@@ -1,1 +1,3 @@
-# ucimo-arduino
+# Učimo Arduino
+
+Učimo Arduino i programiranje mikrokontrolera
