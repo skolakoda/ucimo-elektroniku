@@ -8,16 +8,16 @@
   http://www.arduino.cc/en/Tutorial/Blink
 */
 
-#define LEDPIN 13
+const int ledPin = 13;
 int interval = 1000;
 
 void setup() {
-  pinMode(LEDPIN, OUTPUT); // LED_BUILTIN = 13
+  pinMode(ledPin, OUTPUT); // LED_BUILTIN = 13
 }
 
 void loop() {
-  digitalWrite(LEDPIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  digitalWrite(ledPin, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(interval);              // wait for a second
-  digitalWrite(LEDPIN, LOW);    // turn the LED off by making the voltage LOW
+  digitalWrite(ledPin, LOW);    // turn the LED off by making the voltage LOW
   delay(interval);              // wait for a second
 }
