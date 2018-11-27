@@ -8,11 +8,11 @@
   http://www.arduino.cc/en/Tutorial/Blink
 */
 
-const int ledPin = 13;
+const int ledPin = 13; // LED_BUILTIN = 13
 int interval = 1000;
 
 void setup() {
-  pinMode(ledPin, OUTPUT); // LED_BUILTIN = 13
+  pinMode(ledPin, OUTPUT);
 }
 
 void loop() {

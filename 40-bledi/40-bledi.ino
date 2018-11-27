@@ -6,16 +6,16 @@
   http://www.arduino.cc/en/Tutorial/Fade
 */
 
-int led = 9;
+int ledPin = 9;
 int brightness = 0;
 int fadeAmount = 5;
 
 void setup() {
-  pinMode(led, OUTPUT);
+  pinMode(ledPin, OUTPUT);
 }
 
 void loop() {
-  analogWrite(led, brightness); // a call to analogWrite() is on a scale of 0-255
+  analogWrite(ledPin, brightness); // a call to analogWrite() is on a scale of 0-255
 
   brightness = brightness + fadeAmount;
 

@@ -6,17 +6,18 @@
   http://www.arduino.cc/en/Tutorial/DigitalReadSerial
 */
 
-int pushButton = 2; // digital pin 2 has a pushbutton attached to it
+int buttonPin = 2; // digital pin 2 has a pushbutton attached to it
 
 void setup() {
   Serial.begin(9600);
-  // make the pushbutton's pin an input
-  pinMode(pushButton, INPUT);
+  pinMode(buttonPin, INPUT);
 }
 
 void loop() {
-  // read the input pin
-  int buttonState = digitalRead(pushButton);
-  Serial.println(buttonState);
-  delay(1);
+  int state = digitalRead(buttonPin);
+  if (state == 0)
+    Serial.println("Dugme nije pritisnuto");
+  else
+    Serial.println("Dugme je pritisnuto");
+  delay(100);
 }
