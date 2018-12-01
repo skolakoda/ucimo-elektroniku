@@ -5,12 +5,12 @@
 
 int interval = 1000;
 int brojac = 0;
-int pin1 = 11, pin2 = 12, pin3 = 13;
+int bluePin = 11, greenPin = 12, redPin = 13;
 
 void setup() {
-  pinMode(pin1, OUTPUT);
-  pinMode(pin2, OUTPUT);
-  pinMode(pin3, OUTPUT);
+  pinMode(bluePin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+  pinMode(redPin, OUTPUT);
 }
 
 void loop() {
@@ -19,5 +19,4 @@ void loop() {
   digitalWrite(pin, HIGH);
   delay(interval);
   digitalWrite(pin, LOW);
-  delay(interval);
 }
