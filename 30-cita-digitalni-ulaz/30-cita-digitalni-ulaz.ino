@@ -1,12 +1,11 @@
 /*
-  Potrebno prikačiti dugme!
-
-  Reads a digital input on pin 2, prints the result to the Serial Monitor
+  Potrebno prikačiti dugme na pin 2 (minus u 0)
+  Čita digitalni ulaz sa pina 2 i štampa izlaz na Serial Monitor
 
   http://www.arduino.cc/en/Tutorial/DigitalReadSerial
 */
 
-int buttonPin = 2; // digital pin 2 has a pushbutton attached to it
+int buttonPin = 2;
 
 void setup() {
   Serial.begin(9600);

@@ -1,9 +1,6 @@
 /*
-  Turns an LED on for one second, then off for one second, repeatedly.
-
-  Most Arduinos have an on-board LED you can control. On the UNO, MEGA and ZERO
-  it is attached to digital pin 13, on MKR1000 on pin 6. LED_BUILTIN is set to
-  the correct LED pin independent of which board is used.
+  Arduino UNO ima ugrađenu sijaličicu na pin 13. Konstanta LED_BUILTIN označava taj pin. 
+  Ako dodajemo LED, duža noga je pozitivna, kraća je uzemljenje.
 
   http://www.arduino.cc/en/Tutorial/Blink
 */
@@ -16,8 +13,8 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(ledPin, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(interval);              // wait for a second
-  digitalWrite(ledPin, LOW);    // turn the LED off by making the voltage LOW
-  delay(interval);              // wait for a second
+  digitalWrite(ledPin, HIGH);   // povećava voltažu
+  delay(interval);              // čeka sekund
+  digitalWrite(ledPin, LOW);    // smanjuje voltažu
+  delay(interval);              // čeka sekund
 }
