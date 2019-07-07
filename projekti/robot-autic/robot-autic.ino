@@ -7,6 +7,7 @@ int speedpin1 = 9; // define pin EB(PWM speed regulation)
 
 void setup()
 {
+  // Serial.begin(9600);
   pinMode(pinI1, OUTPUT);
   pinMode(pinI2, OUTPUT);
   pinMode(speedpin, OUTPUT);
@@ -17,7 +18,8 @@ void setup()
 
 void loop()
 {
-  // going straight
+  // ide pravo
+  // Serial.println("ide pravo");
   analogWrite(speedpin, 100); // input analog value to set the speed
   analogWrite(speedpin1, 100);
   digitalWrite(pinI4, LOW); // make the DC motor turn(right) anti-clockwise
@@ -25,7 +27,7 @@ void loop()
   digitalWrite(pinI1, LOW); // make the DC motor turn(left) clockwise
   digitalWrite(pinI2, HIGH);
   delay(2000);
-  // going backwards
+  // ide unazad
   analogWrite(speedpin, 100); // input analog value to set the speed
   analogWrite(speedpin1, 100);
   digitalWrite(pinI4, HIGH); // make the DC motor turn(right) clockwise
@@ -33,7 +35,7 @@ void loop()
   digitalWrite(pinI1, HIGH); //make the DC motor turn(left) anti-clockwise
   digitalWrite(pinI2, LOW);
   delay(2000);
-  // turning left
+  // skrece levo
   analogWrite(speedpin, 60); // input analog value to set the speed
   analogWrite(speedpin1, 60);
   digitalWrite(pinI4, LOW); // make the DC motor turn(right) anti-clockwise
@@ -41,7 +43,7 @@ void loop()
   digitalWrite(pinI1, HIGH); //make the DC motor turn(left) anti-clockwise
   digitalWrite(pinI2, LOW);
   delay(2000);
-  // turning right
+  // skrece desno
   analogWrite(speedpin, 60); //input analog value to set the speed
   analogWrite(speedpin1, 60);
   digitalWrite(pinI4, HIGH); //make the DC motor turn(right) clockwise
@@ -49,7 +51,7 @@ void loop()
   digitalWrite(pinI1, LOW); //make the DC motor turn(left) clockwise
   digitalWrite(pinI2, HIGH);
   delay(2000);
-  // braking
+  // kochi
   digitalWrite(pinI4, HIGH); // make the DC motor brake(right)
   digitalWrite(pinI3, HIGH);
   digitalWrite(pinI1, HIGH); //make the DC motor brake(left)
