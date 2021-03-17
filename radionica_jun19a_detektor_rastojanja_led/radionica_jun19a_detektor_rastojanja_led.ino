@@ -1,13 +1,14 @@
-int buzzer = 9;
-int trigPin = 11;
-int echoPin = 12;
-long duration;
+// potrebno je uključiti i napajanje i uzemljenje u senzor
+int echoPin = 7;
+int trigPin = 8;
+int ledPin = 13; 
+long duration, cm;
 
 void setup() {
   Serial.begin(9600);
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
-  pinMode(buzzer, OUTPUT);
+  pinMode(ledPin, OUTPUT);
 }
 
 void loop() {
@@ -18,12 +19,16 @@ void loop() {
   digitalWrite(trigPin, LOW);
 
   duration = pulseIn(echoPin, HIGH); // da ode i da se vrati
-  //duration = duration / 100 * 100;
-  Serial.print(duration);
-  Serial.print(" duration");
-  Serial.println();
+  cm = (duration/2) / 29.1;
+
+  if (cm <= 10) {
+    digitalWrite(ledPin, HIGH);
+  } else {
+    digitalWrite(ledPin, LOW);
+  }
+  Serial.print(cm);
+  Serial.print("cm");
   Serial.println();
 
-  //tone(buzzer, duration);
   delay(250);
 }
