@@ -2,8 +2,6 @@
 
 Učimo Arduino i programiranje mikrokontrolera
 
-Uvodna prezentacija: [Uvod u elektroniku - Mikrokontroleri](https://www.slideshare.net/DamjanPavlica/uvod-u-elektroniku-mikrokontroleri)
-
 ## Podsetnik
 
 Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
