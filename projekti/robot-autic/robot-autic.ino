@@ -7,7 +7,7 @@ int speedpin1 = 9; // define pin EB(PWM speed regulation)
 
 void setup()
 {
-  // Serial.begin(9600);
+  Serial.begin(9600);
   pinMode(pinI1, OUTPUT);
   pinMode(pinI2, OUTPUT);
   pinMode(speedpin, OUTPUT);
@@ -19,7 +19,7 @@ void setup()
 void loop()
 {
   // ide pravo
-  // Serial.println("ide pravo");
+  Serial.println("ide pravo");
   analogWrite(speedpin, 100); // input analog value to set the speed
   analogWrite(speedpin1, 100);
   digitalWrite(pinI4, LOW); // make the DC motor turn(right) anti-clockwise
@@ -36,6 +36,7 @@ void loop()
   digitalWrite(pinI2, LOW);
   delay(2000);
   // skrece levo
+  Serial.println("skrece levo");
   analogWrite(speedpin, 60); // input analog value to set the speed
   analogWrite(speedpin1, 60);
   digitalWrite(pinI4, LOW); // make the DC motor turn(right) anti-clockwise

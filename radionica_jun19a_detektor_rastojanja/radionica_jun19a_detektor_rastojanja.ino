@@ -15,7 +15,6 @@ void loop() {
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
 
-  // pinMode(echoPin, INPUT);
   duration = pulseIn(echoPin, HIGH); // da ode i da se vrati
   cm = (duration/2) / 29.1;
   Serial.print(cm);
