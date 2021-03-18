@@ -19,9 +19,6 @@ Rešenje: Podesiti Arduino IDE -> Tools -> Port
 
 ## TODO
 
-- probati potenciometar
-  https://dronebotworkshop.com/rotary-encoders-arduino/
-  https://electropeak.com/learn/rotary-encoder-how-it-works-how-to-use-with-arduino/
 - vlažnost tla led za pecinu biljku 
 - paljenje svetla na glas (tapsanje) 
   https://create.arduino.cc/projecthub/iotboys/control-led-by-clap-using-arduino-and-sound-sensor-e31809?ref=platform&ref_id=424_trending_846__&offset=2
