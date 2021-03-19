@@ -1,4 +1,3 @@
-// radionica_jun19a
 // potrebno je uključiti i napajanje i uzemljenje u senzor
 int echoPin = 7;
 int trigPin = 8;
