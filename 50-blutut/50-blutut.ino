@@ -1,4 +1,5 @@
 // Bluetooth Module HC-06
+// moraju se isključiti pinovi pre prebacivanja koda!
 
 String message;
 
