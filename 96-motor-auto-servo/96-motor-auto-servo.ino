@@ -10,9 +10,10 @@ int motor2desni = 5;  // roze
 
 Servo myservo;
 
+// BUG: ne pokrece drugi motor kada startuje servo
 void setup()
 {
-    //myservo.attach(servoPin);
+    myservo.attach(servoPin);
     pinMode(motor1levi, OUTPUT);
     pinMode(motor1desni, OUTPUT);
     pinMode(motor2levi, OUTPUT);

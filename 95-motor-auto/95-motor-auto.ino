@@ -35,21 +35,12 @@ void idi(int speed)
     analogWrite(motor2desni, speed);
 }
 
-void skreni()
-{
-    analogWrite(motor1levi, 0);
-    analogWrite(motor1desni, 120);
-    analogWrite(motor2levi, 120);
-    analogWrite(motor2desni, 0);
-}
-
 void loop()
 {
     int cm = rastojanje();
     int brzina = map(cm, 2, 200, 100, 255);
     if (cm < 20)
     {
-        // skreni();
         brzina = 0;
     }
     idi(brzina);
