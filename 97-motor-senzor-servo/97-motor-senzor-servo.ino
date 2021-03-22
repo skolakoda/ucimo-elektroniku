@@ -13,31 +13,34 @@ int motor2desni = 5;  // roze
 
 Servo myservo;
 
-#define NUM_ANGLES 7
-unsigned char sensorAngle[NUM_ANGLES] = {60, 70, 80, 90, 100, 110, 120};
-unsigned int distance[NUM_ANGLES];
+const int NUM_ANGLES = 7;
+unsigned char uglovi[NUM_ANGLES] = {60, 70, 80, 90, 100, 110, 120};
+unsigned int rastojanja[NUM_ANGLES];
 
-unsigned int readDistance()
+unsigned int rastojanje()
 {
+    digitalWrite(trigPin, LOW);
+    delayMicroseconds(5);
     digitalWrite(trigPin, HIGH);
     delayMicroseconds(10);
     digitalWrite(trigPin, LOW);
-    unsigned long period = pulseIn(echoPin, HIGH);
-    return period * 343 / 2000; // to millimeters
+
+    unsigned int vreme = pulseIn(echoPin, HIGH); // da ode i da se vrati
+    return (vreme / 2) / 29.1; // to cm
 }
 
 void readNextDistance()
 {
     static unsigned char angleIndex = 0;
     static signed char step = 1;
-    distance[angleIndex] = readDistance();
-    Serial.println(distance[angleIndex]);
+    rastojanja[angleIndex] = rastojanje();
+    Serial.println(rastojanja[angleIndex]);
     angleIndex += step;
     if (angleIndex == NUM_ANGLES - 1)
         step = -1;
     else if (angleIndex == 0)
         step = 1;
-    myservo.write(sensorAngle[angleIndex]);
+    myservo.write(uglovi[angleIndex]);
 }
 
 void setup()
@@ -51,22 +54,10 @@ void setup()
     pinMode(echoPin, INPUT);
     myservo.attach(servoPin);
     // myservo.write(90);
-    myservo.write(sensorAngle[0]);
+    myservo.write(uglovi[0]);
     delay(200);
     for (unsigned char i = 0; i < NUM_ANGLES; i++)
         readNextDistance(), delay(200);
-}
-
-int rastojanje()
-{
-    digitalWrite(trigPin, LOW);
-    delayMicroseconds(5);
-    digitalWrite(trigPin, HIGH);
-    delayMicroseconds(10);
-    digitalWrite(trigPin, LOW);
-
-    int vreme = pulseIn(echoPin, HIGH); // da ode i da se vrati
-    return (vreme / 2) / 29.1;
 }
 
 void idi(int speed)
@@ -88,21 +79,20 @@ void skreni()
 void loop()
 {
     readNextDistance();
-    // See if something is too close at any angle
     unsigned char tooClose = 0;
+    // ako je bilo koji ugao preblizu
     for (unsigned char i = 0; i < NUM_ANGLES; i++)
-        if (distance[i] < 300)
+        if (rastojanja[i] < 30)
         {
             tooClose = 1;
         }
     if (tooClose)
     {
-        Serial.println("back up left");
-        skreni(); // proveri jel skreće levo
+        Serial.println("skreni levo");
+        skreni();
     }
     else
     {
-        Serial.println("go forward");
         idi(255);
     }
     // Check the next direction in 50 ms
