@@ -1,11 +1,15 @@
 #include <Servo.h>
 
+int servoPin = 5;  // define the servo pin(PWM)
+
+int echoPin = A0;    // define ultrasonic receive pin (Echo)
+int trigPin = A1;   // define ultrasonic send pin(Trig)
+
 int pinLB = 6;        // define pin6 as left back connect with IN1
 int pinLF = 9;        // define pin9 as left forward connect with IN2
 int pinRB = 10;       // define pin10 as right back connect with IN3
 int pinRF = 11;       // define pin11 as right back connect with IN4
-int inputPin = A0;    // define ultrasonic receive pin (Echo)
-int outputPin = A1;   // define ultrasonic send pin(Trig)
+
 int Fspeedd = 0;      // forward distance
 int Rspeedd = 0;      // right distance
 int Lspeedd = 0;      // left distance
@@ -29,9 +33,9 @@ void setup()
   pinMode(pinLF, OUTPUT);
   pinMode(pinRB, OUTPUT);
   pinMode(pinRF, OUTPUT);
-  pinMode(inputPin, INPUT);
-  pinMode(outputPin, OUTPUT);
-  myservo.attach(5); // define the servo pin(PWM)
+  pinMode(echoPin, INPUT);
+  pinMode(trigPin, OUTPUT);
+  myservo.attach(servoPin);
 }
 
 void advance(int a) // forward
@@ -115,12 +119,12 @@ void detection() //test the distance of different direction
 void ask_pin_F() // test forward distance
 {
   myservo.write(90);
-  digitalWrite(outputPin, LOW);
+  digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
-  digitalWrite(outputPin, HIGH);
+  digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
-  digitalWrite(outputPin, LOW);
-  float Fdistance = pulseIn(inputPin, HIGH);
+  digitalWrite(trigPin, LOW);
+  float Fdistance = pulseIn(echoPin, HIGH);
   Fdistance = Fdistance / 5.8 / 10;
   Serial.print("F distance:");
   Serial.println(Fdistance);
@@ -131,12 +135,12 @@ void ask_pin_L() // test left distance
 {
   myservo.write(5);
   delay(delay_time);
-  digitalWrite(outputPin, LOW);
+  digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
-  digitalWrite(outputPin, HIGH);
+  digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
-  digitalWrite(outputPin, LOW);
-  float Ldistance = pulseIn(inputPin, HIGH);
+  digitalWrite(trigPin, LOW);
+  float Ldistance = pulseIn(echoPin, HIGH);
   Ldistance = Ldistance / 5.8 / 10;
   Serial.print("L distance:");
   Serial.println(Ldistance);
@@ -147,12 +151,12 @@ void ask_pin_R() // test right distance
 {
   myservo.write(177);
   delay(delay_time);
-  digitalWrite(outputPin, LOW);
+  digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
-  digitalWrite(outputPin, HIGH);
+  digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
-  digitalWrite(outputPin, LOW);
-  float Rdistance = pulseIn(inputPin, HIGH);
+  digitalWrite(trigPin, LOW);
+  float Rdistance = pulseIn(echoPin, HIGH);
   Rdistance = Rdistance / 5.8 / 10;
   Serial.print("R distance:");
   Serial.println(Rdistance);

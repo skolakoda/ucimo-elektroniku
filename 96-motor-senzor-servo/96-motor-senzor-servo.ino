@@ -2,10 +2,12 @@
 #include <Servo.h>
 
 int servoPin = 9;
-int motor1desni = 11; // plavi
-int motor1levi = 3;   // zeleni
+
 int trigPin = 8;      // beli
 int echoPin = 7;      // sivi senzor
+
+int motor1desni = 11; // plavi
+int motor1levi = 3;   // zeleni
 int motor2levi = 6;   // sivi motor
 int motor2desni = 5;  // roze
 
