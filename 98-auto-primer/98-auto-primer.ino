@@ -19,17 +19,17 @@ enum Motor
   LEFT,
   RIGHT
 };
-// Set motor speed: 255 full ahead, −255 full reverse , 0 stop
+// Set motor speed: 255 full ahead, -255 full reverse , 0 stop
 void go(enum Motor m, int speed)
 {
   digitalWrite(m == LEFT ? in1Pin : in3Pin, speed > 0 ? HIGH : LOW);
   digitalWrite(m == LEFT ? in2Pin : in4Pin, speed <= 0 ? HIGH : LOW);
-  analogWrite(m == LEFT ? enAPin : enBPin, speed < 0 ? −speed : speed);
+  analogWrite(m == LEFT ? enAPin : enBPin, speed < 0 ? -speed : speed);
 }
 
 void testMotors()
 {
-  static int speed[8] = {128, 255, 128, 0, −128, −255, −128, 0};
+  static int speed[8] = {128, 255, 128, 0, -128, -255, -128, 0};
   go(RIGHT, 0);
   for (unsigned char i = 0; i < 8; i++)
     go(LEFT, speed[i]), delay(200);
@@ -46,9 +46,9 @@ readDistance()
   return period * 343 / 2000;
 }
 
-#define NUM ANGLES 7
-unsigned char sensorAngle[NUM ANGLES] = {60, 70, 80, 90, 100, 110, 120};
-unsigned int distance[NUM ANGLES];
+#define NUM_ANGLES 7
+unsigned char sensorAngle[NUM_ANGLES] = {60, 70, 80, 90, 100, 110, 120};
+unsigned int distance[NUM_ANGLES];
 
 void readNextDistance()
 {
@@ -56,8 +56,8 @@ void readNextDistance()
   static signed char step = 1;
   distance[angleIndex] = readDistance();
   angleIndex += step;
-  if (angleIndex == NUM ANGLES − 1)
-    step = −1;
+  if (angleIndex == NUM_ANGLES - 1)
+    step = -1;
   else if (angleIndex == 0)
     step = 1;
   myservo.write(sensorAngle[angleIndex]);
@@ -80,9 +80,9 @@ void setup()
   go(RIGHT, 0);
   testMotors();
   // Scan the surroundings before starting myservo.
-  write(sensorAngle[0]);
+  myservo.write(sensorAngle[0]);
   delay(200);
-  for (unsigned char i = 0; i < NUM ANGLES; i++)
+  for (unsigned char i = 0; i < NUM_ANGLES; i++)
     readNextDistance(), delay(200);
 }
 
@@ -91,7 +91,7 @@ void loop()
   readNextDistance();
   // See if something is too close at any angle
   unsigned char tooClose = 0;
-  for (unsigned char i = 0; i < NUM ANGLES; i++)
+  for (unsigned char i = 0; i < NUM_ANGLES; i++)
     if (distance[i] < 300)
     {
       tooClose = 1;
@@ -99,8 +99,8 @@ void loop()
   if (tooClose)
   {
     // Something's nearby: back up left
-    go(LEFT, −180);
-    go(RIGHT, −80);
+    go(LEFT, -180);
+    go(RIGHT, -80);
   }
   else
   {
