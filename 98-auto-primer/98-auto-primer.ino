@@ -1,11 +1,11 @@
 #include <Servo.h>
 
-Servo servo;
+Servo myservo;
 // Ultrasonic Module pins
 const int trigPin = 13; // 10 microsecond high pulse causes chirp , wait 50 us
 const int echoPin = 12; // Width of high pulse indicates distance
 // Servo motor that aims ultrasonic sensor.
-const int servoPin = 11; // PWM output for hobby servo
+const int servoPin = 11; // PWM output for hobby myservo
 // Motor control pins: L298N H bridge
 const int enAPin = 6; // Left motor PWM speed control
 const int in1Pin = 7; // Left motor Direction 1
@@ -60,7 +60,7 @@ void readNextDistance()
     step = −1;
   else if (angleIndex == 0)
     step = 1;
-  servo.write(sensorAngle[angleIndex]);
+  myservo.write(sensorAngle[angleIndex]);
 }
 
 void setup()
@@ -74,12 +74,12 @@ void setup()
   pinMode(in3Pin, OUTPUT);
   pinMode(in4Pin, OUTPUT);
   pinMode(enBPin, OUTPUT);
-  servo.attach(servoPin);
-  servo.write(90);
+  myservo.attach(servoPin);
+  myservo.write(90);
   go(LEFT, 0);
   go(RIGHT, 0);
   testMotors();
-  // Scan the surroundings before starting servo.
+  // Scan the surroundings before starting myservo.
   write(sensorAngle[0]);
   delay(200);
   for (unsigned char i = 0; i < NUM ANGLES; i++)

@@ -1,8 +1,9 @@
+// Servo library disables analogWrite() (PWM) functionality on pins 9 and 10!
 #include <Servo.h>
 
-int servoPin = 11;
-int motor1desni = 10; // plavi
-int motor1levi = 9;   // zeleni
+int servoPin = 9;
+int motor1desni = 11; // plavi
+int motor1levi = 3;   // zeleni
 int trigPin = 8;      // beli
 int echoPin = 7;      // sivi senzor
 int motor2levi = 6;   // sivi motor
@@ -10,10 +11,10 @@ int motor2desni = 5;  // roze
 
 Servo myservo;
 
-// BUG: ne pokrece drugi motor kada startuje servo
 void setup()
 {
     myservo.attach(servoPin);
+    myservo.write(90);
     pinMode(motor1levi, OUTPUT);
     pinMode(motor1desni, OUTPUT);
     pinMode(motor2levi, OUTPUT);
@@ -52,16 +53,16 @@ void skreni()
 
 void loop()
 {
-    // for (int pos = 0; pos <= 180; pos += 1)
-    // {
-    //     myservo.write(pos); // tell servo to go to pos
-    //     delay(15);          // waits 15ms for the servo to reach the position
-    // }
-    // for (int pos = 180; pos >= 0; pos -= 1)
-    // {
-    //     myservo.write(pos);
-    //     delay(15);
-    // }
+    for (int pos = 0; pos <= 180; pos += 1)
+    {
+        myservo.write(pos); // tell servo to go to pos
+        delay(15);          // waits 15ms for the servo to reach the position
+    }
+    for (int pos = 180; pos >= 0; pos -= 1)
+    {
+        myservo.write(pos);
+        delay(15);
+    }
 
     int cm = rastojanje();
     int brzina = map(cm, 2, 200, 100, 255);
