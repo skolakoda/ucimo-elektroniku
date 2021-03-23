@@ -13,8 +13,8 @@ byte motor2desni = 5;  // roze
 
 Servo servo;
 
-const byte NUM_ANGLES = 13;
-byte uglovi[NUM_ANGLES] = {0, 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180};
+const byte NUM_ANGLES = 7;
+byte uglovi[NUM_ANGLES] = {0, 30, 60, 90, 120, 150, 180};
 unsigned int rastojanja[NUM_ANGLES];
 
 unsigned int rastojanje()
@@ -29,7 +29,7 @@ unsigned int rastojanje()
     return (vreme / 2) / 29.1;                   // to cm
 }
 
-void pogledajOkolo()
+void pogledajDesnoLevo()
 {
     servo.write(0);
     delay(500);
@@ -53,7 +53,7 @@ void setup()
     pinMode(trigPin, OUTPUT);
     pinMode(echoPin, INPUT);
     servo.attach(servoPin);
-    pogledajOkolo();
+    pogledajDesnoLevo();
 }
 
 void idi(byte brzina, bool napred)
@@ -82,15 +82,13 @@ void stani(int trajanje)
     delay(trajanje);
 }
 
-// TODO: skreni levo, desno
-// trenutno skreće levo
-void skreni(int trajanje)
+void skreni(int trajanje, bool levo)
 {
     byte brzina = 80;
-    analogWrite(motor1levi, brzina);
-    analogWrite(motor1desni, 0);
-    analogWrite(motor2levi, 0);
-    analogWrite(motor2desni, brzina);
+    analogWrite(motor1levi, levo ? brzina : 0);
+    analogWrite(motor1desni, levo ? 0 : brzina);
+    analogWrite(motor2levi, levo ? 0 : brzina);
+    analogWrite(motor2desni, levo ? brzina : 0);
     delay(trajanje);
 }
 
@@ -106,8 +104,8 @@ byte nadjiNajveci()
             maxIndex = i;
         }
     }
-    Serial.println("Najveće rastojanje:");
-    Serial.println(max);
+    Serial.println("maxIndex:");
+    Serial.println(maxIndex);
     return maxIndex;
 }
 
@@ -119,15 +117,22 @@ void loop()
         stani(500);
         nazad(500);
         stani(0);
-        pogledajOkolo();
-        // TODO: gde ima mesta tu skreni
-        nadjiNajveci();
-        skreni(500);
+        pogledajDesnoLevo();
+        byte maxIndex = nadjiNajveci();
+        if (maxIndex < 3)
+        {
+            Serial.println("skreni desno");
+        }
+        else
+        {
+            Serial.println("skreni levo");
+        }
+        skreni(500, maxIndex > 3);
         stani(500);
     }
     else
     {
-        byte brzina = map(cm, 2, 200, 80, 255);
+        byte brzina = map(cm, 20, 200, 100, 255);
         napred(brzina);
     }
 }
