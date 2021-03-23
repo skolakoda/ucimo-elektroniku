@@ -22,9 +22,7 @@ Rešenje: Podesiti Arduino IDE -> Tools -> Port
 - sviranje muzike (mozda na neki okidac)
   https://create.arduino.cc/projecthub/Rad_Silviu/speaker-with-arduino-be454c
   https://www.arduino.cc/en/Tutorial/BuiltInExamples/toneMelody
-- semafor 
-  https://create.arduino.cc/projecthub/techno_z/arduino-traffic-light-simulator-2ec9f7?ref=platform&ref_id=424_trending___&offset=3
-- vlažnost tla led za pecinu biljku 
+- vlažnost tla led za neku biljku 
 - paliti sijalicu kad neko prođe (treba relej ili MOSFET, koristiti DC, ne AC)
   https://youtu.be/58XWVDnB7Ss
   https://youtu.be/XiOcxyyTxy4
@@ -34,5 +32,5 @@ Rešenje: Podesiti Arduino IDE -> Tools -> Port
 
 ### Robot TODO
 
-- kretanje i zaustavljanje na tapšanje
 - kad dođe do zida, stane, pogleda levo-desno i onda se okrene gde može
+- kretanje i zaustavljanje na tapšanje

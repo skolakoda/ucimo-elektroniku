@@ -2,6 +2,7 @@
 #include <Servo.h>
 
 byte servoPin = 9;
+byte soundPin = 2;
 
 byte trigPin = 8; // beli
 byte echoPin = 7; // sivi senzor
@@ -12,6 +13,7 @@ byte motor2levi = 6;   // sivi motor
 byte motor2desni = 5;  // roze
 
 Servo servo;
+bool upaljeno = false;
 
 const byte NUM_ANGLES = 7;
 byte uglovi[NUM_ANGLES] = {0, 30, 60, 90, 120, 150, 180};
@@ -46,6 +48,7 @@ void pogledajDesnoLevo()
 void setup()
 {
     Serial.begin(9600);
+    pinMode(soundPin, INPUT);
     pinMode(motor1levi, OUTPUT);
     pinMode(motor1desni, OUTPUT);
     pinMode(motor2levi, OUTPUT);
@@ -92,47 +95,38 @@ void skreni(int trajanje, bool levo)
     delay(trajanje);
 }
 
-byte nadjiNajveci()
+byte nadjiNajdalji()
 {
-    byte maxIndex = 0;
-    unsigned int max = rastojanja[maxIndex];
+    byte nadjenIndex = 0;
+    unsigned int najdalje = rastojanja[0];
     for (byte i = 0; i < NUM_ANGLES; i++)
     {
-        if (rastojanja[i] > max)
+        if (rastojanja[i] > najdalje)
         {
-            max = rastojanja[i];
-            maxIndex = i;
+            najdalje = rastojanja[i];
+            nadjenIndex = i;
         }
     }
-    Serial.println("maxIndex:");
-    Serial.println(maxIndex);
-    return maxIndex;
+    return nadjenIndex;
 }
 
 void loop()
 {
-    int cm = rastojanje();
-    if (cm < 20)
+    // pali se na pljesak
+    if (digitalRead(soundPin)) upaljeno = !upaljeno;
+    if (!upaljeno) return;
+
+    if (rastojanje() < 20)
     {
         stani(500);
-        nazad(500);
+        nazad(300);
         stani(0);
         pogledajDesnoLevo();
-        byte maxIndex = nadjiNajveci();
-        if (maxIndex < 3)
-        {
-            Serial.println("skreni desno");
-        }
-        else
-        {
-            Serial.println("skreni levo");
-        }
-        skreni(500, maxIndex > 3);
+        skreni(500, nadjiNajdalji() > 3);
         stani(500);
     }
     else
     {
-        // byte brzina = map(cm, 20, 200, 100, 255);
         napred(255);
     }
 }

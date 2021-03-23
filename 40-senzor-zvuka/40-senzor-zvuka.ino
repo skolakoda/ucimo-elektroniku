@@ -2,7 +2,7 @@
 int soundPin = 2;
 int ledPin = 4;
 
-boolean upaljeno = false;
+bool upaljeno = false;
 
 void setup()
 {
