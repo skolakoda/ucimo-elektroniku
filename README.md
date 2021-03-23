@@ -19,6 +19,7 @@ Rešenje: Podesiti Arduino IDE -> Tools -> Port
 
 ## TODO
 
+- https://lastminuteengineers.com/sound-sensor-arduino-tutorial/
 - sviranje muzike (mozda na neki okidac)
   https://create.arduino.cc/projecthub/Rad_Silviu/speaker-with-arduino-be454c
   https://www.arduino.cc/en/Tutorial/BuiltInExamples/toneMelody
