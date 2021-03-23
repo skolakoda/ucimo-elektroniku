@@ -34,7 +34,7 @@ int rastojanje()
     digitalWrite(trigPin, LOW);
 
     int vreme = pulseIn(echoPin, HIGH); // da ode i da se vrati
-    return (vreme / 2) / 29.1;
+    return (vreme * 0.034) / 2;
 }
 
 void idi(int speed)

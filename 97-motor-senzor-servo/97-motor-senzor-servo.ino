@@ -28,7 +28,7 @@ unsigned int rastojanje()
     digitalWrite(trigPin, LOW);
 
     unsigned int vreme = pulseIn(echoPin, HIGH); // da ode i da se vrati
-    return (vreme / 2) / 29.1;                   // to cm
+    return (vreme * 0.034) / 2;                   // to cm
 }
 
 void pogledajDesnoLevo()

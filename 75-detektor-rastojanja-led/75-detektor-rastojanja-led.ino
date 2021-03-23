@@ -19,7 +19,7 @@ void loop() {
   digitalWrite(trigPin, LOW);
 
   duration = pulseIn(echoPin, HIGH); // da ode i da se vrati
-  cm = (duration/2) / 29.1;
+  cm = (duration * 0.034) / 2;
 
   if (cm <= 10) {
     digitalWrite(ledPin, HIGH);

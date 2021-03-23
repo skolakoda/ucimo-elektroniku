@@ -17,7 +17,7 @@ void loop() {
   digitalWrite(trigPin, LOW);
 
   duration = pulseIn(echoPin, HIGH); // da ode i da se vrati
-  cm = (duration/2) / 29.1;
+  cm = (duration * 0.034) / 2;
   Serial.print(cm);
   Serial.print("cm");
   Serial.println();
