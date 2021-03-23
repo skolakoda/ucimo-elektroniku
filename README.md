@@ -19,9 +19,6 @@ Rešenje: Podesiti Arduino IDE -> Tools -> Port
 
 ## TODO
 
-- servo 
-  https://www.makerguides.com/servo-arduino-tutorial/
-  https://arduinogetstarted.com/tutorials/arduino-servo-motor
 - paljenje svetla na glas (tapsanje) ili pokret
   https://create.arduino.cc/projecthub/iotboys/control-led-by-clap-using-arduino-and-sound-sensor-e31809?ref=platform&ref_id=424_trending_846__&offset=2
 - sviranje muzike (mozda na neki okidac)
@@ -37,4 +34,7 @@ Rešenje: Podesiti Arduino IDE -> Tools -> Port
   https://www.instructables.com/Self-Watering-System-for-Plants-Using-Arduino-Uno/
 - temperaturna stanica (treba ekran)
 
+### Robot TODO
 
+- kretanje i zaustavljanje na tapšanje
+- kad dođe do zida, stane, pogleda levo-desno i onda se okrene gde može

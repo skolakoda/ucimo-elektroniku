@@ -13,8 +13,8 @@ int motor2desni = 5;  // roze
 
 Servo myservo;
 
-const int NUM_ANGLES = 7;
-unsigned char uglovi[NUM_ANGLES] = {60, 70, 80, 90, 100, 110, 120};
+const int NUM_ANGLES = 13;
+unsigned char uglovi[NUM_ANGLES] = {0, 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180};
 unsigned int rastojanja[NUM_ANGLES];
 
 unsigned int rastojanje()
@@ -26,21 +26,31 @@ unsigned int rastojanje()
     digitalWrite(trigPin, LOW);
 
     unsigned int vreme = pulseIn(echoPin, HIGH); // da ode i da se vrati
-    return (vreme / 2) / 29.1; // to cm
+    return (vreme / 2) / 29.1;                   // to cm
 }
 
 void readNextDistance()
 {
-    static unsigned char angleIndex = 0;
+    static unsigned char index = 0;
     static signed char step = 1;
-    rastojanja[angleIndex] = rastojanje();
-    Serial.println(rastojanja[angleIndex]);
-    angleIndex += step;
-    if (angleIndex == NUM_ANGLES - 1)
+    rastojanja[index] = rastojanje();
+    Serial.println(rastojanja[index]);
+    index += step;
+    if (index == NUM_ANGLES - 1)
         step = -1;
-    else if (angleIndex == 0)
+    else if (index == 0)
         step = 1;
-    myservo.write(uglovi[angleIndex]);
+    myservo.write(uglovi[index]);
+}
+
+void pogledajOkolo()
+{
+    for (unsigned char i = 0; i < NUM_ANGLES; i++)
+    {
+        readNextDistance();
+        delay(150);
+    }
+    myservo.write(90);
 }
 
 void setup()
@@ -53,11 +63,7 @@ void setup()
     pinMode(trigPin, OUTPUT);
     pinMode(echoPin, INPUT);
     myservo.attach(servoPin);
-    // myservo.write(90);
-    myservo.write(uglovi[0]);
-    delay(200);
-    for (unsigned char i = 0; i < NUM_ANGLES; i++)
-        readNextDistance(), delay(200);
+    pogledajOkolo();
 }
 
 void idi(int speed)
@@ -68,6 +74,7 @@ void idi(int speed)
     analogWrite(motor2desni, speed);
 }
 
+// TODO: skreni levo, desno
 void skreni()
 {
     analogWrite(motor1levi, 120);
@@ -78,23 +85,11 @@ void skreni()
 
 void loop()
 {
-    readNextDistance();
-    unsigned char tooClose = 0;
-    // ako je bilo koji ugao preblizu
-    for (unsigned char i = 0; i < NUM_ANGLES; i++)
-        if (rastojanja[i] < 30)
-        {
-            tooClose = 1;
-        }
-    if (tooClose)
+    int cm = rastojanje();
+    int brzina = map(cm, 2, 200, 80, 255);
+    if (cm < 20)
     {
-        Serial.println("skreni levo");
-        skreni();
+        brzina = 0;
     }
-    else
-    {
-        idi(255);
-    }
-    // Check the next direction in 50 ms
-    delay(50);
+    idi(brzina);
 }
