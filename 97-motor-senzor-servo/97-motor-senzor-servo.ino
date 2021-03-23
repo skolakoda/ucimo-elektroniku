@@ -51,6 +51,7 @@ void pogledajOkolo()
         delay(150);
     }
     myservo.write(90);
+    delay(200);
 }
 
 void setup()
@@ -66,12 +67,27 @@ void setup()
     pogledajOkolo();
 }
 
-void idi(int speed)
+void idi(int snaga, bool napred)
 {
-    analogWrite(motor1levi, 0);
-    analogWrite(motor1desni, speed);
-    analogWrite(motor2levi, 0);
-    analogWrite(motor2desni, speed);
+    analogWrite(motor1levi, napred ? 0 : snaga);
+    analogWrite(motor1desni, napred ? snaga : 0);
+    analogWrite(motor2levi, napred ? 0 : snaga);
+    analogWrite(motor2desni, napred ? snaga : 0);
+}
+
+void napred(int snaga)
+{
+    idi(snaga, true);
+}
+
+void nazad(int snaga)
+{
+    idi(snaga, false);
+}
+
+void stop()
+{
+    idi(0, true);
 }
 
 // TODO: skreni levo, desno
@@ -86,10 +102,18 @@ void skreni()
 void loop()
 {
     int cm = rastojanje();
-    int brzina = map(cm, 2, 200, 80, 255);
     if (cm < 20)
     {
-        brzina = 0;
+        stop();
+        delay(1000);
+        nazad(80);
+        delay(1000);
+        stop();
+        delay(1000);
     }
-    idi(brzina);
+    else
+    {
+        int brzina = map(cm, 2, 200, 50, 255);
+        napred(brzina);
+    }
 }
