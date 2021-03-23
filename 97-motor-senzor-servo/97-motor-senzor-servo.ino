@@ -29,26 +29,16 @@ unsigned int rastojanje()
     return (vreme / 2) / 29.1;                   // to cm
 }
 
-void readNextDistance()
-{
-    static unsigned char index = 0;
-    static signed char step = 1;
-    rastojanja[index] = rastojanje();
-    Serial.println(rastojanja[index]);
-    index += step;
-    if (index == NUM_ANGLES - 1)
-        step = -1;
-    else if (index == 0)
-        step = 1;
-    myservo.write(uglovi[index]);
-}
-
 void pogledajOkolo()
 {
+    myservo.write(0);
+    delay(500);
     for (unsigned char i = 0; i < NUM_ANGLES; i++)
     {
-        readNextDistance();
-        delay(150);
+        rastojanja[i] = rastojanje();
+        Serial.println(rastojanja[i]);
+        myservo.write(uglovi[i]);
+        delay(120);
     }
     myservo.write(90);
     delay(500);
@@ -87,7 +77,7 @@ void nazad(int trajanje)
     delay(trajanje);
 }
 
-void stop(int trajanje)
+void stani(int trajanje)
 {
     idi(0, true);
     delay(trajanje);
@@ -110,13 +100,13 @@ void loop()
     int cm = rastojanje();
     if (cm < 20)
     {
-        stop(500);
+        stani(500);
         nazad(500);
-        stop(0);
+        stani(0);
         pogledajOkolo();
-        // TODO: vidi gde ima mesta tu skreni
+        // TODO: gde ima mesta tu skreni
         skreni(500);
-        stop(500);
+        stani(500);
     }
     else
     {
