@@ -19,8 +19,6 @@ Rešenje: Podesiti Arduino IDE -> Tools -> Port
 
 ## TODO
 
-- paljenje svetla na glas (tapsanje) ili pokret
-  https://create.arduino.cc/projecthub/iotboys/control-led-by-clap-using-arduino-and-sound-sensor-e31809?ref=platform&ref_id=424_trending_846__&offset=2
 - sviranje muzike (mozda na neki okidac)
   https://create.arduino.cc/projecthub/Rad_Silviu/speaker-with-arduino-be454c
   https://www.arduino.cc/en/Tutorial/BuiltInExamples/toneMelody
