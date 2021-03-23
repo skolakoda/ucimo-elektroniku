@@ -132,7 +132,7 @@ void loop()
     }
     else
     {
-        byte brzina = map(cm, 20, 200, 100, 255);
-        napred(brzina);
+        // byte brzina = map(cm, 20, 200, 100, 255);
+        napred(255);
     }
 }
