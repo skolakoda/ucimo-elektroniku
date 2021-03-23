@@ -1,20 +1,20 @@
 // Servo library disables analogWrite() (PWM) functionality on pins 9 and 10!
 #include <Servo.h>
 
-int servoPin = 9;
+byte servoPin = 9;
 
-int trigPin = 8; // beli
-int echoPin = 7; // sivi senzor
+byte trigPin = 8; // beli
+byte echoPin = 7; // sivi senzor
 
-int motor1desni = 11; // plavi
-int motor1levi = 3;   // zeleni
-int motor2levi = 6;   // sivi motor
-int motor2desni = 5;  // roze
+byte motor1desni = 11; // plavi
+byte motor1levi = 3;   // zeleni
+byte motor2levi = 6;   // sivi motor
+byte motor2desni = 5;  // roze
 
-Servo myservo;
+Servo servo;
 
-const int NUM_ANGLES = 13;
-unsigned char uglovi[NUM_ANGLES] = {0, 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180};
+const byte NUM_ANGLES = 13;
+byte uglovi[NUM_ANGLES] = {0, 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, 165, 180};
 unsigned int rastojanja[NUM_ANGLES];
 
 unsigned int rastojanje()
@@ -31,16 +31,15 @@ unsigned int rastojanje()
 
 void pogledajOkolo()
 {
-    myservo.write(0);
+    servo.write(0);
     delay(500);
-    for (unsigned char i = 0; i < NUM_ANGLES; i++)
+    for (byte i = 0; i < NUM_ANGLES; i++)
     {
         rastojanja[i] = rastojanje();
-        Serial.println(rastojanja[i]);
-        myservo.write(uglovi[i]);
+        servo.write(uglovi[i]);
         delay(120);
     }
-    myservo.write(90);
+    servo.write(90);
     delay(500);
 }
 
@@ -53,11 +52,11 @@ void setup()
     pinMode(motor2desni, OUTPUT);
     pinMode(trigPin, OUTPUT);
     pinMode(echoPin, INPUT);
-    myservo.attach(servoPin);
+    servo.attach(servoPin);
     pogledajOkolo();
 }
 
-void idi(int brzina, bool napred)
+void idi(byte brzina, bool napred)
 {
     analogWrite(motor1levi, napred ? 0 : brzina);
     analogWrite(motor1desni, napred ? brzina : 0);
@@ -65,14 +64,14 @@ void idi(int brzina, bool napred)
     analogWrite(motor2desni, napred ? brzina : 0);
 }
 
-void napred(int brzina)
+void napred(byte brzina)
 {
     idi(brzina, true);
 }
 
 void nazad(int trajanje)
 {
-    int brzina = 80;
+    byte brzina = 80;
     idi(brzina, false);
     delay(trajanje);
 }
@@ -87,12 +86,29 @@ void stani(int trajanje)
 // trenutno skreće levo
 void skreni(int trajanje)
 {
-    int brzina = 80;
+    byte brzina = 80;
     analogWrite(motor1levi, brzina);
     analogWrite(motor1desni, 0);
     analogWrite(motor2levi, 0);
     analogWrite(motor2desni, brzina);
     delay(trajanje);
+}
+
+byte nadjiNajveci()
+{
+    byte maxIndex = 0;
+    unsigned int max = rastojanja[maxIndex];
+    for (byte i = 0; i < NUM_ANGLES; i++)
+    {
+        if (rastojanja[i] > max)
+        {
+            max = rastojanja[i];
+            maxIndex = i;
+        }
+    }
+    Serial.println("Najveće rastojanje:");
+    Serial.println(max);
+    return maxIndex;
 }
 
 void loop()
@@ -105,12 +121,13 @@ void loop()
         stani(0);
         pogledajOkolo();
         // TODO: gde ima mesta tu skreni
+        nadjiNajveci();
         skreni(500);
         stani(500);
     }
     else
     {
-        int brzina = map(cm, 2, 200, 80, 255);
+        byte brzina = map(cm, 2, 200, 80, 255);
         napred(brzina);
     }
 }
