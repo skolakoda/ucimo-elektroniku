@@ -19,6 +19,9 @@ const byte NUM_ANGLES = 7;
 byte uglovi[NUM_ANGLES] = {0, 30, 60, 90, 120, 150, 180};
 unsigned int rastojanja[NUM_ANGLES];
 
+unsigned long t = 0;
+unsigned long zadnjiZvuk = 0;
+
 unsigned int rastojanje()
 {
     digitalWrite(trigPin, LOW);
@@ -28,21 +31,21 @@ unsigned int rastojanje()
     digitalWrite(trigPin, LOW);
 
     unsigned int vreme = pulseIn(echoPin, HIGH); // da ode i da se vrati
-    return (vreme * 0.034) / 2;                   // to cm
+    return (vreme * 0.034) / 2;                  // to cm
 }
 
 void pogledajDesnoLevo()
 {
     servo.write(0);
-    delay(500);
+    slusajCekaj(500);
     for (byte i = 0; i < NUM_ANGLES; i++)
     {
         rastojanja[i] = rastojanje();
         servo.write(uglovi[i]);
-        delay(120);
+        slusajCekaj(120);
     }
     servo.write(90);
-    delay(500);
+    slusajCekaj(500);
 }
 
 void setup()
@@ -76,13 +79,13 @@ void nazad(int trajanje)
 {
     byte brzina = 80;
     idi(brzina, false);
-    delay(trajanje);
+    slusajCekaj(trajanje);
 }
 
 void stani(int trajanje)
 {
     idi(0, true);
-    delay(trajanje);
+    slusajCekaj(trajanje);
 }
 
 void skreni(int trajanje, bool levo)
@@ -92,7 +95,7 @@ void skreni(int trajanje, bool levo)
     analogWrite(motor1desni, levo ? 0 : brzina);
     analogWrite(motor2levi, levo ? 0 : brzina);
     analogWrite(motor2desni, levo ? brzina : 0);
-    delay(trajanje);
+    slusajCekaj(trajanje);
 }
 
 byte nadjiNajdalji()
@@ -110,11 +113,37 @@ byte nadjiNajdalji()
     return nadjenIndex;
 }
 
+void slusaj()
+{
+    if (digitalRead(soundPin))
+    {
+
+        if (millis() - zadnjiZvuk > 25)
+        {
+            upaljeno = !upaljeno;
+            Serial.println("upaljeno:");
+            Serial.println(upaljeno);
+        }
+        zadnjiZvuk = millis();
+    }
+}
+
+void slusajCekaj(int trajanje)
+{
+    t = millis();
+    while (millis() < t + trajanje)
+    {
+        slusaj();
+    }
+}
+
 void loop()
 {
-    // pali se na pljesak
-    if (digitalRead(soundPin)) upaljeno = !upaljeno;
-    if (!upaljeno) return;
+    slusaj();
+    if (!upaljeno) {
+        stani(0);
+        return;
+    }
 
     if (rastojanje() < 20)
     {
