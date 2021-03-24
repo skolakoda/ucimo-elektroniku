@@ -1,6 +1,6 @@
 // ky-38 sound sensor: paljenje svetla na tapsanje
 int soundPin = 2;
-int ledPin = 4;
+int ledPin = 13;
 
 bool upaljeno = false;
 
