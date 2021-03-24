@@ -30,7 +30,3 @@ Rešenje: Podesiti Arduino IDE -> Tools -> Port
   https://www.instructables.com/Self-Watering-System-for-Plants-Using-Arduino-Uno/
 - temperaturna stanica (treba ekran)
 
-### Robot TODO
-
-- kad dođe do zida, stane, pogleda levo-desno i onda se okrene gde može
-- kretanje i zaustavljanje na tapšanje
