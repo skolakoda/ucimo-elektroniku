@@ -1,7 +1,7 @@
 #define soundPin 2
 #define ledPin 13
 
-unsigned long zadnjiZvuk = 0; // time when last event happened
+unsigned long zadnjiZvuk = 0;
 bool upaljeno = false;
 
 void setup()
