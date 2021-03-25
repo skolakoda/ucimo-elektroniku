@@ -1,11 +1,10 @@
 // robot kornjača https://app.luminpdf.com/viewer/605c4c35e06c1a0012c2dd96
+// Servo library disables analogWrite() (PWM) functionality on pins 9 and 10
 #include <Servo.h>
 
 int ENA = 3; // ljubičasti (PWM speed regulation)
 int IN1 = 4; // plavi
 int IN2 = 2; // zeleni
-
-// desetka ne radi
 int ENB = 11; // narandžasti (PWM speed regulation)
 int IN3 = 12; // beli
 int IN4 = 13; // sivi
@@ -13,6 +12,7 @@ int IN4 = 13; // sivi
 int echoPin = 7; // zuti
 int trigPin = 8; // braon
 int servoPin = 9;
+// pin 10 ne radi
 
 Servo servo;
 

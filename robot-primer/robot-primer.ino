@@ -1,9 +1,11 @@
 #include <Servo.h>
 
-int IN1 = 4; // plavi
-int IN2 = 2; // zeleni
+int IN1 = 4;  // plavi
+int IN2 = 2;  // zeleni
 int IN3 = 12; // beli
 int IN4 = 13; // sivi
+int ENA = 3;  // ljubičasti (PWM speed regulation)
+int ENB = 11; // narandžasti (PWM speed regulation)
 
 int echoPin = 7; // zuti
 int trigPin = 8; // braon
@@ -27,8 +29,10 @@ void setup()
 
   pinMode(IN1, OUTPUT);
   pinMode(IN2, OUTPUT);
+  pinMode(ENA, OUTPUT);
   pinMode(IN3, OUTPUT);
   pinMode(IN4, OUTPUT);
+  pinMode(ENB, OUTPUT);
 
   pinMode(echoPin, INPUT);
   pinMode(trigPin, OUTPUT);
@@ -180,6 +184,9 @@ void ask_pin_R() // measure the distance on the right
 
 void loop()
 {
+  analogWrite(ENA, 100); // set the speed
+  analogWrite(ENB, 100);
+
   servo.write(90);     // reset the servo motor and prepare it for the next measurement
   detection();         // measure the angle and decide which direction to move
   if (directionn == 2) //if directionn = 2
