@@ -1,4 +1,6 @@
 // robot kornjača https://app.luminpdf.com/viewer/605c4c35e06c1a0012c2dd96
+#include <Servo.h>
+
 int ENA = 3; // ljubičasti (PWM speed regulation)
 int IN2 = 2; // zeleni
 int IN1 = 4; // plavi
@@ -8,6 +10,10 @@ int ENB = 11;  // narandžasti (PWM speed regulation)
 int IN3 = 12; // beli
 int IN4 = 13; // sivi
 
+int servoPin = 9;
+
+Servo servo;
+
 void setup()
 {
   pinMode(IN1, OUTPUT);
@@ -16,6 +22,8 @@ void setup()
   pinMode(IN3, OUTPUT);
   pinMode(IN4, OUTPUT);
   pinMode(ENB, OUTPUT);
+  servo.attach(servoPin);
+  servo.write(90);
 }
 
 void loop()
