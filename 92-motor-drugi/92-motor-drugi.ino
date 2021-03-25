@@ -20,49 +20,42 @@ void setup()
 
 void loop()
 {
+  // going straight
   analogWrite(ENA, 100); // input analog value to set the speed
   analogWrite(ENB, 100);
   digitalWrite(IN1, LOW); // make the DC motor turn(left) clockwise
   digitalWrite(IN2, HIGH);
   digitalWrite(IN3, HIGH);
   digitalWrite(IN4, LOW); // make the DC motor turn(right) anti-clockwise
-
-  // // going straight
-  // analogWrite(ENA, 100); // input analog value to set the speed
-  // analogWrite(ENB, 100);
-  // digitalWrite(IN1, LOW); // make the DC motor turn(left) clockwise
-  // digitalWrite(IN2, HIGH);
-  // digitalWrite(IN3, HIGH);
-  // digitalWrite(IN4, LOW); // make the DC motor turn(right) anti-clockwise
-  // delay(2000);
-  // // going backwards
-  // analogWrite(ENA, 100); // input analog value to set the speed
-  // analogWrite(ENB, 100);
-  // digitalWrite(IN4, HIGH); // make the DC motor turn(right) clockwise
-  // digitalWrite(IN3, LOW);
-  // digitalWrite(IN1, HIGH); //make the DC motor turn(left) anti-clockwise
-  // digitalWrite(IN2, LOW);
-  // delay(2000);
-  // // turning left
-  // analogWrite(ENA, 60); // input analog value to set the speed
-  // analogWrite(ENB, 60);
-  // digitalWrite(IN4, LOW); // make the DC motor turn(right) anti-clockwise
-  // digitalWrite(IN3, HIGH);
-  // digitalWrite(IN1, HIGH); //make the DC motor turn(left) anti-clockwise
-  // digitalWrite(IN2, LOW);
-  // delay(2000);
-  // // turning right
-  // analogWrite(ENA, 60); //input analog value to set the speed
-  // analogWrite(ENB, 60);
-  // digitalWrite(IN4, HIGH); //make the DC motor turn(right) clockwise
-  // digitalWrite(IN3, LOW);
-  // digitalWrite(IN1, LOW); //make the DC motor turn(left) clockwise
-  // digitalWrite(IN2, HIGH);
-  // delay(2000);
-  // // braking
-  // digitalWrite(IN4, HIGH); // make the DC motor brake(right)
-  // digitalWrite(IN3, HIGH);
-  // digitalWrite(IN1, HIGH); //make the DC motor brake(left)
-  // digitalWrite(IN2, HIGH);
-  // delay(2000);
+  delay(2000);
+  // going backwards
+  analogWrite(ENA, 100); // input analog value to set the speed
+  analogWrite(ENB, 100);
+  digitalWrite(IN4, HIGH); // make the DC motor turn(right) clockwise
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN1, HIGH); //make the DC motor turn(left) anti-clockwise
+  digitalWrite(IN2, LOW);
+  delay(2000);
+  // turning left
+  analogWrite(ENA, 60); // input analog value to set the speed
+  analogWrite(ENB, 60);
+  digitalWrite(IN4, LOW); // make the DC motor turn(right) anti-clockwise
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN1, HIGH); //make the DC motor turn(left) anti-clockwise
+  digitalWrite(IN2, LOW);
+  delay(2000);
+  // turning right
+  analogWrite(ENA, 60); //input analog value to set the speed
+  analogWrite(ENB, 60);
+  digitalWrite(IN4, HIGH); //make the DC motor turn(right) clockwise
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN1, LOW); //make the DC motor turn(left) clockwise
+  digitalWrite(IN2, HIGH);
+  delay(2000);
+  // braking
+  digitalWrite(IN4, HIGH); // make the DC motor brake(right)
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN1, HIGH); //make the DC motor brake(left)
+  digitalWrite(IN2, HIGH);
+  delay(2000);
 }
