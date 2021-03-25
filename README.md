@@ -19,6 +19,13 @@ Rešenje: Podesiti Arduino IDE -> Tools -> Port
 
 ## TODO
 
+- isprobati infra crveno: https://app.luminpdf.com/viewer/605c4c35e06c1a0012c2dd96
+
+- isprobati kodove za robota:
+- https://github.com/smartmecard/arduino-smart-robot-car/blob/master/four_in_one_demo_mod_fix_v0.1.ino
+- https://github.com/YahboomTechnology/Arduino-Smart-Bat-Car/blob/master/3.SDK%EF%BC%88Sourcecode%EF%BC%89/For%20Arduino%20IDE/7.Ultrasonic%20check%20obstacle%20and%20avoid/Ultrasonic_check_obstacle_and_avoid/Ultrasonic_check_obstacle_and_avoid.ino
+- https://create.arduino.cc/projecthub/hda-robotics/project-1-2wd-obstacle-avoiding-robot-390ef8
+
 - sviranje muzike (mozda na neki okidac)
   https://create.arduino.cc/projecthub/Rad_Silviu/speaker-with-arduino-be454c
   https://www.arduino.cc/en/Tutorial/BuiltInExamples/toneMelody
