@@ -1,68 +1,68 @@
 // robot kornjača https://app.luminpdf.com/viewer/605c4c35e06c1a0012c2dd96
-int speedpin = 3; // ljubičasti -> ENA (PWM speed regulation)
-int pinI1 = 5;    // plavi -> IN1
-int pinI2 = 6;    // zeleni -> IN2
+int ENA = 3; // ljubičasti (PWM speed regulation)
+int IN1 = 5; // plavi
+int IN2 = 6; // zeleni
 
 // desetka ne radi
-int speedpin2 = 9; // narandžasti -> ENB (PWM speed regulation)
-int pinI3 = 12;    // sivi -> IN3
-int pinI4 = 11;    // beli -> IN4
+int ENB = 9;  // narandžasti (PWM speed regulation)
+int IN3 = 12; // sivi
+int IN4 = 11; // beli
 
 void setup()
 {
-  pinMode(pinI1, OUTPUT);
-  pinMode(pinI2, OUTPUT);
-  pinMode(speedpin, OUTPUT);
-  pinMode(pinI3, OUTPUT);
-  pinMode(pinI4, OUTPUT);
-  pinMode(speedpin2, OUTPUT);
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(ENA, OUTPUT);
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
+  pinMode(ENB, OUTPUT);
 }
 
 void loop()
 {
-  analogWrite(speedpin, 100); // input analog value to set the speed
-  analogWrite(speedpin2, 100);
-  digitalWrite(pinI1, LOW); // make the DC motor turn(left) clockwise
-  digitalWrite(pinI2, HIGH);
-  digitalWrite(pinI3, HIGH);
-  digitalWrite(pinI4, LOW); // make the DC motor turn(right) anti-clockwise
+  analogWrite(ENA, 100); // input analog value to set the speed
+  analogWrite(ENB, 100);
+  digitalWrite(IN1, LOW); // make the DC motor turn(left) clockwise
+  digitalWrite(IN2, HIGH);
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW); // make the DC motor turn(right) anti-clockwise
 
   // // going straight
-  // analogWrite(speedpin, 100); // input analog value to set the speed
-  // analogWrite(speedpin2, 100);
-  // digitalWrite(pinI1, LOW); // make the DC motor turn(left) clockwise
-  // digitalWrite(pinI2, HIGH);
-  // digitalWrite(pinI3, HIGH);
-  // digitalWrite(pinI4, LOW); // make the DC motor turn(right) anti-clockwise
+  // analogWrite(ENA, 100); // input analog value to set the speed
+  // analogWrite(ENB, 100);
+  // digitalWrite(IN1, LOW); // make the DC motor turn(left) clockwise
+  // digitalWrite(IN2, HIGH);
+  // digitalWrite(IN3, HIGH);
+  // digitalWrite(IN4, LOW); // make the DC motor turn(right) anti-clockwise
   // delay(2000);
   // // going backwards
-  // analogWrite(speedpin, 100); // input analog value to set the speed
-  // analogWrite(speedpin2, 100);
-  // digitalWrite(pinI4, HIGH); // make the DC motor turn(right) clockwise
-  // digitalWrite(pinI3, LOW);
-  // digitalWrite(pinI1, HIGH); //make the DC motor turn(left) anti-clockwise
-  // digitalWrite(pinI2, LOW);
+  // analogWrite(ENA, 100); // input analog value to set the speed
+  // analogWrite(ENB, 100);
+  // digitalWrite(IN4, HIGH); // make the DC motor turn(right) clockwise
+  // digitalWrite(IN3, LOW);
+  // digitalWrite(IN1, HIGH); //make the DC motor turn(left) anti-clockwise
+  // digitalWrite(IN2, LOW);
   // delay(2000);
   // // turning left
-  // analogWrite(speedpin, 60); // input analog value to set the speed
-  // analogWrite(speedpin2, 60);
-  // digitalWrite(pinI4, LOW); // make the DC motor turn(right) anti-clockwise
-  // digitalWrite(pinI3, HIGH);
-  // digitalWrite(pinI1, HIGH); //make the DC motor turn(left) anti-clockwise
-  // digitalWrite(pinI2, LOW);
+  // analogWrite(ENA, 60); // input analog value to set the speed
+  // analogWrite(ENB, 60);
+  // digitalWrite(IN4, LOW); // make the DC motor turn(right) anti-clockwise
+  // digitalWrite(IN3, HIGH);
+  // digitalWrite(IN1, HIGH); //make the DC motor turn(left) anti-clockwise
+  // digitalWrite(IN2, LOW);
   // delay(2000);
   // // turning right
-  // analogWrite(speedpin, 60); //input analog value to set the speed
-  // analogWrite(speedpin2, 60);
-  // digitalWrite(pinI4, HIGH); //make the DC motor turn(right) clockwise
-  // digitalWrite(pinI3, LOW);
-  // digitalWrite(pinI1, LOW); //make the DC motor turn(left) clockwise
-  // digitalWrite(pinI2, HIGH);
+  // analogWrite(ENA, 60); //input analog value to set the speed
+  // analogWrite(ENB, 60);
+  // digitalWrite(IN4, HIGH); //make the DC motor turn(right) clockwise
+  // digitalWrite(IN3, LOW);
+  // digitalWrite(IN1, LOW); //make the DC motor turn(left) clockwise
+  // digitalWrite(IN2, HIGH);
   // delay(2000);
   // // braking
-  // digitalWrite(pinI4, HIGH); // make the DC motor brake(right)
-  // digitalWrite(pinI3, HIGH);
-  // digitalWrite(pinI1, HIGH); //make the DC motor brake(left)
-  // digitalWrite(pinI2, HIGH);
+  // digitalWrite(IN4, HIGH); // make the DC motor brake(right)
+  // digitalWrite(IN3, HIGH);
+  // digitalWrite(IN1, HIGH); //make the DC motor brake(left)
+  // digitalWrite(IN2, HIGH);
   // delay(2000);
 }
