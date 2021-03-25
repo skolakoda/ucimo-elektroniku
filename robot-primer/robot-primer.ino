@@ -1,25 +1,21 @@
-int echoPin = 13; // receiving pin for ultrasonic signal
-int trigPin = 12; // sending pin for ultrasonic signal
-
 #include <Servo.h>
-int IN1 = 5;  // define pin 6 as left and back
-int IN2 = 6;  // define pin 9 as left and front
-int IN3 = 10; // define pin 10 as right and back
-int IN4 = 11; // define pin 11 as right and front
 
-int echoPin = 13; // define receiving pin for ultrasonic signal
-int trigPin = 12; // define sending pin for ultrasonic signal
+int IN1 = 4; // plavi
+int IN2 = 2; // zeleni
+int IN3 = 12; // beli
+int IN4 = 13; // sivi
+
+int echoPin = 7; // zuti
+int trigPin = 8; // braon
 int servoPin = 9;
+
+Servo servo;
+int delay_time = 250; // settling time for the servo motor moving backwards
 
 int Fspeedd = 0;    // speed going forward
 int Rspeedd = 0;    // speed going right
 int Lspeedd = 0;    // speed going left
 int directionn = 0; //F=8 B=2 L=4 R=6
-
-Servo servo;
-
-int delay_time = 250; // settling time for the servo motor moving backwards
-
 int Fgo = 8;
 int Rgo = 6;
 int Lgo = 4;

@@ -2,8 +2,8 @@
 #include <Servo.h>
 
 int ENA = 3; // ljubičasti (PWM speed regulation)
-int IN2 = 2; // zeleni
 int IN1 = 4; // plavi
+int IN2 = 2; // zeleni
 
 // desetka ne radi
 int ENB = 11; // narandžasti (PWM speed regulation)
