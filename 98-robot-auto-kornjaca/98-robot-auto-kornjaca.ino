@@ -4,7 +4,7 @@ int IN2 = 2; // zeleni
 int IN1 = 4; // plavi
 
 // desetka ne radi
-int ENB = 9;  // narandžasti (PWM speed regulation)
+int ENB = 11;  // narandžasti (PWM speed regulation)
 int IN3 = 12; // beli
 int IN4 = 13; // sivi
 
