@@ -1,23 +1,33 @@
-// robot kornjača https://app.luminpdf.com/viewer/605c4c35e06c1a0012c2dd96
-// Servo library disables analogWrite() (PWM) functionality on pins 9 and 10
-#include <Servo.h>
+#include <IRremote.h> // onesposobljava neke pinove?
 
-int ENA = 3; // ljubičasti (PWM speed regulation)
-int IN1 = 4; // plavi
-int IN2 = 2; // zeleni
-int ENB = 11; // narandžasti (PWM speed regulation)
+int infraRedPin = 2; // braon
+
+int IN1 = 4;  // plavi
+int IN2 = 7;  // zeleni
 int IN3 = 12; // beli
 int IN4 = 13; // sivi
 
-int echoPin = 7; // zuti
-int trigPin = 8; // braon
-int servoPin = 9;
-// pin 10 ne radi
+int ENA = 5;  // ljubičasti (PWM speed regulation)
+int ENB = 10; // narandžasti (PWM speed regulation)
 
-Servo servo;
+int trigPin = 8; // braon
+int echoPin = 9; // zuti
+
+const long forwardBtn = 0xFF18E7; // 2
+const long backBtn = 0xFF4AB5;    // 8
+const long stopBtn = 0xFF38C7;    // 5
+const long leftBtn = 0xFF10EF;    // 4
+const long rightBtn = 0xFF5AA5;   // 6
+
+IRrecv irrecv(infraRedPin);
+decode_results results;
+
+unsigned long lastClick = millis();
 
 void setup()
 {
+    pinMode(infraRedPin, INPUT);
+
     pinMode(IN1, OUTPUT);
     pinMode(IN2, OUTPUT);
     pinMode(ENA, OUTPUT);
@@ -28,48 +38,112 @@ void setup()
     pinMode(trigPin, OUTPUT);
     pinMode(echoPin, INPUT);
 
-    servo.attach(servoPin);
-    servo.write(90);
+    Serial.begin(9600);
+    irrecv.enableIRIn(); // Start the receiver // ubija motore!
 }
 
 void loop()
 {
-    // going straight
-    analogWrite(ENA, 100); // input analog value to set the speed
+    // if (rastojanje() < 20)
+    // {
+    //     stop();
+    // }
+
+    if (irrecv.decode(&results))
+    {
+        // if 1/4 second since lastClick IR received, print
+        if (millis() - lastClick > 250)
+        {
+            Serial.println(results.value, HEX);
+        }
+
+        switch (results.value)
+        {
+        case forwardBtn:
+            forward();
+            break;
+        case backBtn:
+            back();
+            break;
+        case leftBtn:
+            left();
+            break;
+        case rightBtn:
+            right();
+            break;
+        case stopBtn:
+            stop();
+            break;
+        default:
+            break;
+        }
+
+        lastClick = millis();
+        irrecv.resume(); // receive next value
+    }
+}
+
+int rastojanje()
+{
+    digitalWrite(trigPin, LOW);
+    delayMicroseconds(5);
+    digitalWrite(trigPin, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(trigPin, LOW);
+
+    int vreme = pulseIn(echoPin, HIGH); // da ode i da se vrati
+    return (vreme * 0.034) / 2;
+}
+
+void forward()
+{
+    Serial.println("forward");
+    analogWrite(ENA, 100);
     analogWrite(ENB, 100);
-    digitalWrite(IN1, LOW); // make the DC motor turn(left) clockwise
+    digitalWrite(IN1, LOW);
     digitalWrite(IN2, HIGH);
     digitalWrite(IN3, HIGH);
-    digitalWrite(IN4, LOW); // make the DC motor turn(right) anti-clockwise
-    delay(2000);
-    // going backwards
-    analogWrite(ENA, 100); // input analog value to set the speed
+    digitalWrite(IN4, LOW);
+}
+
+void back()
+{
+    Serial.println("back");
+    analogWrite(ENA, 100);
     analogWrite(ENB, 100);
-    digitalWrite(IN4, HIGH); // make the DC motor turn(right) clockwise
+    digitalWrite(IN4, HIGH);
     digitalWrite(IN3, LOW);
-    digitalWrite(IN1, HIGH); //make the DC motor turn(left) anti-clockwise
+    digitalWrite(IN1, HIGH);
     digitalWrite(IN2, LOW);
-    delay(2000);
-    // turning left
-    analogWrite(ENA, 60); // input analog value to set the speed
+}
+
+void left()
+{
+    Serial.println("left");
+    analogWrite(ENA, 60);
     analogWrite(ENB, 60);
-    digitalWrite(IN4, LOW); // make the DC motor turn(right) anti-clockwise
-    digitalWrite(IN3, HIGH);
-    digitalWrite(IN1, HIGH); //make the DC motor turn(left) anti-clockwise
-    digitalWrite(IN2, LOW);
-    delay(2000);
-    // turning right
-    analogWrite(ENA, 60); //input analog value to set the speed
-    analogWrite(ENB, 60);
-    digitalWrite(IN4, HIGH); //make the DC motor turn(right) clockwise
+    digitalWrite(IN4, HIGH);
     digitalWrite(IN3, LOW);
-    digitalWrite(IN1, LOW); //make the DC motor turn(left) clockwise
+    digitalWrite(IN1, LOW);
     digitalWrite(IN2, HIGH);
-    delay(2000);
-    // braking
-    digitalWrite(IN4, HIGH); // make the DC motor brake(right)
+}
+
+void right()
+{
+    Serial.println("right");
+    analogWrite(ENA, 60);
+    analogWrite(ENB, 60);
+    digitalWrite(IN4, LOW);
     digitalWrite(IN3, HIGH);
-    digitalWrite(IN1, HIGH); //make the DC motor brake(left)
+    digitalWrite(IN1, HIGH);
+    digitalWrite(IN2, LOW);
+}
+
+void stop()
+{
+    Serial.println("stop");
+    digitalWrite(IN4, HIGH);
+    digitalWrite(IN3, HIGH);
+    digitalWrite(IN1, HIGH);
     digitalWrite(IN2, HIGH);
-    delay(2000);
 }
