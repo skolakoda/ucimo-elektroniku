@@ -1,4 +1,4 @@
-#include <IRremote.h>
+#include <IRremote.h> // onesposobljava neke pinove?
 
 int infraRedPin = 2;
 
@@ -19,7 +19,6 @@ const long rightBtn = 0xFF5AA5;   // 6
 IRrecv irrecv(infraRedPin);
 decode_results results;
 
-int on = 0;
 unsigned long last = millis();
 
 void setup()
@@ -41,11 +40,9 @@ void loop()
 {
   if (irrecv.decode(&results))
   {
-    // if 1/4 second since last IR received, toggle the relay
+    // if 1/4 second since last IR received, print
     if (millis() - last > 250)
     {
-      on = !on;
-      digitalWrite(13, on ? HIGH : LOW);
       Serial.println(results.value, HEX);
     }
 
