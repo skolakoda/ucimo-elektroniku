@@ -7,11 +7,11 @@ int IN2 = 6;
 int IN3 = 10;
 int IN4 = 11;
 
-long forwardBtn = 0xFF18E7; // 2
-long backBtn = 0xFF4AB5;    // 8
-long stopBtn = 0xFF38C7;    // 5
-long leftBtn = 0xFF10EF;    // 4
-long rightBtn = 0xFF5AA5;   // 6
+const long forwardBtn = 0xFF18E7; // 2
+const long backBtn = 0xFF4AB5;    // 8
+const long stopBtn = 0xFF38C7;    // 5
+const long leftBtn = 0xFF10EF;    // 4
+const long rightBtn = 0xFF5AA5;   // 6
 
 IRrecv irrecv(infraRedPin);
 decode_results results;
@@ -85,25 +85,25 @@ void loop()
       Serial.println(results.value, HEX);
     }
 
-    if (results.value == forwardBtn)
+    switch (results.value)
     {
+    case forwardBtn:
       forward();
-    }
-    if (results.value == backBtn)
-    {
+      break;
+    case backBtn:
       back();
-    }
-    if (results.value == leftBtn)
-    {
+      break;
+    case leftBtn:
       left();
-    }
-    if (results.value == rightBtn)
-    {
+      break;
+    case rightBtn:
       right();
-    }
-    if (results.value == stopBtn)
-    {
+      break;
+    case stopBtn:
       stop();
+      break;
+    default:
+      break;
     }
 
     last = millis();
