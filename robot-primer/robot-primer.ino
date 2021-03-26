@@ -1,4 +1,4 @@
-#include <Servo.h>
+#include <Servo.h> // robot kornjača primer
 
 int IN1 = 4;  // plavi
 int IN2 = 2;  // zeleni
