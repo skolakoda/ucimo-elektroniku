@@ -1,6 +1,6 @@
 #include <IRremote.h>
 
-int infraRedPin = 2;
+int infraRedPin = 5;
 
 int IN1 = 4;  // plavi
 int IN2 = 2;  // zeleni
@@ -18,6 +18,9 @@ const long rightBtn = 0xFF5AA5;   // 6
 IRrecv irrecv(infraRedPin);
 decode_results results;
 
+int on = 0;
+unsigned long last = millis();
+
 void setup()
 {
   pinMode(infraRedPin, INPUT);
@@ -33,8 +36,46 @@ void setup()
   irrecv.enableIRIn(); // Start the receiver
 }
 
-int on = 0;
-unsigned long last = millis();
+void loop()
+{
+  analogWrite(ENA, 100); // set the speed
+  analogWrite(ENB, 100);
+
+  if (irrecv.decode(&results))
+  {
+    // if 1/4 second since last IR received, toggle the relay
+    if (millis() - last > 250)
+    {
+      on = !on;
+      digitalWrite(13, on ? HIGH : LOW);
+      Serial.println(results.value, HEX);
+    }
+
+    switch (results.value)
+    {
+    case forwardBtn:
+      forward();
+      break;
+    case backBtn:
+      back();
+      break;
+    case leftBtn:
+      left();
+      break;
+    case rightBtn:
+      right();
+      break;
+    case stopBtn:
+      stop();
+      break;
+    default:
+      break;
+    }
+
+    last = millis();
+    irrecv.resume(); // receive next value
+  }
+}
 
 void forward()
 {
@@ -77,45 +118,4 @@ void stop()
   digitalWrite(IN4, HIGH);
   digitalWrite(IN1, HIGH);
   digitalWrite(IN2, HIGH);
-}
-
-void loop()
-{
-  analogWrite(ENA, 100); // set the speed
-  analogWrite(ENB, 100);
-
-  if (irrecv.decode(&results))
-  {
-    // if 1/4 second since last IR received, toggle the relay
-    if (millis() - last > 250)
-    {
-      on = !on;
-      digitalWrite(13, on ? HIGH : LOW);
-      Serial.println(results.value, HEX);
-    }
-
-    switch (results.value)
-    {
-    case forwardBtn:
-      forward();
-      break;
-    case backBtn:
-      back();
-      break;
-    case leftBtn:
-      left();
-      break;
-    case rightBtn:
-      right();
-      break;
-    case stopBtn:
-      stop();
-      break;
-    default:
-      break;
-    }
-
-    last = millis();
-    irrecv.resume(); // receive next value
-  }
 }
