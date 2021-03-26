@@ -2,12 +2,12 @@
 
 int infraRedPin = 5;
 
+int ENA = 3;  // ljubičasti (PWM speed regulation)
 int IN1 = 4;  // plavi
 int IN2 = 2;  // zeleni
+int ENB = 11; // narandžasti (PWM speed regulation)
 int IN3 = 12; // beli
 int IN4 = 13; // sivi
-int ENA = 3;  // ljubičasti (PWM speed regulation)
-int ENB = 11; // narandžasti (PWM speed regulation)
 
 const long forwardBtn = 0xFF18E7; // 2
 const long backBtn = 0xFF4AB5;    // 8
@@ -33,14 +33,11 @@ void setup()
   pinMode(ENB, OUTPUT);
 
   Serial.begin(9600);
-  irrecv.enableIRIn(); // Start the receiver
+  irrecv.enableIRIn(); // Start the receiver // ubija motore!
 }
 
 void loop()
 {
-  analogWrite(ENA, 100); // set the speed
-  analogWrite(ENB, 100);
-
   if (irrecv.decode(&results))
   {
     // if 1/4 second since last IR received, toggle the relay
@@ -80,42 +77,57 @@ void loop()
 void forward()
 {
   Serial.println("forward");
-  digitalWrite(IN3, LOW);
-  digitalWrite(IN4, HIGH);
+  analogWrite(ENA, 100);
+  analogWrite(ENB, 100);
   digitalWrite(IN1, LOW);
   digitalWrite(IN2, HIGH);
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW);
+  delay(2000);
 }
 
 void back()
 {
   Serial.println("back");
-  digitalWrite(IN3, HIGH);
-  digitalWrite(IN4, LOW);
+  analogWrite(ENA, 100);
+  analogWrite(ENB, 100);
+  digitalWrite(IN4, HIGH);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
+  delay(2000);
 }
 
 void left()
 {
   Serial.println("left");
-  digitalWrite(IN3, LOW);
-  digitalWrite(IN4, HIGH);
+  analogWrite(ENA, 60);
+  analogWrite(ENB, 60);
+  digitalWrite(IN4, LOW);
+  digitalWrite(IN3, HIGH);
   digitalWrite(IN1, HIGH);
   digitalWrite(IN2, LOW);
+  delay(2000);
 }
 
 void right()
 {
   Serial.println("right");
-  digitalWrite(IN3, HIGH);
-  digitalWrite(IN4, LOW);
-  digitalWrite(IN1, HIGH);
+  analogWrite(ENA, 60);
+  analogWrite(ENB, 60);
+  digitalWrite(IN4, HIGH);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN1, LOW);
   digitalWrite(IN2, HIGH);
+  delay(2000);
 }
 
 void stop()
 {
   Serial.println("stop");
-  digitalWrite(IN3, HIGH);
   digitalWrite(IN4, HIGH);
+  digitalWrite(IN3, HIGH);
   digitalWrite(IN1, HIGH);
   digitalWrite(IN2, HIGH);
+  delay(2000);
 }
