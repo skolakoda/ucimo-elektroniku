@@ -19,7 +19,7 @@ const long rightBtn = 0xFF5AA5;   // 6
 IRrecv irrecv(infraRedPin);
 decode_results results;
 
-unsigned long last = millis();
+unsigned long lastClick = millis();
 
 void setup()
 {
@@ -40,8 +40,8 @@ void loop()
 {
   if (irrecv.decode(&results))
   {
-    // if 1/4 second since last IR received, print
-    if (millis() - last > 250)
+    // if 1/4 second since lastClick IR received, print
+    if (millis() - lastClick > 250)
     {
       Serial.println(results.value, HEX);
     }
@@ -67,7 +67,7 @@ void loop()
       break;
     }
 
-    last = millis();
+    lastClick = millis();
     irrecv.resume(); // receive next value
   }
 }
@@ -99,10 +99,10 @@ void left()
   Serial.println("left");
   analogWrite(ENA, 60);
   analogWrite(ENB, 60);
-  digitalWrite(IN4, LOW);
-  digitalWrite(IN3, HIGH);
-  digitalWrite(IN1, HIGH);
-  digitalWrite(IN2, LOW);
+  digitalWrite(IN4, HIGH);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, HIGH);
 }
 
 void right()
@@ -110,10 +110,10 @@ void right()
   Serial.println("right");
   analogWrite(ENA, 60);
   analogWrite(ENB, 60);
-  digitalWrite(IN4, HIGH);
-  digitalWrite(IN3, LOW);
-  digitalWrite(IN1, LOW);
-  digitalWrite(IN2, HIGH);
+  digitalWrite(IN4, LOW);
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, LOW);
 }
 
 void stop()
