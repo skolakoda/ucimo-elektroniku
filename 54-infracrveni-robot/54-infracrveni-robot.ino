@@ -84,7 +84,6 @@ void forward()
   digitalWrite(IN2, HIGH);
   digitalWrite(IN3, HIGH);
   digitalWrite(IN4, LOW);
-  delay(2000);
 }
 
 void back()
@@ -96,7 +95,6 @@ void back()
   digitalWrite(IN3, LOW);
   digitalWrite(IN1, HIGH);
   digitalWrite(IN2, LOW);
-  delay(2000);
 }
 
 void left()
@@ -108,7 +106,6 @@ void left()
   digitalWrite(IN3, HIGH);
   digitalWrite(IN1, HIGH);
   digitalWrite(IN2, LOW);
-  delay(2000);
 }
 
 void right()
@@ -120,7 +117,6 @@ void right()
   digitalWrite(IN3, LOW);
   digitalWrite(IN1, LOW);
   digitalWrite(IN2, HIGH);
-  delay(2000);
 }
 
 void stop()
@@ -130,5 +126,4 @@ void stop()
   digitalWrite(IN3, HIGH);
   digitalWrite(IN1, HIGH);
   digitalWrite(IN2, HIGH);
-  delay(2000);
 }
