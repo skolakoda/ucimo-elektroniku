@@ -1,13 +1,14 @@
 #include <IRremote.h>
 
-int infraRedPin = 5;
+int infraRedPin = 2;
 
-int ENA = 3;  // ljubičasti (PWM speed regulation)
 int IN1 = 4;  // plavi
-int IN2 = 2;  // zeleni
-int ENB = 11; // narandžasti (PWM speed regulation)
+int IN2 = 7;  // zeleni
 int IN3 = 12; // beli
 int IN4 = 13; // sivi
+
+int ENA = 5;  // ljubičasti (PWM speed regulation)
+int ENB = 10; // narandžasti (PWM speed regulation)
 
 const long forwardBtn = 0xFF18E7; // 2
 const long backBtn = 0xFF4AB5;    // 8
