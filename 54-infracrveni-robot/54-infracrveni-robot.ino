@@ -2,10 +2,12 @@
 
 int infraRedPin = 2;
 
-int IN1 = 5;
-int IN2 = 6;
-int IN3 = 10;
-int IN4 = 11;
+int IN1 = 4;  // plavi
+int IN2 = 2;  // zeleni
+int IN3 = 12; // beli
+int IN4 = 13; // sivi
+int ENA = 3;  // ljubičasti (PWM speed regulation)
+int ENB = 11; // narandžasti (PWM speed regulation)
 
 const long forwardBtn = 0xFF18E7; // 2
 const long backBtn = 0xFF4AB5;    // 8
@@ -19,10 +21,14 @@ decode_results results;
 void setup()
 {
   pinMode(infraRedPin, INPUT);
+
   pinMode(IN1, OUTPUT);
   pinMode(IN2, OUTPUT);
+  pinMode(ENA, OUTPUT);
   pinMode(IN3, OUTPUT);
   pinMode(IN4, OUTPUT);
+  pinMode(ENB, OUTPUT);
+
   Serial.begin(9600);
   irrecv.enableIRIn(); // Start the receiver
 }
@@ -75,6 +81,9 @@ void stop()
 
 void loop()
 {
+  analogWrite(ENA, 100); // set the speed
+  analogWrite(ENB, 100);
+
   if (irrecv.decode(&results))
   {
     // if 1/4 second since last IR received, toggle the relay
