@@ -18,11 +18,13 @@ const long backBtn = 0xFF4AB5;    // 8
 const long stopBtn = 0xFF38C7;    // 5
 const long leftBtn = 0xFF10EF;    // 4
 const long rightBtn = 0xFF5AA5;   // 6
+const long repeatedBtn = 0xffffffff;
 
 IRrecv irrecv(infraRedPin);
 decode_results results;
 
 unsigned long lastClick = millis();
+long currButton = stopBtn;
 
 void setup()
 {
@@ -49,15 +51,24 @@ void loop()
     //     stop();
     // }
 
+    if ((currButton == leftBtn || currButton == rightBtn) && (millis() - lastClick > 1000))
+    {
+        stop();
+    }
+
     if (irrecv.decode(&results))
     {
         // if 1/4 second since lastClick IR received, print
         if (millis() - lastClick > 250)
         {
-            Serial.println(results.value, HEX);
+            Serial.println(currButton, HEX);
         }
 
-        switch (results.value)
+        lastClick = millis();
+        
+        if (results.value != repeatedBtn) currButton = results.value; // ignorise ffffffff
+
+        switch (currButton)
         {
         case forwardBtn:
             forward();
@@ -78,7 +89,6 @@ void loop()
             break;
         }
 
-        lastClick = millis();
         irrecv.resume(); // receive next value
     }
 }
@@ -141,7 +151,7 @@ void right()
 
 void stop()
 {
-    Serial.println("stop");
+    // Serial.println("stop");
     digitalWrite(IN4, HIGH);
     digitalWrite(IN3, HIGH);
     digitalWrite(IN1, HIGH);
