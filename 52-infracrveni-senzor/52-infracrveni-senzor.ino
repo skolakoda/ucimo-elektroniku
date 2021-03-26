@@ -1,4 +1,4 @@
-#include <IRremote.h>
+#include <IRremote.h> // verzija 2.01
 
 const int infraRedPin = 2;
 
