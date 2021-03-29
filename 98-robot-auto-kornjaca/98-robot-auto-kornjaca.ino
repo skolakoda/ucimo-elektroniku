@@ -51,7 +51,7 @@ void setup()
 
 void loop()
 {
-    if (rastojanje() < 20)
+    if (rastojanje() < 10 && millis() - lastClick > 500)
     {
         stop();
     }
@@ -119,8 +119,8 @@ int rastojanje()
 void forward()
 {
     Serial.println("forward");
-    analogWrite(ENA, 100);
-    analogWrite(ENB, 100);
+    analogWrite(ENA, 120);
+    analogWrite(ENB, 120);
     digitalWrite(IN1, LOW);
     digitalWrite(IN2, HIGH);
     digitalWrite(IN3, HIGH);
@@ -130,8 +130,8 @@ void forward()
 void back()
 {
     Serial.println("back");
-    analogWrite(ENA, 100);
-    analogWrite(ENB, 100);
+    analogWrite(ENA, 120);
+    analogWrite(ENB, 120);
     digitalWrite(IN4, HIGH);
     digitalWrite(IN3, LOW);
     digitalWrite(IN1, HIGH);
