@@ -49,13 +49,12 @@ void setup()
     irrecv.enableIRIn(); // Start the receiver // ubija motore!
 }
 
-// TODO: testirati IR modul na različitim daljinama i zapisati kodove za levo/desno/gore/dole
 void loop()
 {
-    // if (rastojanje() < 20)
-    // {
-    //     stop();
-    // }
+    if (rastojanje() < 20)
+    {
+        stop();
+    }
 
     if ((currButton == leftBtn || currButton == rightBtn) && (millis() - lastClick > 1000))
     {
