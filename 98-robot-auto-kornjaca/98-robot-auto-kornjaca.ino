@@ -141,8 +141,8 @@ void back()
 void left()
 {
     Serial.println("left");
-    analogWrite(ENA, 60);
-    analogWrite(ENB, 60);
+    analogWrite(ENA, 80);
+    analogWrite(ENB, 80);
     digitalWrite(IN4, HIGH);
     digitalWrite(IN3, LOW);
     digitalWrite(IN1, LOW);
@@ -152,8 +152,8 @@ void left()
 void right()
 {
     Serial.println("right");
-    analogWrite(ENA, 60);
-    analogWrite(ENB, 60);
+    analogWrite(ENA, 80);
+    analogWrite(ENB, 80);
     digitalWrite(IN4, LOW);
     digitalWrite(IN3, HIGH);
     digitalWrite(IN1, HIGH);
