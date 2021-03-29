@@ -26,11 +26,9 @@ Rešenje: Podesiti Arduino IDE -> Tools -> Port
 - sviranje muzike (mozda na neki okidac)
   https://create.arduino.cc/projecthub/Rad_Silviu/speaker-with-arduino-be454c
   https://www.arduino.cc/en/Tutorial/BuiltInExamples/toneMelody
-- vlažnost tla led za neku biljku 
 - paliti sijalicu kad neko prođe (treba relej ili MOSFET, koristiti DC, ne AC)
   https://youtu.be/58XWVDnB7Ss
   https://youtu.be/XiOcxyyTxy4
 - automatsko zalivanje (treba relej)
   https://www.instructables.com/Self-Watering-System-for-Plants-Using-Arduino-Uno/
 - temperaturna stanica (treba ekran)
-
