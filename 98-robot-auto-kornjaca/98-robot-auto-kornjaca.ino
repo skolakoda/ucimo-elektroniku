@@ -13,11 +13,16 @@ int ENB = 10; // narandžasti (PWM speed regulation)
 int trigPin = 8; // braon
 int echoPin = 9; // zuti
 
-const long forwardBtn = 0xFF18E7; // 2
-const long backBtn = 0xFF4AB5;    // 8
-const long stopBtn = 0xFF38C7;    // 5
-const long leftBtn = 0xFF10EF;    // 4
-const long rightBtn = 0xFF5AA5;   // 6
+const long forwardBtn = 0xFF18E7;   // 2
+const long forwardAlt = 0x3D9AE3F7; // 2
+const long backBtn = 0xFF4AB5;      // 8
+const long backAlt = 0x1BC0157B;    // 8
+const long stopBtn = 0xFF38C7;      // 5
+const long stopAlt = 0x488F3CBB;    // 5
+const long leftBtn = 0xFF10EF;      // 4
+const long leftAlt = 0x8C22657B;    // 4
+const long rightBtn = 0xFF5AA5;     // 6
+const long rightAlt = 0x449E79F;    // 6
 const long repeatedBtn = 0xffffffff;
 
 IRrecv irrecv(infraRedPin);
@@ -44,6 +49,7 @@ void setup()
     irrecv.enableIRIn(); // Start the receiver // ubija motore!
 }
 
+// TODO: testirati IR modul na različitim daljinama i zapisati kodove za levo/desno/gore/dole
 void loop()
 {
     // if (rastojanje() < 20)
@@ -65,24 +71,30 @@ void loop()
         }
 
         lastClick = millis();
-        
-        if (results.value != repeatedBtn) currButton = results.value; // ignorise ffffffff
+
+        if (results.value != repeatedBtn)
+            currButton = results.value;
 
         switch (currButton)
         {
         case forwardBtn:
+        case forwardAlt:
             forward();
             break;
         case backBtn:
+        case backAlt:
             back();
             break;
         case leftBtn:
+        case leftAlt:
             left();
             break;
         case rightBtn:
+        case rightAlt:
             right();
             break;
         case stopBtn:
+        case stopAlt:
             stop();
             break;
         default:
