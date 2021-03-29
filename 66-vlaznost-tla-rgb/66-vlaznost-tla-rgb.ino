@@ -1,47 +1,22 @@
-
 #define sensorPower 7
 #define sensorPin A0
 
-#define vlazno 400
-#define suvo 700 // mozda malo manje
+#define bluePin 11
+#define greenPin 12
+#define redPin 13
 
-int bluePin = 11, greenPin = 12, redPin = 13;
-int trajanje = 1000;
+#define vlazno 350
+#define suvo 650
 
 void setup()
 {
   pinMode(sensorPower, OUTPUT);
-  digitalWrite(sensorPower, LOW); // Initially keep the sensor OFF
 
   pinMode(bluePin, OUTPUT);
   pinMode(greenPin, OUTPUT);
   pinMode(redPin, OUTPUT);
 
   Serial.begin(9600);
-}
-
-void red()
-{
-  digitalWrite(redPin, HIGH);
-  digitalWrite(greenPin, LOW);
-  digitalWrite(bluePin, LOW);
-  delay(trajanje);
-}
-
-void green()
-{
-  digitalWrite(redPin, LOW);
-  digitalWrite(greenPin, HIGH);
-  digitalWrite(bluePin, LOW);
-  delay(trajanje);
-}
-
-void blue()
-{
-  digitalWrite(redPin, LOW);
-  digitalWrite(greenPin, LOW);
-  digitalWrite(bluePin, HIGH);
-  delay(trajanje);
 }
 
 void loop()
@@ -66,15 +41,33 @@ void loop()
     green();
   }
 
-  delay(1000); // read every second for testing, normally it should read once or twice a day
+  delay(1000); // read every second for testing, normally it would read few times a day
   Serial.println();
 }
 
 int readSensor()
 {
-  digitalWrite(sensorPower, HIGH); // Turn the sensor ON
-  delay(10);                       // Allow power to settle
-  int val = analogRead(sensorPin); // Read the analog value form sensor
-  digitalWrite(sensorPower, LOW);  // Turn the sensor OFF
-  return val;                      // Return analog vrednost value
+  int val = analogRead(sensorPin);
+  return val;
+}
+
+void red()
+{
+  digitalWrite(redPin, HIGH);
+  digitalWrite(greenPin, LOW);
+  digitalWrite(bluePin, LOW);
+}
+
+void green()
+{
+  digitalWrite(redPin, LOW);
+  digitalWrite(greenPin, HIGH);
+  digitalWrite(bluePin, LOW);
+}
+
+void blue()
+{
+  digitalWrite(redPin, LOW);
+  digitalWrite(greenPin, LOW);
+  digitalWrite(bluePin, HIGH);
 }
