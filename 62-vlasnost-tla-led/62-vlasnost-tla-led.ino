@@ -1,13 +1,12 @@
 // https://randomnerdtutorials.com/guide-for-soil-moisture-sensor-yl-69-or-hl-69-with-the-arduino/
 
-int rainPin = A0;
+int sensorPin = A0;
 int greenLED = 6;
 int redLED = 7;
-// you can adjust the threshold value
-int thresholdValue = 800;
+int thresholdValue = 800; // you can adjust the threshold value
 
 void setup(){
-  pinMode(rainPin, INPUT);
+  pinMode(sensorPin, INPUT);
   pinMode(greenLED, OUTPUT);
   pinMode(redLED, OUTPUT);
   digitalWrite(greenLED, LOW);
@@ -16,8 +15,7 @@ void setup(){
 }
 
 void loop() {
-  // read the input on analog pin 0:
-  int sensorValue = analogRead(rainPin);
+  int sensorValue = analogRead(sensorPin);
   Serial.print(sensorValue);
   if(sensorValue < thresholdValue){
     Serial.println(" - Doesn't need watering");
