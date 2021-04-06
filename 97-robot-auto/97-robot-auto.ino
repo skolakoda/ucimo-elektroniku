@@ -90,7 +90,7 @@ void stani(int trajanje)
 
 void skreni(int trajanje, bool levo)
 {
-    byte brzina = 80;
+    byte brzina = 120;
     analogWrite(motor1levi, levo ? brzina : 0);
     analogWrite(motor1desni, levo ? 0 : brzina);
     analogWrite(motor2levi, levo ? 0 : brzina);

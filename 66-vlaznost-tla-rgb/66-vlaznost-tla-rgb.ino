@@ -21,7 +21,7 @@ void setup()
 
 void loop()
 {
-  int vrednost = readSensor();
+  int vrednost = analogRead(sensorPin);
   Serial.print("Izmerena vrednost: ");
   Serial.println(vrednost);
 
@@ -41,14 +41,7 @@ void loop()
     green();
   }
 
-  delay(1000); // read every second for testing, normally it would read few times a day
-  Serial.println();
-}
-
-int readSensor()
-{
-  int val = analogRead(sensorPin);
-  return val;
+  delay(1000);
 }
 
 void red()
