@@ -2,20 +2,11 @@
 
 Učimo Arduino i programiranje mikrokontrolera
 
-https://maker.pro/arduino/tutorial/free-alternatives-to-arduino-ide
+## Razvoj
 
-## Podsetnik
+Po povezivanju Arduina, podesiti Arduino IDE -> Tools -> Port
 
 Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
-
-## Rešavanje problema
-
-```
-An error occurred while uploading the sketch
-avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x30
-```
-
-Rešenje: Podesiti Arduino IDE -> Tools -> Port
 
 ## TODO
 - isprobati kodove za robota:
@@ -29,3 +20,12 @@ Rešenje: Podesiti Arduino IDE -> Tools -> Port
 - automatsko zalivanje (treba relej)
   https://www.instructables.com/Self-Watering-System-for-Plants-Using-Arduino-Uno/
 - temperaturna stanica (treba ekran)
+
+### Preostali moduli
+
+- oči (infracrveni)
+- uši (senzor zvuka)
+- detektor pokreta
+- laserski senzor ky-008
+- čulo svetla
+- dugme
