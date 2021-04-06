@@ -29,3 +29,5 @@ Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
 - laserski senzor ky-008
 - čulo svetla
 - dugme
+- praćenje puta
+- izbegavanje prepreka
