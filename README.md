@@ -23,9 +23,6 @@ Rešenje: Podesiti Arduino IDE -> Tools -> Port
 - https://github.com/YahboomTechnology/Arduino-Smart-Bat-Car/blob/master/3.SDK%EF%BC%88Sourcecode%EF%BC%89/For%20Arduino%20IDE/7.Ultrasonic%20check%20obstacle%20and%20avoid/Ultrasonic_check_obstacle_and_avoid/Ultrasonic_check_obstacle_and_avoid.ino
 - https://create.arduino.cc/projecthub/hda-robotics/project-1-2wd-obstacle-avoiding-robot-390ef8
 
-- sviranje muzike (mozda na neki okidac)
-  https://create.arduino.cc/projecthub/Rad_Silviu/speaker-with-arduino-be454c
-  https://www.arduino.cc/en/Tutorial/BuiltInExamples/toneMelody
 - paliti sijalicu kad neko prođe (treba relej ili MOSFET, koristiti DC, ne AC)
   https://youtu.be/58XWVDnB7Ss
   https://youtu.be/XiOcxyyTxy4
