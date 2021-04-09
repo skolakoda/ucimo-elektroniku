@@ -26,8 +26,8 @@ Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
 - oči (infracrveni)
 - uši (senzor zvuka)
 - detektor pokreta
-- laserski senzor ky-008
-- čulo svetla
+- detektor svetla
+- laser
 - dugme
 - praćenje puta
 - izbegavanje prepreka
