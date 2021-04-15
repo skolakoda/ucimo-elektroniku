@@ -20,14 +20,3 @@ Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
 - automatsko zalivanje (treba relej)
   https://www.instructables.com/Self-Watering-System-for-Plants-Using-Arduino-Uno/
 - temperaturna stanica (treba ekran)
-
-### Preostali moduli
-
-- oči (infracrveni)
-- uši (senzor zvuka)
-- detektor pokreta
-- detektor svetla
-- laser
-- dugme
-- praćenje puta
-- izbegavanje prepreka
