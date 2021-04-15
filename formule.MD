@@ -29,3 +29,19 @@ izmerena struja 119 mikro A
 R = (U * U) / P
 
 U = napon, P = snaga sijalice (na nekima piše)
+
+### Računanje amperaže uređaja
+
+Ako znamo koliko uređaj ima V i W, onda znamo i A: 
+
+A = W / V
+
+Npr. ako imamo solarku od 12 V od 240 W, računamo A:
+
+240 W / 12 V = 12 Ah 
+
+(ako je prikačena na akumulator, deli se sa voltažom onog što puni)
+
+### Saveti
+
+Za prosečnu potrošnju je dovoljno 200 W solarne ploče i 200 Ah akumulator.
