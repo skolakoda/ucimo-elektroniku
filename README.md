@@ -12,6 +12,7 @@ Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
 
 ## TODO
 
+https://predictabledesigns.com/home-automation-with-an-arduino-a-basic-tutorial/
 https://youtu.be/uuRQZbXOLnw
 - isprobati MOSFET, potražiti projekte
 https://www.instructables.com/How-to-Control-a-MOSFET-With-Arduino-PWM/
