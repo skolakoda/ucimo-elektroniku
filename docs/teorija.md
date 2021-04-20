@@ -194,7 +194,7 @@ Kapacitivnost se meri u faradima (F).
 
 ## MOSFET (n kanalni)
 
-Nogice: 1) gate (kapija), 2) drain (odvod), 3) source (izvod)
+Nogice: 1) gate (kapija), 2) drain (odvod), 3) source (izvor)
 
 Primer sa baterijom od 12V:
 
