@@ -192,7 +192,7 @@ Na svakom piše koliki napon najviše podnosi. Neki su oblika valjka, neki diska
 
 Kapacitivnost se meri u faradima (F).
 
-## MOSFET (n kanalni)
+## MOSFET (IRFZ44N, n kanalni)
 
 Nogice: 1. gate (kapija), 2. drain (odvod), 3. source (izvor)
 
