@@ -158,7 +158,7 @@ When using a LiPo battery, remember that if you discharge them too far (below ab
 
 To ensure a steady voltage, we need to use something called a voltage regulator.
 
-voltage-regulator.png
+![](regulator-napona.png)
 
 Figure 5-6 shows how you would use the most common of voltage regulators, called the 7805. Using just a voltage regulator IC and two capacitors, any input voltage between 7V and 25V can be regulated to a constant 5V. The capacitors provide little reservoirs of charge that keep the regulator IC operating in a stable manner.
 
@@ -191,6 +191,27 @@ P = 3.2V * 0.024A = 0.0768W
 Na svakom piše koliki napon najviše podnosi. Neki su oblika valjka, neki diska (okrugli), a neki pravougli. Valjkasti imaju anodu i katoru, a okrugli i pravougli nemaju.
 
 Kapacitivnost se meri u faradima (F).
+
+## MOSFET (n kanal)
+
+Primer sa baterijom od 12V:
+
+Minus potrošača na drain (odvod) mosfeta. Source (izvor) mosfeta na minus baterije.
+Plus baterije na plus potrošača.
+
+Povezati otpornik od 10k na gate (kapiju) mosfeta. Kada se poveže plus baterije na otpornik, mosfet pušta struju, kada se poveže minus baterije, mosfet gasi struju.
+
+Sa arduinom:
+
+Sve ostaje isto, samo se izvor mosfeta poveže na uzemljenje arduina, a otpornik na kapiji sa digitalnim pinom.
+
+Ako se koristi analogni izlaz mosfet može služiti kao potenciometar.
+
+![](mosfet.jpg)
+
+U nekim primerima na izvor mosfeta ide i minus napajanja i uzemljenje arduina:
+
+![](arduino-mosfet.jpg)
 
 ## Saveti
 
