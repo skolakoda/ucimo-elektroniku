@@ -12,9 +12,8 @@ Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
 
 ## TODO
 
-https://predictabledesigns.com/home-automation-with-an-arduino-a-basic-tutorial/
 https://youtu.be/uuRQZbXOLnw
-- isprobati MOSFET, potražiti projekte
+- isprobati MOSFET (IRFZ44N N-Channel), potražiti projekte (možda ne normalno zatvoren)
 https://www.instructables.com/How-to-Control-a-MOSFET-With-Arduino-PWM/
 https://tutorial45.com/arduino-mosfet-project/
 https://www.instructables.com/ArduinoMicrocontroller-MOSFET/
