@@ -13,10 +13,6 @@ Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
 ## TODO
 
 https://youtu.be/uuRQZbXOLnw
-- isprobati MOSFET (IRFZ44N N-Channel), potražiti projekte (možda ne normalno zatvoren)
-https://www.instructables.com/How-to-Control-a-MOSFET-With-Arduino-PWM/
-https://tutorial45.com/arduino-mosfet-project/
-https://www.instructables.com/ArduinoMicrocontroller-MOSFET/
 - isprobati fotodiodu i fotootpornik
 - buđenje za izlazak sunca (foto dioda igra ulogu otpornika, normalno otvorena, može i solarna ploča i bazer, ili solarka i stari radio ili bebi šark)
 - paljenje svetiljki (pecinih zvezda) kad je mrak

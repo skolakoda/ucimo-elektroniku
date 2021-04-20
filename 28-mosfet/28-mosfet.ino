@@ -1,4 +1,4 @@
-const int mosfetPin = 9;
+const int mosfetPin = 6;
 
 void setup()
 {

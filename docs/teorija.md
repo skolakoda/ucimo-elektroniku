@@ -192,7 +192,9 @@ Na svakom piše koliki napon najviše podnosi. Neki su oblika valjka, neki diska
 
 Kapacitivnost se meri u faradima (F).
 
-## MOSFET (n kanal)
+## MOSFET (n kanalni)
+
+Nogice: 1) gate (kapija), 2) drain (odvod), 3) source (izvod)
 
 Primer sa baterijom od 12V:
 
