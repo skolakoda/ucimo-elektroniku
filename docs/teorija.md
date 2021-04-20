@@ -194,24 +194,18 @@ Kapacitivnost se meri u faradima (F).
 
 ## MOSFET (n kanalni)
 
-Nogice: 1) gate (kapija), 2) drain (odvod), 3) source (izvor)
+Nogice: 1. gate (kapija), 2. drain (odvod), 3. source (izvor)
 
-Primer sa baterijom od 12V:
+Primer sa Arduinom, baterijom i potrošačem (LED diodom):
 
-Minus potrošača na drain (odvod) mosfeta. Source (izvor) mosfeta na minus baterije.
-Plus baterije na plus potrošača.
+- Kapija mosfeta se povezuje na izlazi pin Arduina. Ako ima napona, pušta struju, ako nema ne pušta.
+- Odvod mosfeta se povezuje na minus potrošača.
+- Izvor mosfeta se povezuje na minus baterije i uzemljenje arduina.
+- Plus baterije se povezuje na plus potrošača.
 
-Povezati otpornik od 10k na gate (kapiju) mosfeta. Kada se poveže plus baterije na otpornik, mosfet pušta struju, kada se poveže minus baterije, mosfet gasi struju.
+Preporučljivo je povezati otpornik od 10k na kapiju mosfeta, da se ukloni šum signala.
 
-Sa arduinom:
-
-Sve ostaje isto, samo se izvor mosfeta poveže na uzemljenje arduina, a otpornik na kapiji sa digitalnim pinom.
-
-Ako se koristi analogni izlaz mosfet može služiti kao potenciometar.
-
-![](mosfet.jpg)
-
-U nekim primerima na izvor mosfeta ide i minus napajanja i uzemljenje arduina:
+Ako se koristi analogni izlaz arduina, mosfet može služiti kao potenciometar.
 
 ![](arduino-mosfet.jpg)
 
