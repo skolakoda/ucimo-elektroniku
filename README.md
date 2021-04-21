@@ -12,8 +12,6 @@ Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
 
 ## TODO
 
-https://youtu.be/uuRQZbXOLnw
-- isprobati fotodiodu i fotootpornik
 - buđenje za izlazak sunca (foto dioda igra ulogu otpornika, normalno otvorena, može i solarna ploča i bazer, ili solarka i stari radio ili bebi šark)
 - isprobati lampice uporedno
 - paljenje svetiljki (pecinih zvezda) kad je mrak (treba relej)
