@@ -15,16 +15,17 @@ Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
 https://youtu.be/uuRQZbXOLnw
 - isprobati fotodiodu i fotootpornik
 - buđenje za izlazak sunca (foto dioda igra ulogu otpornika, normalno otvorena, može i solarna ploča i bazer, ili solarka i stari radio ili bebi šark)
-- paljenje svetiljki (pecinih zvezda) kad je mrak
-- doneti wifi štekere iz podruma, možda prikačiti na zvezde, toster i sl.
-- dinamo vetrenjača https://www.instructables.com/Strawbees-Windmill/
+- isprobati lampice uporedno
+- paljenje svetiljki (pecinih zvezda) kad je mrak (treba relej)
 - paliti sijalicu kad neko prođe (treba relej ili MOSFET, koristiti DC, ne AC)
   https://youtu.be/58XWVDnB7Ss
   https://youtu.be/XiOcxyyTxy4
-- automatsko zalivanje (treba relej)
+- automatsko zalivanje (treba relej ili MOSFET)
   https://www.instructables.com/Self-Watering-System-for-Plants-Using-Arduino-Uno/
 - temperaturna stanica (treba ekran)
 - regulator napona (treba 7805 i kondenzatori)
+- laser senzor može detektovati prekid zraka
+  https://mytectutor.com/how-to-make-a-laser-tripwire-alarm-using-arduino/
 
 ### Stari telefoni / tableti
 
