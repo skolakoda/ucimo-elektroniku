@@ -12,18 +12,28 @@ Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
 
 ## TODO
 
-- buđenje za izlazak sunca (foto dioda igra ulogu otpornika, normalno otvorena, može i solarna ploča i bazer, ili solarka i stari radio ili bebi šark)
+### Ima delova
 - isprobati lampice uporedno
-- paljenje svetiljki (pecinih zvezda) kad je mrak (treba relej)
-- paliti sijalicu kad neko prođe (treba relej ili MOSFET, koristiti DC, ne AC)
+- paliti sijalicu kad neko prođe (MOSFET)
   https://youtu.be/58XWVDnB7Ss
   https://youtu.be/XiOcxyyTxy4
-- automatsko zalivanje (treba relej ili MOSFET)
+- drveno srce sa crvenim lampicama: https://www.velleman.eu/products/view/?id=459310
+- elektromotor sa solarkom
+- Solar Musical Instrument: More light = higher note
+
+### Nema delova
+- buđenje za izlazak sunca (foto dioda i neko muzičko kolo ili solarna ploča i bazer)
+- paljenje pecinih zvezda kad je mrak (treba relej)
+- automatsko zalivanje (treba relej za pumpu)
   https://www.instructables.com/Self-Watering-System-for-Plants-Using-Arduino-Uno/
 - temperaturna stanica (treba ekran)
-- regulator napona (treba 7805 i kondenzatori)
-- laser senzor može detektovati prekid zraka
-  https://mytectutor.com/how-to-make-a-laser-tripwire-alarm-using-arduino/
+- regulator napona (treba transistor 7805 i kondenzatori)
+- paljenje led noću, treba fotootpornik i npn tranzistor https://youtu.be/eEBMTpxdPiE
+- trepćući led bez arduina:
+  - tranzistori i kondenzatori: https://www.instructables.com/Simple-Blinking-LED-Circuit/
+  - 555 timer https://www.elprocus.com/blinking-led-using-555-timer-ic/
+- solarni punjač: solarka povezana sa (slabijom) baterijom, dioda između brani da se struja noću vraća
+- solarni punjač sa indikatorom: solarni projekti.pdf
 
 ### Stari telefoni / tableti
 
@@ -47,7 +57,7 @@ https://www.wikihow.com/Make-a-Simple-One%E2%80%90Direction-Electric-Toy-Car
 - 9V baterija ✓
 - 9V baterija kućište
 - izolirka ✓
-- 2 štapića od sladoleda
+- 2 štapića od sladoleda ✓
 - 4 čepa
 - zupčanik
 - 2 šipkice od 10-ak cm
