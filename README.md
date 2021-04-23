@@ -11,22 +11,25 @@ Po povezivanju Arduina, podesiti Arduino IDE -> Tools -> Port
 Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
 
 ## TODO
+- kupiti pribor za oto
 
 ### Ima delova
-- isprobati lampice uporedno
+- isprobati lampice uporedno (probati razdvojene grupe po 3 redno vezane diode)
+  http://www.hebeiltd.com.cn/calculator/v5/led.php
 - paliti sijalicu kad neko prođe (MOSFET)
   https://youtu.be/58XWVDnB7Ss
   https://youtu.be/XiOcxyyTxy4
 - drveno srce sa crvenim lampicama: https://www.velleman.eu/products/view/?id=459310
 - elektromotor sa solarkom
 - Solar Musical Instrument: More light = higher note
+- temperaturna stanica: slati temperaturu preko neta; kasnije dodati ekran i solarno napajanje (nadograditi vlagomer?)
+  https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
 
 ### Nema delova
 - buđenje za izlazak sunca (foto dioda i neko muzičko kolo ili solarna ploča i bazer)
-- paljenje pecinih zvezda kad je mrak (treba relej)
+- paljenje zvezda kad je mrak (treba relej)
 - automatsko zalivanje (treba relej za pumpu)
   https://www.instructables.com/Self-Watering-System-for-Plants-Using-Arduino-Uno/
-- temperaturna stanica (treba ekran)
 - regulator napona (treba transistor 7805 i kondenzatori)
 - paljenje led noću, treba fotootpornik i npn tranzistor https://youtu.be/eEBMTpxdPiE
 - trepćući led bez arduina:
@@ -34,8 +37,14 @@ Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
   - 555 timer https://www.elprocus.com/blinking-led-using-555-timer-ic/
 - solarni punjač: solarka povezana sa (slabijom) baterijom, dioda između brani da se struja noću vraća
 - solarni punjač sa indikatorom: solarni projekti.pdf
+- punjač sa kontrolerom: prekida kolo kada dostigne određeni napon (za akumulatore 14V), mala škola elektronike.pdf (str. 81)
 
-### Stari telefoni / tableti
+### Ideje
+- detektor metala za cevi i armaturu u zidu (ima kit)
+- tragač strujnih vodova (mala škola elektronike str. 240)
+- glasovni prekidač (mala škola elektronike str. 241)
+
+### Stari telefoni
 
 - povezati baterije u banku baterija: 
   mobilni: 
