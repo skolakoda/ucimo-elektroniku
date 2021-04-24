@@ -54,3 +54,6 @@ Let’s say the total requirement is 25mAh/day. If batteries are 3000mAh, we cou
 ```
 3000mAh / 25mAh = 120 dana
 ```
+
+## Regulator punjenja (charge controller)
+

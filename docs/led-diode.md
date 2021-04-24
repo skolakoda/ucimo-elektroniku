@@ -1,4 +1,4 @@
-# LED dioda
+# LED diode
 
 Svaka svetleća dioda obara napon kola za 2V (plave i bele za 4V). 
 
