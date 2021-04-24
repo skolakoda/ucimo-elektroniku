@@ -50,23 +50,25 @@ P = 3.2V * 0.024A = 0.0768W
 
 ## Pretvaranje naizmenične struje u jednosmernu
 
-Divide the AC voltage by the square root of 2 to find the DC voltage.
+Podeli napon izmenične struje korenom iz dva da odrediš napon usmerene.
+```
+U (DC) = U (AC) / √2
+```
 
-Since an AC power supply sends voltage in alternating waves, DC voltage will be lower once you convert it.
+Pošto izmenična struja ide naizmenično, usmereni napon će biti niži kada se pretvori. Na primer ako je naizmenični napon 120 V, jednosmerni će biti:
+```
+120 V / √2 = 84.85 V (DC)
+```
 
-    For example, if the AC power source has 120 V, then your formula would be 120/√(2) = 84.85 V DC 
-
-If you don’t have a calculator, you can round √(2) to 1.4.
-
-Know that the actual DC output will be less than your calculation.
+Aktuelni izlaz će biti manji od računice. Ako nemaš digitron, √2 možeš zaokružiti na 1.4. 
 
 ## Regulacija napona
 
-To ensure a steady voltage, we need to use something called a voltage regulator.
-
 ![](slike/regulator-napona.png)
 
-Figure 5-6 shows how you would use the most common of voltage regulators, called the 7805. Using just a voltage regulator IC and two capacitors, any input voltage between 7V and 25V can be regulated to a constant 5V. The capacitors provide little reservoirs of charge that keep the regulator IC operating in a stable manner.
+Da obezbedimo stabilan napon, treba nam regulator (stabilizator) napona. Slika pokazuje kako se koristi najčešći regulator napona: IC 7805. Uz pomoć te komponente i dva kondenzatora, svaki ulazni napon između 7V i 25V se stabilizuje u konstantnih 5V. 
+
+Kondenzatori su mali rezervoari napona koji regulatoru napona IC omogućuju stabilan rad.
 
 ## Saveti
 
