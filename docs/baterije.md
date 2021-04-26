@@ -1,59 +1,76 @@
 # Baterije
 
-## Punjenje baterija
+Za stabilizaciju napona prilikom punjenje baterija potrebno je koristiti regulator napona, takođe zvan i regulator punjenja (*charge controller*).
+
+## Punjenje NiMH baterija
 
 Primer:
 - 12v punjač
-- 4 x AA NiMH baterije
+- 4 x AA nikl-metal-hidridne (NiMH) baterije
 
-The easiest way to charge a NiMH (Nickel-metal hydride) battery pack is to trickle charge it, limiting the current with a resistor. To calculate the value of R1, we first have to decide what current we want to charge our battery with. Generally, a NiMH battery can be safely trickle charged with less than 0.1C indefinitely. If the AA batteries we have each hold a C of 2000mAh, then we can charge them at up to 200mA. To be on the safe side, and if we planned to allow the batteries to “trickle” charge most of the time—for, say, a battery backup project—I would probably use a lower current of 0.05C or more conveniently C/20, which is 100mA.
+Najjednostavniji način punjenja NiMH baterije je da ograničimo struju otpornikom. Da bismo izračunali vrednost otpornika, moramo odlučiti kojom strujom želimo puniti bateriju. NiMH baterija može se neograničeno puniti strujom manjom od 10% njenog kapaciteta. Npr, ako AA baterije imaju kapacitet 2000mAh, možemo ih puniti strujom od 200mA. Za svaki slučaj, ako planiramo da punimo baterije većinu vremena, bolje puniti strujom od 5% kapaciteta baterije, što iznosi 100mA.
 
-Typically, the charge time for NiMH batteries is about 3C times the charging current, so at 100mA, we could expect our batteries to take 3 × 2000mAh / 100mA = 60 hours.
+Tipično vreme punjenja NiMH baterija je: 
+```
+3 * kapacitet (C) / struja
+```
 
-Back to calculating R1. When the batteries are discharged, each will be at a voltage of about 1.0V, so the voltage across the resistor will be 12V – 4V = 8V.
+Dakle, sa strujom od 100mA, potrebno je:
+```
+Vreme punjenja = 3 × 2000mAh / 100mA = 6000mAh / 100mA = 60 časova
+```
 
+Da bismo izabrali otpornik, treba izračunati napon. Kada su baterije prazne imaju napon oko 1V, pa će napon kola biti:
+```
+V = 12V – 4V = 8V.
+```
+
+Sada možemo izračunati otpor: 
+```
 R = V / I = 8V / 0.1A = 80Ω.
+```
 
-Let’s be conservative and choose the convenient resistor value of 100Ω. Feeding this back in, the actual current will be
-
+Iz opreza možemo izabrati jači otpornik od 100Ω. Kada ga prikačimo u kolo, aktuelna struja će biti:
+```
 I = V / R = 8V / 100Ω = 80mA.
-
-When the batteries are fully charged, their voltage will rise to about 1.3V so the current will reduce to: 
-
-I = V / R = (12V – 1.3V × 4) / 100Ω = 68mA.
-
-Now we just need to find out what maximum power rating we need for R1.
-
-P = I V = 0.08A × 8 = 0.64W = 640 mW
-
-So, we should probably use a 1-W resistor.
-
-## Mobilne baterije
-
-Tipical battery is 3.7V (a single cell) and 1600mAh.
-
-When using a LiPo battery, remember that if you discharge them too far (below about 3V per cell), you can permanently damage them. Most new LiPo batteries will include an automatic cut-off circuit, built into the battery package, to prevent over-discharging, but this may not be the case for a scavenged battery.
-
-## Trajanje baterije
-
-Primer:
-
-The motor uses 1A each time it operates, but it is only twice a day for about three seconds. The control circuit using 1mA all the time. So, how many mAh the control circuit and motors each use in a day?
-
-The motors:
-```
-1A × 3 seconds × 2 = 6As = 6/3600Ah = 0.0016 Ah = 1.6mAh per day
 ```
 
-The controller: 
+Na kraju, treba da saznamo koja maksimalna snaga nam je potrebna za otpornik:
 ```
-1mA × 24 hours = 24mAh per day 
+P = I * V = 0.08A * 8V = 0.64W = 640 mW
 ```
 
-Let’s say the total requirement is 25mAh/day. If batteries are 3000mAh, we could expect them to last:
+Iz opreza, bolje koristiti otpornik koji može da podnese 1W.
+
+P.S. Kada su baterije skroz pune, njihov napon je oko 1.3V, pa će struja u kolu biti manja:
+```
+I = V / R = (12V – 1.3V × 4) / 100Ω = 12V - 5.2V / 100Ω = 6.8V / 100Ω = 68mA.
+```
+
+## Litijum-polimerska (LiPo) baterija
+
+Litijum-polimerske baterije se koriste u mobilnim telefonima. Tipična LiPo baterija je napona 3.7V i kapaciteta 1600mAh.
+
+Ako se LiPo baterija previše isprazni (ispod 3V), može se trajno oštetiti. Većina novih LiPo baterija ima ugrađeno automatsko prekidačko kolo da spreči prekomerno pražnjenje, ali to možda nije slučaj sa starim baterijama.
+
+## Kako izračunati trajanja baterije
+
+Primer (Arduino i steper motor):
+
+Motor koristi 1A po sekundi, a pali se dvaput dnevno po 3 sekunde. Kontroler troši 1mA sve vreme. Koliko zajedno potroše za dan?
+
+Motor:
+```
+1A × 3 sekunde × 2 = 6As = 6/3600Ah = 0.0016 Ah = 1.6mAh dnevno
+```
+
+Kontroler: 
+```
+1mA × 24 časa = 24mAh dnevno
+```
+
+Recimo da je ukupna potrošnja 25mAh po danu. Ako baterija ima 3000mAh, možemo očekivati da traje:
 ```
 3000mAh / 25mAh = 120 dana
 ```
-
-## Regulator punjenja (charge controller)
 

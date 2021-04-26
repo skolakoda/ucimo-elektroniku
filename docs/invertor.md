@@ -1,0 +1,1 @@
+Invertor pretvara jednosmernu struju u naizmeničnu.
