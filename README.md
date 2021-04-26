@@ -26,7 +26,7 @@ Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
   https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
 
 ### Nema delova
-- buđenje za izlazak sunca (foto dioda i neko muzičko kolo ili solarna ploča i bazer)
+- buđenje za izlazak sunca (foto dioda i neko muzičko kolo, ili solarna ploča i bazer; može i elektromotor sa pampurom da drnda zvončiće)
 - paljenje zvezda kad je mrak (treba relej)
 - automatsko zalivanje (treba relej za pumpu)
   https://www.instructables.com/Self-Watering-System-for-Plants-Using-Arduino-Uno/

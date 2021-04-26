@@ -34,4 +34,6 @@ Kada merimo solarni panel, treba povezati njegov plus i minus otpornikom, da bi 
 
 ## Merenje baterija
 
+Baterije bez potrošača prikazuju veću voltažu od nominalne. Npr. baterija od 12V će pokazati napon od 12.6V. Ako napunjena pokaže 12V, na izmaku je. 
+
 the voltage of a battery shown when it is not powering anything can be a little misleading. For a more accurate picture, use a 100Ω resistor as a “dummy” load.
