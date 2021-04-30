@@ -11,7 +11,8 @@ Po povezivanju Arduina, podesiti Arduino IDE -> Tools -> Port
 Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
 
 ## TODO
-- kupiti pribor za oto
+- napraviti za robota ploču od drveta (elektronika za neupućene 318), pričvrstiti motore i ostale delove, doraditi skretanje (elektronika za neupućene 321)
+- isprobati sms kontrolu arduina (za zalivanje, relej...)
 
 ### Ima delova
 - isprobati lampice uporedno (probati razdvojene grupe po 3 redno vezane diode)
@@ -26,7 +27,12 @@ Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
   https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
 
 ### Nema delova
-- buđenje za izlazak sunca (foto dioda i neko muzičko kolo, ili solarna ploča i bazer; može i elektromotor sa pampurom da drnda zvončiće)
+- merač vlažnosti sa ekserima, fali potenciometar (učimo elektroniku, projekti)
+- buđenje za izlazak sunca:
+  - foto dioda i muzičko kolo
+  - solarna ploča i bazer
+  - tajmer 555 i zvučnik (elektronika za neupućene str. 300)
+  - može i elektromotor sa pampurom da drnda zvončiće
 - paljenje zvezda kad je mrak (treba relej)
 - automatsko zalivanje (treba relej za pumpu)
   https://www.instructables.com/Self-Watering-System-for-Plants-Using-Arduino-Uno/

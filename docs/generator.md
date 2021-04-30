@@ -1,4 +1,4 @@
-# Generisanje struje
+# Generator struje
 
 Za generisanje usmerene struje koristimo DC motor sa četkicama, ili elektronski komutirani (EC) motor bez četkica sa ispravljačem napona. Za generisanje naizmenične struje koristimo EC motor bez četkica povezan na samo 2 faze.
 
