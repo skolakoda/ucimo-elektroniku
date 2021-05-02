@@ -4,26 +4,21 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
 Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 
-## Razvoj
-
-Po povezivanju Arduina, podesiti Arduino IDE -> Tools -> Port
-
-Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
-
 ## TODO
-- napraviti za robota ploču od drveta (elektronika za neupućene 318), pričvrstiti motore i ostale delove, doraditi skretanje (elektronika za neupućene 321)
-- isprobati sms kontrolu arduina (za zalivanje, relej...)
 
 ### Ima delova
-- isprobati lampice uporedno (probati razdvojene grupe po 3 redno vezane diode)
-  http://www.hebeiltd.com.cn/calculator/v5/led.php
 - paliti sijalicu kad neko prođe (MOSFET)
   https://youtu.be/58XWVDnB7Ss
   https://youtu.be/XiOcxyyTxy4
+- autić https://www.wikihow.com/Make-a-Simple-One%E2%80%90Direction-Electric-Toy-Car
+- napraviti za robota ploču od drveta (elektronika za neupućene 318), pričvrstiti motore i ostale delove, doraditi skretanje (elektronika za neupućene 321)
+- isprobati lampice uporedno (probati razdvojene grupe po 3 redno vezane diode)
+  http://www.hebeiltd.com.cn/calculator/v5/led.php
 - drveno srce sa crvenim lampicama: https://www.velleman.eu/products/view/?id=459310
 - elektromotor sa solarkom
 - Solar Musical Instrument: More light = higher note
 - temperaturna stanica: slati temperaturu preko neta; kasnije dodati ekran i solarno napajanje (nadograditi vlagomer?)
+  https://youtu.be/wEbGhYjn4QI
   https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
 
 ### Nema delova
@@ -44,11 +39,16 @@ Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
 - solarni punjač: solarka povezana sa (slabijom) baterijom, dioda između brani da se struja noću vraća
 - solarni punjač sa indikatorom: solarni projekti.pdf
 - punjač sa kontrolerom: prekida kolo kada dostigne određeni napon (za akumulatore 14V), mala škola elektronike.pdf (str. 81)
+- preko sms-a uključivati zalivanje (treba GSM modul, relej...)
+  https://www.instructables.com/Control-the-relays-via-GPRS-SMS/
+  https://randomnerdtutorials.com/control-a-12v-lamp-via-sms-with-arduino/
+  https://create.arduino.cc/projecthub/FiDeNet/sms-controlled-relays-and-leds-2906ff
 
 ### Ideje
 - detektor metala za cevi i armaturu u zidu (ima kit)
 - tragač strujnih vodova (mala škola elektronike str. 240)
 - glasovni prekidač (mala škola elektronike str. 241)
+- stabilizator napona https://www.electronicshub.org/lead-acid-battery-charger-circuit/
 
 ### Stari telefoni
 
@@ -63,17 +63,15 @@ Za ispis u konzolu otvoriti: Arduino IDE -> Tools -> Serial Monitor
 
 ### Autić
 
-https://www.wikihow.com/Make-a-Simple-One%E2%80%90Direction-Electric-Toy-Car
-
 - elektromotor ✓
 - žice ✓
 - lepak ✓
 - lemilica ✓
 - 9V baterija ✓
-- 9V baterija kućište
+- 9V baterija kućište ✓
 - izolirka ✓
 - 2 štapića od sladoleda ✓
-- 4 čepa
-- zupčanik
-- 2 šipkice od 10-ak cm
+- 4 čepa ✓
+- zupčanik ✓
+- 2 šipkice od 10-ak cm ✓
 - 2 slamčice tanje
