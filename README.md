@@ -1,4 +1,4 @@
-# Učimo Arduino
+# Učimo Elektroniku
 
 Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
