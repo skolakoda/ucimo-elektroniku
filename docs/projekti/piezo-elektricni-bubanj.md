@@ -25,7 +25,7 @@ Zadivite prijatelje svojim svetlosnim bubnjem koji ćete napraviti na sledeći n
 2. Parove disk-neonka zalepite trakom ili lepkom za plastičnu osnovu.
 3. Nabavite par palica za bubnjeve, zamračite sobu i lupajte po diskovima u ritmu omiljene pesme.
 
-## Spisak delova
+## Delovi
 
 Za eksperiment sa piezoelektricitetom treba vam tek nekoliko komponenti:
 * običan piezoelektrični disk (po mogućstvu sa dve zalemljene žice)

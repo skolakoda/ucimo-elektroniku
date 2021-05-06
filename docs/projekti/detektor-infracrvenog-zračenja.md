@@ -12,7 +12,7 @@ Pomoću ovog detektora možete proveriti da li nešto emituje infracrveno zrače
 
 Premda je fototranzistor za infracrveno zračenje najosetljiviji na ovaj opseg spektra, reaguje i na vidljivu svetlost. Najbolje rezultate postići ćete ako detektor koristite u slabo osvetljenoj prostoriji.
 
-## Spisak delova
+## Delovi
 
 Kratka lista delova za ovaj projekat:
 * Ql: Fototranzistor za infracrveno zračenje (mi smo koristili RadioShack 276-0145, ali biće dobar bilo koji fototranzistor)

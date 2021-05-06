@@ -18,23 +18,22 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
   - izmeriti napon i struju lampice, dizajnirati kolo http://www.hebeiltd.com.cn/calculator/v5/led.php
   - drveno srce sa crvenim lampicama: https://www.velleman.eu/products/view/?id=459310
 - probati mali elektromotor sa solarkom
-- autić (fale 2 slamčice)
-  https://www.wikihow.com/Make-a-Simple-One%E2%80%90Direction-Electric-Toy-Car
+- autić (fale 2 slamčice): https://www.wikihow.com/Make-a-Simple-One%E2%80%90Direction-Electric-Toy-Car
 - sunčev instrument (vidi projekte)
 - temperaturna stanica: 
   - isprobati wifi module, slati temperaturne podatke na oblak
   - kasnije dodati ekran i solarno napajanje
-  https://youtu.be/wEbGhYjn4QI
-  https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
+    https://youtu.be/wEbGhYjn4QI
+    https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
 
 ### Nema delova
-- merač vlažnosti sa ekserima, fali potenciometar (učimo elektroniku, projekti)
-- buđenje za izlazak sunca:
+- merač vlažnosti, fali potenciometar (projekti)
+- jutarnji alarm:
   - foto dioda i muzičko kolo
   - solarna ploča i bazer
-  - tajmer 555 i zvučnik (elektronika za neupućene str. 300)
-  - može i elektromotor sa pampurom da drnda zvončiće
-- paljenje zvezda kad je mrak (treba relej)
+  - fotootpornik, tajmer 555 i zvučnik (projekti)
+  - solarna ploča i elektromotor sa pampurom drnda zvončiće
+- paljenje pecinih zvezda kad je mrak (treba relej)
 - automatsko zalivanje (treba relej za pumpu)
   https://www.instructables.com/Self-Watering-System-for-Plants-Using-Arduino-Uno/
 - regulator napona (treba transistor 7805 i kondenzatori)
@@ -42,8 +41,7 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 - trepćući led bez arduina:
   - tranzistori i kondenzatori: https://www.instructables.com/Simple-Blinking-LED-Circuit/
   - 555 timer https://www.elprocus.com/blinking-led-using-555-timer-ic/
-- solarni punjač: solarka povezana sa (slabijom) baterijom, dioda između brani da se struja noću vraća
-- solarni punjač sa indikatorom: solarni projekti.pdf
+- solarni punjač (projekti)
 - punjač sa kontrolerom: prekida kolo kada dostigne određeni napon (za akumulatore 14V), mala škola elektronike.pdf (str. 81)
 - preko sms-a uključivati zalivanje (treba GSM modul, relej...)
   https://www.instructables.com/Control-the-relays-via-GPRS-SMS/
@@ -51,9 +49,7 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
   https://create.arduino.cc/projecthub/FiDeNet/sms-controlled-relays-and-leds-2906ff
   https://lastminuteengineers.com/sim800l-gsm-module-arduino-tutorial/
   https://lastminuteengineers.com/a6-gsm-gprs-module-arduino-tutorial/
-
-### Ideje
-- detektor metala za cevi i armaturu u zidu (ima kit)
+- detektor metala za cevi i armaturu u zidu (postoji kit)
 - tragač strujnih vodova (mala škola elektronike str. 240)
 - glasovni prekidač (mala škola elektronike str. 241)
 - stabilizator napona https://www.electronicshub.org/lead-acid-battery-charger-circuit/

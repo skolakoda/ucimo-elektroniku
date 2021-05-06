@@ -1,20 +1,21 @@
-# Merač vlažnosti
+# Merač vlage (vlagomer)
+
+Sa meračem vlage možete proveriti vlažnost tla i je li biljkama potrebno zalivanje.
+
+Ovaj vlagomer je neviđeno jednostavan. Zasniva se na principu električne provodljivosti vode. Kada dva metalna izvoda stavite u vlažno okruženje, usled provodljivosti vode zatvara se kolo. Struja uključuje tranzistor, a tranzistor svetleću diodu. Ako nema vlage, kolo nije zatvoreno, i LED ne svetli.
+
+## Šema
 
 ![](../slike/merac-vlaznosti.jpg)
 
-Sa meračem vlažnosti ćete moći da proverite kolika je vlažnost biljaka i je li potrebno zalivanje.
+Dva izvoda napravite od eksera. Postavite eksere na parče plastike, na rastojanju od oko 1,5 centimetara, da stoje paralelno. Zakucajte eksere u plastiku da je probiju, da mogu prodreti duboko u ispitivani materijal. Osetljivost merača podešavajte pomoću potenciometra (R2).
 
-Ovaj merač vlažnosti je zadivljujuće jednostavan. Zasniva se na principu električne provodljivosti vode. Merač ima dva mala metalna izvoda (sonde). Kada ih stavite u vodu, ona usled svoje provodljivosti zatvara kolo, koje usmerava struju u tranzistor. Čim se tranzistor uključi, uključuje LED diodu koja zasvetli. Kada izvodi nisu u kontaktu s vodom, kolo nije zatvoreno, i LED dioda ne svetli.
+Vlagomer radi s naponom od 5 do 12 volti, dakle može baterija od 9 volti.
 
-Dva izvoda napravićete od eksera od oko 4 cm. Postavite eksere na parče plastike, na rastojanju od oko 1,5 centimetara, da stoje paralelno. Zakucajte eksere u plastiku tako da je probiju, da mogu prodreti duboko u ispitivani materijal. Na primer, izvode merača možete ubosti u tapison i utvrditi ima li ispod njega tragova vode iz cevi koja je pukla. Osetljivost merača možete podešavati pomoću potenciometra R2.
+## Delovi
 
-Merač vlažnosti radi s naponom od 5 do 12 volti, dakle biće dobra baterija od 9 volti.
-
-## Spisak delova
-
-Za merač vlažnosti potrebne sa naredne komponente:
-* Ql: Tranzistor 2N2222 NPN
-* Rl: Otpornik od 470 oma
-* R2: Potenciometar 50K
-* LED: LED dioda (bilo koja boja svetlosti)
-* Sonde: Dva eksera (dužine oko 4 cm)
+- Tranzistor 2N2222 NPN (Ql)
+- Otpornik od 470 oma (Rl)
+- Potenciometar 50K (R2)
+- LED dioda (bilo koja boja)
+- Dva eksera, dužine oko 4 cm (sonde)

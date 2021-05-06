@@ -6,7 +6,7 @@ Ovo kolo koristi dva tajmera 555. Oba ćete upotrebiti kao *astabilne multivibra
 
 Podesite dva potenciometra, R2 i R4, da menjaju visinu i brzinu zavijajućeg zvuka sirene. Kada podesite vrednosti ova dva potenciometra moći ćete da proizvedete različite varijante sirene i druge zanimljive zvučne efekte. Ovo kolo može da radi s bilo kojim naponom između 5 i 15 volti.
 
-## Spisak delova
+## Delovi
 
 Ako hoćete da iritirate komšiluk alarmom, kupite naredne komponente:
 * IC1, IC2: Integrisano kolo, tajmer 555

@@ -6,6 +6,6 @@ Zasniva se na dva operaciona pojačivača, koji zajedno pojačavaju signal elekt
 
 ![](../slike/gitarsko-pojacalo-za-slusalice.jpg)
 
-## Spisak delova
+## Delovi
 
 ![](../slike/gitarsko-pojacalo-za-slusalice-delovi.jpg)
