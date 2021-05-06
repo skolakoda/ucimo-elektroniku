@@ -9,20 +9,23 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 ## TODO
 
 ### Ima delova
-- sređivanje robota:
+- robot:
   - napraviti ploču od drveta (elektronika za neupućene 318), pričvrstiti motore i ostale delove, 
   - doraditi skretanje (elektronika za neupućene 321)
-- isprobati lampice uporedno (probati razdvojene grupe po 3 redno vezane diode)
-  http://www.hebeiltd.com.cn/calculator/v5/led.php
-- drveno srce sa crvenim lampicama: https://www.velleman.eu/products/view/?id=459310
-- elektromotor sa solarkom
-- Solar Musical Instrument: More light = higher note
-- temperaturna stanica: slati temperaturu preko neta; kasnije dodati ekran i solarno napajanje (nadograditi vlagomer?)
+  - staviti elastičan materijal na senzor zvuka jer hvata vibracije motora
+- lampice:
+  - isprobati lampice uporedno (probati razdvojene grupe po 3 redno vezane)
+  - izmeriti napon i struju lampice, dizajnirati kolo http://www.hebeiltd.com.cn/calculator/v5/led.php
+  - drveno srce sa crvenim lampicama: https://www.velleman.eu/products/view/?id=459310
+- probati mali elektromotor sa solarkom
+- autić (fale 2 slamčice)
+  https://www.wikihow.com/Make-a-Simple-One%E2%80%90Direction-Electric-Toy-Car
+- sunčev instrument (vidi projekte)
+- temperaturna stanica: 
+  - isprobati wifi module, slati temperaturne podatke na oblak
+  - kasnije dodati ekran i solarno napajanje
   https://youtu.be/wEbGhYjn4QI
   https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
-- staviti senzor zvuka robota na elastičan materijal jer hvata vibracije motora
-- isprobati wifi module, slati temperaturne podatke na oblak
-- autić https://www.wikihow.com/Make-a-Simple-One%E2%80%90Direction-Electric-Toy-Car
 
 ### Nema delova
 - merač vlažnosti sa ekserima, fali potenciometar (učimo elektroniku, projekti)
@@ -65,18 +68,3 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
     https://www.instructables.com/REUSE-YOUR-OLD-LAPTOP-BATTERY-TO-MAKE-A-POWER-BANK/
 - postaviti stari mobilni kao nadzornu kameru https://alfred.camera/
 - iskoristiti bateriju, tastaturu, kamericu, zvučnik, senzore, elektromotor?
-
-### Autić
-
-- elektromotor ✓
-- žice ✓
-- lepak ✓
-- lemilica ✓
-- 9V baterija ✓
-- 9V baterija kućište ✓
-- izolirka ✓
-- 2 štapića od sladoleda ✓
-- 4 čepa ✓
-- zupčanik ✓
-- 2 šipkice od 10-ak cm ✓
-- 2 slamčice tanje
