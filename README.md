@@ -4,14 +4,14 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
 Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 
+> Upozorenje: Uvek povezivati uzemljenje pre napona, i uvek prvo prekidati napon pa uzemljenje! U suprotnom, neki moduli mogu biti uništeni.
+
 ## TODO
 
 ### Ima delova
-- paliti sijalicu kad neko prođe (MOSFET)
-  https://youtu.be/58XWVDnB7Ss
-  https://youtu.be/XiOcxyyTxy4
-- autić https://www.wikihow.com/Make-a-Simple-One%E2%80%90Direction-Electric-Toy-Car
-- napraviti za robota ploču od drveta (elektronika za neupućene 318), pričvrstiti motore i ostale delove, doraditi skretanje (elektronika za neupućene 321)
+- sređivanje robota:
+  - napraviti ploču od drveta (elektronika za neupućene 318), pričvrstiti motore i ostale delove, 
+  - doraditi skretanje (elektronika za neupućene 321)
 - isprobati lampice uporedno (probati razdvojene grupe po 3 redno vezane diode)
   http://www.hebeiltd.com.cn/calculator/v5/led.php
 - drveno srce sa crvenim lampicama: https://www.velleman.eu/products/view/?id=459310
@@ -20,6 +20,9 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 - temperaturna stanica: slati temperaturu preko neta; kasnije dodati ekran i solarno napajanje (nadograditi vlagomer?)
   https://youtu.be/wEbGhYjn4QI
   https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
+- staviti senzor zvuka robota na elastičan materijal jer hvata vibracije motora
+- isprobati wifi module, slati temperaturne podatke na oblak
+- autić https://www.wikihow.com/Make-a-Simple-One%E2%80%90Direction-Electric-Toy-Car
 
 ### Nema delova
 - merač vlažnosti sa ekserima, fali potenciometar (učimo elektroniku, projekti)
@@ -43,6 +46,8 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
   https://www.instructables.com/Control-the-relays-via-GPRS-SMS/
   https://randomnerdtutorials.com/control-a-12v-lamp-via-sms-with-arduino/
   https://create.arduino.cc/projecthub/FiDeNet/sms-controlled-relays-and-leds-2906ff
+  https://lastminuteengineers.com/sim800l-gsm-module-arduino-tutorial/
+  https://lastminuteengineers.com/a6-gsm-gprs-module-arduino-tutorial/
 
 ### Ideje
 - detektor metala za cevi i armaturu u zidu (ima kit)

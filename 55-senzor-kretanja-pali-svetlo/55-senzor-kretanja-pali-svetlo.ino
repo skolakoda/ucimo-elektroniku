@@ -1,9 +1,9 @@
-int ledPin = 13;
-int motionPin = 8;
+const int mosfetPin = 6;
+const int motionPin = 8;
 
 void setup()
 {
-  pinMode(ledPin, OUTPUT);
+  pinMode(mosfetPin, OUTPUT);
   pinMode(motionPin, INPUT);
   Serial.begin(9600);
 }
@@ -11,6 +11,7 @@ void setup()
 void loop()
 {
   int sensorValue = digitalRead(motionPin);
-  digitalWrite(ledPin, sensorValue);
+  digitalWrite(mosfetPin, sensorValue);
   Serial.println(sensorValue);
+  delay(100);
 }
