@@ -6,21 +6,21 @@ Sve to rade dva tiristora, jedna dioda i jedna zener dioda uz nekoliko otpornika
 
 ## Šema
 
+Osnovu punjača čini ispravljač. On je standardan, tu su prekidač za uključenje na gradsku mrežu i osigurač torusni trafo 2 x 18V, 2 x 2.25A, grec ispravljač od 8-10A. Na desnoj strani šeme, imamo dve veze, plus i minus kojima trebamo da se povezemo sa sledećom šemom. 
+
 ![](../slike/ispravljac-za-punjac-akumulatora-shema.jpg)
+
+Drugi deo automatskog punjača čini regulator sa indikatorima:
 
 ![](../slike/punjac-akumulatora-shema.jpg)
 
-Prvi dec punjača je standardan, tu su prekidač za uključenje na gradsku mrežu i osigurač torusni trafo 2X18V, 2X2.25A, grec ispravljač od 8-10A. Na desnoj strani šeme, imamo dve veze, plus i minus kojima trebamo da se povezemo sa sledećom šemom  - koja je srce automatskog punjača. 
+Osnovna funkcija je jednostavna - sam se uključuje, sam se isključuje. U principu to je jedna klackalica, koja se sastoji iz dva tiristora od kojih je jedan onaj Tl, jači, predviđen za ukopčavanje akumulatora. Drugi, T2, je slabiji koji se nalazi na našoj tiristorskoj klackalici. Klackalica se podešava u ravnotezu pomeranje oslonca na levo iii na desno. Mi to radimo sa trimer potenciometrom i Zener diodom 6.8V. Jednostavno namestimo do kog napona se akumulator puni, odnosno kada se akumulator isključuje sa punjača.
 
-Osnovna odlika je jednostavna - sam se uključuje, sam se isključuje. U principu to je jedna klackalica, koja se sastoji iz dva tiristora od kojih je jedan onaj Tl, jači, predviđen za ukopčavanje akumulatora. Drugi, T2, je slabiji koji se nalazi na našoj tiristorskoj klackalici.
+Imamo i tri LE diode. Žuta pokazuje kada je punjač priključen na gradsku mrežu. Zelena pokazuje kada je akumulator pun i kada je skinut sa punjača. I najzad crvena LE dioda pokazuje kada se vrši punjenje akumulatora. 
 
-Klackalica se podešava u ravnotezu, znate kako, pomeranje sredine, oslonca, na leva iii na desno. Mi to radimo sa trimer potenciometrom i Zener diodom 6.8V. Jednostavno namestimo do kog napona se akumulator puni, odnosno kada se akumulator isključuje sa punjača.
+Trimer potenciometrom se inicijalno podesi kada je akumulator pun. Za to trebamo voltmetar da merimo napon akumulatora. Kada postigne 13.5-14V, sigurno je pun. Najjednostavnije rešenje podesavanja ovog trimera je uzeti akumulator iz auta posle duze voznje i spojiti ga na punjač. Posle desetak minuta punjenja treba potenciometar podesiti da upali zelenu LED diodu koja kaze pun akumulator.
 
-Imamo i tri LE diode. Zuta pokazuje kada je punjač priključen na gradsku mrežu. Zelena pokazuje kada je akumulator pun i kada je skinut sa punjača. I najzad crvena LE dioda pokazuje kada se vrši punjenje akumulatora. 
-
-Trimer potenciometrom jednom za uvek se podešava kada je akumulator pun. Za to trebamo voltmetar da merimo napon akumulatora. Kada postigne 13.5-14V, sigurno je pun. Isto se može uraditi i merenjem gustine sumporne kiseline ereometrom. (O tome procitajte u Maloj skoli elektronike u poglavlju "Punjac akumulatora RK3212"). Najjednostavnije rešenje podesavanja ovog trimera je uzeti akumulator iz auta posle duze voznje i spojiti ga na "Automatski punjač RK3213". Posle desetak minuta punjenja treba trimer potenciometar podesiti da upali zelenu led diodu koja kaze PUN akumulator.
-
-Moze se punjaču ugraditi i ampermetar 5 - 15A za kontrolu struje punjenja. On se montira iznad anode tiristora Tl, ka strelici "plus". Na njemu se moze primetiti da struja punjenja ne prestaje trenutno, nego lagano, postepeno. To se opaža i po ledovima zelenom i crvenom koji znaju da svetle istovremeno i trepere par minuta dok se ne odluce.
+Može se punjaču ugraditi i ampermetar 5-15 A za kontrolu struje punjenja. On se montira iznad anode tiristora Tl, ka strelici "plus". Na njemu se moze primetiti da struja punjenja ne prestaje trenutno, nego lagano, postepeno. To se opaža i po ledovima zelenom i crvenom koji znaju da svetle istovremeno, trepere i kolebaju se par minuta.
 
 Na tiristoru Tl imamo pad napona od 1.5V. Sa strujom od 5 A to je dovoljno da se tiristor greje. Da se ne bi grejao pričvrstite ga jednim vijkom za metalnu kutiju punjača i svakako dodajte malo silikonske paste radi boljeg odvodenja toplote. Neki specijalni hladnjak mislimo da nije potreban.
 
