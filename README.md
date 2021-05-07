@@ -54,18 +54,14 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
   https://create.arduino.cc/projecthub/FiDeNet/sms-controlled-relays-and-leds-2906ff
   https://lastminuteengineers.com/sim800l-gsm-module-arduino-tutorial/
   https://lastminuteengineers.com/a6-gsm-gprs-module-arduino-tutorial/
-- detektor metala
-  - detektor metala za cevi i armaturu u zidu (postoji kit)
-  - tragač strujnih vodova (mala škola elektronike str. 240)
-- glasovni prekidač (mala škola elektronike str. 241)
-
-### Stari telefoni
-
-- povezati baterije u banku baterija: 
+- detektori
+  - detektor metala (projekti, ima kit)
+  - detektor strujnih vodova (projekti)
+- glasovni prekidač (clap switch, ima kit)
+- napraviti banku baterija: 
   mobilni: 
     https://www.instructables.com/Mobile-Phone-Battery-Power-Bank/
     https://www.instructables.com/Reuse-Old-Phone-Batteries-As-a-Powerbank-earth-Day/
   laptop:
     https://www.instructables.com/REUSE-YOUR-OLD-LAPTOP-BATTERY-TO-MAKE-A-POWER-BANK/
-- postaviti stari mobilni kao nadzornu kameru https://alfred.camera/
-- iskoristiti bateriju, tastaturu, kamericu, zvučnik, senzore, elektromotor?
+- pregledati malu školu još jednom
