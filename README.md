@@ -65,3 +65,5 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
   laptop:
     https://www.instructables.com/REUSE-YOUR-OLD-LAPTOP-BATTERY-TO-MAKE-A-POWER-BANK/
 - pregledati malu školu još jednom
+
+Simboli: Ω, μ
