@@ -1,6 +1,14 @@
 # Autić
 
-Uputstvo: https://www.wikihow.com/Make-a-Simple-One%E2%80%90Direction-Electric-Toy-Car
+Točkovi se prave od čepova oblepljenih izolirkom. Konstrukcija se pravi od štapića za sladoled. 
+
+![](../slike/autic-kontrukcija.jpg)
+
+Osovine su šipkice (može drveni štapići, mine za hemijsku...), a držači osovina su slamčice.
+
+![](../slike/autic-motor.jpg)
+
+Na kraju se još stavi motor i baterija i spreman je!
 
 ## Delovi
 
@@ -16,3 +24,5 @@ Uputstvo: https://www.wikihow.com/Make-a-Simple-One%E2%80%90Direction-Electric-T
 - zupčanik
 - 2 šipkice od 10-ak cm
 - 2 slamčice
+
+Izvor: https://www.wikihow.com/Make-a-Simple-One%E2%80%90Direction-Electric-Toy-Car

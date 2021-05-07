@@ -20,13 +20,13 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
   - izmeriti napon i struju lampice, dizajnirati kolo http://www.hebeiltd.com.cn/calculator/v5/led.php
   - drveno srce sa crvenim lampicama: https://www.velleman.eu/products/view/?id=459310
 - probati mali elektromotor sa solarkom
-- autić (fale 2 slamčice): https://www.wikihow.com/Make-a-Simple-One%E2%80%90Direction-Electric-Toy-Car
-- sunčev instrument (vidi projekte)
+- autić (projekti, fale 2 slamčice)
 - temperaturna stanica: 
   - isprobati wifi module, slati temperaturne podatke na oblak
   - kasnije dodati ekran i solarno napajanje
     https://youtu.be/wEbGhYjn4QI
     https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
+- sunčev instrument (projekti)
 
 ### Nema delova
 - merač vlažnosti, fali potenciometar (projekti)
