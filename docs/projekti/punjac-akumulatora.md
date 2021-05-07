@@ -1,0 +1,57 @@
+# Automatski punjač za akumulator
+
+Kada kazemo automatski punjač akumulatora mislimo na automatsko isključenje kada se napuni. Akumulator se puni do nekih 14V i onda se smatra punim. Tada ga treba isključiti. To u automobilu radi regler.
+
+Sve to rade dva tiristora, jedna dioda i jedna zener dioda uz nekoliko otpornika. 
+
+## Šema
+
+![](../slike/ispravljac-za-punjac-akumulatora-shema.jpg)
+
+![](../slike/punjac-akumulatora-shema.jpg)
+
+Prvi dec punjača je standardan, tu su prekidač za uključenje na gradsku mrežu i osigurač torusni trafo 2X18V, 2X2.25A, grec ispravljač od 8-10A. Na desnoj strani šeme, imamo dve veze, plus i minus kojima trebamo da se povezemo sa sledećom šemom  - koja je srce automatskog punjača. 
+
+Osnovna odlika je jednostavna - sam se uključuje, sam se isključuje. U principu to je jedna klackalica, koja se sastoji iz dva tiristora od kojih je jedan onaj Tl, jači, predviđen za ukopčavanje akumulatora. Drugi, T2, je slabiji koji se nalazi na našoj tiristorskoj klackalici.
+
+Klackalica se podešava u ravnotezu, znate kako, pomeranje sredine, oslonca, na leva iii na desno. Mi to radimo sa trimer potenciometrom i Zener diodom 6.8V. Jednostavno namestimo do kog napona se akumulator puni, odnosno kada se akumulator isključuje sa punjača.
+
+Imamo i tri LE diode. Zuta pokazuje kada je punjač priključen na gradsku mrežu. Zelena pokazuje kada je akumulator pun i kada je skinut sa punjača. I najzad crvena LE dioda pokazuje kada se vrši punjenje akumulatora. 
+
+Trimer potenciometrom jednom za uvek se podešava kada je akumulator pun. Za to trebamo voltmetar da merimo napon akumulatora. Kada postigne 13.5-14V, sigurno je pun. Isto se može uraditi i merenjem gustine sumporne kiseline ereometrom. (O tome procitajte u Maloj skoli elektronike u poglavlju "Punjac akumulatora RK3212"). Najjednostavnije rešenje podesavanja ovog trimera je uzeti akumulator iz auta posle duze voznje i spojiti ga na "Automatski punjač RK3213". Posle desetak minuta punjenja treba trimer potenciometar podesiti da upali zelenu led diodu koja kaze PUN akumulator.
+
+Moze se punjaču ugraditi i ampermetar 5 - 15A za kontrolu struje punjenja. On se montira iznad anode tiristora Tl, ka strelici "plus". Na njemu se moze primetiti da struja punjenja ne prestaje trenutno, nego lagano, postepeno. To se opaža i po ledovima zelenom i crvenom koji znaju da svetle istovremeno i trepere par minuta dok se ne odluce.
+
+Na tiristoru Tl imamo pad napona od 1.5V. Sa strujom od 5 A to je dovoljno da se tiristor greje. Da se ne bi grejao pričvrstite ga jednim vijkom za metalnu kutiju punjača i svakako dodajte malo silikonske paste radi boljeg odvodenja toplote. Neki specijalni hladnjak mislimo da nije potreban.
+
+![](../slike/povezivanje-izvoda-torusa.jpg)
+
+![](../slike/trafo-montaza.jpg)
+
+Transformator je predviden za unutrasnju montažu u horizontalnom iii vertikalnom položaju, na suvom mestu gde je obezbeđena cirkulacija vazduha, dalje od izvora toplote. Montaža se vrši odgovarajućim priborom iii lepljenjem za podlogu silikonskim gitom. Budite pažljivi, obzirom da je transformator ekstremno osetljiv na mehanička oštećenja.
+
+## Delovi
+
+- T1, Tiristor, 12A, TIC126
+- T2, Tiristor, lA, T106
+- D, Dioda 1N4007
+- Z, Zener dioda l.4W, ZY6.8V
+- LE dioda, zuta
+- LE dioda, zelena
+- LE dioda, crvena
+- P, Trimer potenciometar, veliki, 5 KΩ
+- C, Elektrolitski kondenzator, stojeci, 100 μF, 25V min
+- Otpornik, 2W, 470Ω (zuta-ljubičasta-braon-zlatna)
+- Otpornik, 1/4W, 470Ω (zuta-ljubičasta-braon-zlatna)
+- Otpornik, 1/4W, 680Ω (plava-siva-braon-zlatna)
+- Otpornik, 1/4W, 1.2 KΩ (braon-crvena-crvena-zlatna)
+- Otpornik, 1/4W, 5.6 KΩ (zelena-plava-crvena-zlatna)
+- Otpornik, 1/4W, 10 KΩ (braon-crna-narandzasta-zlatna
+- Transformator 2 X 18V, 2 X 4A
+- Grec 8A min
+- Osigurač, tromi, O.4A
+- Kucište osigurača
+- Prekidač za uključivanje punjača
+- Indikator, PM2, 100μA
+
+Izvor: Mala škola elektronike (pdf, str. 81)

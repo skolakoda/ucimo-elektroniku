@@ -8,6 +8,8 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 
 ## TODO
 
+- dopuniti listi projekata
+
 ### Ima delova
 - robot:
   - napraviti ploču od drveta (elektronika za neupućene 318), pričvrstiti motore i ostale delove, 
@@ -33,26 +35,29 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
   - solarna ploča i bazer
   - fotootpornik, tajmer 555 i zvučnik (projekti)
   - solarna ploča i elektromotor sa pampurom drnda zvončiće
-- paljenje pecinih zvezda kad je mrak (treba relej)
+- paljenje svetla noću:
+  - paljenje pecinih zvezda kad je mrak (treba relej)
+  - paljenje led noću, treba fotootpornik i npn tranzistor https://youtu.be/eEBMTpxdPiE
 - automatsko zalivanje (treba relej za pumpu)
   https://www.instructables.com/Self-Watering-System-for-Plants-Using-Arduino-Uno/
-- regulator napona (treba transistor 7805 i kondenzatori)
-- paljenje led noću, treba fotootpornik i npn tranzistor https://youtu.be/eEBMTpxdPiE
 - trepćući led bez arduina:
   - tranzistori i kondenzatori: https://www.instructables.com/Simple-Blinking-LED-Circuit/
   - 555 timer https://www.elprocus.com/blinking-led-using-555-timer-ic/
-- solarni punjač (projekti)
-- punjač sa kontrolerom: prekida kolo kada dostigne određeni napon (za akumulatore 14V), mala škola elektronike.pdf (str. 81)
+- punjači
+  - solarni punjač (projekti)
+  - punjač akumulatora (projekti), 
+  - punjač akumulatora https://www.electronicshub.org/lead-acid-battery-charger-circuit/
+  - regulator napona (vidi članak, treba transistor 7805 i kondenzatori)
 - preko sms-a uključivati zalivanje (treba GSM modul, relej...)
   https://www.instructables.com/Control-the-relays-via-GPRS-SMS/
   https://randomnerdtutorials.com/control-a-12v-lamp-via-sms-with-arduino/
   https://create.arduino.cc/projecthub/FiDeNet/sms-controlled-relays-and-leds-2906ff
   https://lastminuteengineers.com/sim800l-gsm-module-arduino-tutorial/
   https://lastminuteengineers.com/a6-gsm-gprs-module-arduino-tutorial/
-- detektor metala za cevi i armaturu u zidu (postoji kit)
-- tragač strujnih vodova (mala škola elektronike str. 240)
+- detektor metala
+  - detektor metala za cevi i armaturu u zidu (postoji kit)
+  - tragač strujnih vodova (mala škola elektronike str. 240)
 - glasovni prekidač (mala škola elektronike str. 241)
-- stabilizator napona https://www.electronicshub.org/lead-acid-battery-charger-circuit/
 
 ### Stari telefoni
 

@@ -65,6 +65,7 @@
 7. [invertor](invertor.md)
 
 ### Literatura: 
+- Vladimir Krstić, *Mala škola elektronike*, Beograd, 1968.
 - Miomir Filipović, *Elektronika za početnike*, internet izdanje.
 - Gordon McComb i Earl Boysen, *Elektronika za neupućene*, Beograd 2006.
 - Ian Sinclair, John Dunton *Practical Electronics Handbook*, Newnes 2007.
