@@ -4,7 +4,7 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
 Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 
-> Upozorenje: Uvek povezivati uzemljenje pre napona, i uvek prvo prekidati napon pa uzemljenje! U suprotnom, neki moduli mogu biti uništeni.
+Uvek povezivati uzemljenje pre napona, i prvo prekidati napon pa uzemljenje! U suprotnom, neki moduli mogu biti uništeni.
 
 ## TODO
 
@@ -21,6 +21,8 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
   - drveno srce sa crvenim lampicama: https://www.velleman.eu/products/view/?id=459310
 - probati mali elektromotor sa solarkom
 - autić (projekti, fale 2 slamčice)
+  - dodati propeler
+  - dodati solarni pogon
 - temperaturna stanica: 
   - isprobati wifi module, slati temperaturne podatke na oblak
   - kasnije dodati ekran i solarno napajanje
@@ -29,12 +31,12 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 - sunčev instrument (projekti)
 
 ### Nema delova
-- merač vlažnosti, fali potenciometar (projekti)
+- merač vlažnosti sa ekserima, fali potenciometar (projekti)
 - jutarnji alarm:
-  - foto dioda i muzičko kolo
-  - solarna ploča i bazer
-  - fotootpornik, tajmer 555 i zvučnik (projekti)
-  - solarna ploča i elektromotor sa pampurom drnda zvončiće
+  - solarna ploča i elektromotor da drnda
+  - foto dioda (fali) i muzičko kolo
+  - solarna ploča i bazer (fali)
+  - fotootpornik (fali), tajmer 555 (fali) i zvučnik (projekti)
 - paljenje svetla noću:
   - paljenje pecinih zvezda kad je mrak (treba relej)
   - paljenje led noću, treba fotootpornik i npn tranzistor https://youtu.be/eEBMTpxdPiE
@@ -57,13 +59,11 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 - detektori
   - detektor metala (projekti, ima kit)
   - detektor strujnih vodova (projekti)
-- glasovni prekidač (clap switch, ima kit)
-- napraviti banku baterija: 
+- glasovni prekidač (*clap switch*, ima kit)
+- banka baterija: 
   mobilni: 
     https://www.instructables.com/Mobile-Phone-Battery-Power-Bank/
     https://www.instructables.com/Reuse-Old-Phone-Batteries-As-a-Powerbank-earth-Day/
   laptop:
     https://www.instructables.com/REUSE-YOUR-OLD-LAPTOP-BATTERY-TO-MAKE-A-POWER-BANK/
-- fm radio prijemnik
-
-Simboli: Ω, μ
+- fm radio prijemnik (projekti, videti kit)
