@@ -59,6 +59,13 @@ Stanje napunjenosti baterije može se odrediti na osnovu njene trenutne voltaže
 
 ![](slike/stanje-telefonske-baterije.jpg)
 
+Ako imamo četiri podeoka na indikatoru:
+1. When battery voltage is over 3.3V, it will illuminate 1 block
+2. When battery voltage is over 3.5V, it will illuminate 2 blocks
+3. When battery voltage is over 3.7V, it will illuminate 3 blocks
+4. When battery voltage is over 3.9V, it will illuminate 4 blocks
+5. When battery voltage is less than 3.3V, all blocks will be off
+
 ### Stanje napunjenosti baterije od 12 V
 
 ![](slike/stanje-napunjenosti-baterije.gif)

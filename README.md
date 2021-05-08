@@ -64,5 +64,6 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
     https://www.instructables.com/Reuse-Old-Phone-Batteries-As-a-Powerbank-earth-Day/
   laptop:
     https://www.instructables.com/REUSE-YOUR-OLD-LAPTOP-BATTERY-TO-MAKE-A-POWER-BANK/
+- fm radio prijemnik
 
 Simboli: Ω, μ
