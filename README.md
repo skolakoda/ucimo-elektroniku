@@ -7,25 +7,21 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 >Uvek povezivati uzemljenje pre napona, i prvo prekidati napon pa uzemljenje! U suprotnom, neki moduli mogu biti uništeni.
 
 ## TODO
-
-- dopuniti listi projekata
-
 ### Ima delova
-- robot:
-  - napraviti ploču od drveta (elektronika za neupućene 318), pričvrstiti motore i ostale delove, 
-  - doraditi skretanje (elektronika za neupućene 321)
-  - staviti elastičan materijal na senzor zvuka jer hvata vibracije motora
 - lampice:
   - isprobati lampice uporedno (probati razdvojene grupe po 3 redno vezane)
   - izmeriti napon i struju lampice, dizajnirati kolo http://www.hebeiltd.com.cn/calculator/v5/led.php
   - drveno srce sa crvenim lampicama: https://www.velleman.eu/products/view/?id=459310
-- probati mali elektromotor sa solarkom (zalemiti mu žice)
 - temperaturna stanica: 
   - isprobati wifi module, slati temperaturne podatke na oblak
   - kasnije dodati ekran i solarno napajanje
     https://youtu.be/wEbGhYjn4QI
     https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
 - sunčev instrument (projekti)
+- robot:
+  - napraviti ploču od drveta (elektronika za neupućene 318), pričvrstiti motore i ostale delove, 
+  - doraditi skretanje (elektronika za neupućene 321)
+  - staviti elastičan materijal na senzor zvuka jer hvata vibracije motora
 - autić (projekti, fale slamčice)
   - dodati propeler
   - dodati solarni pogon

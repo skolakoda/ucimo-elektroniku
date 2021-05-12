@@ -24,9 +24,21 @@ PUNJIVE (sekundarne) ćelije:
 
 ## Povezivanje baterija
 
-Baterije tipa AAA, AA, C i D daju napon od 1,5 V, nasuprot pravouganoj bateriji od 9 V. Možete upotrebiti više baterija od 1,5 V da bi dobili željeni napon. Kada pozitivan pol jedne baterije povezete s negativnim polom druge (redna veza), dobićete 3 V. Baterije se smeštaju u držače baterija. Kada četiri baterije napona 1,5 V stavite u jedan držač one zajedno daju napon od 6 V.
+### Redna veza
 
-Za mnoge projekte kojima je potreban napon od 9 volti bolje je šest AA baterija manjeg napona (1,5 V) nego jednu bateriju od 9 V. Baterija tipa AA duže traju. Držač sa šest AA baterija objedinjeno sadrži više hemikalija od jedne baterije od 9 V, pa duže može da generiše električnu struju.
+![](slike/redna-veza-baterija.jpg)
+
+Rednim povezivanjem baterija dobija se veći napon.
+
+Baterije tipa AAA, AA, C i D daju napon od 1,5 V. Kada pozitivan pol jedne baterije povežemo s negativnim polom druge, dobićemo 3 V. Kada četiri baterije od 1,5 V stavimo u jedan držač one zajedno daju napon od 6 V. 
+
+Ako nam treba napon od 9 volti obično je bolje povezati šest AA baterija od 1,5 V nego jednu bateriju od 9 V. AA baterije AA duže traju jer objedinjeno sadrže više hemikalija.
+
+### Uporedna veza
+
+![](slike/uporedna-veza-baterija.jpg)
+
+Paralelnim povezivanjem baterija dobija se veća amperaža, dok napon ostaje isti.
 
 ## Kapacitet i trajanje baterije
 
