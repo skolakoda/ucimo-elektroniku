@@ -1,12 +1,10 @@
 # Merenja multimetrom
 
-Pošto ste uključili multimetar i kalibrisali ga, možete obaviti prva merenja. 
-
 ## Merenje napona
 
-Napon se može meriti u svim tačkama kola, a ne samo na polovima baterije. Npr, možemo meriti napon preko otpornika ili LED diode. Kada merimo napon pojedine komponenete kačimo multimer za njene nožice (crna sonda može na uzemljenje?), a kada merimo celo kolo onda za napajanje.
+Napon se može meriti u svim tačkama kola. Npr, možemo meriti napon preko otpornika ili LED diode. Kada merimo napon pojedine komponenete kačimo multimer za njene nožice, a kada merimo celo kolo onda za napajanje.
 
-Ako kolo emituje oscilujuće signale, oni se mogu menjati tako brzo da ih ne možemo izmeriti multimetrom. Odgovaraja oprema za merenje brzomenjajućih signala su logička sonda i osciloskop.
+Ako kolo emituje oscilujuće signale, oni se mogu menjati prebrzo pa ih ne možemo meriti multimetrom. Oprema za merenje brzomenjajućih signala su logička sonda i osciloskop.
 
 ## Merenje struje
 

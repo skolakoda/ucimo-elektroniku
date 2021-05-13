@@ -8,10 +8,6 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 
 ## TODO
 ### Ima delova
-- lampice:
-  - isprobati lampice uporedno (probati razdvojene grupe po 3 redno vezane)
-  - izmeriti napon i struju lampice, dizajnirati kolo http://www.hebeiltd.com.cn/calculator/v5/led.php
-  - drveno srce sa crvenim lampicama: https://www.velleman.eu/products/view/?id=459310
 - temperaturna stanica: 
   - isprobati wifi module, slati temperaturne podatke na oblak
   - kasnije dodati ekran i solarno napajanje
@@ -28,11 +24,7 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 
 ### Nema delova
 - merač vlažnosti sa ekserima, fali potenciometar (projekti)
-- jutarnji alarm (cekam kit):
-  - solarna ploča i elektromotor da drnda
-  - solarna ploča i bazer (fali)
-  - foto dioda (fali) i muzičko kolo
-  - fotootpornik (fali), tajmer 555 (fali) i zvučnik (projekti)
+- jutarnji alarm (cekam kit)
 - paljenje svetla noću:
   - paljenje pecinih zvezda kad je mrak (treba relej)
   - paljenje led noću, treba fotootpornik i npn tranzistor https://youtu.be/eEBMTpxdPiE
