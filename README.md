@@ -21,6 +21,10 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 - autić (projekti, fale slamčice)
   - dodati propeler
   - dodati solarni pogon
+- laser prati infracrveno
+  - https://www.instructables.com/Arduino-Nano-Infrared-Obstacle-Avoidance-Sensor-Wi/
+  - https://www.instructables.com/Arduino-Laser-Turret/
+  - https://create.arduino.cc/projecthub/hockey1alex/laser-turret-ef958b
 
 ### Nema delova
 - merač vlažnosti sa ekserima, fali potenciometar (projekti)
