@@ -15,9 +15,9 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
     https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
 - sunčev instrument (projekti)
 - robot:
+  - osposobiti robota da radi na prekidač
   - napraviti ploču od drveta (elektronika za neupućene 318), pričvrstiti motore i ostale delove, 
   - doraditi skretanje (elektronika za neupućene 321)
-  - staviti elastičan materijal na senzor zvuka jer hvata vibracije motora
 - autić (projekti, fale slamčice)
   - dodati propeler
   - dodati solarni pogon
