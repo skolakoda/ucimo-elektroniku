@@ -9,7 +9,10 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 ## TODO
 ### Ima delova
 - temperaturna stanica: 
-  - isprobati wifi module, slati temperaturne podatke na oblak
+  - isprobati wifi module (ESP8266)
+    https://lastminuteengineers.com/esp8266-nodemcu-arduino-tutorial/
+  - slati temperaturne podatke na oblak
+    https://lastminuteengineers.com/bme280-esp8266-weather-station/
   - kasnije dodati ekran i solarno napajanje
     https://youtu.be/wEbGhYjn4QI
     https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
