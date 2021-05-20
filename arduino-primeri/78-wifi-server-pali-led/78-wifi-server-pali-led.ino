@@ -26,7 +26,7 @@ void setup(void)
     Serial.print(".");
   }
   Serial.println("");
-  Serial.print("server radi na: ");
+  Serial.print("server ide na: ");
   Serial.println(WiFi.localIP());
 
   server.on("/", handleRoot);
@@ -63,7 +63,10 @@ void loop(void)
 
 void handleRoot()
 {
-  server.send(200, "text/plain", "zdravo svete!");
+  LED1status = LOW;
+  LED2status = LOW;
+  Serial.println("GPIO7 Status: OFF | GPIO6 Status: OFF");
+  server.send(200, "text/html", createHTML(LED1status,LED2status)); 
 }
 
 void handleNotFound()

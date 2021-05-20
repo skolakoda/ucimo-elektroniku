@@ -30,7 +30,7 @@ void setup(void)
     Serial.print(".");
   }
   Serial.println("");
-  Serial.print("server radi na: ");
+  Serial.print("server ide na: ");
   Serial.println(WiFi.localIP());
 
   server.on("/", handleRoot);
