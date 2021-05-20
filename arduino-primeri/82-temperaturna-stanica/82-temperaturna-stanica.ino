@@ -47,25 +47,25 @@ void handleNotFound(){
 }
 
 String createHTML(){
-  String ptr = "<!DOCTYPE html> <html>\n";
-  ptr +="<head><meta charset=\"utf-8\" >\n";
-  ptr +="<title>Vremenski izveštaj</title>\n";
-  ptr +="<style>\n";
-  ptr +="body {font-family:Helvetica; text-align:center; padding:20px; color:#444;} \n";
-  ptr +="p {font-size: 24px; }\n";
-  ptr +="</style>\n";
-  ptr +="</head>\n";
-  ptr +="<body>\n";
+  String html = "<!DOCTYPE html> <html>\n";
+  html +="<head><meta charset=\"utf-8\" >\n";
+  html +="<title>Временски извештај</title>\n";
+  html +="<style>\n";
+  html +="body {font-family:Helvetica; text-align:center; padding:20px; color:#444;} \n";
+  html +="p {font-size: 24px; }\n";
+  html +="</style>\n";
+  html +="</head>\n";
+  html +="<body>\n";
 
-  ptr +="<h1>Vremenski izveštaj</h1>\n";  
-  ptr +="<p>Temperatura: ";
-  ptr +=temperatura;
-  ptr +=" °C</p>";
-  ptr +="<p>Vlažnost vazduha: ";
-  ptr +=vlaznost;
-  ptr +=" %</p>";
+  html +="<h1>Временски извештај</h1>\n";  
+  html +="<p>Температура: ";
+  html +=(int)round(temperatura);
+  html +=" °C</p>";
+  html +="<p>Влажност ваздуха: ";
+  html +=(int)round(vlaznost);
+  html +=" %</p>";
   
-  ptr +="</body>\n";
-  ptr +="</html>\n";
-  return ptr;
+  html +="</body>\n";
+  html +="</html>\n";
+  return html;
 }
