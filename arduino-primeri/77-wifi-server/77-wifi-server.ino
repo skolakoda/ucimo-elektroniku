@@ -3,25 +3,29 @@
 #include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>
 
-const char* ssid = "skolakoda";
-const char* password = "skolakoda523";
+const char *ssid = "skolakoda";
+const char *password = "skolakoda523";
 
 ESP8266WebServer server(80);
 
-void handleRoot() {
+void handleRoot()
+{
   server.send(200, "text/plain", "zdravo svete!");
 }
 
-void handleNotFound() {
+void handleNotFound()
+{
   server.send(404, "text/plain", "stranica ne postoji\n");
 }
 
-void setup(void) {
+void setup(void)
+{
   Serial.begin(115200);
   WiFi.mode(WIFI_STA);
   WiFi.begin(ssid, password);
 
-  while (WiFi.status() != WL_CONNECTED) {
+  while (WiFi.status() != WL_CONNECTED)
+  {
     delay(500);
     Serial.print(".");
   }
@@ -30,16 +34,15 @@ void setup(void) {
   Serial.println(WiFi.localIP());
 
   server.on("/", handleRoot);
-
   server.on("/prd", []() {
     server.send(200, "text/plain", "ova stranica radi");
   });
-
   server.onNotFound(handleNotFound);
 
   server.begin();
 }
 
-void loop(void) {
+void loop(void)
+{
   server.handleClient();
 }

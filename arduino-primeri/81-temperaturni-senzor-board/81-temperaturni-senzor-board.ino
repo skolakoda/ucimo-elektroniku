@@ -1,17 +1,19 @@
 // https://lastminuteengineers.com/esp8266-dht11-dht22-web-server-tutorial/
 #include "DHT.h"
 
-uint8_t DHTPin = D7; // D8 ne radi 
+uint8_t DHTPin = D7;    // D8 ne radi
 DHT dht(DHTPin, DHT11); // Initialize DHT sensor
 
-void setup() {
+void setup()
+{
   Serial.begin(115200);
   delay(100);
   pinMode(DHTPin, INPUT);
-  dht.begin();              
+  dht.begin();
 }
 
-void loop() {
+void loop()
+{
   float temperature = dht.readTemperature();
   float humidity = dht.readHumidity();
   Serial.print("Temperatura: ");
