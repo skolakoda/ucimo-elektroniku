@@ -8,9 +8,13 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 
 ## TODO
 ### Ima delova
-- temperaturna stanica: 
+- wifi mikrokontroler Wemos D1 mini ESP8266
   - isprobati wifi module (ESP8266)
     https://lastminuteengineers.com/esp8266-nodemcu-arduino-tutorial/
+    https://makersportal.com/blog/2019/6/12/wemos-d1-mini-esp8266-arduino-wifi-board
+    https://www.youtube.com/watch?v=4QpOErbx0nM
+  - postaviti lokalni server sa podacima
+- temperaturna stanica: 
   - slati temperaturne podatke na oblak
     https://lastminuteengineers.com/bme280-esp8266-weather-station/
   - kasnije dodati ekran i solarno napajanje
@@ -28,6 +32,13 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
   - https://www.instructables.com/Arduino-Nano-Infrared-Obstacle-Avoidance-Sensor-Wi/
   - https://www.instructables.com/Arduino-Laser-Turret/
   - https://create.arduino.cc/projecthub/hockey1alex/laser-turret-ef958b
+- tesla coil https://www.aliexpress.com/item/1005001603256594.html
+- Arduino UNO + ESP8266 WiFi Module 
+  https://www.instructables.com/Arduino-UNO-ESP8266-WiFi-Module/
+  https://create.arduino.cc/projecthub/imjeffparedes/add-wifi-to-arduino-uno-663b9e
+  https://electropeak.com/learn/using-esp8266-wifi-module-arduino-ide-full-guide/
+  https://create.arduino.cc/projecthub/hbolanos2001/wifi-esp8266-and-dht22-sensor-09d455?ref=search&ref_id=ESP8266&offset=8
+  https://create.arduino.cc/projecthub/ahmedibrrahim/iot-using-esp8266-01-and-arduino-afa35e?ref=search&ref_id=ESP8266&offset=12
 
 ### Nema delova
 - merač vlažnosti sa ekserima, fali potenciometar (projekti)
@@ -37,6 +48,7 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
   - paljenje led noću, treba fotootpornik i npn tranzistor https://youtu.be/eEBMTpxdPiE
 - automatsko zalivanje (treba relej za pumpu)
   https://www.instructables.com/Self-Watering-System-for-Plants-Using-Arduino-Uno/
+  https://create.arduino.cc/projecthub/ammarshahid572/automated-plant-watering-system-cb23d9?ref=search&ref_id=ESP8266&offset=46
 - trepćući led bez arduina:
   - tranzistori i kondenzatori: https://www.instructables.com/Simple-Blinking-LED-Circuit/
   - 555 timer https://www.elprocus.com/blinking-led-using-555-timer-ic/
