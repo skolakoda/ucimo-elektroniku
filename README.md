@@ -10,8 +10,7 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 ### Ima delova
 - vremenska stanica:
   - dodati ekran
-    https://lastminuteengineers.com/oled-display-esp8266-tutorial/
-  -  dodati solarno napajanje
+  - dodati solarno napajanje
     https://youtu.be/wEbGhYjn4QI
     https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
 - sunčev instrument (projekti)

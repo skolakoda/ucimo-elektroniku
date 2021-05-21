@@ -1,7 +1,7 @@
-// https://subscription.packtpub.com/book/hardware_and_creative/9781787288102/1/ch01lvl1sec15/connecting-the-esp8266-to-a-cloud-server
 // https://dweet.io/get/latest/dweet/for/vremenska-stanica-zvezdara
 #include <ESP8266WiFi.h>
 #include "DHT.h"
+#include <LiquidCrystal_I2C.h>
 
 const char *ssid = "skolakoda";
 const char *password = "skolakoda523";
@@ -9,48 +9,48 @@ const char *host = "dweet.io";
 
 uint8_t DHTPin = D7;
 DHT dht(DHTPin, DHT11);
-
-float temperatura;
-float vlaznost;
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 void setup()
 {
   Serial.begin(115200);
   pinMode(DHTPin, INPUT);
   dht.begin();
+  lcd.init();
   delay(10);
 
-  Serial.println();
-  Serial.println("Connecting to wifi ");
+  Serial.println("\npovezivanje na wifi ");
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED)
   {
     delay(500);
     Serial.print(".");
   }
-
-  Serial.println("");
-  Serial.println("WiFi connected");
+  Serial.println("\npovezan na mrezu ");
 }
 
 void loop()
 {
-  delay(5000);
-  temperatura = dht.readTemperature();
-  vlaznost = dht.readHumidity();
+  String temperatura = String(round(dht.readTemperature()), 0);
+  String vlaznost = String(round(dht.readHumidity()), 0);
 
-  Serial.println("connecting to cloud ");
-  // WiFiClient class to create TCP connections
+  lcd.clear();
+  lcd.backlight();
+  lcd.setCursor(0, 0);
+  lcd.print("Temperatura: " + temperatura);
+  lcd.setCursor(0, 1);
+  lcd.print("Vlaznost: " + vlaznost + "%");
+
+  Serial.println("povezivanje na oblak ");
   WiFiClient client;
   if (!client.connect(host, 80))
   {
-    Serial.println("connection failed");
+    Serial.println("povezivanje neuspelo!");
     return;
   }
 
-  String url = "/dweet/for/vremenska-stanica-zvezdara?temperatura="+String(temperatura, 1)+"&vlaznost="+String(vlaznost, 1);
-  Serial.print("Requesting URL: ");
-  Serial.println(url);
+  String url = "/dweet/for/vremenska-stanica-zvezdara?temperatura=" + temperatura + "&vlaznost=" + vlaznost;
+  Serial.println("temperatura: " + temperatura + ", vlaznost:" + vlaznost);
   client.print(String("GET ") + url + " HTTP/1.1\r\n" +
                "Host: " + host + "\r\n" +
                "Connection: close\r\n\r\n");
@@ -72,6 +72,6 @@ void loop()
     String line = client.readStringUntil('\r');
     Serial.print(line);
   }
-  Serial.println();
-  Serial.println("closing connection");
+  // TODO: azurirati jednom u minuti
+  delay(5000);
 }
