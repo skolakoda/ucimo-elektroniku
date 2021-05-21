@@ -8,16 +8,16 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 
 ## TODO
 ### Ima delova
-- wifi mikrokontroler Wemos D1 mini ESP8266
-  - isprobati wifi module (ESP8266)
-    https://lastminuteengineers.com/esp8266-nodemcu-arduino-tutorial/
-    https://makersportal.com/blog/2019/6/12/wemos-d1-mini-esp8266-arduino-wifi-board
-    https://www.youtube.com/watch?v=4QpOErbx0nM
-  - postaviti lokalni server sa podacima
-- temperaturna stanica: 
+- temperaturna stanica:
   - slati temperaturne podatke na oblak
+    https://stem.ubidots.com/app/devices/
+    https://help.ubidots.com/en/articles/1440348-connect-an-adafruit-feather-huzzah-esp8266-to-ubidots-over-http
+    https://subscription.packtpub.com/book/hardware_and_creative/9781787288102/1/ch01lvl1sec15/connecting-the-esp8266-to-a-cloud-server
+    https://www.instructables.com/Getting-Started-With-ESP8266-and-AskSensors-IoT-Pl/
     https://lastminuteengineers.com/bme280-esp8266-weather-station/
-  - kasnije dodati ekran i solarno napajanje
+  - dodati ekran
+    https://lastminuteengineers.com/oled-display-esp8266-tutorial/
+  -  dodati solarno napajanje
     https://youtu.be/wEbGhYjn4QI
     https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
 - sunčev instrument (projekti)

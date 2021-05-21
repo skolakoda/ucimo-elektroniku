@@ -10,7 +10,7 @@
 const char *ssid = "lokalna-mreza";
 const char *password = "123456789";
 
-#define DHTPIN D7     // Digital pin connected to the DHT sensor
+#define DHTPIN D7
 #define DHTTYPE DHT11 // or DHT22, DHT21
 
 DHT dht(DHTPIN, DHTTYPE);
@@ -25,6 +25,7 @@ const char index_html[] PROGMEM = R"rawliteral(
 <!DOCTYPE HTML><html>
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="refresh" content="10" >
   <title>Vremenska stanica</title>
   <style>
     html {
@@ -45,38 +46,15 @@ const char index_html[] PROGMEM = R"rawliteral(
   <h2>Vremenska stanica</h2>
   <p>
     <span class="dht-labels">Temperatura</span> 
-    <span id="temperature">%TEMPERATURE%</span>
+    <span>%TEMPERATURE%</span>
     <sup class="units">&deg;C</sup>
   </p>
   <p>
     <span class="dht-labels">Vlažnost</span>
-    <span id="humidity">%HUMIDITY%</span>
+    <span>%HUMIDITY%</span>
     <sup class="units">%</sup>
   </p>
 </body>
-<script>
-setInterval(function ( ) {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("temperature").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "/temperature", true);
-  xhttp.send();
-}, 10000 ) ;
-
-setInterval(function ( ) {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("humidity").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "/humidity", true);
-  xhttp.send();
-}, 10000 ) ;
-</script>
 </html>)rawliteral";
 
 // Replaces placeholder with values
@@ -108,12 +86,6 @@ void setup()
 
   server.on("/", HTTP_GET, [](AsyncWebServerRequest *request) {
     request->send_P(200, "text/html", index_html, processor);
-  });
-  server.on("/temperature", HTTP_GET, [](AsyncWebServerRequest *request) {
-    request->send_P(200, "text/plain", String(temperatura).c_str());
-  });
-  server.on("/humidity", HTTP_GET, [](AsyncWebServerRequest *request) {
-    request->send_P(200, "text/plain", String(vlaznost).c_str());
   });
 
   server.begin();
