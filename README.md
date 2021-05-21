@@ -8,10 +8,7 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 
 ## TODO
 ### Ima delova
-- temperaturna stanica:
-  - slati temperaturne podatke na oblak
-    https://www.instructables.com/Getting-Started-With-ESP8266-and-AskSensors-IoT-Pl/
-    https://lastminuteengineers.com/bme280-esp8266-weather-station/
+- vremenska stanica:
   - dodati ekran
     https://lastminuteengineers.com/oled-display-esp8266-tutorial/
   -  dodati solarno napajanje

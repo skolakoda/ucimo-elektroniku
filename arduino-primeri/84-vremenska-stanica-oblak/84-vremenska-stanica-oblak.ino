@@ -1,14 +1,24 @@
 // https://subscription.packtpub.com/book/hardware_and_creative/9781787288102/1/ch01lvl1sec15/connecting-the-esp8266-to-a-cloud-server
 #include <ESP8266WiFi.h>
+#include "DHT.h"
 
 const char *ssid = "skolakoda";
 const char *password = "skolakoda523";
 const char *host = "dweet.io";
 
+uint8_t DHTPin = D7;
+DHT dht(DHTPin, DHT11);
+
+float temperatura;
+float vlaznost;
+
 void setup()
 {
   Serial.begin(115200);
+  pinMode(DHTPin, INPUT);
+  dht.begin();
   delay(10);
+
   Serial.println();
   Serial.println("Connecting to wifi ");
   WiFi.begin(ssid, password);
@@ -25,18 +35,20 @@ void setup()
 void loop()
 {
   delay(5000);
+  temperatura = dht.readTemperature();
+  vlaznost = dht.readHumidity();
+
   Serial.println("connecting to cloud ");
-  // Use WiFiClient class to create TCP connections
+  // WiFiClient class to create TCP connections
   WiFiClient client;
-  const int httpPort = 80;
-  if (!client.connect(host, httpPort))
+  if (!client.connect(host, 80))
   {
     Serial.println("connection failed");
     return;
   }
 
   // https://dweet.io/get/latest/dweet/for/vremenska-stanica-zvezdara
-  String url = "/dweet/for/vremenska-stanica-zvezdara?temperatura=23&vlaznost=66";
+  String url = "/dweet/for/vremenska-stanica-zvezdara?temperatura="+String(temperatura, 1)+"&vlaznost="+String(vlaznost, 1);
   Serial.print("Requesting URL: ");
   Serial.println(url);
   client.print(String("GET ") + url + " HTTP/1.1\r\n" +
