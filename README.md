@@ -10,9 +10,6 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 ### Ima delova
 - temperaturna stanica:
   - slati temperaturne podatke na oblak
-    https://stem.ubidots.com/app/devices/
-    https://help.ubidots.com/en/articles/1440348-connect-an-adafruit-feather-huzzah-esp8266-to-ubidots-over-http
-    https://subscription.packtpub.com/book/hardware_and_creative/9781787288102/1/ch01lvl1sec15/connecting-the-esp8266-to-a-cloud-server
     https://www.instructables.com/Getting-Started-With-ESP8266-and-AskSensors-IoT-Pl/
     https://lastminuteengineers.com/bme280-esp8266-weather-station/
   - dodati ekran
