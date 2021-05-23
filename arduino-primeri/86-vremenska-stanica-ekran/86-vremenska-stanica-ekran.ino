@@ -38,7 +38,7 @@ void loop()
   String vlaznost = String(round(humid), 0);
   String osecaj = String(round(heatIndex), 0);
   
-  Serial.println("temperatura: " + temperatura + "vlaznost: " + vlaznost + "osecaj: " + osecaj);
+  Serial.println("\ntemperatura: " + temperatura + ", vlaznost: " + vlaznost + ", osecaj: " + osecaj);
 
   prikaziPodatke(temperatura, osecaj);
   posaljiNaOblak(temperatura, vlaznost, osecaj);
