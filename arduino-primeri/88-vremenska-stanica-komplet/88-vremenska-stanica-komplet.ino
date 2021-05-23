@@ -10,6 +10,14 @@ const char *password = "skolakoda523";
 const char *host = "dweet.io";
 
 uint8_t DHTPin = D7;
+uint8_t buttonPin = D8;
+
+int intervalCloud = 60000; // jedan minut
+int intervalBtn = 200;
+unsigned long time_1 = 0;
+unsigned long time_2 = 0;
+bool upaljeno = false;
+
 DHT dht(DHTPin, DHT11);
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
@@ -35,30 +43,42 @@ void loop()
   float temp = dht.readTemperature();
   float humid = dht.readHumidity();
   float heatIndex = dht.computeHeatIndex(temp, humid, false);
-  
+
   String temperatura = String(round(temp), 0);
   String vlaznost = String(round(humid), 0);
   String osecaj = String(round(heatIndex), 0);
-  
-  Serial.println("\ntemperatura: " + temperatura + ", vlaznost: " + vlaznost + ", osecaj: " + osecaj);
 
-  prikaziPodatke(temperatura, osecaj);
-  posaljiNaOblak(temperatura, vlaznost, osecaj);
+  if (millis() > time_2 + intervalBtn)
+  {
+    time_2 = millis();
+    if (digitalRead(buttonPin))
+      upaljeno = !upaljeno;
 
-  delay(60000); // azurira jednom u minuti
+    if (upaljeno)
+      lcd.backlight();
+    else
+      lcd.noBacklight();
+  }
+
+  if (millis() > time_1 + intervalCloud)
+  {
+    time_1 = millis();
+    Serial.println("\ntemperatura: " + temperatura + ", vlaznost: " + vlaznost + ", osecaj: " + osecaj);
+    prikaziPodatke(temperatura, osecaj);
+    posaljiNaOblak(temperatura, vlaznost, osecaj);
+  }
 }
 
 void prikaziPodatke(String temperatura, String osecaj)
 {
   lcd.clear();
-  lcd.backlight();
   lcd.setCursor(0, 0);
   lcd.print("Temperatura: " + temperatura);
-  lcd.setCursor(15,0);
+  lcd.setCursor(15, 0);
   lcd.write(0xdf); // º
   lcd.setCursor(0, 1);
   lcd.print("Osecaj:      " + osecaj);
-  lcd.setCursor(15,1);
+  lcd.setCursor(15, 1);
   lcd.write(0xdf); // º
 }
 

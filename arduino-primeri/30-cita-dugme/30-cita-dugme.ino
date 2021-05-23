@@ -5,10 +5,10 @@
   http://www.arduino.cc/en/Tutorial/DigitalReadSerial
 */
 
-int buttonPin = 2;
+int buttonPin = D8;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   pinMode(buttonPin, INPUT);
 }
 
