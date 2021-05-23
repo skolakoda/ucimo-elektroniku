@@ -1,14 +1,12 @@
 /*
-  Potrebno prikačiti dugme na pin 2 (minus u 0)
-  Čita digitalni ulaz sa pina 2 i štampa izlaz na Serial Monitor
-
+  Prikačiti dugme na pin 2 (minus u 0)
   http://www.arduino.cc/en/Tutorial/DigitalReadSerial
 */
 
-int buttonPin = D8;
+int buttonPin = 2;
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   pinMode(buttonPin, INPUT);
 }
 
