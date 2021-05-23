@@ -38,8 +38,11 @@ void loop()
   lcd.backlight();
   lcd.setCursor(0, 0);
   lcd.print("Temperatura: " + temperatura);
+  lcd.setCursor(15,0);
+  lcd.write(0xdf); // º
+
   lcd.setCursor(0, 1);
-  lcd.print("Vlaznost: " + vlaznost + "%");
+  lcd.print("Vlaznost:    " + vlaznost + "%");
 
   Serial.println("povezivanje na oblak ");
   WiFiClient client;
@@ -72,6 +75,6 @@ void loop()
     String line = client.readStringUntil('\r');
     Serial.print(line);
   }
-  // TODO: azurirati jednom u minuti
-  delay(5000);
+
+  delay(60000); // azurira jednom u minuti
 }
