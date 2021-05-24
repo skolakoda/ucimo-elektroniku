@@ -12,10 +12,10 @@ const char *host = "dweet.io";
 uint8_t DHTPin = D7;
 uint8_t buttonPin = D8;
 
-int intervalCloud = 60000; // jedan minut
-int intervalBtn = 200;
-unsigned long time_1 = 0;
-unsigned long time_2 = 0;
+int oblakInterval = 60000; // jedan minut
+int dugmeInterval = 200;
+unsigned long vreme1 = 0;
+unsigned long vreme2 = 0;
 bool upaljeno = false;
 String temperatura = "0", vlaznost = "0", osecaj = "0";
 
@@ -52,16 +52,16 @@ void loop()
     lcd.noBacklight();
 
   // sluša dugme
-  if (millis() > time_2 + intervalBtn)
+  if (millis() > vreme2 + dugmeInterval)
   {
-    time_2 = millis();
+    vreme2 = millis();
     if (digitalRead(buttonPin)) upaljeno = !upaljeno;
   }
 
   // ažurira podatke
-  if (millis() > time_1 + intervalCloud)
+  if (millis() > vreme1 + oblakInterval)
   {
-    time_1 = millis();
+    vreme1 = millis();
     prikaziPodatke();
     posaljiNaOblak();
   }
