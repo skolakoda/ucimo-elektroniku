@@ -1,6 +1,6 @@
 // http://dweet.io/follow/vremenska-stanica-zvezdara
-// https://dweet.io:443/get/dweets/for/vremenska-stanica-zvezdara
-// https://dweet.io/get/latest/dweet/for/vremenska-stanica-zvezdara
+// https://dweet.io/get/dweets/for/vremenska-stanica-zvezdara
+
 #include <ESP8266WiFi.h>
 #include "DHT.h"
 #include <LiquidCrystal_I2C.h>
@@ -17,6 +17,7 @@ int intervalBtn = 200;
 unsigned long time_1 = 0;
 unsigned long time_2 = 0;
 bool upaljeno = false;
+String temperatura = "0", vlaznost = "0", osecaj = "0";
 
 DHT dht(DHTPin, DHT11);
 LiquidCrystal_I2C lcd(0x27, 16, 2);
@@ -29,6 +30,9 @@ void setup()
   lcd.init();
   delay(10);
 
+  izvrsiMerenja();
+  prikaziPodatke();
+
   Serial.println("\npovezivanje na wifi ");
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED)
@@ -40,36 +44,43 @@ void setup()
 
 void loop()
 {
+  izvrsiMerenja();
+
+  if (upaljeno)
+    lcd.backlight();
+  else
+    lcd.noBacklight();
+
+  // sluša dugme
+  if (millis() > time_2 + intervalBtn)
+  {
+    time_2 = millis();
+    if (digitalRead(buttonPin)) upaljeno = !upaljeno;
+  }
+
+  // ažurira podatke
+  if (millis() > time_1 + intervalCloud)
+  {
+    time_1 = millis();
+    prikaziPodatke();
+    posaljiNaOblak();
+  }
+}
+
+void izvrsiMerenja()
+{
   float temp = dht.readTemperature();
   float humid = dht.readHumidity();
   float heatIndex = dht.computeHeatIndex(temp, humid, false);
 
-  String temperatura = String(round(temp), 0);
-  String vlaznost = String(round(humid), 0);
-  String osecaj = String(round(heatIndex), 0);
+  temperatura = String(round(temp), 0);
+  vlaznost = String(round(humid), 0);
+  osecaj = String(round(heatIndex), 0);
 
-  if (millis() > time_2 + intervalBtn)
-  {
-    time_2 = millis();
-    if (digitalRead(buttonPin))
-      upaljeno = !upaljeno;
-
-    if (upaljeno)
-      lcd.backlight();
-    else
-      lcd.noBacklight();
-  }
-
-  if (millis() > time_1 + intervalCloud)
-  {
-    time_1 = millis();
-    Serial.println("\ntemperatura: " + temperatura + ", vlaznost: " + vlaznost + ", osecaj: " + osecaj);
-    prikaziPodatke(temperatura, osecaj);
-    posaljiNaOblak(temperatura, vlaznost, osecaj);
-  }
+  Serial.println("\ntemperatura: " + temperatura + ", vlaznost: " + vlaznost + ", osecaj: " + osecaj);
 }
 
-void prikaziPodatke(String temperatura, String osecaj)
+void prikaziPodatke()
 {
   lcd.clear();
   lcd.setCursor(0, 0);
@@ -82,7 +93,7 @@ void prikaziPodatke(String temperatura, String osecaj)
   lcd.write(0xdf); // º
 }
 
-void posaljiNaOblak(String temperatura, String vlaznost, String osecaj)
+void posaljiNaOblak()
 {
   Serial.println("povezivanje na oblak ");
   WiFiClient client;

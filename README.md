@@ -9,10 +9,11 @@ Ideje: https://www.electronicshub.org/electronics-projects-ideas/
 ## TODO
 ### Ima delova
 - vremenska stanica:
-  - dodati ekran
+  - štednja baterije (deep sleep)
   - dodati solarno napajanje
     https://youtu.be/wEbGhYjn4QI
     https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
+  - spakovati
 - sunčev instrument (projekti)
 - robot:
   - osposobiti robota da radi na prekidač
