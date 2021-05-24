@@ -2,15 +2,12 @@
 
 Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
-Ideje: https://www.electronicshub.org/electronics-projects-ideas/
-
->Uvek povezivati uzemljenje pre napona, i prvo prekidati napon pa uzemljenje! U suprotnom, neki moduli mogu biti uništeni.
+>Povezivati uzemljenje pre napona, a prekidati napon pa uzemljenje! U suprotnom, neki moduli mogu biti uništeni.
 
 ## TODO
 ### Ima delova
 - vremenska stanica:
   - dodati solarno napajanje
-    https://youtu.be/wEbGhYjn4QI
     https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
   - spakovati
 - sunčev instrument (projekti)

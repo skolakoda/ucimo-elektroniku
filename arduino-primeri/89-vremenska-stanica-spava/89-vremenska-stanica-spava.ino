@@ -1,5 +1,6 @@
 // http://dweet.io/follow/vremenska-stanica-zvezdara
 // https://github.com/openhomeautomation/esp8266-battery/blob/master/esp8266_low_power/esp8266_low_power.ino
+// potrebno je povezati RST i D0 (pin za buđenje), nakon slanja koda!
 
 #include <ESP8266WiFi.h>
 #include "DHT.h"
@@ -8,7 +9,7 @@
 const char *ssid = "skolakoda";
 const char *password = "skolakoda523";
 const char *host = "dweet.io";
-const int vremeSpavanja = 10; // in seconds
+const int vremeSpavanja = 600; // u sekundama
 
 uint8_t DHTPin = D7;
 
