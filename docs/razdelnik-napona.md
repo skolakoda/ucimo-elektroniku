@@ -1,27 +1,67 @@
 # Razdelnik napona
 
-Napon „vuče“ elektrone kroz žicu. Otpornici se suprotstavljaju kretanju elektrona kroz njih, koristeći deo napona. To smanjivanje napona zove se pad napona.
+Napon „vuče“ elektrone kroz žicu, a otpornici se suprotstavljaju njihovom kretanju, koristeći deo napona. To smanjivanje napona zove se pad napona.
 
-Kolo pod nazivom razdelnik napona koristi pad napona za stvaranje napona manjeg od izvora napajanja u određenim tačkama kola. Na primer, recimo da je napajanje 9 volti, ali neka komponenta se napaja manjim naponom. Razdelnikom napona smanjićemo napon.
+Razdelnik napona je kolo koje koristi pad napona za stvaranje manjeg napona u određenim tačkama kola. Na primer, ako je napajanje 9 volti, a neka komponenta se napaja manjim naponom, razdelnikom ćemo smanjiti napon.
+
+## Formule
+
+Izlazni napon se izračunava formulom:
+
+```
+V(izlaz) = R2 / (R1 + R2) * V(ulaz)
+```
+
+Pad napona na otporniku R1 računamo formulom:
+
+```
+V(R1) = R1 / (R1 + R2) * V(ulaz)
+```
+
+## Primer: ulaz 9V -> izlaz 3V
 
 ![](slike/razdelnik-napona.jpg)
 
-Recimo da u kolu imamo dva otpornika (220 Ω i 330 Ω) i napajanje od 9 V. Pad napona na svakom otporniku proporcionalan je njegovom otporu podeljenom ukupnom otpornošću:
+Na primer, u kolu imamo dva otpornika (220 Ω i 110 Ω) i napajanje od 9 V. Pad napona na otporniku R1 je:
+
 ```
-Pad napona na otporniku R1 = (R1 / (R1 + R2)) * Vt = 220 Ω / 330 Ω * 9 V = 6 V
+V(R1) = 220 Ω / (220 Ω + 110 Ω) * 9 V
+      = 220 Ω / 330 Ω * 9 V 
+      = 2 / 3 * 9 V 
+      = 6 V
 ```
 
-Izlazni napon se izračunava oduzimanjem napona na otporniku R1 od napona izvora napajanja:
+Izlazni napon računamo oduzimanjem napona na otporniku R1 od ulaznog napona:
+
 ```
-V(out) = V(in) - V(R1) = 9 volti - 6 volti = 3 volta
+V(izlaz) = V(ulaz) - V(R1)
+         = 9 V - 6 V
+         = 3 V
 ```
 
-Šta ako vam je potreban neki drugi izlazni napon? Promenite otpornik. Na primer, ako želite da izlazni napon bude upola manji od napajanja, upotrebite dva otpornika iste otpornosti. Zatim upotrebite jednačinu da bi izračunali pad napona na otporniku Rl:
+Izlazni napon se može izračunati i direktno:
+
 ```
-Pad napona na otporniku R1 = jedna polovina Vt
+V izlaz = 110 / 330 * 9V
+        = 1/3 * 9V
+        = 3V
 ```
+
+## Primer: izlaz pola ulaza
+
+Ako želite da izlazni napon bude upola manji od izvora, upotrebite dva otpornika iste otpornosti. Zatim upotrebite jednačinu da bi izračunali pad napona na otporniku Rl:
+
+```
+V(R1) = R1 / (R1 + R1) * Vt
+      = R1 / 2 * R1 * Vt
+      = 1 / 2 Vt
+```
+
+## Primer: izlaz 2/3 ulaza
 
 Ako izlazni napon treba da ima vrednost dve trećine napona napajanja, upotrebite R1 čija je otpornost upola manja od otpornosti otpornika R2. Ponovo izračunajte pad napona:
 ```
-Pad napona na otporniku R1 = jedna trećina Vt
+V(R1) = R1 / (R1 + 2 R1) * Vt
+      = R1 / 3 R1 * Vt
+      = 1 / 3 Vt
 ```
