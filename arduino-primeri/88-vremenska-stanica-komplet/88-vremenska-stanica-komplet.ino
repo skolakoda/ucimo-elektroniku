@@ -1,5 +1,5 @@
 // http://dweet.io/follow/vremenska-stanica-zvezdara
-// https://github.com/openhomeautomation/esp8266-battery/blob/master/esp8266_low_power/esp8266_low_power.ino
+// očitava podatke, šalje na oblak, u međuvremenu duboko spava radi štednje energije
 // potrebno je povezati RST i D0 (pin za buđenje), nakon slanja koda!
 
 #include <ESP8266WiFi.h>
