@@ -9,7 +9,7 @@
 const char *ssid = "skolakoda";
 const char *password = "skolakoda523";
 const char *host = "dweet.io";
-const int vremeSpavanja = 600; // u sekundama
+const int vremeSpavanja = 60; // u sekundama
 
 uint8_t DHTPin = D7;
 
@@ -59,9 +59,7 @@ void prikaziPodatke()
   lcd.setCursor(15, 0);
   lcd.write(0xdf); // º
   lcd.setCursor(0, 1);
-  lcd.print("Osecaj:      " + osecaj);
-  lcd.setCursor(15, 1);
-  lcd.write(0xdf); // º
+  lcd.print("Vlaznost:    " + vlaznost + "%");
 }
 
 void posaljiNaOblak()
