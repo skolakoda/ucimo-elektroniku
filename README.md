@@ -7,9 +7,7 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 ## TODO
 ### Ima delova
 - vremenska stanica:
-  - spustiti napon baterije sa 3.7 na 3.3 V
-    http://www.learningaboutelectronics.com/Articles/How-to-reduce-voltage-with-resistors.php
-    https://electronics.stackexchange.com/questions/75448/how-to-reduce-dc-voltage-using-resistors
+  - spustiti napon baterije sa 3.7 na 3.3 V (isprobati razdelnik napona, proveriti menja li se sa potrošnjom)
   - dodati solarno napajanje
     https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
   - spakovati
@@ -28,6 +26,7 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 - tesla coil https://www.aliexpress.com/item/1005001603256594.html
 - piezo bubanj
 - pumpa (solenoid)
+- rastaviti bateriju iz laptopa
 - merač vlažnosti sa ekserima, stigo potenciometar (projekti)
 - paljenje svetla noću:
   - paljenje pecinih zvezda kad je mrak (stigo relej)

@@ -49,6 +49,8 @@ V izlaz = 110 / 330 * 9V
 
 ## Primer: izlaz pola ulaza
 
+![](slike/podela-napona-na-pola.png)
+
 Ako želite da izlazni napon bude upola manji od izvora, upotrebite dva otpornika iste otpornosti. Zatim upotrebite jednačinu da bi izračunali pad napona na otporniku Rl:
 
 ```
@@ -64,4 +66,12 @@ Ako izlazni napon treba da ima vrednost dve trećine napona napajanja, upotrebit
 V(R1) = R1 / (R1 + 2 R1) * Vt
       = R1 / 3 R1 * Vt
       = 1 / 3 Vt
+```
+
+## Kako izabrati odgovarajuće otpornike?
+
+Da bismo dobili željeni izlaz, jedan otpornik biramo nasumično, a drugi računamo pomoću formule:
+
+```
+R2 = V(izlaz) * R1 / (V(ulaz) - V(izlaz))
 ```
