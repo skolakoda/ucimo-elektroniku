@@ -63,6 +63,7 @@
 5. [punjenje-baterija](punjenje-baterija.md)
 6. [ispravljac](ispravljac.md)
 7. [invertor](invertor.md)
+7. [punjenje-laptopa](punjenje-laptopa.md)
 
 ### Literatura: 
 - Vladimir Krstić, *Mala škola elektronike*, Beograd, 1968.
