@@ -7,6 +7,13 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 ## TODO
 ### Ima delova
 - sunčev instrument (projekti)
+  - koristiti fotootpornik ili fotodiodu, probati i solarni panel
+  - upotrebiti arduino nano
+  - probati senzor rastojanja https://www.instructables.com/Musical-Instrument-Using-Arduino-Ultrasonic-Distan/
+  - možda staviti laser za vizuelizaciju
+  - probati potenciometre https://projects.raspberrypi.org/en/projects/8bitsynth
+  - bolji zvuk https://create.arduino.cc/projecthub/michalin70/arduino-as-waveform-synthesizer-for-music-2aa48f?ref=tag&ref_id=synthesizer&offset=3
+  - 3D gesture https://create.arduino.cc/projecthub/lanmiLab/make-musical-instrument-using-arduino-and-flick-large-e2890b
 - robot:
   - osposobiti robota da radi na prekidač
   - napraviti ploču od drveta (elektronika za neupućene 318), pričvrstiti motore i ostale delove, 

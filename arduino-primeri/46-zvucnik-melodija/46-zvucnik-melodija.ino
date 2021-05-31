@@ -1,7 +1,7 @@
 // http://www.arduino.cc/en/Tutorial/Tone
 #include "pitches.h"
 
-int zvucnik = 8;
+int zvucnik = 8; // na plus zvučnika
 int melodija[] = {NOTE_C4, NOTE_G3, NOTE_G3, NOTE_A3, NOTE_G3, 0, NOTE_B3, NOTE_C4};
 int duzinaNota[] = {4, 8, 8, 4, 4, 4, 4, 4}; // 4 = četvrtina, 8 = osmina
 
@@ -19,5 +19,5 @@ void setup()
 
 void loop()
 {
-  // bez ponavljanja melodije
+  // bez ponavljanja
 }
