@@ -6,11 +6,6 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
 ## TODO
 ### Ima delova
-- vremenska stanica:
-  - spustiti napon baterije sa 3.7 na 3.3 V (isprobati razdelnik napona, proveriti menja li se sa potrošnjom)
-  - dodati solarno napajanje
-    https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
-  - spakovati
 - sunčev instrument (projekti)
 - robot:
   - osposobiti robota da radi na prekidač
@@ -60,3 +55,6 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
   laptop:
     https://www.instructables.com/REUSE-YOUR-OLD-LAPTOP-BATTERY-TO-MAKE-A-POWER-BANK/
 - fm radio prijemnik (projekti, ima kit)
+- vremenska stanica:
+  - dodati solarno napajanje
+    https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
