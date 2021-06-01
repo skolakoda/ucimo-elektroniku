@@ -23,7 +23,12 @@ The zener diode and the 470 ohm resistor make sure the supply voltage of the con
 
 ## Alternativna verzija
 
-Koristiti: 
+Bez solarnog napajanja: 
 - Arduino 
 - zvučnik
 - fotootpornik
+
+Za solarno napajanje treba još:
+- solarna ploča
+- baterija
+- podizač napona
