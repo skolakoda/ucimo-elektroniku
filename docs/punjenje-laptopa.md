@@ -19,17 +19,17 @@ Punjač mora podržavati *Power Delivery* protokol! Ako samo isporuči 20V bez P
 
 ## Solarne opcije
 
-- **Direktno solarni panel i stabilizator napona** na 20V.
-- **Akumulator i podizač napona** sa 12V na 20V. Ako nema USB Type-C izlaz, iseći i povezati (crnu i crvenu žicu). Može i *laptop car charger* + ženska utičnica za upaljač (*Cigarette Lighter Female Socket Plug*).
-- **Akumulator i invertor** (*car inverter*) - užasno neefikasno! Prvo pretvara jednosmernu u naizmeničnu, potom ispravljač laptopa vraća naizmeničnu u jednosmernu. Ako oba pretvaranja imaju efikasnost od 80%, ukupni gubitak energije je 36%.
-- **Puniti direktno baterije laptopa**, izbeći ugrađena ograničenja (Lenovo ima 8 litijum-polimerskih ćelija). Za baterije je moguće koristiti predviđeni punjač baterija.
+- **Samo solarni panel i stabilizator napona** na 20V. Radi samo dok je sunce.
+- **Akumulator i automobilski punjač**. Uključiti automobilski punjač laptopa u utičnicu za upaljač, koja daje 12V. Utičnica može biti povezana direktno na akumulator.
+- **Akumulator i podizač napona** sa 12V na 20V. Slično kao prethodno, ali samo za uređaje bez USB-C/PD. Moguće je dodati i triger za *Power Delivery*, što automobilski punjač već ima.
+- **Akumulator i invertor** (*car inverter*) - na duže staze užasno neefikasno. Prvo invertor pretvara jednosmernu u naizmeničnu, a potom ispravljač vraća naizmeničnu u jednosmernu. Ako oba pretvaranja imaju efikasnost od 80%, ukupni gubitak energije je 36%.
 
 ## Ostale opcije
 
-- **Punjenje pedalanjem** (ručni vojni generator)
+- **Punjenje pedalanjem** (ručni vojni generator, prevoriti u bicikl)
 - **Punjenje vetrom**
 - **Laptop power bank** za kraće boravke
 
-## Automobilski utikač (upaljač)
+## Hakovanje
 
-The voltage of the power outlet is usually near 12 V DC, (13.5V to 15V while the running engine is turning the alternator). The 12V power circuit is protected by a car fuse, often rated at 10 to 20 amperes. Large appliances such as hair dryers or toasters draw too much power to be fed. 
+- **Puniti direktno bateriju laptopa**. Pronaći pozitivni i negativni pin baterije i pokušati direktno punjenje, kako bi se izbegao USB-C *Power Delivery* protokol. Ako je baterija od 14.8V, puniti sa 16V (neko preporučuje struju 1A). Međutim, "pametne" baterije mogu odbiti saradnju.

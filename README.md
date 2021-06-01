@@ -14,13 +14,13 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
   - probati potenciometre https://projects.raspberrypi.org/en/projects/8bitsynth
   - bolji zvuk https://create.arduino.cc/projecthub/michalin70/arduino-as-waveform-synthesizer-for-music-2aa48f?ref=tag&ref_id=synthesizer&offset=3
   - 3D gesture https://create.arduino.cc/projecthub/lanmiLab/make-musical-instrument-using-arduino-and-flick-large-e2890b
+- autić (projekti, fale slamčice)
+  - dodati propeler
+  - dodati solarni pogon
 - robot:
   - osposobiti robota da radi na prekidač
   - napraviti ploču od drveta (elektronika za neupućene 318), pričvrstiti motore i ostale delove, 
   - doraditi skretanje (elektronika za neupućene 321)
-- autić (projekti, fale slamčice)
-  - dodati propeler
-  - dodati solarni pogon
 - laser prati infracrveno
   - https://www.instructables.com/Arduino-Nano-Infrared-Obstacle-Avoidance-Sensor-Wi/
   - https://www.instructables.com/Arduino-Laser-Turret/
@@ -45,6 +45,11 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
   https://create.arduino.cc/projecthub/FiDeNet/sms-controlled-relays-and-leds-2906ff
   https://lastminuteengineers.com/sim800l-gsm-module-arduino-tutorial/
   https://lastminuteengineers.com/a6-gsm-gprs-module-arduino-tutorial/
+- banka baterija
+  - probati punjenje baterije sa sivog laptopa sa 16V (pomoću ampmetra videti jel puni) 
+    https://www.instructables.com/Reusing-Laptop-Batteries/
+  - mobilni: https://www.instructables.com/Mobile-Phone-Battery-Power-Bank/
+  - laptop: https://www.instructables.com/REUSE-YOUR-OLD-LAPTOP-BATTERY-TO-MAKE-A-POWER-BANK/
 
 ### Nema delova
 - jutarnji alarm (cekam kit)
@@ -56,11 +61,6 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
   - detektor metala (projekti, cekam kit)
   - detektor strujnih vodova (projekti)
 - glasovni prekidač (*clap switch*, cekam kit)
-- banka baterija:
-  mobilni: 
-    https://www.instructables.com/Mobile-Phone-Battery-Power-Bank/
-  laptop:
-    https://www.instructables.com/REUSE-YOUR-OLD-LAPTOP-BATTERY-TO-MAKE-A-POWER-BANK/
 - fm radio prijemnik (projekti, ima kit)
 - vremenska stanica:
   - dodati solarno napajanje
