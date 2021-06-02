@@ -1,33 +1,32 @@
 // https://electropeak.com/learn/rotary-encoder-how-it-works-how-to-use-with-arduino/
 // Connect the + to 5V, GND to GND pin, CLK to pin number 6, and DT to pin number 7
 
-#define encoderOutA 6 // CLK
-#define encoderOutB 7 // DT
+#define DT 6
+#define CLK 7
 
-int counter = 0;
-int State;
-int old_State;
+int brojac = 0;
+int staroStanje;
 
 void setup() {
-  pinMode (encoderOutA, INPUT);
-  pinMode (encoderOutB, INPUT);
+  pinMode (DT, INPUT);
+  pinMode (CLK, INPUT);
   Serial.begin (9600);
-  old_State = digitalRead(encoderOutA);
+  staroStanje = digitalRead(DT);
 }
 
 void loop() {
-  State = digitalRead(encoderOutA);
-  if (State != old_State)
+  int stanje = digitalRead(DT);
+  if (stanje != staroStanje)
   {
-    if (digitalRead(encoderOutB) != State)
+    if (digitalRead(CLK) != stanje)
     {
-      counter ++;
+      brojac ++;
     }
     else {
-      counter --;
+      brojac --;
     }
-    Serial.print("Position: ");
-    Serial.println(counter);
+    Serial.print("brojac: ");
+    Serial.println(brojac);
   }
-  old_State = State;
+  staroStanje = stanje;
 }
