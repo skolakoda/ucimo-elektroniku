@@ -1,8 +1,8 @@
 # Punjenje baterija
 
-Za stabilizaciju napona prilikom punjenje baterija potrebno je koristiti regulator napona, takođe zvan i regulator punjenja (*charge controller*).
+Za stabilizaciju solarnog napona prilikom punjenje baterija potrebno je koristiti regulator napona, takođe zvan i regulator punjenja (*charge controller*).
 
-## Punjenje NiMH baterija (od 1.2 V)
+## Nikl-metal-hidridne (NiMH) ćelije od 1.2 V
 
 Najjednostavniji način punjenja NiMH baterije je da ograničimo struju otpornikom. Da bi izračunali vrednost otpornika, moramo odlučiti kojom strujom punimo bateriju. NiMH baterija može se neograničeno puniti strujom manjom od 10% njenog kapaciteta. Npr, ako AA baterije imaju kapacitet 2000mAh, možemo ih puniti strujom od 200mA. Ako planiramo da punimo baterije neprestano, bolje puniti strujom od 5% kapaciteta baterije, što iznosi 100mA.
 
@@ -69,3 +69,9 @@ I = V / R
 = 6.8V / 100Ω 
 = 68mA
 ```
+
+## Litijum jonske (Li-Ion) ćelije od 3.7 V
+
+Ne treba ih puniti do kraja, to ih oštećuje. Delimično punjenje im najviše odgovara. Pune se otprilike do 4.2V.
+
+Odmah obustaviti punjenje ako se baterija zagreva, to je znak opasnosti.

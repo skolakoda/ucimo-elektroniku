@@ -8,6 +8,8 @@ Napon u baterijama stvara se u procesu elektrohemijske reakcije. Da bi se reakci
 
 Punjive baterije omogućuju obnavljanje hemikalija u njima, tj. dobijanje napona bliskog izvornom. Ne pokušavajte da punite jednokratne baterije, mogu procuriti ili eksplodirati.
 
+Sve baterije su podložne samopražnjenju, odnosno gubitku napona usled stajanja.
+
 ## Podela po hemijskom sastavu
 
 Baterije uglavnom delimo na osnovu hemikalija koje sadrže. Od njih zavisi da li su jednokratne ili punjive.
@@ -20,7 +22,8 @@ JEDNOKRATNE (primarne) ćelije:
 PUNJIVE (sekundarne) ćelije:
 * **Nikl-kadmijum** (Ni-Cd ili NiCd): Najpopularniji tip punjivih baterija, najčešće od 1,2 volta. Iako su mnogi proizvođaći to već rešili, njihov najveći nedostatak je tzv. memorijski efekat - morate ih potpuno isprazniti pre punjenja da bi dostigle pun kapacitet.
 * **Nikl-metal-hidrid** (Ni-MH): Baterije ovoga tipa generišu napon od 1,2 volta. Nemaju memorijski efekat kao nikl-kadmijumske. Ako se odlučite za punjive baterije, predlažemo da počnete s ovim tipom.
-* **Litijum-polimer** (LiPo): Litijum-polimerske baterije su punjive baterije koje se koriste u mobilnim telefonima. Tipična LiPo baterija je napona 3.7V i kapaciteta 1600mAh. Ako se previše isprazni (ispod 3V), može se trajno oštetiti. Većina novih ima ugrađeno automatsko prekidačko kolo da spreči prekomerno pražnjenje, ali to možda nije slučaj sa starijim.
+* **Litijum-jon** (Li-Ion): Litijum-jonske baterije su punjive baterije koje se koriste u elektronici i električnim vozilima. Napon Li-Ion ćelije je 3.7V. Nemaju memorijski efekat i slabo se same prazne. Ne treba ih puniti do kraja jer im to smanjuje vek. Hladne su dok se pune, i svako zagrevanje je opasno. Nisu u stanju da podnesu prepunjavanje, zapaljive su i mogu eksplodirati ako se prepune.
+* **Litijum-polimer** (LiPo), odntosno **litijum-jon-polimer**: Punjive baterije koje se koriste u mobilnim telefonima. Tipična litijum-polimerska ćelija je napona 3.7V i kapaciteta 1600mAh. Ako se previše isprazni (ispod 3V), može se trajno oštetiti. Većina novih ima ugrađeno automatsko prekidačko kolo da spreči prekomerno pražnjenje, ali to možda nije slučaj sa starijim.
 
 ## Povezivanje baterija
 
@@ -72,11 +75,11 @@ Stanje napunjenosti baterije može se odrediti na osnovu njene trenutne voltaže
 ![](slike/stanje-telefonske-baterije.jpg)
 
 Ako imamo četiri podeoka na indikatoru:
-1. When battery voltage is over 3.3V, it will illuminate 1 block
-2. When battery voltage is over 3.5V, it will illuminate 2 blocks
-3. When battery voltage is over 3.7V, it will illuminate 3 blocks
-4. When battery voltage is over 3.9V, it will illuminate 4 blocks
-5. When battery voltage is less than 3.3V, all blocks will be off
+- When battery voltage is over 3.9V, it will illuminate 4 blocks
+- When battery voltage is over 3.7V, it will illuminate 3 blocks
+- When battery voltage is over 3.5V, it will illuminate 2 blocks
+- When battery voltage is over 3.3V, it will illuminate 1 block
+- When battery voltage is less than 3.3V, all blocks will be off
 
 ### Stanje napunjenosti baterije od 12 V
 
