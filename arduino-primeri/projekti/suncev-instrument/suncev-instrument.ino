@@ -6,11 +6,11 @@ void setup() {
 }
 
 void loop() {
-  int value = analogRead(fotootpornik);
+  int svetlost = analogRead(fotootpornik);
   Serial.print("fotootpornik : ");
-  Serial.println(value);
+  Serial.println(svetlost);
   
-  int nota = map(value, 0, 1023, 31, 4978);
+  int nota = map(svetlost, 0, 1023, 31, 4978);
   int trajanje = 1000 / 4;
   Serial.print("nota : ");
   Serial.println(nota);

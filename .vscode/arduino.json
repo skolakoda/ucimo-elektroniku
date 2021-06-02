@@ -1,4 +1,5 @@
 {
     "board": "arduino:avr:uno",
-    "sketch": "arduino-primeri\\projekti\\suncev-instrument\\suncev-instrument.ino"
+    "sketch": "arduino-primeri\\projekti\\suncev-instrument\\suncev-instrument.ino",
+    "port": "COM12"
 }
