@@ -1,5 +1,6 @@
 {
     "board": "arduino:avr:uno",
-    "sketch": "arduino-primeri\\projekti\\suncev-instrument\\suncev-instrument.ino",
-    "port": "COM12"
+    "output": "../build",
+    "port": "COM12",
+    "sketch": "arduino-primeri\\projekti\\suncev-instrument\\suncev-instrument.ino"
 }
