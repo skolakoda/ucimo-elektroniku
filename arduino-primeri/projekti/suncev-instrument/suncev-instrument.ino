@@ -1,7 +1,9 @@
-int fotootpornik = A0;
-int zvucnik = 8; // plus zvučnika
+byte fotootpornik = A0;
+byte zvucnik = 5; // plus zvučnika
 
-int granicaTame = 20;
+byte granicaTame = 20;
+byte najdubljiZvuk = 31;
+int najvisiZvuk = 4978;
 
 void setup() {
   Serial.begin(9600);
@@ -9,13 +11,13 @@ void setup() {
 
 void loop() {
   int svetlost = analogRead(fotootpornik);
-  // TODO: napraviti trajanje promenljivim
-  unsigned long trajanje = 1000 / 4;
+  // TODO: promenljivo trajanje
+  int trajanje = 1000 / 8;
   Serial.print("fotootpornik : ");
   Serial.println(svetlost);
   delay(trajanje);
 
   if (svetlost < granicaTame) return;
-  unsigned int visina = map(svetlost, granicaTame, 1023, 31, 4978);
+  int visina = map(svetlost, granicaTame, 1023, najdubljiZvuk, najvisiZvuk);
   tone(zvucnik, visina, trajanje);
 }
