@@ -1,3 +1,4 @@
+// prima daljinac
 #include <IRremote.h> // verzija 2.01
 
 const int infraRedPin = 2;

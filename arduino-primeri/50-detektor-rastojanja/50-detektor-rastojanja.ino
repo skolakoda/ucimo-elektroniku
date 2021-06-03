@@ -1,6 +1,6 @@
 // potrebno je uključiti i napajanje i uzemljenje u senzor
-int echoPin = 7;
 int trigPin = 8;
+int echoPin = 7;
 long duration, cm;
 
 void setup() {
