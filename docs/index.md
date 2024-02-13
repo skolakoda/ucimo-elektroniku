@@ -18,7 +18,7 @@
 2. [kondenzatori](kondenzatori.md)
 3. [diode](diode.md)
   1. [led-diode](led-diode.md)
-4. [tranzistori](tranzistor.md)
+4. [tranzistori](tranzistori.md)
   1. [MOSFET](MOSFET.md)
 5. [žice](zice.md)
 6. [baterije](baterije.md)
