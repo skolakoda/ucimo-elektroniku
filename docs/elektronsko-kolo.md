@@ -8,6 +8,7 @@ Kolo ima pet osnovnih delova:
 * žice koje povezuju sve elemente kola
 * izlazni uređaj (koji se naziva opterećenje ili potrošač), na primer zvučnik 
 * uzemljenje koje kompletira kolo
+
 Mnoga kola, ali ne sva, imaju i ulaz.
 
 ## Paljenje sijalice
