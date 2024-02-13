@@ -8,13 +8,15 @@ Kondenzatori su vrlo jednostavni. Tipičan kondenzator ima u sebi dve metalne pl
 
 Kondenzatori se upotrebljavaju za različite svrhe, uključujući:
 * Pravljenje merača vremena: neka vrsta elektronskog metronoma, u kome se kondenzator uparuje sa otpornikom da bi se brojali otkucaji.
-* "Peglanje" napona: ispravljači često koriste kondenzatore da bi se napon „ispeglao“ i njegova vrednost ostala na stabilnom nivou.
+* Stabilizacija napona: ispravljači često koriste kondenzatore da bi se napon „ispeglao“ i njegova vrednost ostala na stabilnom nivou.
 * Blokiranje jednosmerne struje: Kada su redno vezani sa izvorom signala, poput mikrofona, kondenzatori blokiraju jednosmernu struju a propuštaju naizmeničnu. To se koristi u pojačivačima.
 * Podešavanje frekvencije: Kondenzatori se koriste za pravljenje jednostavnih filtera koji odbijaju naizmenične signale većeg ili manjeg nivoa od željene učestanosti. Podešavanjem vrednosti kondenzatora moguće je podešavati vršne frekvencije filtra.
 
-### Smanjivanje kolebanja napona
+### Stabilizacija napona
 
-Sposobnost kondenzatora da prikupljaju i otpuštaju elektrone možete iskoristiti da „ispeglate" kolebanja napona. Određeni nivo napona primenjenog na kondenzator proizvodi određeni broj uskladištenih elektrona. Kada napon počne da raste, kondenzator skladišti više elektrona, čime se umanjuje taj porast napona. U slučaju da napon počne da opada, kondenzator oslobađa određeni broj „zarobljenih" elektrona i time se ponovo smanjuje promena napona. U ispravljačima naizmeničnu struju u jednosmernu često se koriste kondenzatori za „peglanje" kolebanja napona.
+Sposobnost kondenzatora da prikupljaju i otpuštaju elektrone možete iskoristiti da „ispeglate" kolebanja napona. Određeni nivo napona primenjenog na kondenzator proizvodi određeni broj uskladištenih elektrona. Kada napon počne da raste, kondenzator skladišti više elektrona, čime se umanjuje taj porast napona. U slučaju da napon počne da opada, kondenzator oslobađa određeni broj „zarobljenih" elektrona i time se ponovo smanjuje promena napona. 
+
+U ispravljačima naizmenične struje u jednosmernu često se koriste kondenzatori za „peglanje" kolebanja napona.
 
 ## Kapacitivnost
 
@@ -22,7 +24,7 @@ Kapacitivnost se meri u faradima (F). Što je vrednost veća, kondenzator može 
 
 ## Radni napon
 
-Radni napon ili WV (en. *working voltage*) je najveći napon koji kondenzator može izdržati pre no što se oštete dielektrični slojevi. Pri naponu većem od radnog, struja može napraviti luk između pločica, varnica se „probija“ kroz dielektrik i kondenzator postaje neupotrebljiv (probijen).
+Radni napon (WV - *working voltage*) je najveći napon koji kondenzator može izdržati pre no što se oštete dielektrični slojevi. Pri naponu većem od radnog, struja može napraviti luk između pločica, varnica se „probija“ kroz dielektrik i kondenzator postaje neupotrebljiv (probijen).
 
 Na svakom kondenzatoru piše koliki napon najviše podnosi. Kondenzator za jednosmernu struju ne podnose više od 16 do 35 volti. Da bi bili sigurni, najbolje je izabrati kondenzator s radnim naponom bar 10-15 % većim od napona u kolu.
 
