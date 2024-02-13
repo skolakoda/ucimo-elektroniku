@@ -1,8 +1,8 @@
 # Učimo Elektroniku
 
-Učimo elektroniku, Arduino i programiranje mikrokontrolera.
-
 https://skolakoda.github.io/ucimo-elektroniku/
+
+Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
 > Važno upozorenje: Povezivati uzemljenje pa napon, a prekidati napon pa uzemljenje! U suprotnom, neki moduli mogu biti uništeni.
 
