@@ -1,4 +1,4 @@
-# Učimo Elektroniku
+# Učimo elektroniku
 
 https://skolakoda.github.io/ucimo-elektroniku/
 
