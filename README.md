@@ -7,7 +7,6 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 > Važno upozorenje: Povezivati uzemljenje pa napon, a prekidati napon pa uzemljenje! U suprotnom, neki moduli mogu biti uništeni.
 
 ## TODO
-### Ima delova
 - robot:
   - popraviti oba robota
   - osposobiti robota da radi na prekidač
