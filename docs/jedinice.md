@@ -1,20 +1,22 @@
 # Veličine i jedinice mere
 
-Da bi razumeli materiju, morate znati koje se veličine i jedinice koriste u elektronici. Jedinice vam kazuju koliko nečega imate. Na primer, kada kupujete jabuke, njihovu masu izražavate kilogramima (kg). Slično tome, pomoću multimetra merimo otpor u omima, napon u voltima, i jačinu struje u amperima. U tabeli su navedene uobičajene jedinice i skraćenice koje se koriste u elektronici:
+Jedinice mere vam kazuju koliko nečega imate. Na primer, kada kupujete jabuke, njihovu masu izražavate kilogramima. Slično tome, pomoću multimetra merimo otpor u omima, napon u voltima, i jačinu struje u amperima. 
 
-Veličina | Skraćenica | Jedinica | Oznaka | Komponenta
--------- | ---------- | -------- | ------ | ------
-Otpor    | R | om | Ω | Otpornik
-Kapacitivnost | C | farad | F | Kondenzator
-Induktivnost | L | henri | H | Induktivni kalem
-Napon    | E ili V | volt | V
-Struja   | I | amper | A 
-Snaga    | P | vat | W 
-Frekvencija | f | herc | Hz
+U tabeli su navedene uobičajene veličine i jedinice mere u elektronici:
+
+Veličina | Jedinica | Komponenta
+-------- | -------- | ------
+otpor (R) | om (Ω) | otpornik
+kapacitivnost (C) | farad (F) | kondenzator
+induktivnost (L) | henri (H) | induktivni kalem
+napon (E ili V) | volt (V)
+struja (I) | amper (A) 
+snaga (P) | vat (W) 
+frekvencija (f) | herc (Hz)
 
 ## Naučna notacija
 
-Kada merite jabuke, možete izmeriti i samo krišku jedne jabuke i nekoliko kilograma jabuka. U elektronici se koristi mnogo širi opseg jedinica. U jednom kolu ukupan otpor može biti nekoliko miliona oma, a u drugom, struja koja protiče kroz njega može biti vrlo slaba (možda samo hiljaditi deo ampera). Pri korišćenju i označavanju vrlo, vrlo velikih i vrlo, vrlo malih brojeva primenjuje se specijalna terminologija.
+Kada merite jabuke, možete izmeriti i samo krišku i nekoliko kilograma jabuka. U elektronici se koristi mnogo širi opseg jedinica. U jednom kolu ukupan otpor može biti nekoliko miliona oma, a u drugom, struja koja protiče kroz njega može biti vrlo slaba (možda samo hiljaditi deo ampera). Pri korišćenju i označavanju vrlo velikih i vrlo malih brojeva primenjuje se specijalna terminologija.
 
 U elektronici se za označavanje malih i velikih brojeva koriste prefiksi i naučna notacija:
 

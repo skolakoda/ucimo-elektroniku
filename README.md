@@ -7,16 +7,17 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 > Važno upozorenje: Povezivati uzemljenje pa napon, a prekidati napon pa uzemljenje! U suprotnom, neki moduli mogu biti uništeni.
 
 ## TODO
+- paljenje svetla noću (ili od 22h do 1h):
+  - detektovati noć pomoću fotootpornik ili časovnika i logovati
+  - koristiti postojeće svetiljke, LED traku ili zasebne diode 
+  - paljenje led (fotootpornik i npn tranzistor) https://youtu.be/eEBMTpxdPiE
+  - bonus: paljene na pljesak
 - robot:
   - popraviti oba robota
   - osposobiti robota da radi na prekidač
   - napraviti ploču od drveta (elektronika za neupućene 318), pričvrstiti motore i ostale delove, 
   - doraditi skretanje (elektronika za neupućene 321)
-- paljenje svetla noću (ili od 22h do 1h):
-  - detektovati noć pomoću fotootpornik ili časovnika i logovati 
-  - paljenje led (fotootpornik i npn tranzistor) https://youtu.be/eEBMTpxdPiE
-  - bonus: paljene na pljesak
-- figurice: laser na kuli prati ljudski pokret
+- laser na kuli prati ljudski pokret
   - https://www.instructables.com/Arduino-Nano-Infrared-Obstacle-Avoidance-Sensor-Wi/
   - https://www.instructables.com/Arduino-Laser-Turret/
 - automatsko zalivanje (relej za pumpu)
