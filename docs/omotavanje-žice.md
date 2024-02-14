@@ -1,6 +1,10 @@
 # Omotavanje žice
 
-Ovijanje žicom ili omotavanje žice (en. *wire wrapping*) jeste sistem povezivanja dve tačke žicom, pri kome se koristi posebna alatka i fina žica debljine 0,25 ili 0,3 mm za namotavanje. Ako to uradite kako treba, kola s namotanim žicama stabilna su kao lemljena kola. Takođe, imate slobodu da menjate i ispravljate stvari bez razlemljivanja i ponovnog lemljenja.
+[wiki](https://sh.wikipedia.org/wiki/Ovijanje_%C5%BEicom)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Wire_Wrapping.jpg/320px-Wire_Wrapping.jpg)
+
+**Ovijanje žicom** ili **omotavanje žice** (en. *wire wrapping*) jeste sistem povezivanja dve tačke žicom, pri kome se koristi posebna alatka i fina žica debljine 0,25 ili 0,3 mm za namotavanje. Ako to uradite kako treba, kola s namotanim žicama stabilna su kao lemljena kola. Takođe, imate slobodu da menjate i ispravljate stvari bez razlemljivanja i ponovnog lemljenja.
 
 Omotavanje žice je tehnika koja je dozvoljena samo za jednosmerna kola niskog napona.
 

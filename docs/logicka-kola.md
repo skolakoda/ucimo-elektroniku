@@ -1,5 +1,7 @@
 # Logička kola
 
+[wiki](https://sh.wikipedia.org/wiki/Logi%C4%8Dka_kapija)
+
 **Logička kola** su integrisana kola koja na osnovu ulaznih vrednosti i logičkih pravila određuju izlaznu vrednost. Obično imaju dva ulaza; invertor ima samo jedan ulaz, a postoje i logička kola s više ulaza. Kada se govori o vrednostima ulaza i izlaza, kaže se da je ulaz visok (1) ili nizak (0). U elektronici, visok ulaz znači da kolo ima napon oko 5 volti. Nizak ulaz znači da je napon približno 0 volti.
 
 ## Najčešća logička kola

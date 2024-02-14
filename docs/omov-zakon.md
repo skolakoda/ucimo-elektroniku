@@ -1,5 +1,7 @@
 # Omov zakon
 
+[wiki](https://sh.wikipedia.org/wiki/Ohmov_zakon)
+
 Recimo da znamo koliku struju može podneti komponenta, i koliki napon daje napajanje, ali treba izabrati odgovarajući otpornik. Koristićemo Omov zakon, koji kaže da je napon (V ili U) jednak umnošku struje (I) i otpora (R), odnosno:
 
 ```

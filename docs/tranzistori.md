@@ -1,8 +1,10 @@
 # Tranzistori
 
-![](slike/NPN-transistor.jpg)
+[wiki](https://sh.wikipedia.org/wiki/Tranzistor)
 
-Tranzistor upravlja tokom električne struje tako što otvara i zatvara svoje „ventile“. Reč tranzistor je kovanica koja znači prelazni otpornik (*trans rezistor*). Tranzistore možemo koristiti kao prekidače ili kao pojačavače.
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Transistors.agr.jpg/572px-Transistors.agr.jpg)
+
+**Tranzistor** upravlja tokom električne struje tako što otvara i zatvara svoje „ventile“. Reč tranzistor je kovanica koja znači prelazni otpornik (*trans rezistor*). Tranzistore možemo koristiti kao prekidače ili kao pojačavače.
 
 Tranzistori su razvijeni kao alternativa vakuumskim lampama. Milioni pojedinačnih tranzistora čine mikroprocesor u srcu svakog računara.
 
@@ -20,16 +22,16 @@ Poluprovodni materijal tranzistora veličine je zrna peska, čak i manji. Za tak
 
 ## Tranzistor kao prekidač
 
-Prekidač otvara/zatvara put kojim protiče električna struja. Tranzistor možemo koristiti kao električno upravljan prekidač. 
+Prekidač otvara i zatvara put kojim protiče električna struja. Tranzistor možemo koristiti kao električno upravljan prekidač. 
 
 Tranzistori obično imaju tri izvoda. To su:
 * baza 
 * emiter 
 * kolektor
 
-Kada se tranzistor koristi kao prekidač, baza se ponaša kao poluga na mehaničkom prekidaču. Kada na bazu dovedete struju, tranzistor se uključi, a bez struje je isključen. Emiter i kolektor vezuju se za pozitivan ili negativan napon. Koji se izvod s čim povezuje, zavisi od električnog kola.
+Kada se tranzistor koristi kao prekidač, baza se ponaša kao poluga na mehaničkom prekidaču. Kada na bazu dovedete struju, tranzistor se uključi, a bez struje je isključen. Emiter i kolektor vezuju se za pozitivan ili negativan napon. Koji se izvod s čim povezuje, zavisi od električnog kola. Tranzistori kao prekidači sastavni su deo integrisanih kola koja sadrže logička kola, na primer za kalkulatore i računare.
 
-Tranzistori povezani kao prekidači, sastavni su deo integrisanih kola koja sadrže logička kola, na primer integrisana kola za kalkulatore i računare.
+![](slike/NPN-transistor.jpg)
 
 ### Primer: paljenje u svitanje
 

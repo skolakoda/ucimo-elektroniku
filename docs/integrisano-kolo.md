@@ -1,10 +1,14 @@
 # Integrisano kolo
 
-**Integrisana kola** (takođe **čipovi** ili **IC**), minijaturne su štampane ploče napravljene na jednom komadu poluprovodnika. Tipično integrisano kolo ima na stotine tranzistora, otpornika, dioda i kondenzatora. Integrisana kola su osnovni gradivni blokovi većih električnih kola. Povezuju se međusobno, pa mogu da oforme bilo koji elektronski uređaj.
+[wiki](https://sh.wikipedia.org/wiki/Integralno_kolo)
+
+**Integralno kolo** (takođe **čip** ili **IC**) je minijaturna štampana ploča napravljena na jednom komadu poluprovodnika. Tipično integrisano kolo ima na stotine tranzistora, otpornika, dioda i kondenzatora. Integrisana kola su osnovni gradivni blokovi većih električnih kola. Povezuju se međusobno, pa mogu da oforme bilo koji elektronski uređaj.
 
 Način na koji su komponente povezane unutar integrisanog kola određuje njegovu ulogu i rad.
 
 Integrisana kola su najčešće u kućištima s dva reda izvoda ili pinova (en. *dual in-line pin*, DIP). Najčešće se koriste integrisana kola sa 8, 14 i 16 izvoda.
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Integrated_circuit_on_microchip.jpg/400px-Integrated_circuit_on_microchip.jpg)
 
 ## Vrste integrisanih kola
 
@@ -12,8 +16,8 @@ Tokom vremena, proizvođači čipova su elektroničarima ponudili hiljade i hilj
 
 Integrisana kola se dela na linearna i digitalna. Ti se pojmovi odnose na vrstu signala koji se koriste u kolu.
 
-* Linearna: Namenjena su za korišćenje u svim električnim kolima s različitim naponima i strujama (analogno kolo). Primer analognog kola je pojačavalo za gitaru.
-* Digitalna: Koriste se samo u kolima sa dva napona (digitalno kolo). Ta dva napona predstavljaju binarne digitalne podatke (uključeno/isključeno, visoko/nisko, 0/1). Uobičajeni naponi koji predstavljaju digitalne podatke jesu 0 i (najčešće) 5 volti.
+* **Linearna**: Namenjena su za korišćenje u svim električnim kolima s različitim naponima i strujama (analogno kolo). Primer analognog kola je pojačavalo za gitaru.
+* **Digitalna**: Koriste se samo u kolima sa dva napona (digitalno kolo). Ta dva napona predstavljaju binarne digitalne podatke (uključeno/isključeno, visoko/nisko, 0/1). Uobičajeni naponi koji predstavljaju digitalne podatke jesu 0 i (najčešće) 5 volti.
 
 Neka integrisana kola mogu da rade i sa analognim i s digitalnim signalima, ili da pretvaraju digitalne signale u analogne i obratno.
 

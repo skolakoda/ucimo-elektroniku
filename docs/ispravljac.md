@@ -1,5 +1,7 @@
 # Ispravljač
 
+[wiki](https://sh.wikipedia.org/wiki/Ispravlja%C4%8D)
+
 Ispravljač (en. *rectifier*) pretvara naizmeničnu struju u usmerenu.
 
 ![](slike/ispravljanje-struje.jpg)

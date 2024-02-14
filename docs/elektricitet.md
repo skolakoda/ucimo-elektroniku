@@ -1,5 +1,7 @@
 # Elektricitet i električna struja
 
+wiki: [elektricitet](https://sh.wikipedia.org/wiki/Elektricitet) i [električna struja](https://sh.wikipedia.org/wiki/Elektri%C4%8Dna_struja)
+
 Da bi razumeli kako nastaju elektricitet i električna struja, neophodno je da ih razložimo na sastavne delove.
 
 ## Elektroni i protoni
@@ -18,6 +20,9 @@ Neki materijali bolje provode elektricitet od drugih. Elektroni se lakše kreću
 
 Koji su materijali dobri provodnici a koji izolatori? Uglavnom se kao provodnici koriste bakar i aluminijum. Plastika i staklo su najčešće korišćeni izolatori.
 
+> ### Zastarele oznake
+> Prvi istraživači su verovali da električna stru­ja nastaje zbog toka pozitivno naelektri­sanih čestica. Zato su električnu struju opisali kao tok naelektrisanja od pozitivnog ka negativnom naponu. Mnogo kasnije, naučnici su zaključili da se elektroni kreču od negativnog ka pozitiv­nom naponu. Nažalost, na električnim šemama smer struje se i dalje označava streli­com usmerenom suprotno od stvarnog smera kretanja.
+
 ## Pružanje otpora
 
 Otpor je mera sposobnosti elektrona da se kreću kroz materijal. Šira žica pruža manji otpor kretanju elektrona od uže žice. U skoro svim elektronskim uređajima koriste se otpornici. Otpornici imaju unapred određenu vrednost otpora, što omogućava upravljanje tokom elektrona kroz električno kolo.
@@ -28,12 +33,11 @@ Da bi se elektroni kretali kroz provodnik neka sila mora da ih „pogura“. Ta 
 
 ## Poređenje sa vodom
 
-Ako uzmete žicu (provodnik) i jedan kraj povežete s pozitivnim polom baterije a drugi s negativnim, elektroni počinju da teku od negativnog ka pozitivnom polu. Taj tok elektrona zove se električna struja. 
+[wiki](https://sh.wikipedia.org/wiki/Hidrauli%C4%8Dka_analogija)
+
+Ako uzmete provodnik i jedan kraj povežete s pozitivnim polom baterije a drugi s negativnim, elektroni počinju da teku od negativnog ka pozitivnom polu. Taj tok elektrona zove se električna struja. 
 
 Da bi lakše razumeli kako provodnik i napon utiču na struju, zamislimo kako pritisak vode i prečnik cevi utiču na tok vode:
 
 * Veći pritisak uzrokuje da više vode teče kroz cev. Slično, veći napon uzrokuje da više elektrona teče kroz provodnik.
-* Kada je prečnik veći, pod istim pritiskom kroz cev teče više vode. Slično, kada je prečnik veći, pod istim naponom kroz žicu teče više elektrona.
-
-> ### Zastarele oznake
-> Prvi istraživači su verovali da električna stru­ja nastaje zbog toka pozitivno naelektri­sanih čestica. Zato su električnu struju opisali kao tok naelektrisanja od pozitivnog ka negativnom naponu. Mnogo kasnije, naučnici su zaključili da se elektroni kreču od negativnog ka pozitiv­nom naponu. Nažalost, na električnim šemama smer struje se i dalje označava streli­com usmerenom suprotno od stvarnog smera kretanja.
+* Kada je prečnik veći, pod istim pritiskom kroz cev teče više vode. Slično, kada je prečnik veći, pod istim naponom kroz provodnik teče više elektrona.

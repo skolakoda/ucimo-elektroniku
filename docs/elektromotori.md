@@ -1,14 +1,22 @@
 # Motori jednosmerne struje
 
-Jeste li se ikada zapitali šta uzrokuje vibriranje telefona? Motor jednosmerne struje. Takav motor pretvara električnu energiju u kretanje. To kretanje može biti okretanje točkova robota, podrhtavanje telefona ili bilo koje drugo kretanje.
+[wiki](https://sh.wikipedia.org/wiki/Elektromotor_istosmjerne_struje)
 
-![](slike/dc-motor.jpg)
+Jeste li se ikada zapitali šta uzrokuje vibriranje telefona? **Motor jednosmerne struje**. Takav motor pretvara električnu energiju u kretanje. To kretanje može biti okretanje točkova robota, podrhtavanje telefona ili bilo koje drugo kretanje.
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Motor_internals.JPG/320px-Motor_internals.JPG)
+
+## Delovi
 
 **Elektromagneti** su važan deo motora jednosmerne struje pošto se ti motori, u osnovi, sastoje od elektromagneta na osovini koja rotira između dva stalna magneta. Pozitivan i negativan pol baterije povezuju se tako da svaki kraj elektromagneta ima isti polaritet kao stalan magnet pored njega. Isti polovi magneta međusobno se odbijaju. To odbijanje pokreće elektromagnet i izaziva obrtanje osovine. Kako se osovina obrće, tako pozitivna i negativna veza elektromagneta menjaju mesta, pa magneti nastavljaju da „guraju“ osovinu. 
 
 Jednostavan mehanizam sastavljen od **komutatora** (kružnog prekidača kod koga je svaki segment povezan s različitim krajem elektromagneta) i **četkica** koje dodiruju komutator, uzrokuje promenu veza. Komutator se obrće zajedno sa osovinom dok su četkice stacionarne, s tim da je jedna povezana s pozitivnim polom baterije a druga s negativnim. Dok osovina sa komutatorom rotira, menja se segment koji je u kontaktu sa svakom četkicom. Tako se menjaju krajevi elektromagneta povezani s pozitivnim i negativnim naponom.
 
 **Osovina** u DC motoru rotira brzinom od nekoliko hiljada obrtaja u minutu - što je prebrzo za većinu aplikacija. Proizvođači zato prodaju i motore sa uređajem koji smanjuje brzinu osovine na manje od sto obrtaja u minutu - slično kao što se promenom stepena prenosa pomoću menjača menja brzina automobila.
+
+![](slike/dc-motor.jpg)
+
+## Karakteristike
 
 U katalozima proizvođača obično se navodi nekoliko specifikacija motora. Dve ključne stavke koje morate uzeti u obzir jesu:
 * **Brzina**: Izražena u obrtajima u minutu (en. *revolutions per minute*, rpm). Potrebna brzina zavisi od predviđene namene. Na primer, kada želite da napravite model automobila, „gađajte“ brzinu od 60 obrtaja u minutu - tada će motor okretati točkove jednom u sekundi.

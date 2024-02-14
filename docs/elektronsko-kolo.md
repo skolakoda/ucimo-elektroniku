@@ -1,5 +1,7 @@
 # Elektronsko kolo
 
+[wiki](https://sh.wikipedia.org/wiki/Elektronsko_kolo)
+
 Elektronsko kolo je skup komponenti međusobno povezanih žicama kroz koje teče električna struja. Elektronsko kolo je sastavljeno od elektronskih komponenti, kao što su otpornici, tranzistori, induktori i diode.
 
 Kolo ima pet osnovnih delova:

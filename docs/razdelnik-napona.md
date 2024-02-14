@@ -1,6 +1,6 @@
 # Razdelnik napona
 
-Napon "gura" elektrone kroz žicu, a otpornici se suprotstavljaju kretanju elektrona, smanjujući napon. To smanjenje napona na komponenti zove se **pad napona**. 
+Napon "gura" elektrone kroz žicu, a otpornici se suprotstavljaju njihovom kretanju, smanjujući napon. To smanjenje napona na komponenti zove se **pad napona**. 
 
 **Razdelnik napona** je kolo koje pomoću pada napona stvara manji izlazni napon u delu kola, odnosno stvara manji izlazni napon od ulaznog.
 

@@ -6,7 +6,7 @@ Neke od ovih jednačina korističete i pri menjanju postojećih kola. Na primer,
 
 ## Računanje nepoznanica pomoću Omovog zakona
 
-Omov zakon određuje odnos između snage, napona, struje i otpora. U tabeli navedene su jednačine pomoću kojih se računaju ove vrednosti:
+[Omov zakon](omov-zakon) određuje odnos između snage, napona, struje i otpora. U tabeli navedene su jednačine pomoću kojih se računaju ove vrednosti:
 
 Nepoznata vrednost     | Formula
 -----------------------|----------

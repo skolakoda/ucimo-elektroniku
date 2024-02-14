@@ -1,5 +1,9 @@
 # Prekidači
 
+[wiki](https://sh.wikipedia.org/wiki/Prekida%C4%8D)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Switches-electrical.agr.jpg/400px-Switches-electrical.agr.jpg)
+
 Napajanja kolu "daje život". Međutim, kako se napajanje uključuje i isključuje? Za to služe prekidači.
 
 Kada promenite položaj prekidača da bi isključili baterijsku lampu, vi prekidate vezu između baterije i sijalice. Svi prekidači i preklopnici rade isto: ostvaruju vezu između žica da bi se omogućio tok električne struje ili tu vezu prekidaju da bi se tok zaustavio.

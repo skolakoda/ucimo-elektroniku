@@ -1,5 +1,9 @@
 # Mikrokontroler
 
+[wiki](https://sh.wikipedia.org/wiki/Mikrokontroler)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Octomod_Breadboard_%28photo_by_George_P._Macklin%29.jpg/420px-Octomod_Breadboard_%28photo_by_George_P._Macklin%29.jpg)
+
 Mikrokontroleri su osmo svetsko čudo. Jednostavno rečeno - oni su programabilna kola. Kao i računare, možete ih programirati da rade šta želite.
 
 Iako možda izgledaju kao obična integrisana kola, nude mnogo više: mikrokontroleri omogućavaju konstruisanje najboljih i najmodernijih elektronskih uređaja. Na primer, ako vozite noviji auto, vrlo je verovatno da je u njega ugrađen ne jedan, već desetak mikrokontrolera. Svaki od njih odgovoran je za po neki deo automobila, počev od kočnice, preko elektronskog paljenja, do sistema za aktiviranje vazdušnih jastuka.

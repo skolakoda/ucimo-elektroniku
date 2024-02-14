@@ -1,5 +1,7 @@
 # MOSFET
 
+[wiki](https://sh.wikipedia.org/wiki/MOSFET)
+
 MOSFET tranzistor ima tri izvoda: 
 1. *gate* (kapija)
 2. *drain* (odvod) 

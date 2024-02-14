@@ -1,5 +1,9 @@
 # Otpornici
 
+[wiki](https://sh.wikipedia.org/wiki/Otpornik)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Electronic-Axial-Lead-Resistors-Array.jpg/400px-Electronic-Axial-Lead-Resistors-Array.jpg)
+
 Električna struja je kretanje elektrona kroz provodnik. Sve komponente pružaju otpor električnoj struji, a otpornici su napravljeni da samo to rade. Otpornike možemo smatrati „kočnicama“ za elektrone. Njima kontrolišemo tok elektrona kroz kolo.
 
 Otpornici su osnovni gradivni blokovi električnih kola. Možete ih koristiti za:

@@ -1,6 +1,10 @@
 # Statički elektricitet
 
-Oblik elektriciteta koji se sreće u svakodnevnom životu, a koji je opasan i po ljude i po električne uređaje, jeste statički elektricitet. Zove se statički jer je reč o struji koja ostaje zarobljena u nekom izolacionom telu, čak i kada se ukloni izvor napajanja. Kod konvencionalne naizmenične i jednosmerne struje statički elektricitet nestaje kada se izvor napajanja isključi.
+[wiki](https://sh.wikipedia.org/wiki/Stati%C4%8Dki_elektricitet)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Attractive-electric-force-between-hair-and-balloon.jpg/400px-Attractive-electric-force-between-hair-and-balloon.jpg)
+
+Oblik elektriciteta koji se sreće u svakodnevnom životu, a koji je opasan i po ljude i po električne uređaje, jeste **statički elektricitet**. Zove se statički jer je reč o struji koja ostaje zarobljena u nekom izolacionom telu, čak i kada se ukloni izvor napajanja. Kod konvencionalne naizmenične i jednosmerne struje statički elektricitet nestaje kada se izvor napajanja isključi.
 
 Stari Egipćani su otkrili statički elektricitet kada su mačku trljali uglačanim ćilibarom. Nakon trljanja, te materijale bi privlačila neka nevidljiva sila. Slično tome, dva komadića mačjeg krzna koja bi protrljati o ćilibar, odbijala bi se. lako Egipćani nisu znali o kojoj se misterioznoj sili radi, bili su svesni da ona postoji.
 

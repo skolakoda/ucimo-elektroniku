@@ -1,6 +1,8 @@
 # Senzori
 
-Senzori (ili čula) su oči i uši elektronskog projekta.
+[wiki](https://sh.wikipedia.org/wiki/Senzor)
+
+**Senzori** (ili čula) su oči i uši elektronskog projekta.
 
 ## Senzori svetlosti
 

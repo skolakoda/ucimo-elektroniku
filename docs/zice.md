@@ -1,5 +1,9 @@
 # Žica
 
+[wiki](https://sh.wikipedia.org/wiki/%C5%BDica)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Stranded_lamp_wire.jpg/239px-Stranded_lamp_wire.jpg)
+
 Tokom pravljenja električnog kola moraćete da povezujete komponente kako bi omogućili struju između njih, a žice, kablovi i konektori upravo to omogućavaju. 
 
 Žica koju koristite u elektronskim projektima samo je dugačak struk metala, najčešće bakra. Žica ima samo jednu ulogu - kroz nju se kreću elektroni. Međutim, na raspolaganju nam je nekoliko tipova žice.

@@ -1,6 +1,10 @@
 # Prototipska ploča
 
-Prototipske ploče (en. *circuit breadboards*, *prototyping boards*, *solderless breadboards*) proizvode se u svim oblicima, stilovima i veličinama, ali sve služe istoj svrsi: imaju redove otvora, električno spojenih pomoću metalnih traka. U njih umećete komponente - otpornike, kondenzatore, diode, tranzistore, integrisana kola... a potom ih povezujete žicama da bi napravili kolo. Kada se uverite da kolo radi, možete primeniti neku od brojnih konstrukcionih tehnika koje su vam dostupne.
+[wiki](https://sh.wikipedia.org/wiki/Prototipska_plo%C4%8Da)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/400_points_breadboard.jpg/320px-400_points_breadboard.jpg)
+
+**Prototipske ploče** (en. *circuit breadboards*, *prototyping boards*, *solderless breadboards*) proizvode se u svim oblicima, stilovima i veličinama, ali sve služe istoj svrsi: imaju redove otvora, električno spojenih pomoću metalnih traka. U njih umećete komponente - otpornike, kondenzatore, diode, tranzistore, integrisana kola... a potom ih povezujete žicama da bi napravili kolo. Kada se uverite da kolo radi, možete primeniti neku od brojnih konstrukcionih tehnika koje su vam dostupne.
 
 Ne propustite prvo na prototipskoj ploči da ispitate kolo koje planirate da napravite. Često je moguće popraviti performanse malom promenom vrednosti nekoliko komponenti. Te izmene izvršićete na krajnje jednostavan način - uklonićete komponentu i zameniti je drugom, bez lemljenja.
 

@@ -1,5 +1,7 @@
 # Električna šema
 
+[wiki](https://sh.wikipedia.org/wiki/Elektri%C4%8Dna_shema)
+
 Zamislite da umesto elektronskog uređaja pravite drvenu kućicu za odmor. Pre nego što počnete radove, treba da napravite projekat, tj. nacrt kućice. Upravo to je električna šema: nacrt elektronskog kola, koje čini osnovu svakog uređaja.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/9a/LEDCircuit.PNG)

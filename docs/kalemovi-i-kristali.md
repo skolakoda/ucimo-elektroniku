@@ -4,6 +4,8 @@ Kalemovi i kristali u bliskoj su vezi s frekvencijom (učestanošću). **Kalemov
 
 ## Induktivni kalem
 
+[wiki](https://sh.wikipedia.org/wiki/Induktor)
+
 ![](slike/induktor.jpg)
 
 Sve radio-stanice emituju električne talase na određenoj frekvenciji. Kada promenite stanicu, vi podešavate radio na novu frekvenciju pomoću promenljivih komponenti u kolu, tako da one omoguće prijem samo signala na datoj frekvenciji. Šta to „briše“ sve signale sem onih koje emituje vaša omiljena radio-stanica? Za filtriranje frekvencije koriste se kalemovi, zajedno s kondenzatorima.
@@ -20,6 +22,8 @@ Kalemovi mogu biti stalni ili promenljivi. Kod oba tipa, žica je omotana oko iz
 Jezgro kalema može biti od vazduha, ferita (gvožđa) ili mnogih drugih materijala (iako se najčešće koriste vazduh i feriti).
 
 ## Kristali
+
+[wiki](https://sh.wikipedia.org/wiki/Kristalni_oscilator)
 
 Kada **kristal kvarca** isečete na određenu debljinu, kristal osciluje na određenoj frekvenciji. Kristali se koriste u kolima koja se zovu oscilatori; ona generišu električne signale na određenoj frekvenciji. Mikrokontroleri, kao što je kontroler BASIC Stamp, koriste oscilatore. Oni se upotrebljavaju i u mnogim drugim elektronskim uređajima.
 

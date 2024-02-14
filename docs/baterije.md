@@ -1,5 +1,7 @@
 # Baterije
 
+[wiki](https://sh.wikipedia.org/wiki/Baterija)
+
 Baterija se sastoji iz više redno vezanih elektrohemijskih ćelija, koje poseduju potencijalnu energiju. Baterije su odličan izvor napajanja za elektronske projekte, lake su i prenosive.
 
 ![](slike/olovno-kiselinska-celija.jpg)

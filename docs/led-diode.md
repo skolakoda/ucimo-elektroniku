@@ -1,5 +1,9 @@
 # Svetleće diode (LED)
 
+[wiki](https://sh.wikipedia.org/wiki/Svetle%C4%87a_dioda)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Verschiedene_LEDs.jpg/640px-Verschiedene_LEDs.jpg)
+
 Svetleća dioda (LED) je posebna vrsta dioda, isključivo za emitovanje svetlosti. Mogu biti raznih boja. Podnose vrlo slabe struje. Svaka svetleća dioda obara napon kola za oko 2V (plave i bele za 4V). Oko 20mA je najveća struja koju podnosi.
 
 Za LED diode navode se najveća dozvoljena struja i vršna struja. Vršna struja je apsolutno maksimalna struja koju možete propustiti kroz LED diodu u vrlo kratkom vremenu. Kratko istinski znači kratko - reda veličine milisekundi. Ove dve veličine ne treba mešati!

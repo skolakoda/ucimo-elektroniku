@@ -1,5 +1,9 @@
 # Multimetar
 
+[wiki](https://sh.wikipedia.org/wiki/Multimetar)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Digital_Multimeter_Aka.jpg/240px-Digital_Multimeter_Aka.jpg)
+
 Tokom sastavljanja kola ili otkrivanja problema, moraćete da obavite određena merenja da bi proverili rade li komponente kako bi trebalo. Multimetar je prvi merni uređaj i verovatno jedini koji će vam ikada zatrebati. Pomoću tog uređaja možete ne samo potvrditi da je vrednost napona u kolu odgovarajuća, već i proveriti da li negde postoji kratak spoj ili je prekinuta veza između komponenti.
 
 Recimo da ste sastavili električno kolo i upravo ga uključili. Šta ako ne radi? Pomoću multimetra ustanovićete koja je komponenta uzrok problema. Možete izmeriti napon, otpor i struju u različitim tačkama kola. Na primer, ako je napon u jednoj tački kola 5 volti, a u nekoj drugoj neočekivano padne na 0 volti, uzrok problema je negde između te dve kontrolne tačke.

@@ -1,5 +1,7 @@
 # Diode
 
+[wiki](https://sh.wikipedia.org/wiki/Dioda)
+
 Dioda je najjednostavniji oblik poluprovodnika. Poluprovodnici se koriste za upravljanje tokom elektrona u kolu. Dioda je velike otpornosti kada struja teče u jednom smeru a male kada teče u suprotnom. Drugim rečima, dioda se ponaša kao jednosmerni ventil za elektrone.
 
 Postoji nekoliko tipova dioda. Najčešće su:

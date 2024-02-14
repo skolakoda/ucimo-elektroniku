@@ -1,5 +1,9 @@
 # Kondenzatori: rezervoari elektriciteta
 
+[wiki](https://sh.wikipedia.org/wiki/Kondenzator)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Capacitors_%287189597135%29.jpg/420px-Capacitors_%287189597135%29.jpg)
+
 Kondenzatori skladište elektrone tako što ih privlače ka pozitivnom polu. Čim se napon smanji ili nestane, elektroni se oslobađaju. Kada kondenzator uklanja ili dodaje elektrone, on omogućava regulisanje promena napona. Takođe, kondenzatori u kombinaciji sa otpornicima mogu se koristiti kao merači vremena (tajmeri).
 
 Kondenzatori su vrlo jednostavni. Tipičan kondenzator ima u sebi dve metalne pločice, koje razdvaja dielektrični materijal odnosno izolator. Kao dielektrici se najčešće koriste plastika, liskun i papir.
@@ -34,7 +38,7 @@ Kondenzatori se biraju na osnovu dielektrika u njima. Neki materijali su bolji z
 
 Kondenzatori mogu biti različitih oblika. Kondenzatori s papirnim i aluminijumskim dielektrikom najčešće su cilindričnog oblika. Kondenzatori s tantalom, keramikom, liskunom i polistirenom loptastiji su, jer se uranjaju u epoksidno ili plastično kupatilo da bi se oformio omotač.
 
-## Kapacitivnost
+## Oznake
 
 Kapacitivnost nekih kondenzatora odštampana je direktno na njima. Obično su to kondenzatori sa aluminijumskim elektrolitom. Na velikim kondenzatorima ima dovoljno prostora da se odštampa kapacitivnost i radni napon.
 

@@ -1,8 +1,12 @@
 # Releji
 
-Na primer, naš uređaj napajaju baterije od 5 volti, ali želimo da uključi sijalice od 220 volti. Upotrebimo relej!
+[wiki](https://sh.wikipedia.org/wiki/Relej)
 
-Relej je električno napajan prekidač. Kada uređaj pošalje 5 volti releju, uključuje se elektromagnet i tako zatvara prekidač.
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Zugmagnet.jpg/304px-Zugmagnet.jpg)
+
+Recimo da naš uređaj napajaju baterije od 5 volti, ali želimo da uključi sijalice od 220 volti. Upotrebimo relej!
+
+**Relej** je električno napajan prekidač. Kada uređaj pošalje 5 volti releju, uključuje se elektromagnet i tako zatvara prekidač.
 
 Kako elektromagnetni deo releja radi? Elektromagnet može biti žica namotana oko gvozdene šipke ili eksera. Kada kroz žicu propustite struju, ekser postaje namagnetisan. Kada isključite struju, ekser gubi magnetne osobine.
 

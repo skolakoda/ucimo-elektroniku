@@ -1,6 +1,10 @@
 # Elektronske komponente
 
-Električne komponente su delovi koje koristimo u elektronskim projektima. Neke komponente služe za upravljanje tokom struje; na primer, pomoću obrtnog prekidača podešavamo jačinu sijalice. Druge komponente, kao zvučnici, napajaju se elektricitetom. Komponente koje zovemo senzori detektuju nešto (recimo svetlost ili toplotu) i generišu struju da bi se dobio odziv - na primer uključenje ili isključenje alarma.
+[wiki](https://sh.wikipedia.org/wiki/Elektronska_komponenta)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Componentes.JPG/600px-Componentes.JPG)
+
+Elektronske komponente su delovi koje koristimo u elektronskim projektima. Neke komponente služe za upravljanje tokom struje; na primer, pomoću obrtnog prekidača podešavamo jačinu sijalice. Druge komponente, kao zvučnici, napajaju se elektricitetom. Komponente koje zovemo senzori detektuju nešto (recimo svetlost ili toplotu) i generišu struju da bi se dobio odziv - na primer uključenje ili isključenje alarma.
 
 Pomoću električnih komponenti može da se upravlja elektricitetom. Na primer, prekidač povezuje sijalicu sa izvorom struje. Da bi se sijalica isključila, prekidač prekida električno kolo. Za upravljanje elektricitetom koriste se i otpornici, kondenzatori, diode i tranzistori.
 
@@ -21,6 +25,8 @@ Detektori kretanja, svetlosni senzori, mikrofoni i temperaturni senzori generiš
 Na primer, mikrofon generiše signal naizmenične struje, a temperaturni senzor jednosmerne.
 
 ## Poluprovodnici
+
+[wiki](https://sh.wikipedia.org/wiki/Poluprovodnik)
 
 U tranzistorima, diodama, svetlećim diodama, integrisanim kolima i mnogim drugim elektronskim uređajima umesto provodnika koriste se poluprovodnici. Poluprovodnik je materijal, kao silicijum, koji ima osobine provodnika i izolatora.
 
