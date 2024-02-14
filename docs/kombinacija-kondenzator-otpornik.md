@@ -1,6 +1,6 @@
 # Kombinacija kondenzatora i otpornika
 
-Kondenzator i otpornik vezani u kolo, čine jedan od osnovnih gradivnih blokova elektronskih kola. Kondenzator skladišti elektrone, dok otpornik upravlja njihovim tokom. Skupa, te dve komponente i mogu upravljati brzinom kojom elektroni pune i napuštaju kondenzator. Što je veća kapacitivnost, kroz kondenzator teče slabija struja, treba više elektrona da se napuni, i punjenje traje duže. Pravim izborom kondenzatora i otpornika možete podesiti trajanje punjenja i pražnjenja.
+Kondenzator i otpornik vezani u kolo čine jedan od osnovnih gradivnih blokova elektronskih kola. Kondenzator skladišti elektrone, dok otpornik upravlja njihovim tokom. Skupa, te dve komponente i mogu upravljati brzinom kojom elektroni pune i napuštaju kondenzator. Što je veća kapacitivnost, kroz kondenzator teče slabija struja, treba više elektrona da se napuni, i punjenje traje duže. Pravim izborom kondenzatora i otpornika možete podesiti trajanje punjenja i pražnjenja.
 
 ## Uključivanje i isključivanje kola
 
@@ -10,7 +10,7 @@ Izlazni napon (V izlaz) zavisi od toga koliko je napunjen kondenzator u kolu. Š
 
 Šta ako želite da se kondenzator napuni za 30 sekundi? U kutiji s komponentama imate kondenzator kapacitivnosti 15 mikrofarada; korišćenjem otpornika otpornosti 2 megaoma podešava se vreme za koje kondenzator dostigne dve trećine svog kapaciteta.
 
-Punjenje kondenzatora do dve trećine kapaciteta često obezbeduje dovoljan izlazni napon za uključivanje sledeće komponente u kolu. Ako vam to ne pođe za rukom, upotrebite otpornik manje otpornosti da bi se kondenzator punio brže. U principu, sve to možete obaviti vrlo jednostavno: upotrebite kondenzator koji vam je pri ruci i izračunajte koliko je oma neophodno da bi se približili željenom vremenskom kašnjenju.
+Punjenje kondenzatora do dve trećine kapaciteta često obezbeđuje dovoljan izlazni napon za uključivanje sledeće komponente u kolu. Ako vam to ne pođe za rukom, upotrebite otpornik manje otpornosti da bi se kondenzator punio brže. U principu, sve to možete obaviti vrlo jednostavno: upotrebite kondenzator koji vam je pri ruci i izračunajte koliko je oma neophodno da bi se približili željenom vremenskom kašnjenju.
 
 Vreme za koje se kondenzator napuni do dve trećine kapaciteta možete izračunati pomoću takozvane RC vremenske konstante. Pomnožite otpornost otpornika, u omima, kapacitivnošću kondenzatora, u faradima, i dobićete vreme za koje se kondenzator napuni do dve trećine kapaciteta.
 

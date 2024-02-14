@@ -2,13 +2,13 @@
 
 Zamislite da umesto elektronskog uređaja pravite drvenu kućicu za odmor. Pre nego što počnete radove, treba da napravite projekat, tj. nacrt kućice. Upravo to je električna šema: nacrt elektronskog kola, koje čini osnovu svakog uređaja.
 
+![](https://upload.wikimedia.org/wikipedia/commons/9/9a/LEDCircuit.PNG)
+
 ## Čitanje električnih šema
 
-Šemalski dijagrami vam pokazuju kako su povezane komponente u kolu. Na šemama se veze prikazuju simbolima koji predstavljaju elektronske komponente i linijama koje predstavljaju način njihovog povezivanja.
+Šematski dijagrami nam pokazuju kako su povezane elektronske komponente u kolu. Na šemama se veze prikazuju simbolima koji predstavljaju komponente i linijama koje predstavljaju način njihovog povezivanja.
 
 Ako odlučite da se ozbiljno bavite elektronikom, pre ili kasnije ćete morati da naučite kako se čitaju šeme. No, jezik šema nije tako težak. Na većini šematskih dijagrama koristi se tek desetak simbola za komponente, kao što su otpornici, kondenzatori i tranzistori.
-
-## Šta je šema i zašto je ona važna?
 
 Šematski dijagrami umnogome liče na mape i auto-karte na kojima linije povezuju mesta ili predele. Dok se na mapama linije koriste za povezivanje tačaka i zvezdica koje predstavljaju naselja i gradove, na šemama se linije koriste za povezivanje simbola koji predstavljaju otpornike, tranzistore i kondenzatore koji čine neko električno kolo.
 
@@ -20,13 +20,15 @@ U šemama se uglavnom poštuju standardne konvencije. One se mogu razlikovati na
 
 # Šematski simboli
 
+![](https://upload.wikimedia.org/wikipedia/commons/c/cb/Circuit_elements.svg)
+
 U savremenim šemama elektronskih kola koristi se nekoliko stotina simbola, dok se u starijim kolima koristi još više simbola, medu kojima su oni za vakuumske cevi i druge komponente. Ipak, neophodno je da zapamtite samo nekoliko desetina simbola. Ostale možete potražiti u priručnicima kad ih vidite na nekoj šemi.
 
 Simbole delimo u četiri kategorije;
-* Osnovni šematski simboli: masa i uzemljenje, tačke spajanja, ulazi i izlazi.
-* Elektronske komponente: otpornici, tranzistori, diode i prigušnice.
-* Logički simboli: kola I, ILI, NILI i NE (invertori).
-* Razni drugi simboli: prekidači, sijalice i ostali hardver.
+* **Osnovni** šematski simboli: masa i uzemljenje, tačke spajanja, ulazi i izlazi.
+* Elektronske **komponente**: otpornici, tranzistori, diode i prigušnice.
+* **Logički** simboli: kola I, ILI, NILI i NE (invertori).
+* **Razni** drugi simboli: prekidači, sijalice i ostali hardver.
 
 Osnovni šematski simboli predstavljaju mehaničke aspekte kola, kao što su napajanje, mesta i načini povezivanja i svi konektori, utikači i terminali.
 
