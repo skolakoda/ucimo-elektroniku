@@ -1,6 +1,6 @@
 # Integrisano kolo
 
-Integrisana kola (takođe čipovi ili IC), minijaturne su štampane ploče napravljene na jednom komadu poluprovodnika. Tipično integrisano kolo ima na stotine tranzistora, otpornika, dioda i kondenzatora. Integrisana kola su osnovni gradivni blokovi većih električnih kola. Povezuju se međusobno, pa mogu da oforme bilo koji elektronski uređaj.
+**Integrisana kola** (takođe **čipovi** ili **IC**), minijaturne su štampane ploče napravljene na jednom komadu poluprovodnika. Tipično integrisano kolo ima na stotine tranzistora, otpornika, dioda i kondenzatora. Integrisana kola su osnovni gradivni blokovi većih električnih kola. Povezuju se međusobno, pa mogu da oforme bilo koji elektronski uređaj.
 
 Način na koji su komponente povezane unutar integrisanog kola određuje njegovu ulogu i rad.
 
