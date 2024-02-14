@@ -1,5 +1,7 @@
 # Tranzistori
 
+![](slike/NPN-transistor.jpg)
+
 Tranzistor upravlja tokom električne struje tako što otvara i zatvara svoje „ventile“. Reč tranzistor je kovanica koja znači prelazni otpornik (*trans rezistor*). Tranzistore možemo koristiti kao prekidače ili kao pojačavače.
 
 Tranzistori su razvijeni kao alternativa vakuumskim lampama. Milioni pojedinačnih tranzistora čine mikroprocesor u srcu svakog računara.
@@ -16,7 +18,7 @@ Poluprovodni materijal tranzistora veličine je zrna peska, čak i manji. Za tak
 * Tranzistori za pojačavanje signala skoro uvek imaju tri izvoda, a fototranzistori dva.
 * Veličina: Tranzistori snage veći su od onih za pojačavanje signala.
 
-## Tranzistora kao prekidač
+## Tranzistor kao prekidač
 
 Prekidač otvara/zatvara put kojim protiče električna struja. Tranzistor možemo koristiti kao električno upravljan prekidač. 
 
@@ -35,7 +37,7 @@ Recimo da koristite uređaj koji se automatski pali u svitanje. Uređajem upravl
 
 ## Tranzistor kao pojačavač
 
-Često je neophodno pojačati signal. Na primer, pojačati signal od mikrofona do zvučnika. Pojačavač mora da ima tranzistor koji je delimično uključen. Da bi se tranzistor delimično uključio, na bazu se dovodi mali napon polarizacije (en. *bias*). Taj postupak se zove pobuđivanje tranzistora. 
+Često je neophodno pojačati signal, na primer od mikrofona do zvučnika. Pojačavač mora da ima tranzistor koji je delimično uključen. Da bi se tranzistor delimično uključio, na bazu se dovodi mali napon polarizacije (en. *bias*). Taj postupak se zove pobuđivanje tranzistora. 
 
 Pobuđeno stanje čini glavnu razliku između korišćenja tranzistora kao pojačavača i kao prekidača. Kada se tranzistor koristi kao prekidač, tranzistor je ili uključen ili isključen. U slučaju kada se koristi kao pojačavač, primenjuje se napon polarizacije, ili pobuda, na bazu kako bi tranzistor bio delimično uključen. Zamislite to kao rad automobila u leru. 
 
@@ -49,7 +51,7 @@ Možete povezati više od jednog tranzistora i postići nekoliko stepeni pojača
 
 ![](slike/osnovni-pojacavac.jpg)
 
-Na slici je kolo s tranzistorskim pojačavačem. Da bi se tranzistor pobudio otpornici R1 i R2 vezani su na bazu i konfigurisani kao razdelnik napona. Izlaz iz razdelnika obezbeđuje napon baze dovoljan za uključivanje tranzistora i omogućavanje struje. Kada pojačavač primi naizmenični ulazni signal, kao onaj koji potiče iz mikrofona, signal mora biti oko 0 volti da bi održao napon polarizacije tranzistora. Kondenzator na ulazu filtrira sva odstupanja od 0 volti jednosmernog napona (DC pomeraj) ulaznog signala. Preostala dva otpornika, R4 između emitera i uzemljenja i R3 između kolektora i izvora napona (+V), upravljaju pojačanjem.
+Na slici je kolo s tranzistorskim pojačavačem. Da bi se tranzistor pobudio otpornici R1 i R2 vezani su na bazu i konfigurisani kao [razdelnik napona](razdelnik-napona). Izlaz iz razdelnika obezbeđuje napon baze dovoljan za uključivanje tranzistora i omogućavanje struje. Kada pojačavač primi naizmenični ulazni signal, kao onaj koji potiče iz mikrofona, signal mora biti oko 0 volti da bi održao napon polarizacije tranzistora. Kondenzator na ulazu filtrira sva odstupanja od 0 volti jednosmernog napona (DC pomeraj) ulaznog signala. Preostala dva otpornika, R4 između emitera i uzemljenja i R3 između kolektora i izvora napona (+V), upravljaju pojačanjem.
 
 ### Operacioni pojačavač
 
@@ -57,11 +59,11 @@ Operacioni pojačavač je integrisano kolo koje sadrži nekoliko tranzistora i d
 
 ## Podela tranzistora
 
-## Bipolarni i unipolarni (tranzistori sa efektom polja)
-
 Dva najčešća tipa su bipolarni i unipolarni (FET) tranzistori. Pod tranzistorom se podrazumeva bipolarni, ako nije naglašeno drukčije. 
-* Bipolarni tranzistori: Na bazu tranzistora dovodi se mala ulazna struja. Time se menja jačina struje između kolektora i emitera.
-* FET (tranzistori sa efektom polja): imaju tri izvoda, ali se zovu gejt, sors i drejn. Dovođenjem napona na gejt upravlja se strujom između sorsa i drejna. Postoje dve vrste FET tranzistora: sa N kanalom (slično NPN tranzistoru) i sa P kanalom (slično PNP tranzistoru).
+* **bipolarni**: na bazu tranzistora dovodi se mala ulazna struja, čime se menja jačina struje između kolektora i emitera.
+* **unipolarni (tranzistori sa efektom polja, FET)**: imaju tri izvoda, ali se zovu gejt, sors i drejn. Dovođenjem napona na gejt upravlja se strujom između sorsa i drejna. Postoje dve vrste FET tranzistora: 
+  * sa N kanalom (slično NPN tranzistoru) i 
+  * sa P kanalom (slično PNP tranzistoru).
 
 ### Bipolarni tranzistori: NPN i PNP
 

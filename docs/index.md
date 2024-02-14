@@ -23,6 +23,7 @@
 5. [žice](zice.md)
 6. [baterije](baterije.md)
 7. [prekidaci](prekidaci.md)
+    1. [releji](releji.md)
 8. [elektromotori](elektromotori.md)
 9. [senzori](senzori.md)
 10. [integrisano-kolo](integrisano-kolo.md)

@@ -45,9 +45,9 @@ Paralelnim povezivanjem baterija dobija se veća amperaža, dok napon ostaje ist
 
 ## Kapacitet i trajanje baterije
 
-Vrednost amper-sati ili miliamper-sati neke baterije ukazuje na količinu struje koju baterija može da proizvede. Na primer, baterija od 9 volti obično ima vrednost od oko 500 miliampersati. Ta baterija može da napaja kolo koje troši 25 miliampera oko 20 sati pre nego što napon počne da joj opada. AA baterija može da ima vrednost i 1500 miliampersati. Sledstveno, grupa AA baterija može da napaja kolo koje troši 25 miliampera oko 60 sati.
+Vrednost amper-sati neke baterije ukazuje na količinu struje koju baterija može da proizvede. Na primer, baterija od 9 volti obično ima vrednost od oko 500 miliampersati. Ta baterija može da napaja kolo koje troši 25 miliampera oko 20 sati pre nego što napon počne da joj opada. AA baterija može da ima vrednost i 1500 miliampersati. Sledstveno, grupa AA baterija može da napaja kolo koje troši 25 miliampera oko 60 sati.
 
-Primer 1: Arduino i steper motor:
+### Primer 1: Arduino i steper motor:
 
 Motor koristi 1A po sekundi, a pali se dvaput dnevno po 3 sekunde. Kontroler troši 1mA sve vreme. Koliko zajedno potroše za dan?
 
@@ -75,11 +75,11 @@ Stanje napunjenosti baterije može se odrediti na osnovu njene trenutne voltaže
 ![](slike/stanje-telefonske-baterije.jpg)
 
 Ako imamo četiri podeoka na indikatoru:
-- When battery voltage is over 3.9V, it will illuminate 4 blocks
-- When battery voltage is over 3.7V, it will illuminate 3 blocks
-- When battery voltage is over 3.5V, it will illuminate 2 blocks
-- When battery voltage is over 3.3V, it will illuminate 1 block
-- When battery voltage is less than 3.3V, all blocks will be off
+- Kada je napon baterije preko 3.9 V, osvetliće 4 podeoka
+- Kada je napon baterije preko 3.7 V, osvetliće 3 podeoka
+- Kada je napon baterije preko 3.5 V, osvetliće 2 podeoka
+- Kada je napon baterije preko 3.3 V, osvetliće 1 podeok
+- Kada je napon baterije ispod 3.3 V, svi podeoci će biti isključeni
 
 ### Stanje napunjenosti baterije od 12 V
 

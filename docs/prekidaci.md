@@ -25,17 +25,3 @@ Prekidače sa utisnim dugmetom najčešće koristimo za uključivanje/isključiv
 * Preklopnik (jednopolni preklopni prekidač) ulaznu žicu povezuje sa jednom od dve izlazne. Na primer, kada kolo treba da uključi zeleno ili crveno svetlo, koristite ovu vrsta preklopnika.
 * Dvopolni prekidač: ima dve ulazne žice i dve izlazne. Koristi se za uključenje dva zasebna kola. Na primer, u jednom kolu mogu da budu komponente koje rade na 5 volti a u drugom komponente koje rade na 12 volti.
 * Dvopolni preklopnik: kao dva obična preklopnika kontrolisana jednim mehanizmom. Može se koristiti da menja polaritet jednosmernog napona kako bi se motor okretao u suprotnom smeru.
-
-# Releji
-
-Napravili ste uređaj koji će vas obavestiti kada neko krene da prazni frižider. Međutim, uređaj napajaju baterije od 5 volti, a vi želite da uređaj uključi sijalice od 220 volti. Upotrebite relej!
-
-Relej je električno napajan prekidač. Kada uređaj pošalje 5 volti releju, uključuje se elektromagnet i tako zatvara prekidač.
-
-Kako elektromagnetni deo releja radi? Elektromagnet može biti i žica namotana oko gvozdene šipke ili čak eksera. Kada kroz žicu propustite struju, ekser postaje namagnetisan. Kada isključite struju, ekser gubi magnetne osobine.
-
-Dva magneta se međusobno privlače ili odbijaju u zavisnosti od toga koje polove magneta sastavite. Deo prekidača u releju sastoji se od poluge pričvršćene za magnet. Kada na namotaj žice primenite napon, elektromagnet privlači polugu ka sebi, prekidač se zatvara i povezuje izvor napona od 220 volti sa sijalicama. Kada prekinete tok struje kroz kalem, elektromagnet se isključuje, opruga povlači polugu pa se prekidač otvara.
-
-Možete naći releje koji koriste jednosmerni napon od 5, 12 ili 24 V za napajanje, s jednopolnim prekidačem ili preklopnikom i s dvopolnim preklopnikom.
-
-Polugu u releju nekada nazivaju armatura.
