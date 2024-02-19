@@ -4,77 +4,82 @@
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Digital_Multimeter_Aka.jpg/240px-Digital_Multimeter_Aka.jpg)
 
-Tokom sastavljanja kola ili otkrivanja problema, moraćete da obavite određena merenja da bi proverili rade li komponente kako bi trebalo. Multimetar je prvi merni uređaj i verovatno jedini koji će vam ikada zatrebati. Pomoću tog uređaja možete ne samo potvrditi da je vrednost napona u kolu odgovarajuća, već i proveriti da li negde postoji kratak spoj ili je prekinuta veza između komponenti.
+Tokom sastavljanja kola ili otkrivanja problema, moramo obaviti određena merenja da bi proverili rade li komponente kako treba. Multimetar je prvi i verovatno jedini merni uređaj koji će nam ikad zatrebati. Pomoću njega možemo ne samo potvrditi da je napon u kolu odgovarajući, već i proveriti postoji li negde kratak spoj ili je prekinuta veza između komponenti.
 
-Recimo da ste sastavili električno kolo i upravo ga uključili. Šta ako ne radi? Pomoću multimetra ustanovićete koja je komponenta uzrok problema. Možete izmeriti napon, otpor i struju u različitim tačkama kola. Na primer, ako je napon u jednoj tački kola 5 volti, a u nekoj drugoj neočekivano padne na 0 volti, uzrok problema je negde između te dve kontrolne tačke.
+Recimo da smo sastavili električno kolo i upravo ga uključili. Šta ako ne radi? Pomoću multimetra ustanovićemo koja je komponenta uzrok problema. Možemo izmeriti napon, otpor i struju u različitim tačkama kola. Na primer, ako je napon u jednoj tački kola 5 volti, a u nekoj drugoj neočekivano padne na 0 volti, uzrok problema je negde između te dve tačke.
 
 ## Osnove multimetra
 
-Multimetar, koji se još naziva i univerzalni instrument ili avometar (od amper-volt-om), osnovna je alatka za sve koji se bave elektronikom. Multimetar se koristi za brojna merenja - odatle i prefiks „multi“. Pomoću te alatke možete meriti:
+Multimetar je osnovna alatka za sve koji se bave elektronikom. Multimetar se koristi za brojna merenja - odatle i prefiks „multi“. Pomoću te alatke možemo meriti:
 * naizmenične napone
 * jednosmerne napone
 * otpornost
 * jačinu struje koja prolazi kroz kolo
 * kontinuitet (da li su veze u kolu ispravne ili su prekinute)
+
 U zavisnosti od modela, moguće je ispitati ispravnost dioda, kondenzatora i tranzistora.
 
-Svi multimetri imaju par mernih kablova, crni i crveni (crni za vezu sa uzemljenjem, a crveni za vezu s pozitivnim polom). Oba kabla imaju na kraju metalnu sondu (ispitnu pipalicu).
+Svi multimetri imaju par mernih kablova, crni i crveni (crni za vezu sa uzemljenjem, a crveni za vezu s pozitivnim polom). Oba kabla imaju na kraju metalnu sondu (pipalicu). 
 
-Ako nemate multimetar, trebalo bi ozbiljno da razmislite o kupovini. Glavna razlika između skupljih i jeftinijih modela je broj funkcija i mogućnosti - na primer, imaju li ugrađene funkcije za ispitivanje kondenzatora i tranzistora.
+Glavna razlika između skupljih i jeftinijih modela je broj funkcija i mogućnosti - na primer, imaju li ugrađene funkcije za ispitivanje kondenzatora i tranzistora.
 
-## Zapamtite: bezbednost na prvom mestu!
+## Bezbednost na prvom mestu!
 
-Tokom većine ispitivanja u kojima se koristi multimetar radi se s niskim naponima, koji vam ne mogu mnogo nauditi. Međutim, ponekad ćete morati da ispitate visoke napone, kao što je ulazni naizmenični napon izvora napajanja. U tim situacijama nepažljivo korišćenje multimetra može da izazove ozbiljne povrede. Čak i kada ne ispitujete kolo visokog napona, možete biti izloženi opasnoj električnoj struji ako radite sa određenom elektronskom opremom, kao što su radio-prijemnik, stereo uređaj ili video-rikorder.
+U većini ispitivanja gde koristimo multimetar radi se s niskim naponima, koji nam ne mogu mnogo nauditi. Međutim, ponekad ispitujemo i visoke napone, kao što je ulazni naizmenični napon napajanja. U tim situacijama nepažljivo korišćenje multimetra može da izazove ozbiljne povrede. Čak i kada ne ispitujemo kolo visokog napona, možemo biti izloženi opasnoj struji ako radimo sa određenom elektronskom opremom, kao što su radio-prijemnik, stereo uređaj ili video-rikorder.
 
-Zapamtite: Ako radite na elektronskom projektu koji koristi struju iz gradske električne mreže i dodirnete „živi“ provodnik kroz koji prolazi naizmenična struja, možete se ozbiljno ozlediti pa čak i poginuti. Posebno budite pažljivi i držite prste podalje od metalnih sondi multimetra na krajevima mernih kablova. 
+Zapamtite: Ako radite na projektu koji koristi struju iz gradske električne mreže i dodirnete „živi“ provodnik kroz koji prolazi naizmenična struja, možete se ozbiljno ozlediti pa čak i poginuti. Obavezno držite prste podalje od metalnih pipalica multimetra! 
 
 Nikada ne postavljajte sonde naslepo po kolu da bi očitali neku vrednost. Sonde postavite samo na one delove kola koji su vam poznati. 
 
-Bezbedna metoda korišćenja multimetra podrazumeva pričvršćivanje štipaljke na kraju crnog kabla i postavljanje te štipaljke na šasiju uređaja ili uzemljenje. Jednom rukom postavljajte sondu na crvenom (pozitivnom) kablu na različita merna mesta a drugu bezbedno držite u džepu.
+Bezbedno korišćenje multimetra podrazumeva pričvršćivanje štipaljke na crnom kablu i njeno postavljanje na šasiju uređaja ili uzemljenje. Jednom rukom postavljajte sondu na crvenom kablu na različita merna mesta a drugu bezbedno držite u džepu.
 
-## Koji izabrati: digitalni ili anaiogni multimetar?
+## Koji izabrati: digitalni ili analogni multimetar?
 
 Postoje dve vrste multimetara: digitalni i analogni.
-* Digitalni multimetri imaju digitalni displej, kao digitalni ručni časovnici.
-* Na analognim multimetrima, izmerene vrednosti prikazuju se staromodno, mehaničkim kretanjem kazaljke po skali.
-Digitalni multimetri su nekada bili skuplji od analognih, ali je sada ta razlika u ceni nestala. 
+* **Digitalni multimetri** imaju digitalni displej, kao digitalni časovnici.
+* **Analogni multimetri** izmerene vrednosti prikazuju mehaničkim kretanjem kazaljke po skali.
 
-Generalno gledano, analogni multimetri se teže koriste jer je neophodno izabrati tip ispitivanja (napon, struja, otpornost) i opseg merenja. Zatim treba pročitati rezultate na odgovarajućoj skali i proceniti pravu izmerenu vrednost jer kazaljka stalno „podrhtava". Nasuprot tome, digitalni multimetri prikazuju rezultat kao tačan broj, pa korisnik ne treba ništa da nagađa.
+Generalno, analogni multimetri se teže koriste jer je neophodno izabrati tip ispitivanja (napon, struja, otpornost) i opseg merenja. Zatim treba pročitati rezultate na odgovarajućoj skali i proceniti pravu izmerenu vrednost jer kazaljka stalno „podrhtava". Nasuprot tome, digitalni multimetri prikazuju rezultat kao tačan broj, pa korisnik ne treba ništa da nagađa.
+
+Digitalni multimetri su nekada bili skuplji od analognih, ali je sada ta razlika u ceni nestala. 
 
 ## Osnovne funkcije multimetra
 
-Ogoljeno do srži, može se reći kako je osnovna namena multimetra da obavlja tri osnovna merenja u elektronici: napona, jačine struje i otpornosti.
+Može se reći da je osnovna namena multimetra da obavlja tri osnovna merenja u elektronici: 
+* napona, 
+* jačine struje i 
+* otpornosti.
 
 ### Merenje struje i napona
 
 Napon i struja se mere kada je kolo priključeno na izvor napajanja. U uobičajena merenja napona i struje spadaju:
-* Merenje napona baterije. Napon možete izmeriti i dok koristite bateriju. U stvari, mnogi elektroničari smatraju da se precizniji rezultati dobijaju kada baterija obezbeđuje napon za kolo, odnosno pod opterećenjem.
+* Merenje napona baterije. Mnogi elektroničari smatraju da se precizniji rezultati dobijaju kada baterija obezbeđuje napon za kolo, odnosno kada se meri pod opterećenjem.
 * Određivanje da li kolo ili neka komponenta crpi previše struje. Ako kroz kolo protiče jača struja od one koju podnosi, komponente mogu da se pregreju i trajno oštete.
-* Potvrđivanje da se komponenta napaja odgovarajućim naponom. Te provere će vam pomoći da pronađete uzrok problema u kolu.
+* Potvrda da se komponenta napaja odgovarajućim naponom. Te provere će vam pomoći da pronađete uzrok problema u kolu.
 
 ### Merenje otpornosti
 
-Otpornost (u omima) se skoro uvek meri kada kolo nije uključeno. Možete meriti otpornost celog kola ili pojedinačne komponente. Možete meriti otpornost žica, otpornika, motora i mnogih drugih komponenti i uređaja.
+Otpornost (u omima) se skoro uvek meri kada kolo nije uključeno. Možemo meriti otpornost celog kola ili pojedinačne komponente. Možemo meriti otpornost žica, otpornika, motora i mnogih drugih komponenti.
 
-Otpornost, ili njeno nepostojanje, ukazaće vam na kratke spojeve ili otvorena kola - takozvani kontinuitet elektronskih komponenti. Tokom tih ispitivanja, kratak spoj ima otpornost nula (ili skoro nula) dok je otpornost otvorenog kola beskonačna. Testove kontinuiteta koristite za pronalaženje prekida u žicama.
+Otpornost, ili njeno nepostojanje, ukazaće nam na kratke spojeve ili otvorena kola - takozvani kontinuitet elektronskih komponenti. Tokom tih ispitivanja, kratak spoj ima otpornost nula (ili skoro nula) dok je otpornost otvorenog kola beskonačna. Testove kontinuiteta koristimo za pronalaženje prekida u žicama.
 
-Pomoću multimetra možete obaviti još neka ispitivanja koja se zasnivaju na merenju otpornosti:
-* Osigurači: Pregoreli osigurač daje otvoreno kolo.
-* Prekidači: Uključivanjem i isključivanjem prekidača rezultati očitavanja na multimetru menjaju se između vrednosti nula (kratak spoj, uključen prekidač) i beskonačno (otvoreno kolo, isključen prekidač).
-* Spojevi na štampanoj ploči: Loš spoj bakarnih vodova na štampanoj ploči ponaša se kao prekinuta žica i na multimetru se pokazuje kao otvoreno kolo beskonačne otpornosti.
-* Lemni spojevi: Loš lemni spoj se na multimetru očitava kao otvoreno kolo beskonačne otpornosti.
+Pomoću multimetra možemo obaviti još neka ispitivanja koja se zasnivaju na merenju otpornosti:
+* **Osigurači**: Pregoreli osigurač daje otvoreno kolo.
+* **Prekidači**: Uključivanjem i isključivanjem prekidača rezultati očitavanja na multimetru menjaju se između vrednosti nula (kratak spoj, uključen prekidač) i beskonačno (otvoreno kolo, isključen prekidač).
+* **Lemni spojevi**: Loš lemni spoj se na multimetru očitava kao otvoreno kolo beskonačne otpornosti.
+* **Spojevi na štampanoj ploči**: Loš spoj bakarnih vodova na štampanoj ploči ponaša se kao prekinuta žica i na multimetru se pokazuje kao otvoreno kolo beskonačne otpornosti.
 
 ### Zvučni signal pri ispitivanju kontinuiteta
 
-Neki multimetri se tokom ispitivanja kontinuiteta oglašavaju zvučnim signalom. Da bi iskoristili tu mogućnost, postavite birač radnog režima multimetra na Continuity ili Tone. Zvučno oglašavanje će vam koristiti kada proveravate veze u kolu. Ako žica ili veza imaju kratak spoj, multimetar će se oglasiti zvučnim signalom.
+Neki multimetri se tokom ispitivanja kontinuiteta oglašavaju zvučnim signalom. Da bi to koristili, postavite birač radnog režima na *Continuity* ili *Tone*. Zvučno oglašavanje će nam koristiti kada proveravamo veze u kolu. Ako veza ima kratak spoj, multimetar će se oglasiti zvučnim signalom.
 
-## Svi mogući ulazi i položaji birača
+## Delovi multimetra
 
-Na slici 9-3 možete uočiti sve glavne elemente tipičnog multimetra. Evo šta oni znače:
-* Indikator sa skalama ili digitalni displej: Analogni multimetri imaju indikator s nekoliko označenih skala i kazaljku koja pokazuje izmerene vrednosti. Digitalni multimetar ima digitalni displej s brojčanim očitavanjem.
-* Birač funkcija: Postavite birač u odgovarajući položaj za merenje koje želite da obavite: napon, struja, otpornost... Na multimetrima koji nemaju funkciju automatskog biranja opsega, pomoću birača ćete morati da izaberete i opseg vrednosti (maksimalnu vrednost). Ako je podešena maksimalna vrednost veća od najveće vrednosti koju možete da dobijete merenjem sigurni ste da će merenje biti najpreciznije moguće.
-* Priključci za merne kablove: Svaki multimetar ima najmanje dva priključka za merne kablove + (pozitivan) i - (negativan). Merni kablovi se uključuju u te priključke. Neki multimetri imaju i dodatne ulaze za merenje jakih struja (koji su obično označeni slovom A, od reči amperaža) i specijalna ležišta za ispitivanje tranzistora i kondenzatora, koja su prikazana na slici.
-* Dugme za podešavanje nule: Na analognim multimetrima bez automatskog podešavanja, postoji obrtno dugme kako bi kazaljku postavili tačno na 0 (nula) oma pre merenja otpornosti. Neki digitalni multimetri imaju dugme koje, kada ga pritisnete, podešava uređaj na nulu.
+Glavni elementi tipičnog multimetra su:
+* **Indikator** sa skalama ili digitalni displej: Analogni multimetri imaju indikator s nekoliko označenih skala i kazaljku koja pokazuje izmerene vrednosti. Digitalni multimetar ima digitalni displej s brojčanim očitavanjem.
+* **Birač funkcija**: Postavite birač u odgovarajući položaj za merenje koje želite da obavite: napon, struja, otpornost... Na multimetrima koji nemaju funkciju automatskog biranja opsega, pomoću birača morate izabrati i opseg vrednosti (maksimalnu vrednost). Ako je podešena maksimalna vrednost veća od najveće vrednosti koju možete da dobijete merenjem sigurni ste da će merenje biti najpreciznije moguće.
+* **Priključci za merne kablove**: Svaki multimetar ima najmanje dva priključka za merne kablove `+` (pozitivan) i `-` (negativan). Merni kablovi se uključuju u njih. Neki multimetri imaju i dodatne ulaze za merenje jakih struja (koji su obično označeni slovom `A`, od amperaža) i specijalna ležišta za ispitivanje tranzistora i kondenzatora.
+* **Dugme za podešavanje nule**: Na analognim multimetrima bez automatskog podešavanja, postoji obrtno dugme kako bi kazaljku postavili tačno na nula oma pre merenja otpornosti. Neki digitalni multimetri imaju dugme koje, kada ga pritisnete, podešava uređaj na nulu.
 
 ## Preciznost, rezolucija i osetljivost
 
