@@ -14,7 +14,7 @@ I = V / R
   = 2 ampera
 ```
 
-Trebalo bi proveriti snagu koju otpornik podnosi, kako ne bi bio spaljen. Na osnovu drugog oblika Omovog zakona, računamo snagu:
+Trebalo bi proveriti snagu koju otpornik podnosi, kako ne bi bio spaljen. Pomoću drugog oblika Omovog zakona, računamo snagu:
 
 ```
 P = R * I^2 
