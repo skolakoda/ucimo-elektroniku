@@ -25,6 +25,8 @@ Evo delova tipičnog mikrokontrolera:
 * **Postojana memorija**: Program koji izvršava računar mikrokontrolera, čuva se u postojanoj memoriji. Ova memorija zadržava sadržaj i kada isključite mikrokontroler i oživljava kada se on ponovo pokrene.
 * **Ulazno-izlazni priključci (I/O)**: Omogućavaju da mikrokontroler komunicira sa okolinom, da upravlja svetlom, motorima, relejima, senzorima, prekidačima, LCD ekranima, čak i drugim mikrokontrolerima. I/O priključci dopremaju mikrokontroleru informacije na osnovu kojih upravlja drugim uređajima. Na primer, mikrokontroler može da aktivira LED diodu kada pritisnete prekidač ili da pokrene motor kada senzor detektuje da neko prolazi.
 
+## Primer: LEGO robot
+
 Dobar primer za funkcionisanje mikrokontrolera jeste mozak iz kompleta za Mindstorms robote kompanije LEGO. Kao i sve mikrokontrolere, mozak Mindstorms robota programirate tako što mu šaljete programske naredbe. Te naredbe prvo sastavite na računaru, potom ih šaljete robotovom mozgu preko infracrvenih talasa. Pošto pošaljete naredbe mikrokontroleru, one se čuvaju u trajnoj memoriji dok ih ne zamenite novim naredbama. Kad izmenite samo nekoliko redova programa, robot moći će da radi sledeće:
 * Pronaći ce najjači svetlosni izvor u prostoriji i otići ka njemu,
 * Umesto da priđe najjačem izvoru svetlosti, udaljiće se od njega.
