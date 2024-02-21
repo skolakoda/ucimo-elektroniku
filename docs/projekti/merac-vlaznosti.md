@@ -1,8 +1,8 @@
-# Merač vlage (vlagomer)
+# Vlagomer
 
-Sa meračem vlage možete proveriti vlažnost tla i je li biljkama potrebno zalivanje.
+Sa meračem vlage možemo proveriti vlažnost tla i je li biljkama potrebno zalivanje.
 
-Ovaj vlagomer je neviđeno jednostavan. Zasniva se na principu električne provodljivosti vode. Kada dva metalna izvoda stavite u vlažno okruženje, usled provodljivosti vode zatvara se kolo. Struja uključuje tranzistor, a tranzistor svetleću diodu. Ako nema vlage, kolo nije zatvoreno, i LED ne svetli.
+Vlagomer je neviđeno jednostavan. Zasniva se na principu električne provodljivosti vode. Kada dva metalna izvoda stavimo u vlažno okruženje, usled provodljivosti vode zatvara se kolo. Struja uključuje tranzistor, a tranzistor svetleću diodu. Ako nema vlage, kolo nije zatvoreno, i LED ne svetli.
 
 ## Šema
 
@@ -17,5 +17,5 @@ Vlagomer radi s naponom od 5 do 12 volti, dakle može baterija od 9 volti.
 - Tranzistor 2N2222 NPN (Ql)
 - Otpornik od 470 oma (Rl)
 - Potenciometar 50K (R2)
-- LED dioda (bilo koja boja)
+- LED dioda
 - Dva eksera, dužine oko 4 cm (sonde)

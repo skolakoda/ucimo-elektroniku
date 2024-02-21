@@ -12,7 +12,7 @@ Srce projekta je tajmer LM555 koji se ponaša kao generator zvuka. Kada svetlost
 
 ## Delovi
 
-Evo liste delova alarma za svetlo:
+Lista delova alarma za svetlo:
 * IC1: Tajmer LM555
 * Q1: Tranzistor 2N3906 PNP
 * Rl: Potenciometar 100K
@@ -22,4 +22,4 @@ Evo liste delova alarma za svetlo:
 * Cl, C3: Blok kondenzator (nepolarizovani) od 0,01 pF
 * C2: Elektrolitski ili tantalov (polarizovani) kondenzator od 1,0 pF
 * Zvučnik: 0,5 vati, 8 oma
-* Fotootpornik: Eksperimentišite s različitim veličinama; na primer, fotootpornik veće otpornosti povećaće osetljivost kola.
+* Fotootpornik: Eksperimentišite s različitim veličinama; fotootpornik veće otpornosti povećaće osetljivost kola.
