@@ -8,6 +8,7 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
 ## TODO
 - paljenje svetla noću (ili od 22h do 1h):
+  - solarno-bastensko-svetlo (projekti)
   - detektovati noć pomoću fotootpornik ili časovnika i logovati
   - koristiti postojeće svetiljke, LED traku ili zasebne diode 
   - paljenje led (fotootpornik i npn tranzistor) https://youtu.be/eEBMTpxdPiE
@@ -33,7 +34,7 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 - fm radio prijemnik (projekti, ima kit)
 - jutarnji alarm (cekam kit)
 - punjači
-  - solarni punjač (fali dioda i punjive baterije, projekti)
+  - solarni punjač (fali dioda?, projekti)
   - punjač akumulatora https://www.electronicshub.org/lead-acid-battery-charger-circuit/
   - regulator napona (vidi članak, treba transistor 7805 i kondenzatori)
 - detektori

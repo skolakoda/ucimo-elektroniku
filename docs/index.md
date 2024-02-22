@@ -61,7 +61,7 @@
 12. [sirena](projekti/sirena.md)
 13. [solarni-punjac](projekti/solarni-punjac.md)
 14. [solarno-bastensko-svetlo](projekti/solarno-bastensko-svetlo.md)
-15. [suncev-intrument](projekti/suncev-intrument.md)
+15. [suncev-instrument](projekti/suncev-instrument.md)
 16. [trepcuca-svetla](projekti/trepcuca-svetla.md)
 17. [treptavo-svetlo](projekti/treptavo-svetlo.md)
 18. [zujalica](projekti/zujalica.md)
