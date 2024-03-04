@@ -20,8 +20,8 @@ Punjač mora podržavati *Power Delivery* protokol! Ako samo isporuči 20V bez P
 ## Solarne opcije
 
 - **Samo solarni panel i stabilizator napona** na 20V. Radi samo dok je sunce.
-- **Akumulator i automobilski punjač**. Uključiti automobilski punjač laptopa u utičnicu za upaljač, koja daje 12V. Utičnica može biti povezana direktno na akumulator.
-- **Akumulator i podizač napona** sa 12V na 20V. Slično kao prethodno, ali samo za uređaje bez USB-C/PD. Moguće je dodati i triger za *Power Delivery*, što automobilski punjač već ima.
+- **Automobilski punjač**. Utičnica za upaljač može puniti laptop preko posebnog kabla.
+- **Akumulator i podizač napona** sa 12V na 20V, ali samo za uređaje bez USB-C/PD. Moguće je dodati i triger za *Power Delivery*, što automobilski punjač već ima.
 - **Akumulator i invertor** (*car inverter*) - na duže staze užasno neefikasno. Prvo invertor pretvara jednosmernu u naizmeničnu, a potom ispravljač vraća naizmeničnu u jednosmernu. Ako oba pretvaranja imaju efikasnost od 80%, ukupni gubitak energije je 36%.
 
 ## Ostale opcije
