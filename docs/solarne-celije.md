@@ -10,7 +10,7 @@ Za napajanje uređaja možete koristiti panele solarnih ćelija. Pre toga ćete 
 
 ## Merenje solarnog panela
 
-Kada merimo solarni panel, treba povezati njegov plus i minus otpornikom, da bi imao potrošača (kao kod [merenja](31-merenja.md) baterije). 
+Kada merimo solarni panel, treba povezati njegov plus i minus otpornikom, da bi imao potrošača (kao kod [merenja](merenja.md) baterije). 
 
 Takođe, izmerite napon panela na različito osvetljenim mestima, i uporedite rezultate.
 

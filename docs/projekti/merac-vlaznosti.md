@@ -15,7 +15,7 @@ Vlagomer radi s naponom od 5 do 12 volti, dakle može baterija od 9 volti.
 ## Delovi
 
 - Tranzistor 2N2222 NPN (Ql)
-- Otpornik od 470 oma (Rl)
+- Otpornik od 470 oma (R1)
 - Potenciometar 50K (R2)
 - LED dioda
 - Dva eksera, dužine oko 4 cm (sonde)

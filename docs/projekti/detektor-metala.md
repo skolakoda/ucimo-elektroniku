@@ -1,12 +1,12 @@
 # Tragac metala, cevi, instalaciia u zidu
 
-Nikakvi majstorski radovi ne bi smeli da počnu pre nego se ispitaju instalacije u zidu. Pre bušenja obavezno proveriti da li se na tom mestu ne nalazi vodovodna iii gasna cev iii elektricni kabl.
+Nikakvi majstorski radovi ne bi smeli da počnu pre nego se ispitaju instalacije u zidu. Pre bušenja obavezno proveriti da li se na tom mestu ne nalazi vodovodna ili gasna cev ili elektricni kabl.
 
 ## Šema
 
 Šema se sastoji od šest tranzistora: dva su oscilator za traženje, dva rade kao indikator i dva kao stabilizator napona.
 
-Podešavanje i rukovanje ovim uređajem je prosto. Potenciometar P1 stavite na sredinu, a sa trimerom P2 dovodi se prag paljenja LE diode. Približite kalemu tragača neki metalan predmet - LED će se upaliti. Probajte da podesavate P1 i P2 da vidite kada je najosetljiviji sistem. Ugradite uređaj u neku plastičnu kutiju. Kalem pričvrstite lepljenjem, bez vijaka. Vruć vosak iii parafin je najlakši za upotrebu - sveću obično imate u kući. 
+Podešavanje i rukovanje ovim uređajem je prosto. Potenciometar P1 stavite na sredinu, a sa trimerom P2 dovodi se prag paljenja LE diode. Približite kalemu tragača neki metalan predmet - LED će se upaliti. Probajte da podesavate P1 i P2 da vidite kada je najosetljiviji sistem. Ugradite uređaj u neku plastičnu kutiju. Kalem pričvrstite lepljenjem, bez vijaka. Vruć vosak ili parafin je najlakši za upotrebu - sveću obično imate u kući. 
 
 ![](../slike/detektor-metala-shema.jpg)
 
@@ -22,7 +22,7 @@ Napajanje je iz baterije napona 9V.
 
 ## Delovi
 
-- Rl, Otpornik, 47 Kn (zuta-ljubičasta-narandžasta-zlatna) .......................................... 1
+- R1, Otpornik, 47 Kn (zuta-ljubičasta-narandžasta-zlatna) .......................................... 1
 - R2, R3, Otpornik, 10 Kn (braon-crna-narandžasta-zlatna) ......................................... 2
 - R4, Otpornik, 22 0 (crvena-crvena-crna-zlatna) ........................................................ 1
 - R5, Otpornik, 5.6 Kn (zelena-plava-crvena-zlatna) .................................................... 1

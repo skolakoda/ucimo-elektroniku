@@ -14,7 +14,7 @@ Drugi deo automatskog punjača čini regulator sa indikatorima:
 
 ![](../slike/punjac-akumulatora-shema.jpg)
 
-Osnovna funkcija je jednostavna - sam se uključuje, sam se isključuje. U principu to je jedna klackalica, koja se sastoji iz dva tiristora od kojih je Tl, jači, predviđen za ukopčavanje akumulatora. Drugi, T2, je slabiji koji se nalazi na našoj tiristorskoj klackalici. Klackalica se podešava u ravnotežu pomeranjem oslonca na levo iii na desno. Mi to radimo sa trimer potenciometrom i Zener diodom 6.8V. Jednostavno namestimo do kog napona se akumulator puni, odnosno kada se akumulator isključuje sa punjača.
+Osnovna funkcija je jednostavna - sam se uključuje, sam se isključuje. U principu to je jedna klackalica, koja se sastoji iz dva tiristora od kojih je Tl, jači, predviđen za ukopčavanje akumulatora. Drugi, T2, je slabiji koji se nalazi na našoj tiristorskoj klackalici. Klackalica se podešava u ravnotežu pomeranjem oslonca na levo ili na desno. Mi to radimo sa trimer potenciometrom i Zener diodom 6.8V. Jednostavno namestimo do kog napona se akumulator puni, odnosno kada se akumulator isključuje sa punjača.
 
 Imamo i tri LE diode. Žuta pokazuje kada je punjač priključen na gradsku mrežu. Zelena pokazuje kada je akumulator pun i kada je skinut sa punjača. I najzad crvena LE dioda pokazuje kada se vrši punjenje akumulatora. 
 
@@ -28,7 +28,7 @@ Na tiristoru T1 imamo pad napona od 1.5V. Sa strujom od 5A to je dovoljno da se 
 
 ![](../slike/trafo-montaza.jpg)
 
-Transformator je predviđen za unutrašnju montažu u horizontalnom iii vertikalnom položaju, na suvom mestu gde je obezbeđena cirkulacija vazduha, dalje od izvora toplote. Montaža se vrši odgovarajućim priborom iii lepljenjem za podlogu silikonskim gitom. Budite pažljivi, obzirom da je transformator ekstremno osetljiv na mehanička oštećenja.
+Transformator je predviđen za unutrašnju montažu u horizontalnom ili vertikalnom položaju, na suvom mestu gde je obezbeđena cirkulacija vazduha, dalje od izvora toplote. Montaža se vrši odgovarajućim priborom ili lepljenjem za podlogu silikonskim gitom. Budite pažljivi, obzirom da je transformator ekstremno osetljiv na mehanička oštećenja.
 
 ## Delovi
 

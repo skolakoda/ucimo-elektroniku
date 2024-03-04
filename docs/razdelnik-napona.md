@@ -53,7 +53,7 @@ V izlaz = 110 / 330 * 9V
 
 ![](slike/podela-napona-na-pola.png)
 
-Ako želite da izlazni napon bude upola manji od izvora, upotrebite dva otpornika iste otpornosti. Zatim upotrebite jednačinu da bi izračunali pad napona na otporniku Rl:
+Ako želite da izlazni napon bude upola manji od izvora, upotrebite dva otpornika iste otpornosti. Zatim upotrebite jednačinu da bi izračunali pad napona na otporniku R1:
 
 ```
 V(R1) = R1 / (R1 + R1) * Vt

@@ -16,5 +16,5 @@ Premda je fototranzistor za infracrveno zračenje najosetljiviji na ovaj opseg s
 
 Kratka lista delova za ovaj projekat:
 * Fototranzistor za infracrveno zračenje (npr. RadioShack 276-0145, ali može bilo koji fototranzistor)
-* Rl: Otpornik od 330 oma
+* R1: Otpornik od 330 oma
 * LED dioda

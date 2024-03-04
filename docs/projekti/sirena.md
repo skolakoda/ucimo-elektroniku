@@ -10,10 +10,10 @@ Podesite dva potenciometra, R2 i R4, da menjaju visinu i brzinu zavijajućeg zvu
 
 Kolo čine naredne komponente:
 * IC1, IC2: Integrisano kolo, tajmer 555
-* Rl, R3: Otpornik od 2,2 kilooma
+* R1, R3: Otpornik od 2,2 kilooma
 * R2: Potenciometar od 50 kilooma
 * R4: Potenciometar od 100 kilooma
-* Cl: Elektrolitički (polarizovani) kondenzator od 47 pF
+* C1: Elektrolitički (polarizovani) kondenzator od 47 pF
 * C2: Blok kondenzator (nepolarizovani) od 0,01 pF
 * C3: Blok kondenzator (nepolarizovani) od 0,1 pF
 * C4: Elektrolitički ili tantalov (polarizovani) kondenzator od 1 pF
