@@ -6,7 +6,7 @@ Da bi razumeli kako nastaju elektricitet i električna struja, neophodno je da i
 
 ## Elektroni i protoni
 
-Elektroni spadaju u osnovne gradivne čestice prirode. Oni su najbolji prijatelji protona. Elektroni i protoni su izuzetno mali i nalaze se u svemu oko nas. Zrnce prašine sadrži milione i milione elektrona i protona.
+Elektroni spadaju u osnovne gradivne čestice prirode. Oni su suprotnost protona. Elektroni i protoni su izuzetno mali i nalaze se u svemu oko nas. Zrnce prašine sadrži milione i milione elektrona i protona.
 
 Elektroni i protoni imaju jednaku količinu naelektrisanja, ali suprotnog pola - elektroni su naelektrisani negativno, a protoni pozitivno. Suprotna naelektrisanja se privlače, slično kao kod magneta. Privlačenje elektrona i protona u svetu mikroskopskih razmera deluje kao lepak i sprečava nestajanje materije.
 
