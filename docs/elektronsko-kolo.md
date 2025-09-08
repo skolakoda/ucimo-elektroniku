@@ -15,9 +15,9 @@ Mnoga kola, ali ne sva, imaju i ulaz.
 
 ## Paljenje sijalice
 
-![](slike/prosto-elektronsko-kolo.jpg)
-
 Jedno od najjednostavnijih kola sastoji se od sijalice i dve žice koje povezuju sijalicu i izvor napajanja. To kolo nije praktično pošto je sijalica stalno uključena - biće mnogo praktičnije ako dodamo prekidač kojim se uključuje i isključuje sijalica. 
+
+![](slike/prosto-elektronsko-kolo.jpg)
 
 Na slici je prikazana šema kola u kojem su sijalica i prekidač. Kada je **prekidač u zatvorenom položaju**, kolo je zatvoreno i elektroni mogu slobodno da se kreću od negativnog pola baterije, kroz sijalicu, do pozitivnog pola baterije. U sijalici se nalazi vlakno koje se greje i emituje svetlost kada elektroni prolaze kroz njega. S druge strane, kada je **prekidač u otvorenom položaju**, kolo je otvoreno jer u njemu postoji prekid. Zbog toga električna struja ne može da protiče. Bez struje nema ni svetla.
 
