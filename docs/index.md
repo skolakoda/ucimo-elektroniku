@@ -2,7 +2,7 @@
 
 ## Osnove
 
-- [Elektricitet](elektricitet.md)
+- [Osnovni pojmovi](pojmovi.md)
 - [Izvori elektriciteta](izvori-elektriciteta.md)
 - [Komponente](komponente.md)
 - [Elektronsko kolo](elektronsko-kolo.md)
