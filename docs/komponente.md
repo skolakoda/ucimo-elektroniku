@@ -4,17 +4,17 @@
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Componentes.JPG/600px-Componentes.JPG)
 
-Elektronske komponente su delovi koje koristimo u elektronskim projektima. Neke komponente služe za upravljanje tokom struje; na primer, pomoću obrtnog prekidača podešavamo jačinu sijalice. Druge komponente, kao zvučnici, napajaju se elektricitetom. Komponente koje zovemo senzori detektuju nešto (recimo svetlost ili toplotu) i generišu struju da bi se dobio odziv - na primer uključenje ili isključenje alarma.
+**Elektronske komponente** su delovi koje koristimo u elektronskim projektima. Neke komponente služe za upravljanje tokom struje; na primer, pomoću obrtnog prekidača podešavamo jačinu sijalice. Druge komponente, kao zvučnici, napajaju se elektricitetom. Komponente koje zovemo senzori detektuju nešto (recimo svetlost ili toplotu) i generišu struju da bi se dobio odziv - na primer uključenje ili isključenje alarma.
 
-Pomoću električnih komponenti može da se upravlja elektricitetom. Na primer, prekidač povezuje sijalicu sa izvorom struje. Da bi se sijalica isključila, prekidač prekida električno kolo. Za upravljanje elektricitetom koriste se i otpornici, kondenzatori, diode i tranzistori.
+Pomoću električnih komponenti možemo upravljati elektricitetom. Na primer, prekidač povezuje sijalicu sa izvorom struje. Da bi se sijalica isključila, prekidač prekida električno kolo. Za upravljanje elektricitetom koriste se i otpornici, kondenzatori, diode i tranzistori.
 
 ## Integrisana kola
 
-Integrisana kola (en. *integrated circuits*, IC) jesu komponente koje sadrže mnoštvo minijaturnih delova (otpornike, tranzistore, diode). Jedno integrisano obavlja isti rad kao nekoliko pojedinačnih delova.
+**Integrisana kola** (en. *integrated circuits*, **IC**) jesu komponente koje sadrže mnoštvo minijaturnih delova (otpornika, tranzistora, dioda). Jedno integrisano obavlja isti rad kao više pojedinačnih delova.
 
-Audio pojačivač je primer integrisanog kola. Pojačala se koriste za povećanje snage zvučnih signala. Na primer, ako imamo mikrofon, njegov slab izlazni signal propušta se kroz pojačalo da bi mu snaga bila dovoljna za generisanje zvuka u zvučnicima.
+**Audio pojačivač** je primer integrisanog kola. Pojačala se koriste za povećanje snage zvučnih signala. Na primer, ako imamo mikrofon, njegov slab izlazni signal propušta se kroz pojačalo da bi mu snaga bila dovoljna za generisanje zvuka u zvučnicima.
 
-Drugi primer integrisanog kola koje se koristi u elektronskim projektima jeste mikrokontroler. On se može programirati da upravlja radom različitih uređaja i aparata, kao što su roboti.
+Drugi primer integrisanog kola koje se koristi u elektronskim projektima jeste **mikrokontroler**. On se može programirati da upravlja radom različitih uređaja i aparata, kao što su roboti.
 
 ## Senzori
 
@@ -32,7 +32,7 @@ U tranzistorima, diodama, svetlećim diodama, integrisanim kolima i mnogim drugi
 
 Silicijum je izuzetan hemijski element. U čistom stanju, slabo provodi električnu struju. Međutim, ako mu se dodaju primese - na primer bor ili fosfor - postaje dobar provodnik. Kada se silicijumu doda fosfor, on postaje poluprovodnik tipa *n*. Kada mu se doda bor, postaje poluprovodnik tipa *p*. Poluprovodnik tipa *n* ima više elektrona od čistog poluprovodnika, a poluprovodnik tipa *p* manje.
 
-Kada se u kristalnoj rešetki silicijuma atomi bora i fosfora nađu jedni do drugih, nastaje *pn* spoj. Struja kroz *pn* spoj teče samo u jednom smeru. Diode, koje pretvaraju naizmeničnu struju u jednosmernu, primer su komponente u kojoj postoji *pn* spoj.
+Kada se u kristalnoj rešetki silicijuma atomi bora i fosfora nađu jedni do drugih, nastaje *pn* spoj. **Struja kroz *pn* spoj teče samo u jednom smeru.** Diode, koje pretvaraju naizmeničnu struju u jednosmernu, primer su komponente u kojoj postoji *pn* spoj.
 
 Kada se izloži dejstvu svetlosti, *pn* spoj generiše električnu struju i ta njegova osobina koristi se pri pravljenju solarnih ćelija. S druge strane, kada kroz *pn* spoj propustite električnu struju, on emituje svetlost, kao što rade svetleće diode (en. *light-emiuing diodes*, LED).
 
