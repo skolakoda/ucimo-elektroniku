@@ -31,15 +31,15 @@ Elektricitet struji sve dok postoji razlika potencijala, odnosno napon. Kretanje
 
 Oznaka za struju je **I** (skraćeno od **intenzitet struje**), što označava količinu strujanja kroz provodnik u jedinici vremena. Jačina struje se izražava u amperima, zbog čega se naziva i **amperaža**.
 
-### Provodnici i izolatori
-
-Neki materijali bolje provode elektricitet od drugih. Uglavnom se kao **provodnici** koriste bakar i aluminijum. Najčešće korišćeni **izolatori** su plastika i staklo. Slobodni elektroni se u metalu ponašaju kao klikeri bačeni na led. Plastika, koja je izolator, više nalikuje na pesak. 
-
 ### Smer struje
 
 Prvi istraživači su verovali da električna stru­ja nastaje usled toka pozitivno naelektri­sanih čestica. Oni su struju opisivali kao tok od višeg potencijala ka nižem, tj. od pozitivnog ka negativnom naponu (od + ka –). Nakon otkrića elektrona, naučnici su videli da se elektroni kreću od negativnog ka pozitiv­nom naponu (od – ka +), što je **stvarni smer struje**. 
 
 Nažalost, konvencionalni smer struje se i dalje koristi u svim električnim šemama, proračunima i elektrotehnici. Zato je smer struje označen streli­com usmerenom suprotno od stvarnog kretanja.
+
+### Provodnici i izolatori
+
+Neki materijali bolje provode elektricitet od drugih. Uglavnom se kao **provodnici** koriste bakar i aluminijum. Najčešće korišćeni **izolatori** su plastika i staklo. Slobodni elektroni se u metalu ponašaju kao klikeri bačeni na led. Plastika, koja je izolator, više nalikuje na pesak. 
 
 ## Napon
 
