@@ -4,7 +4,7 @@
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Electronic-Axial-Lead-Resistors-Array.jpg/400px-Electronic-Axial-Lead-Resistors-Array.jpg)
 
-Električna struja je kretanje elektrona kroz provodnik. Sve komponente pružaju otpor električnoj struji, a otpornici su napravljeni da samo to rade. Otpornike možemo smatrati „kočnicama“ za elektrone. Njima kontrolišemo tok elektrona kroz kolo.
+Sve komponente pružaju otpor električnom toku, a otpornici su napravljeni da samo to rade. Otpornike možemo smatrati „kočnicama“ za elektrone. Njima kontrolišemo tok elektrona kroz kolo.
 
 Otpornici su osnovni gradivni blokovi električnih kola. Možete ih koristiti za:
 * Ograničavanje struje koja stiže do komponenti: Neke komponente, kao svetleće diode (LED), troše struju kao što dete jede čokoladu. Pokušaće da pojedu sve što im date. Međutim, za LED diode to može biti pogubno - pregorevaju od previše električne struje. Zato treba upotrebiti otpornik i ograničiti tok struje do njih.
