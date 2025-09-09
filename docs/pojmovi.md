@@ -14,22 +14,38 @@ Dok su protoni relativno nepokretni, elektroni često prelaze s jednog predmeta 
 
 ## Elektricitet
 
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Lightning3.jpg/330px-Lightning3.jpg)
+
 **Elektricitet** je prirodni fenomen koji potiče od prisustva i kretanja električnog naboja.
 
-Prošetajte po vunenom tepihu i dotaknite kvaku; elektroni koji putuju između vašeg prsta i kvake izazivaće varnicu. Munja je još jedan primer elektrona koji putuju između oblaka i površine zemlje. Ovo su primeri elektriciteta u "neobuzdanom" stanju.
+Prošetajte po vunenom tepihu i dotaknite kvaku; elektroni koji putuju između vašeg prsta i kvake izazivaće varnicu. Munja je najupečatljiviji primer elektrona koji putuju između oblaka i površine zemlje. Ovo su primeri elektriciteta u "neobuzdanom" stanju.
 
 ## Električna struja
 
-Kako elektroni putuju s jednog mesta na drugo? Kroz provodnik. **Električna struja predstavlja usmereno kretanje elektrona kroz provodnik.**
+**Električna struja predstavlja usmereno kretanje naelektrisanih čestica kroz provodnik.** Struja može biti:
 
-Neki materijali bolje provode elektricitet od drugih. Elektroni se lakše kreću kroz metal nego kroz plastiku. Uglavnom se kao **provodnici** koriste bakar i aluminijum. Najčešće korišćeni **izolatori** su plastika i staklo. Slobodni elektroni se u metalu ponašaju kao klikeri bačeni na led. Plastika, koja je izolator, više nalikuje na pesak. 
+- jednosmerna (DC): elektroni se kreću u jednom smeru.
+- naizmenična (AC): elektroni se kreću čas u jednom čas u drugom smeru.
 
-> #### Smer struje
-> Prvi istraživači su verovali da električna stru­ja nastaje zbog toka pozitivno naelektri­sanih čestica. Zato su električnu struju opisali kao tok naelektrisanja od pozitivnog ka negativnom naponu. Mnogo kasnije, naučnici su zaključili da se elektroni kreču od negativnog ka pozitiv­nom naponu. Nažalost, na električnim šemama smer struje se i dalje označava streli­com usmerenom suprotno od stvarnog smera kretanja.
+Elektricitet struji sve dok postoji razlika potencijala, odnosno napon. Kretanje elektrona kroz neku sredinu uvek proizvodi toplotu, a može se pretvarati i u druge vidove energije.
+
+Oznaka za struju je **I** (skraćeno od **intenzitet struje**), što označava količinu strujanja kroz provodnik u jedinici vremena. Jačina struje se izražava u amperima, zbog čega se naziva i **amperaža**.
+
+### Provodnici i izolatori
+
+Neki materijali bolje provode elektricitet od drugih. Uglavnom se kao **provodnici** koriste bakar i aluminijum. Najčešće korišćeni **izolatori** su plastika i staklo. Slobodni elektroni se u metalu ponašaju kao klikeri bačeni na led. Plastika, koja je izolator, više nalikuje na pesak. 
+
+### Smer struje
+
+Prvi istraživači su verovali da električna stru­ja nastaje usled toka pozitivno naelektri­sanih čestica. Oni su struju opisivali kao tok od višeg potencijala ka nižem, tj. od pozitivnog ka negativnom naponu (od + ka –). Nakon otkrića elektrona, naučnici su videli da se elektroni kreću od negativnog ka pozitiv­nom naponu (od – ka +), što je **stvarni smer struje**. 
+
+Nažalost, konvencionalni smer struje se i dalje koristi u svim električnim šemama, proračunima i elektrotehnici. Zato je smer struje označen streli­com usmerenom suprotno od stvarnog kretanja.
 
 ## Napon
 
-Da bi se elektroni kretali kroz provodnik neka sila mora da ih „pogura“. Ta privlačna sila između pozitivnog i negativnog naelektrisanja jeste elektromotorna sila koja se zove **napon**. Negativno naelektrisani elektroni kreću se kroz provodnik ka pozitivnom naponu.
+**Napon** je razlika električnog potencijala između dve tačke. Možemo ga zamisliti kao pritisak koji tera elektrone da se kreću kroz provodnik. Negativno naelektrisani elektroni kreću se kroz provodnik ka pozitivnom naponu. Napon se izražava u voltima, zbog čega se naziva i **voltaža**.
+
+**Elektromotorna sila** je vrsta napona koju proizvodi izvor struje (npr. baterija ili generator) da bi pokrenuo elektrone kroz kolo.
 
 ## Otpor
 
