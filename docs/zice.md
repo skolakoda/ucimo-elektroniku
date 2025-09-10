@@ -1,20 +1,20 @@
-# Žica
+# Žice
 
 [wiki](https://sh.wikipedia.org/wiki/%C5%BDica)
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Stranded_lamp_wire.jpg/239px-Stranded_lamp_wire.jpg)
 
-Tokom pravljenja električnog kola moraćete da povezujete komponente kako bi omogućili struju između njih, a žice, kablovi i konektori upravo to omogućavaju. 
+Tokom pravljenja električnog kola moramo povezati komponente da bi struja išla između njih. Za to služe žice, kablovi i konektori. 
 
-Žica koju koristite u elektronskim projektima samo je dugačak struk metala, najčešće bakra. Žica ima samo jednu ulogu - kroz nju se kreću elektroni. Međutim, na raspolaganju nam je nekoliko tipova žice.
+Žica koju koristimo u elektronskim projektima samo je dugačak struk metala, najčešće bakra. Žica ima samo jednu ulogu - kroz nju se kreću elektroni. Međutim, na raspolaganju nam je nekoliko tipova žice.
 
 ## Licnasta ili puna žica?
 
-Presecite bilo koji kabl za napajanje (naravno izvučen iz utičnice). Ako vidite dva ili tri snopa vrlo tankih žica omotanih izolacijom, to je takozvana licnasta žica. Ako u kablu postoji samo jedna jedina žica umesto nekoliko snopova, to je puna žica.
+Presecite bilo koji kabl za napajanje (naravno izvučen iz utičnice). Ako vidite snop vrlo tankih žica omotan izolacijom, to je takozvana licnasta žica. Ako u kablu postoji samo jedna jedina žica, to je puna žica.
 
-Kada se koristi koji tip žice? Licnastu žicu birate za sprave u kojima će se ona stalno pomerati. Na primer, za multimetar, jer kablove za povezivanje sondi sa samim uređajem stalno pomerate i savijate. Kada bi uzeli punu žicu, pukla bi i prekinula se posle nekoliko savijanja.
+Kada se koristi koji tip žice? Licnastu žicu biramo za sprave u kojima će se ona stalno pomerati. Na primer, za multimetar, jer kablove za povezivanje sondi sa samim uređajem stalno pomeramo i savijamo. Kada bi uzeli punu žicu, pukla bi i prekinula se posle nekoliko savijanja.
 
-Punu žicu koristite za povezivanje komponenti na prototipskoj ploči i u drugim uređajima u kojima se žice neće pomerati. Puna žica se lako umeće u otvore na ploči, a nakon toga ostaje u položaju u kojem ste je postavili. Ako povežete komponente na prototipskoj ploči licnastom žicom, moraćete da uvrnete lične da bi sve ušle u otvor, a tada neka lična može da se prekine i napravi kratak spoj.
+Punu žicu koristimo za povezivanje komponenti na prototipskoj ploči i drugim uređajima u kojima se žice neće pomerati. Puna žica se lako umeće u otvore na ploči, a nakon toga ostaje u položaju u kojem smo je postavili. Ako povežemo komponente na prototipskoj ploči licnastom žicom, moraćemo da uvrnemo licne da bi ušle u otvor, ali neka lična može da se izviri i napravi kratak spoj.
 
 ## Veličina je važna
 
@@ -27,7 +27,7 @@ Veličina žice određuje se njenim poprečnim presekom ili prečnikom. Dajemo n
 
 ## Boja
 
-Izolacija oko žice pravi se u različitim bojama da bi se lakše odredilo kako i sa čime je treba povezati. Pogledajte, na primer, priključke baterije napona 9 volti, Videćetc jednu crvenu i jednu crnu žicu. Crvena je povezana s pozitivnim polom baterije, a crna s negativnim.
+Izolacija oko žice pravi se u različitim bojama da bi se lakše odredilo kako i sa čime je treba povezati. Pogledajte, na primer, priključke baterije napona 9 volti, Videćete jednu crvenu i jednu crnu žicu. Crvena je povezana s pozitivnim polom baterije, a crna s negativnim.
 
 Kada pravite električno kolo, žice određenih boja koriste se za različite električne veze:
 * Crvenu žicu za veze s pozitivnim naponom (+V).
