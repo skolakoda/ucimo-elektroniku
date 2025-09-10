@@ -63,9 +63,9 @@ U skoro svim elektronskim uređajima koriste se otpornici. Otpornici imaju unapr
 
 [wiki](https://sh.wikipedia.org/wiki/Hidrauli%C4%8Dka_analogija)
 
-Ako uzmemo provodnik i jedan kraj povežemo s pozitivnim polom baterije a drugi s negativnim, elektroni počinju da teku od negativnog ka pozitivnom polu. Taj tok elektrona zove se električna struja. 
+Ako uzmemo žicu i jedan kraj povežemo s pozitivnim polom baterije a drugi s negativnim, elektroni počinju da teku od negativnog ka pozitivnom polu. Taj tok elektrona zove se električni tok (ili struja). Da bismo lakše razumeli električni tok, koristimo analogiju sa vodom:
 
-Da bismo lakše razumeli kako napon i provodnik utiču na struju, zamislimo kako pritisak vode i prečnik cevi utiču na tok vode:
-
-* Više vode teče kroz cev pod većim pritiskom, a više elektrona kroz provodnik pod većim naponom.
+* Više vode teče kroz istu cev pod većim pritiskom, a više elektrona kroz isti provodnik pod većim naponom.
 * Kroz širu cev teče više vode pod istim pritiskom, a kroz širi provodnik više elektrona pod istim naponom.
+
+![](slike/analogija.jpg)
