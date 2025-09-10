@@ -1,10 +1,10 @@
 # Osnovni pojmovi
 
-> wiki: [elektricitet](https://sh.wikipedia.org/wiki/Elektricitet) i [električna struja](https://sh.wikipedia.org/wiki/Elektri%C4%8Dna_struja)
-
-Da bismo razumeli kako nastaju elektricitet i električna struja, neophodno je da ih razložimo na sastavne delove.
+Da bismo razumeli elektricitet i električnu struju, neophodno je razložiti ih na sastavne delove.
 
 ## Elektroni
+
+[wiki](https://sh.wikipedia.org/wiki/Elektron)
 
 ![](slike/electron.png)
 
@@ -16,6 +16,8 @@ Dok su protoni relativno nepokretni, elektroni često prelaze s jednog predmeta 
 
 ## Elektricitet
 
+[wiki](https://sh.wikipedia.org/wiki/Elektricitet)
+
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Lightning3.jpg/330px-Lightning3.jpg)
 
 **Elektricitet** je prirodni fenomen koji potiče od prisustva i kretanja električnog naboja. Negativan električni naboj znači da čestica ima višak elektrona. Takve čestice se međusobno odbijaju, a privlače ih čestice sa pozitivnim nabojem.
@@ -23,6 +25,8 @@ Dok su protoni relativno nepokretni, elektroni često prelaze s jednog predmeta 
 Prošetajte po vunenom tepihu i dotaknite kvaku; elektroni koji putuju između vašeg prsta i kvake izazivaće varnicu. Munja je najupečatljiviji primer elektrona koji putuju između oblaka i površine zemlje. Ovo su primeri elektriciteta u "neobuzdanom" stanju.
 
 ## Električna struja
+
+[wiki](https://sh.wikipedia.org/wiki/Elektri%C4%8Dna_struja)
 
 ![](slike/struja.gif)
 
@@ -49,6 +53,8 @@ Neki materijali bolje provode elektricitet od drugih. Uglavnom se kao **provodni
 
 ## Napon
 
+[wiki](https://sh.wikipedia.org/wiki/Elektri%C4%8Dni_napon)
+
 **Napon** je razlika električnog potencijala između dve tačke. Možemo ga zamisliti kao pritisak koji tera elektrone da se kreću kroz provodnik. Negativno naelektrisani elektroni kreću se kroz provodnik ka pozitivnom naponu. Napon se meri u voltima (**V**), zbog čega se naziva i **voltaža**. Oznaka za napon je **U**.
 
 **Elektromotorna sila** je vrsta napona koju proizvodi izvor struje (npr. baterija ili generator) da bi pokrenuo elektrone kroz kolo.
@@ -56,6 +62,8 @@ Neki materijali bolje provode elektricitet od drugih. Uglavnom se kao **provodni
 ![](slike/analogija.png)
 
 ## Otpor
+
+[wiki](https://sh.wikipedia.org/wiki/Elektri%C4%8Dni_otpor_i_vodljivost)
 
 **Otpor** je mera sposobnosti elektrona da se kreću kroz materijal. Šira žica pruža manji otpor kretanju elektrona od uže žice. Otpor zavisi još od materijala i temperature.
 
