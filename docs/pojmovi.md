@@ -6,6 +6,8 @@ Da bismo razumeli kako nastaju elektricitet i električna struja, neophodno je d
 
 ## Elektroni
 
+![](slike/electron.png)
+
 **Elektroni** spadaju u osnovne gradivne čestice prirode. Oni su suprotnost protona. Elektroni i protoni su izuzetno mali i nalaze se u svemu oko nas. Zrnce prašine sadrži milione elektrona i protona.
 
 Elektroni i **protoni** imaju jednaku količinu naelektrisanja, ali suprotnog pola - elektroni su naelektrisani negativno, a protoni pozitivno. Suprotna naelektrisanja se privlače, slično kao kod magneta. Privlačenje elektrona i protona u svetu mikroskopskih razmera deluje kao lepak i sprečava nestajanje materije.
@@ -22,6 +24,8 @@ Prošetajte po vunenom tepihu i dotaknite kvaku; elektroni koji putuju između v
 
 ## Električna struja
 
+![](slike/struja.gif)
+
 **Električna struja (ili električni tok) je kretanje naelektrisanih čestica kroz provodnik.** Struja može biti:
 
 - jednosmerna (DC): elektroni se kreću u jednom smeru.
@@ -29,13 +33,15 @@ Prošetajte po vunenom tepihu i dotaknite kvaku; elektroni koji putuju između v
 
 Elektricitet teče sve dok postoji razlika potencijala, odnosno napon. Kretanje elektrona uvek proizvodi toplotu, a može se pretvoriti i u druge vidove energije.
 
-Jačina struje se meri u amperima, zbog čega se naziva i **amperaža**. Oznaka za struju je **I**. 
+Jačina struje se meri u amperima (**A**), zbog čega se naziva i **amperaža**. Oznaka za struju je **I**. 
 
 ### Smer struje
 
 Prvi istraživači su verovali da električna stru­ja nastaje usled toka pozitivno naelektri­sanih čestica. Oni su struju opisivali kao tok od višeg potencijala ka nižem, tj. od pozitivnog ka negativnom naponu (od + ka –). Nakon otkrića elektrona, naučnici su videli da se elektroni kreću od negativnog ka pozitiv­nom naponu (od – ka +), što je **stvarni smer struje**. 
 
-Nažalost, konvencionalni smer struje se i dalje koristi u svim električnim šemama, proračunima i elektrotehnici. Zato je smer struje označen streli­com usmerenom suprotno od stvarnog kretanja.
+Nažalost, konvencionalni smer struje se i dalje koristi u svim električnim šemama, označen strelicom suprotno od stvarnog kretanja.
+
+![](slike/smer-struje.png)
 
 ### Provodnici i izolatori
 
@@ -43,7 +49,7 @@ Neki materijali bolje provode elektricitet od drugih. Uglavnom se kao **provodni
 
 ## Napon
 
-**Napon** je razlika električnog potencijala između dve tačke. Možemo ga zamisliti kao pritisak koji tera elektrone da se kreću kroz provodnik. Negativno naelektrisani elektroni kreću se kroz provodnik ka pozitivnom naponu. Napon se meri u voltima, zbog čega se naziva i **voltaža**.
+**Napon** je razlika električnog potencijala između dve tačke. Možemo ga zamisliti kao pritisak koji tera elektrone da se kreću kroz provodnik. Negativno naelektrisani elektroni kreću se kroz provodnik ka pozitivnom naponu. Napon se meri u voltima (**V**), zbog čega se naziva i **voltaža**. Oznaka za napon je **U**.
 
 **Elektromotorna sila** je vrsta napona koju proizvodi izvor struje (npr. baterija ili generator) da bi pokrenuo elektrone kroz kolo.
 
