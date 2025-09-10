@@ -4,33 +4,30 @@
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Electronic-Axial-Lead-Resistors-Array.jpg/400px-Electronic-Axial-Lead-Resistors-Array.jpg)
 
-Sve komponente pružaju otpor električnom toku, a otpornici su napravljeni da samo to rade. Otpornike možemo smatrati „kočnicama“ za elektrone. Njima kontrolišemo tok elektrona kroz kolo.
-
-Otpornici su osnovni gradivni blokovi električnih kola. Možete ih koristiti za:
-* Ograničavanje struje koja stiže do komponenti: Neke komponente, kao svetleće diode (LED), troše struju kao što dete jede čokoladu. Pokušaće da pojedu sve što im date. Međutim, za LED diode to može biti pogubno - pregorevaju od previše električne struje. Zato treba upotrebiti otpornik i ograničiti tok struje do njih.
-* Smanjivanje napona u delu kola: U mnogim električnim kolima neophodno je obezbediti različite napone za različite delove tog kola. To čete lako učiniti pomoću otpornika. Dva otpornika spojena na način prikazan na slici 4-1 čine razdelnik napona. Kad imate dva istovetna otpornika, koji podjednako „koče“ tok struje, napon između njih je tačno upola manji od napona u ostatku kola.
-* Upravljanje naponom/strujom koji ulaze u druge komponente: Kombinacija otpornika i kondenzatora, na primer, daje neku vrstu elektronskog peščanog sata. Otpornik možete postaviti na ulaz tranzistora da bi upravljali stepenom pojačanja signala u tranzistoru.
-* Zaštitu ulaza osetljivih komponenti: Previše struje uništava elektronske komponente. Postavljanjem otpornika na ulaz osetljivog tranzistora ili integrisanog kola, ograničavate struju koja stiže do njih. Ova jednostavna tehnika može da vam uštedi mnogo vremena i novca.
+Sve komponente pružaju otpor električnom toku, a otpornici su napravljeni da samo to rade. **Otpornike možemo smatrati „kočnicama“ za elektrone**. Njima kontrolišemo tok elektrona kroz kolo. Otpornici se koriste za:
+* **Smanjenje struje i zaštita komponenti**: Otpornici služe da kontrolišu koliko struje prolazi kroz neku komponentu. Tako sprečavaju da elementi poput LED dioda, tranzistora ili integrisanih kola prime previše struje i pregore.
+* **Smanjenje napona u delu kola**: Nekad je potrebno obezbediti različit napon za različite delove kola. To se postiže pomoću dva otpornika spojena da čine [razdelnik napona](https://sh.wikipedia.org/wiki/Razdelnik_napona). Npr, ako imamo dva ista otpornika, napon između njih je tačno upola manji od napona u ostatku kola.
+* **Upravljanje naponom i strujom na ulazu komponenti**: Na primer, kondenzator koji se puni i prazni kroz otpornik stvara efekat peščanog sata. Otpornik na ulazu tranzistora ograničava struju i time utiče na stepen pojačanja signala.
 
 ## Vrednosti otpornika
 
-Vrednost otpora izražava se u omima, a simbol je grčko slovo omega Ω. Što je vrednost u omima veća, veći je otpor komponente.
+Vrednost otpora izražava se u omima (simbol je grčko slovo omega Ω). Što je vrednost veća, veći je otpor.
 
-Da bi razumeli kako podešavati otpor, treba znati da postoje dve osnovne vrste otpornika: stalni i promenljivi.
-* Stalni otpornik pruža unapred određen otpor električnoj struji. Oznake u boji određuju vrednost otpora. Obeležavanje bojama počinje od kraja tela otpornika, a oznaka se sastoji od četiri, pet i ponekad šest traka različitih boja.
-* Promenljivi otpornik, koji se naziva potenciometar, omogućava kontinualno podešavanje otpora od 0 oma do neke maksimalne vrednosti. Na potenciometru je obično odštampana najveća vrednost otpora.
-
-Ne označavaju se svi otpornici bojama. Na telima nekih otpornika vrednost otpora je odštampana. To su precizni otpornici.
+Postoje dve osnovne vrste otpornika:
+* **Stalni otpornik** pruža unapred određen otpor električnoj struji. Oznake u boji određuju vrednost otpora. Obeležavanje bojama počinje od kraja tela otpornika, a oznaka se sastoji od četiri, pet traka različitih boja. Precizni otpornici imaju odštampanu vrednost otpora.
+* **Promenljivi otpornik** ili **potenciometar**, omogućava podešavanje otpora od 0 oma do neke maksimalne vrednosti. Na potenciometru je obično odštampana najveća vrednost otpora.
 
 ## Oznake u boji
 
-Oznake u boji su svetski prihvaćen standard i koriste se u elektronici decenijama. Otpornik može imati četiri ili pet traka u boji, zavisno od preciznosti (standardna ili visoka). Evo šta predstavljaju trake na otporniku standardne preciznosti:
+Oznake u boji su standard u elektronici. Otpornik može imati četiri ili pet traka u boji, zavisno od preciznosti (standardna ili visoka). Kod otpornika standardne preciznosti:
 * Trake jedan, dva i tri određuju vrednost otpora.
-* Traka četiri označava toleranciju otpornika i obično je unutar ±5 procenata ili ±10 procenata (opseg vrednosti otpora).
+* Traka četiri označava toleranciju otpornika, obično unutar ±5 ili ±10 %.
 
 Donja tabela prikazuje vrednosti oznaka u boji. Pretpostavimo da je otpornik označen žuto-ljubičasto-crveno-srebrnom trakom. Prve dve trake ukazuju na prve dve cifre otpora otpornika. Dakle, žuta predstavlja broj 4 a ljubičasta broj 7, pa su značajne cifre 47. Treća traka je množilac. U našem primeru ta traka je crvena, pa je vrednost 100. Pomnožite 47 sa 100 i dobijate 4700 oma. Često se vrednosti veće od 1000 izražavaju slovom k (kilo, oznaka za 1000), pa je otpor otpornika 4,7 kilo oma.
 
 ![jačina otpornika](slike/otpornici.png)
+
+Ne označavaju se svi otpornici bojama. Precizni otpornici imaju odštampanu vrednost otpora.
 
 ## Tolerancija otpornika
 
