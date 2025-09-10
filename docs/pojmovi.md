@@ -8,9 +8,9 @@ Da bismo razumeli kako nastaju elektricitet i električna struja, neophodno je d
 
 ![](slike/electron.png)
 
-**Elektroni** spadaju u osnovne gradivne čestice prirode. Oni su suprotnost protona. Elektroni i protoni su izuzetno mali i nalaze se u svemu oko nas. Zrnce prašine sadrži milione elektrona i protona.
+**Elektron je elementarna čestica sa negativnim naelektrisanjem**, koja spada u osnovne gradivne čestice prirode. Elektroni i protoni su izuzetno mali i nalaze se u svemu oko nas. Zrnce prašine sadrži milione elektrona i protona.
 
-Elektroni i **protoni** imaju jednaku količinu naelektrisanja, ali suprotnog pola - elektroni su naelektrisani negativno, a protoni pozitivno. Suprotna naelektrisanja se privlače, slično kao kod magneta. Privlačenje elektrona i protona u svetu mikroskopskih razmera deluje kao lepak i sprečava nestajanje materije.
+**Proton, pozitivno naelektrisana čestica, je suprotnost elektrona**. Elektroni i protoni imaju jednaku količinu naelektrisanja, ali suprotnog pola - elektroni su naelektrisani negativno, a protoni pozitivno. Suprotni polovi se privlače, kao kod magneta. Privlačenje elektrona i protona u mikrosvetu deluje kao lepak i sprečava nestajanje materije.
 
 Dok su protoni relativno nepokretni, elektroni često prelaze s jednog predmeta na drugi. 
 
@@ -18,7 +18,7 @@ Dok su protoni relativno nepokretni, elektroni često prelaze s jednog predmeta 
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Lightning3.jpg/330px-Lightning3.jpg)
 
-**Elektricitet** je prirodni fenomen koji potiče od prisustva i kretanja električnog naboja.
+**Elektricitet** je prirodni fenomen koji potiče od prisustva i kretanja električnog naboja. Negativan električni naboj znači da čestica ima višak elektrona. Takve čestice se međusobno odbijaju, a privlače ih čestice sa pozitivnim nabojem.
 
 Prošetajte po vunenom tepihu i dotaknite kvaku; elektroni koji putuju između vašeg prsta i kvake izazivaće varnicu. Munja je najupečatljiviji primer elektrona koji putuju između oblaka i površine zemlje. Ovo su primeri elektriciteta u "neobuzdanom" stanju.
 
@@ -52,6 +52,8 @@ Neki materijali bolje provode elektricitet od drugih. Uglavnom se kao **provodni
 **Napon** je razlika električnog potencijala između dve tačke. Možemo ga zamisliti kao pritisak koji tera elektrone da se kreću kroz provodnik. Negativno naelektrisani elektroni kreću se kroz provodnik ka pozitivnom naponu. Napon se meri u voltima (**V**), zbog čega se naziva i **voltaža**. Oznaka za napon je **U**.
 
 **Elektromotorna sila** je vrsta napona koju proizvodi izvor struje (npr. baterija ili generator) da bi pokrenuo elektrone kroz kolo.
+
+![](slike/analogija.png)
 
 ## Otpor
 
