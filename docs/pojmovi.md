@@ -1,6 +1,6 @@
 # Osnovni pojmovi
 
-wiki: [elektricitet](https://sh.wikipedia.org/wiki/Elektricitet) i [električna struja](https://sh.wikipedia.org/wiki/Elektri%C4%8Dna_struja)
+> wiki: [elektricitet](https://sh.wikipedia.org/wiki/Elektricitet) i [električna struja](https://sh.wikipedia.org/wiki/Elektri%C4%8Dna_struja)
 
 Da bismo razumeli kako nastaju elektricitet i električna struja, neophodno je da ih razložimo na sastavne delove.
 
