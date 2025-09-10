@@ -57,11 +57,17 @@ Neki materijali bolje provode elektricitet od drugih. Uglavnom se kao **provodni
 
 **Napon je razlika električnog potencijala između dve tačke**. Možemo ga zamisliti kao pritisak koji pokreće elektrone kroz provodnik. Napon se meri u voltima (**V**), zbog čega se naziva i **voltaža**. Oznaka za napon je **U**.
 
-**Izvor napona** (npr. baterija ili generator) je uređaj koji neprestano održava razliku električnog potencijala između svojih polova. Izvor napona stvara električno polje između svojih polova, koje privlači elektrone ka pozitivnom polu i odbija od negativnog.
-
-**Elektromotorna sila** je sposobnost izvora da održava razliku potencijala između svojih polova, što omogućava struji da teče kada je kolo zatvoreno.
+**Izvor napona** je uređaj (npr. baterija ili generator) koji održava razliku električnog potencijala između svojih polova. Izvor napona stvara električno polje između svojih polova, koje privlači elektrone ka pozitivnom polu i odbija od negativnog. **Elektromotorna sila** je sposobnost izvora da održava razliku potencijala između svojih polova.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/9/9b/Potential.jpg)
+
+### Pad napona
+
+**Pad napona** je smanjenje napona dok struja prolazi kroz komponentu u kolu, obično zbog njenog otpora. Kada struja prolazi kroz otpornik, deo napona se „obara“ i pretvara u toplotnu energiju. Pad napona na potrošaču pokazuje koliko energije iz kola on prima i pretvara u korisnu formu, poput toplote, svetlosti ili kretanja.
+
+Pad napona se javlja samo u serijskom spoju. Kod serijskog spoja imamo jedan napon na izvoru, a nakon svakog potrošača napon „opada“ za onoliko koliko je potrošač „pojeo“. U paralelnom spoju, napon ostaje isti za sve potrošače. 
+
+![](slike/pad-napona.png)
 
 ## Otpor
 
