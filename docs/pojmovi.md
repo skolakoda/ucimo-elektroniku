@@ -55,19 +55,23 @@ Neki materijali bolje provode elektricitet od drugih. Uglavnom se kao **provodni
 
 [wiki](https://sh.wikipedia.org/wiki/Elektri%C4%8Dni_napon)
 
-**Napon** je razlika električnog potencijala između dve tačke. Možemo ga zamisliti kao pritisak koji tera elektrone da se kreću kroz provodnik. Negativno naelektrisani elektroni kreću se kroz provodnik ka pozitivnom naponu. Napon se meri u voltima (**V**), zbog čega se naziva i **voltaža**. Oznaka za napon je **U**.
+**Napon je razlika električnog potencijala između dve tačke**. Možemo ga zamisliti kao pritisak koji pokreće elektrone kroz provodnik. Napon se meri u voltima (**V**), zbog čega se naziva i **voltaža**. Oznaka za napon je **U**.
 
-**Elektromotorna sila** je vrsta napona koju proizvodi izvor struje (npr. baterija ili generator) da bi pokrenuo elektrone kroz kolo.
+**Izvor napona** (npr. baterija ili generator) je uređaj koji neprestano održava razliku električnog potencijala između svojih polova. Izvor napona stvara električno polje između svojih polova, koje privlači elektrone ka pozitivnom polu i odbija od negativnog.
 
-![](slike/analogija.png)
+**Elektromotorna sila** je sposobnost izvora da održava razliku potencijala između svojih polova, što omogućava struji da teče kada je kolo zatvoreno.
+
+![](https://upload.wikimedia.org/wikipedia/commons/9/9b/Potential.jpg)
 
 ## Otpor
 
 [wiki](https://sh.wikipedia.org/wiki/Elektri%C4%8Dni_otpor_i_vodljivost)
 
-**Otpor** je mera sposobnosti elektrona da se kreću kroz materijal. Šira žica pruža manji otpor kretanju elektrona od uže žice. Otpor zavisi još od materijala i temperature.
+**Otpor** je mera sposobnosti elektrona da se kreću kroz materijal. Širi provodnik pruža manji otpor kretanju elektrona od užeg. Otpor zavisi još od materijala i temperature.
 
-U skoro svim elektronskim uređajima koriste se otpornici. Otpornici imaju unapred određenu vrednost otpora, što omogućava upravljanje tokom elektrona kroz električno kolo.
+U skoro svim elektronskim uređajima koriste se otpornici. Otpornici imaju zadatu vrednost, što omogućava upravljanje tokom elektrona kroz kolo.
+
+![](slike/otpor.jpg)
 
 ## Poređenje sa vodom
 
@@ -79,3 +83,5 @@ Ako uzmemo žicu i jedan kraj povežemo s pozitivnim polom baterije a drugi s ne
 * Kroz širu cev teče više vode pod istim pritiskom, a kroz širi provodnik više elektrona pod istim naponom.
 
 ![](slike/analogija.jpg)
+
+<!-- ![](slike/analogija.png) -->
