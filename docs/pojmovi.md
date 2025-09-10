@@ -30,7 +30,7 @@ Prošetajte po vunenom tepihu i dotaknite kvaku; elektroni koji putuju između v
 
 ![](slike/struja.gif)
 
-**Električna struja (ili električni tok) je kretanje naelektrisanih čestica kroz provodnik.** Struja može biti:
+**Električna struja (strujanje elektriciteta ili električni tok) je usmereno kretanje naelektrisanih čestica (obično elektrona) kroz provodnik.** Struja može biti:
 
 - jednosmerna (DC): elektroni se kreću u jednom smeru.
 - naizmenična (AC): elektroni se kreću čas u jednom čas u drugom smeru.
