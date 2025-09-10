@@ -20,8 +20,10 @@ Diode se označavaju standardnim brojčanim oznakama, na primer, ispravljačka d
 
 ## Polaritet
 
-Sve diode imaju polaritet - pozitivan i negativan kraj. Pozitivan kraj se zove anoda a negativan katoda. Katodu lako možete prepoznati jer se na toj strani nalaze crvene ili crne trake. Vrlo je važno da postavite diodu tako da bude usmerena u pravom smeru.
+Sve diode imaju polaritet - pozitivan i negativan kraj. Pozitivan kraj se zove **anoda** a negativan **katoda**. Katodu lako možete prepoznati jer se na toj strani nalaze crvene ili crne trake. Vrlo je važno da postavite diodu tako da bude usmerena u pravom smeru.
 
 Pošto diode puštaju struju u jednom smeru a blokiraju u drugom, ako diodu pogrešno postavite kolo neće raditi ili ćete oštetiti neke komponente.
 
-Na šemama se polaritet diode označava kratkom linijom koja predstavlja katodu, to jest negativan pol.
+Na šemama polaritet diode se označava kratkom linijom koja predstavlja katodu, to jest negativan pol.
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Diode_symbol.svg/320px-Diode_symbol.svg.png)
