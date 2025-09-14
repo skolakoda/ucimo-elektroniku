@@ -1,14 +1,22 @@
 # Redna i uporedna kola
 
-Komponente u kolu možete povezati **redno**, tako da struja iste jačine protiče kroza sve komponente, ili **paralelno**, tako da deo struje protiče kroz jednu komponentu a deo kroz drugu, i tako redom.
+[wiki](https://sh.wikipedia.org/wiki/Redna_i_uporedna_kola)
 
 ![](slike/redna-i-uporedna-kola.png)
 
+Komponente u kolu možemo povezati **redno** (serijski), tako da struja iste jačine protiče kroza sve komponente, ili **uporedo** (paralelno), tako da deo struje protiče kroz jednu komponentu a deo kroz drugu, i tako redom.
+
+U serijskom kolu, iako napon pada po komponentama, kroz svaku komponentu protiče ista količina elektrona.
+
 ## Redna veza
 
-Recimo da imamo kolo sastavljeno od baterije, sijalice i otpornika. Elektroni se kreću od negativnog pola baterije kroz sijalicu a zatim prolaze kroz otpornik. Takav raspored komponenti zove se redna veza, što znači da elektricitet redom struji kroz komponente.
+![](https://upload.wikimedia.org/wikipedia/commons/9/9a/LEDCircuit.PNG)
+
+Recimo da imamo kolo sastavljeno od baterije, sijalice i otpornika. Elektroni se kreću od negativnog pola baterije kroz otpornik a zatim prolaze kroz sijalicu. Takav raspored komponenti zove se redna veza, što znači da elektricitet redom struji kroz komponente.
 
 ### Redna veza otpornika
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Series_circuit.svg/320px-Series_circuit.svg.png)
 
 Ukupan otpor u kolu izračunavamo sabiranjem otpornosti komponenti. Recimo da imamo kolo sa četiri otpornika u rednoj vezi. Da bi izračunali ukupnu otpornost kola (Rt), saberite otpornost svih otpornika. Na primer:
 
@@ -25,15 +33,15 @@ I = V / R
   = 0,015 ampera ili 15 miliampera
 ```
 
-Zašto bih morao da vodim računa o jačini struje u kolu, pitate se? Postoje dva zaista dobra razloga:
-* Čak i najizdržljivije komponente mogu da podnesu samo određenu jačinu struje. Na primer, LED dioda će verovatno pregoreti ako kroz nju propustite više od 50 miliampera.
-* Napajanje može da obezbedi struju samo određene jačine. Da bi sve radilo kako je predviđeno, obezbedite izvor napajanja koji će dati onoliko struje koliko je potrebno.
+Zašto treba voditi računa o jačini struje u kolu? 
+* Čak i najizdržljivije komponente mogu podneti samo određenu jačinu struje. Na primer, LED dioda će verovatno pregoreti ako kroz nju propustite više od 50 miliampera.
+* Napajanje može da obezbedi struju samo određene jačine. Da bi sve radilo kako treba, obezbedite dovoljan izvor napajanja.
 
 ## Uporedna veza
 
-U kolima s rednom vezom može se naići na sledeći **problem**: ako jedna komponenta otkaže, ona prekida struju kola. Na primer, ako svetleća reklama ima dvesta redno vezanih sijalica, čim jedna pregori, sve prestaju da svetle.
+U kolima s rednom vezom može se pojaviti sledeći **problem**: ako jedna komponenta otkaže, prekida struju kola. Na primer, ako svetleća reklama ima 200 redno vezanih sijalica, čim jedna pregori, sve prestaju da svetle. Postoji **rešenje** - komponente možemo povezati paralelno. Tada, ako jedna sijalica pregori, 199 ispravnih i dalje svetli. Naravno, poruka se može nehotice izmeniti :)
 
-Postoji jednostavno **rešenje** - komponente možemo povezati paralelno. Dakle, ako u svetlećoj reklami ima dvesta paralelno vezanih sijalica i jedna pregori, 199 preostalih i dalje svetli. Naravno, neko slovo može se nehotično izmeniti :)
+### Paralelna veza otpornika
 
 ![](slike/uporedna-veza-otpornika.jpg)
 
@@ -53,4 +61,4 @@ I = V / Rt
   = 1,25 ampera
 ```
 
-Ako u ovom primeru koristimo bateriju kao izvor napajanja, ona će se istrošiti vrlo brzo. Na baterijama je navedena vrednost u ampersatima. Baterija od jednog ampersata traje samo sat vremena ako napaja kolo koje crpi jedan amper. Zato prilikom izbora napajanja moramo uzeti u obzir jačinu struje i koliko dugo kolo mora da radi.
+Ako ovde koristimo bateriju kao izvor napajanja, ona će se istrošiti vrlo brzo. Na baterijama je navedena vrednost u ampersatima. Baterija od jednog ampersata traje samo sat vremena ako kolo crpi jedan amper. Zato prilikom izbora napajanja moramo uzeti u obzir jačinu struje i koliko dugo kolo mora da radi.

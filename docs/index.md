@@ -34,7 +34,7 @@
 
 ## Električna kola
 
-- [Šeme](sheme.md)
+- [Električne šeme](sheme.md)
 - [Redna i uporedna kola](redna-i-uporedna-kola.md)
 - [Razdelnik napona](razdelnik-napona.md)
 - [Multimetar](multimetar.md)
