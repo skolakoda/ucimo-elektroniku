@@ -4,7 +4,7 @@
 
 ![](slike/redna-i-uporedna-kola.png)
 
-Komponente u kolu možemo povezati **redno** (serijski), tako da ista struja ide kroz sve komponente, ili **uporedo** (paralelno), tako da deo elektrona protiče kroz jednu komponentu a deo kroz drugu.
+Komponente u kolu možemo povezati **redno** (serijski), tako da isti elektroni teku kroz sve komponente, ili **uporedo** (paralelno), tako da deo elektrona protiče kroz jednu komponentu a deo kroz drugu.
 
 U rednom kolu napon pada po komponentama, ali kroz svaku protiče ista količina elektrona. U paralelnom kolu napon je isti na svim granama, ali struja se deli.
 
