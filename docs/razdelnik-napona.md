@@ -1,8 +1,8 @@
 # Razdelnik napona
 
-Napon "gura" elektrone kroz žicu, a otpornici se suprotstavljaju njihovom kretanju, smanjujući napon. To smanjenje napona na komponenti zove se **pad napona**. 
+Napon "gura" elektrone kroz žicu, a otpornici se suprotstavljaju kretanju elektrona, smanjujući napon. To smanjenje napona na komponenti zove se **pad napona**. 
 
-**Razdelnik napona** je kolo koje pomoću pada napona stvara manji izlazni napon u delu kola, odnosno stvara manji izlazni napon od ulaznog.
+**Razdelnik napona** je kolo koje pomoću pada napona u jedom delu stvara manji izlazni napon od ulaznog.
 
 ## Formule
 
@@ -53,7 +53,7 @@ V izlaz = 110 / 330 * 9V
 
 ![](slike/podela-napona-na-pola.png)
 
-Ako želite da izlazni napon bude upola manji od izvora, upotrebite dva otpornika iste otpornosti. Zatim upotrebite jednačinu da bi izračunali pad napona na otporniku R1:
+Ako želimo da izlazni napon bude pola od ulaznog, koristimo dva otpornika iste otpornosti. Pomoću jednačine možemo izračunati pad napona na otporniku R1:
 
 ```
 V(R1) = R1 / (R1 + R1) * Vt
@@ -63,7 +63,7 @@ V(R1) = R1 / (R1 + R1) * Vt
 
 ## Primer: izlaz 2/3 ulaza
 
-Ako izlazni napon treba da ima vrednost dve trećine napona napajanja, upotrebite R1 čija je otpornost upola manja od otpornosti otpornika R2. Ponovo izračunajte pad napona:
+Ako izlazni napon treba da ima vrednost dve trećine ulaznog napona, koristimo R1 čiji je otpor upola manji od R2. Pad napona računamo jednačinom:
 ```
 V(R1) = R1 / (R1 + 2 R1) * Vt
       = R1 / 3 R1 * Vt
@@ -72,7 +72,7 @@ V(R1) = R1 / (R1 + 2 R1) * Vt
 
 ## Kako izabrati odgovarajuće otpornike?
 
-Da bismo dobili željeni izlaz, jedan otpornik biramo nasumično, a drugi računamo pomoću formule:
+Da bismo dobili željeni izlaz, jedan otpornik uzimamo nasumično, a drugi računamo pomoću formule:
 
 ```
 R2 = V(izlaz) * R1 / (V(ulaz) - V(izlaz))
