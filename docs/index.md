@@ -39,6 +39,7 @@
 - [Razdelnik napona](razdelnik-napona.md)
 - [Multimetar](multimetar.md)
   - [Merenja multimetrom](merenja.md)
+  - [Dodatne funkcije multimetra](dodatne-funkcije-multimetra.md)
   - [Merenje struje naponom](merenje-struje-naponom.md)
 - [Mikrokontroleri](mikrokontroleri.md)
 - [Prototipska ploča](prototipska-ploča.md)

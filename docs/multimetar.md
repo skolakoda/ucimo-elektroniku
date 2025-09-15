@@ -43,9 +43,9 @@ Postoji granica koje multimetri mogu da mere. Ta granica se zove **maksimalni op
 * naizmenična struja: 200 mA (miliampera)
 * otpor: 2 MΩ (dva megaoma ili dva miliona oma)
 
-Većina digitalnih multimetara može da meri samo struju jačine do jednog ampera. Tipičan digitalni multimetar ima maksimalan opseg od 200 miliampera. Svaki pokušaj da se izmeri znatno jača struja može izazvati pregorevanje osigurača u multimetru. 
+Većina digitalnih multimetara može da meri samo struju jačine do jednog ampera. Tipičan digitalni multimetar ima maksimalan opseg od 200 miliampera. Svaki pokušaj da se izmeri znatno jača struja može izazvati pregorevanje osigurača u multimetru. Ako imate multimetar sa ograničenim opsegom merenja jačine struje, ipak možete meriti jače struje indirektno, koristeći otpornik male otpornosti i velike snage.
 
-Ako imate multimetar sa ograničenim opsegom merenja jačine struje, ipak možete meriti jače struje indirektno, koristeći otpornik male otpornosti i velike snage.
+Multimetar ukazuje na prekoračenje granice ako je veličina koja se meri prevelika da bi je aparat prikazao. Na digitalnom multimetru se prekoračenje prikazuje kao trepćuća 1 (ili slovima OL - *overload/over-limit*). Na analognim multimetrima, prekoračenje se prikazuje tako što kazaljka izlazi van skale. Ukazivanje na prekoračenje je često kada se ispituje kontinuitet. To znači da je otpor prevelik da bi ga multimetar registrovao.
 
 ## Podešavanje multimetra
 
@@ -60,24 +60,7 @@ Redovno proveravajte jesu li sonde čiste. Prljave ili zarđale sonde mogu biti 
 
 Takođe, proveravajte napon baterija i zamenite ih kad treba.
 
-## Biranje opsega
-
-Na mnogim multimetrima moramo izabrati opseg merenja da bi imali precizne rezultate. Na primer, ako merimo napon baterije od 9 volti, opseg podešavamo na naredni veći od 9 volti, što je obično 20 ili 50 volti. Obavezno očitajte rezultat sa odgovarajuće skale. Ako ste izabrali, na primer, opseg od 20 volti, morate koristiti skalu od 20 volti. U suprotnom, dobićete netačne rezultate.
-
-Ručno podešavanje opsega nije mnogo složeno. Međutim, danas je automatsko biranje opsega kod digitalnih multimetara uobičajeno. Kada želite da merite napon, birač postavljate u odgovarajući položaj i merite.
-
-Bez obzira da li je multimetar analogan ili digitalan, on ukazuje na prekoračenje granice ako je veličina koja se meri prevelika da bi je aparat prikazao. Na digitalnom multimetru se prekoračenje prikazuje kao trepćuća jedinica (ili slovima OL). Na analognim multimetrima, prekoračenje se prikazuje tako što kazaljka izlazi van skale. Ukazivanje na prekoračenje je često kada se ispituje kontinuitet. To znači da je otpor prevelik da bi ga multimetar registrovao.
-
-Kada koristite analogni multimetar, izbegavajte prekoračenja jer se tako može narušiti preciznost kretanja kazaljke.
-
-## Dodatne funkcije i oprema
-
-Neki multimetri imaju dodatne korisne funkcije, poput:
-* **Ispitivanje kondenzatora i merenje kapacitivnosti**. Pošto merni kablovi i sonde mogu da utiču na očitavanje vrednosti kapacitivnosti, multimetri koji mere kapacitivnost imaju zasebno ležište. Umetnite kondenzator u to ležište i zatim izmerite njegovu kapacitivnost.
-* **Ispitivanje diode**. Na digitalnim multimetrima s tom funkcijom postoji poseban položaj birača koji služi za ispitivanje dioda. I pomoću većine analognih multimetara možete ispitati rad diode, koristeći skalu za male otpornosti.
-* **Ispitivanje tranzistora**. Kada se koristi analogni multimetar, tranzistori se ispituju na isti način kao diode. Na digitalnim multimetrima, tranzistori se ispituju uz korišćenje odgovarajućeg, označenog ležišta za tranzistore.
-
-### Kvalitetni merni kablovi
+## Kvalitetni merni kablovi
 
 Merni kablovi koji se dobijaju s jeftinijim multimetrima nisu toliko kvalitetni, pa bi možda trebalo nabaviti bolje. Dobar izbor su spiralni kablovi koji mogu da se rastegnu i do metar dužine.
 
@@ -93,16 +76,16 @@ Ako ispitujemo visok napon iz gradske mreže nepažljivo korišćenje multimetra
 - **Ne postavljajte sonde naslepo po kolu** da bi očitali neku vrednost, već samo na one delove kola koji su vam poznati. 
 - **Držite jednu ruku u džepu**. Pričvrstite crnu sondu na uzemljenje, jednom rukom koristite crvenu sondu, a drugu bezbedno držite u džepu.
 
-## Eksperiment: Merenje otpora vode
+## Vizuelno ispitivanje
 
-Multimetar možemo upotrebiti za prost naučni eksperiment kojim se demonstrira postupak merenja otpora, i pokazuje koliko primesa ima u vodi koju pijemo. To ćemo izvesti na sledeći način:
+Pre upotrebe multimetra, možemo prvo izvršiti vizuelno ispitivanje komponenti. U nekim slučajevima, već na prvi pogled se vidi da je komponenta uništena. Kad komponenta izgleda kao da je spržena, sigurno je pregorela. Ako se neka elektronska komponenta pregreje - obično zbog prejake struje - može da se istopi ili eksplodira. Kada otkrijete spaljenu komponentu, neophodno je da saznate zašto je pregorela kako bi sprečili da se to ponovi.
 
-1. Uzmite dve čiste čaše.
-2. Isperite ih destilovanom vodom. Destilovanu vodu možete kupiti u svakoj samoposluzi.
-3. Jednu čašu napunite destilovanom vodom, a drugu običnom.
-4. Podesite multimetar za merenje otpora. Podesite ga na prilično velik opseg, recimo 200 kilooma ili više.
-5. Gumicom za tegle spojite izolovane ručice sondi. Uverite se da se metalni delovi sondi ne dodiruju.
-6. Uronite sonde u čašu s destilovanom vodom. Zabeležite rezultat i - po potrebi - smanjite opseg merenja.
-7. Nakon toga uronite sonde u čašu sa običnom vodom. Zabeležite dobijeni rezultat.
+Oštećene komponente ćete otkriti ako potražite sledeće znake:
+* Kod **otpornika**, pogledajte ima li uočljivo ispupčeno središte, promenjene boje.
+* Kod **kondenzatora**, proverite postoji li ispupčenje na vrhu ili krajevima i curi li nešto (elektrolit).
+* Na **diodi**, **tranzistoru** ili **integrisanom kolu** potražite očigledne promene boje na štampanoj ploči.
+* Nemojte prevideti komponentu koja se raspala.
 
-U osnovnoj školi smo učili da voda provodi elektricitet. Ta tvrdnja nije sasvim tačna. Voda bez primesa je izolator; elektricitet provode minerali rastvoreni u vodi. Destilovana voda sadrži malo minerala, pa ima vrlo veliku otpor. U zavisnosti od toga gde živite, voda iz vodovodne mreže može da sadrži mnogo soli i minerala, pa je zato njena provodnost veća.
+Naravno, komponenta može biti oštećena čak i bez vidljivih znakova pregorevanja. Zato vizuelno ispitivanje koristimo samo za pronalaženje očiglednih oštećenja a ne za konačan sud o ispravnosti komponente.
+
+> Izbegavajte kontakt sa sirupastom tečnošću iz elektrolitskog kondenzatora. Može da vas opeče. Odmah operite ruke toplom vodom i sapunom ako dodirnete tu tečnost. Ne dozvolite da vam kapne u oči! Ukoliko se to dogodi, dobro isperite oči mlazom vode i zatražite hitnu medicinsku pomoć.
