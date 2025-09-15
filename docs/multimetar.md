@@ -6,7 +6,7 @@
 
 Tokom pravljenja ili popravke kola, moramo vršiti određena merenja da bi proverili rade li komponente kako treba. **Multimetar** je prvi i verovatno jedini merni uređaj koji će nam ikad zatrebati. Pomoću njega možemo ne samo proveriti napon u kolu, već i postoji li negde kratak spoj ili prekinuta veza između komponenti.
 
-Recimo da smo imamo električno kolo koje ne radi. Pomoću multimetra ustanovićemo koja je komponenta uzrok problema. Možemo izmeriti napon, otpor i struju u različitim tačkama kola. Na primer, ako je napon u jednoj tački 5 volti, a u drugoj neočekivano padne na 0, uzrok problema je negde između te dve tačke.
+Ako električno kolo ne radi, pomoću multimetra možemo ustanoviti koja je komponenta uzrok problema. Možemo izmeriti napon, otpor i struju u različitim tačkama kola. Na primer, ako je napon u jednoj tački 5 volti, a u drugoj neočekivano padne na 0, uzrok problema je negde između te dve tačke.
 
 ## Osnovna merenja
 
