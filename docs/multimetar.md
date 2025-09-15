@@ -8,41 +8,6 @@ Tokom pravljenja ili popravke kola, moramo vršiti određena merenja da bi prove
 
 Ako električno kolo ne radi, pomoću multimetra možemo ustanoviti koja je komponenta uzrok problema. Možemo izmeriti napon, otpor i struju u različitim tačkama kola. Na primer, ako je napon u jednoj tački 5 volti, a u drugoj neočekivano padne na 0, uzrok problema je negde između te dve tačke.
 
-## Osnovna merenja
-
-Multimetar se koristi za brojna merenja u elektronici. Pomoću multimetra se meri:
-
-* **napon** (jednosmerni i naizmenični)
-* **struja**
-* **otpor**
-* **kontinuitet** (je li kolo čitavo ili prekinuto)
-
-Svaki multimetar ima par mernih kablova (**crni** za uzemljenje, **crveni** za pozitivni pol), sa metalnom sondom ili pipalicom na kraju. Neki multimetri, na primer, imaju i mogućnost ispitivanja dioda, kondenzatora i tranzistora.
-
-Prilikom merenja ne dodirujte sonde prstima, jer otpor tela može da poremeti merenje.
-
-### Struja i napon
-
-Napon i struja se mere kada je kolo priključeno na izvor napajanja. U uobičajena merenja spadaju:
-* **Merenje napona baterije**. Precizniji su rezultati kada se baterija meri pod opterećenjem.
-* **Crpi li kolo previše struje**. Ako kroz kolo protiče prejaka struja, komponente mogu pregoreti.
-* **Napaja li se komponenta odgovarajućim naponom**. Te provere će vam pomoći da pronađete uzrok problema u kolu.
-
-### Otpor
-
-Otpor se obično meri kada je kolo isključeno. Možemo meriti otpor celog kola ili neke komponente - žice, otpornika, motora i mnogih drugih.
-
-Otpor, ili njegov izostanak, ukazuje na kratke spojeve ili otvorena kola. Kratak spoj ima otpor (skoro) nula, dok je otpor otvorenog kola beskonačan. Testove kontinuiteta koristimo za pronalaženje prekida u žicama.
-
-Pomoću multimetra možemo obaviti još neka merenja zasnovana na otporu:
-* **Osigurač**: Pregoreli osigurač daje otvoreno kolo.
-* **Prekidač**: Uključen prekidač ima vrednost otpora nula (kratak spoj), a isključen beskonačno (otvoreno kolo).
-* **Lemni spoj**: Neispravan lemni spoj ima beskonačan otpor (otvoreno kolo). Isto važi za spoj na štampanoj ploči.
-
-### Kontinuitet
-
-Neki multimetri se tokom ispitivanja kontinuiteta oglašavaju zvučnim signalom. Da bi to koristili, postavite birač radnog režima na *Continuity* ili *Tone*. Zvučno oglašavanje će nam koristiti kada proveravamo veze u kolu. Ako veza ima kratak spoj, multimetar će se oglasiti zvučnim signalom.
-
 ## Digitalni ili analogni multimetar?
 
 Postoje dve vrste multimetara: digitalni i analogni.

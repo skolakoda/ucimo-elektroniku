@@ -1,30 +1,62 @@
 # Merenja multimetrom
 
-## Merenje napona
+Multimetar se koristi za brojna merenja u elektronici. Pomoću multimetra se meri:
 
-Napon se može meriti u svim tačkama kola. Npr, možemo meriti napon preko otpornika ili LED diode. Kada merimo napon pojedine komponente kačimo multimer za njene nožice, a kada merimo celo kolo onda za napajanje.
+* **napon** (jednosmerni i naizmenični)
+* **struja**
+* **otpor**
+* **kontinuitet** (je li kolo čitavo ili prekinuto)
+
+Svaki multimetar ima par mernih kablova (**crni** za uzemljenje, **crveni** za pozitivni pol), sa metalnom sondom ili pipalicom na kraju. Neki multimetri, na primer, imaju i mogućnost ispitivanja dioda, kondenzatora i tranzistora.
+
+Prilikom merenja ne dodirujte sonde prstima, jer otpor tela može da poremeti merenje.
 
 Ako kolo emituje oscilujuće signale, oni se mogu menjati prebrzo pa ih ne možemo meriti multimetrom. Oprema za merenje brzomenjajućih signala su logička sonda i osciloskop.
 
+## Merenje napona
+
+Multimetar na DC V.
+
+- **Merenje napona kola.** Kada merimo napon celog kola kačimo multimetar za napajanje (crnu sondu na negativni, a crvenu na pozitivni pol napajanja).
+- **Merenje napona komponente.** Napon komponente (ili **pad napona**) je razlika električnog potencijala između njena dva priključka. Kada merimo napon komponente kačimo multimer za njene nožice. Tako proveravamo napaja li se komponenta odgovarajućim naponom. 
+- **Merenje napona baterije**. Crna sonda na minus baterije, crvena na plus. Precizniji su rezultati kada se baterija meri pod opterećenjem (sa prikačenim potrošačem).
+
 ## Merenje struje
 
-Da bi izmerili struju, potrebno je redno vezati multimetar u kolo. Tako se meri ukupna struja koju kolo crpi. Oprez, mnogi multimetri mere struju samo do određene jačine!
+Multimetar na A (DC ili AC).
 
-Možemo izmeriti i struju koja teče kroz deo kola, ili kroz samo jednu komponentu. 
+- **Merenje struje kroz kolo.** Da bismo izmerili ukupnu struju koju kolo crpi, potrebno je redno vezati multimetar u kolo. Dakle prekinuti kolo na mestu gde merimo, pa povezati multimetar kao most, tako da struja prolazi kroz njega. Za jednosmernu struju crvena sonda ide ka plus strani izvora, crna ka minus (ako obrnemo instrument samo pokaže negativan znak, ali merenje ostaje tačno.).
+
+Ako je redna veza, struja svake komponente je jednaka. Ako je paralelna veza, svaka grana ima svoju struju. Za merenje moramo ubaciti multimetar samo u jednu granu. Tako merimo struju koja teče kroz samo jednu granu odnosno komponentu.
+
+Ako kroz kolo protiče prejaka struja, komponente mogu pregoreti.
+
+> Oprez, mnogi multimetri mere struju samo do određene jačine!
+
+## Merenje otpora
+
+Multimetar na Ω.
+
+Otpor se meri kada je kolo isključeno. Možemo meriti otpor celog kola ili neke komponente - žice, otpornika, motora i slično. Stavi sonde na krajeve te komponente i očitaj vrednost otpora.
+
+Otpor, ili njegov izostanak, ukazuje na kratke spojeve ili otvorena kola. Kratak spoj ima otpor (skoro) nula, dok je otpor otvorenog kola beskonačan. Testove kontinuiteta koristimo za pronalaženje prekida u žicama.
+
+Pomoću multimetra možemo obaviti još neka merenja zasnovana na otporu:
+* **Osigurač**: Pregoreli osigurač daje otvoreno kolo.
+* **Prekidač**: Uključen prekidač ima vrednost otpora nula (kratak spoj), a isključen beskonačno (otvoreno kolo).
+* **Lemni spoj**: Neispravan lemni spoj ima beskonačan otpor (otvoreno kolo). Isto važi za spoj na štampanoj ploči.
 
 ## Ispitivanje kontinuiteta
 
-Ispitivanjem kontinuiteta proveravamo je li kolo kompletno ili nije. Kontinuitet ćemo najlakše opisati ako jednu žicu smatramo kolom:
-* Kratak spoj pokazuje da postoji veza između dve tačke jedne žice. Multimetar to stanje prikazuje kao otpornost vrednosti 0 (nula) oma.
-* Otvoreno kolo znači da u kolu ne postoji kontinuitet, odnosno postoji prekid. Multimetar to stanje prikazuje kao beskonačnu otpornost, to jest otpornost toliko velike vrednosti da multimetar ne može da je registruje.
+Multimetar na režim za kontinuitet (*Continuity* ili *Tone*), koji obično uključuje zvučni signal.
 
-Kada ispitujete kabl s nekoliko žica, proverite da li se žice u njemu dodiruju (prave kratak spoj).
+Ispitivanjem kontinuiteta proveravamo je li kolo povezano (zatvoreno) ili nije:
+* Kratak spoj pokazuje da postoji veza između dve tačke. Multimetar to prikazuje kao otpor 0 oma. Ako veza ima kratak spoj, multimetar će se oglasiti zvučnim signalom.
+* Otvoreno kolo znači da postoji prekid. Multimetar to prikazuje kao beskonačan otpor.
 
 Ispitivanje žica:
-* Ispitivanje kontinuiteta žice. Povežite sonde multimetra s krajevima žice. Trebalo bi da očita otpornost blizu 0 oma. Očitavanje od nekoliko oma ukazuje na mogući prekid u kolu.
-* Ispitivanje kratkog spoja između žica koje ne bi trebalo da su povezane. Povežite sonde multimetra s ogoljenim krajem dveju žica. Trebalo bi da očita gotovo beskonačnu otpornost. Ako se očita nula verovatno postoji kratak spoj.
-
-Ako ispitujete dve odvojene žice, dobićete rezultat od beskonačno mnogo oma, zar ne? U većini slučajeva je tako. Međutim, takva veza može da ima određenu otpornost, pa ne brinite previše ako se ne očitava beskonačna vrednost.
+* Ispitivanje kontinuiteta žice. Povežite sonde s krajevima žice. Trebalo bi da očita otpornost blizu 0 oma.
+* Ispitivanje kratkog spoja između žica koje ne bi trebalo da su povezane. Povežite sonde s ogoljenim krajem dveju žica. Trebalo bi da očita gotovo beskonačnu otpornost. Ako očita 0 verovatno postoji kratak spoj.
 
 ### Čak i žica pruža otpor
 
