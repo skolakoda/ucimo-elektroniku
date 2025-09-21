@@ -13,7 +13,7 @@ Danas je automatsko biranje opsega kod digitalnih multimetara uobičajeno.
 
 ## Merenje napona
 
-Multimetar na DC V.
+Postavimo na DC V.
 
 - **Merenje napona kola.** Multimetar kačimo za napajanje - crnu sondu na negativni, crvenu na pozitivni pol - i očitavamo vrednost.
 - **Merenje napona komponente.** Multimetar kačimo za nožice komponente i proveravamo napaja li se ona odgovarajućim naponom. Napon komponente ili **pad napona** je razlika električnog potencijala između njena dva priključka. 
@@ -21,7 +21,7 @@ Multimetar na DC V.
 
 ## Merenje struje
 
-Multimetar na A (DC ili AC).
+Postavimo na A (DC ili AC).
 
 - **Merenje struje kroz kolo.** Da bismo izmerili ukupnu struju koju kolo crpi, potrebno je redno vezati multimetar u kolo, tako da struja prolazi kroz njega (crvena sonda ka plusu, crna ka minusu). Ako je redna veza, struja svake komponente je jednaka. 
 - **Merenje struje kroz komponentu.** Ako je veza paralelna, svaka grana ima svoju struju. Multimetar povezujemo samo u jednu granu i merimo samo struju koja teče kroz tu komponentu.
@@ -32,7 +32,7 @@ Ako je prejaka struja, komponente mogu pregoreti.
 
 ## Merenje otpora
 
-Multimetar na Ω. Isključimo napajanje. Sonde multimetra postavimo na krajeve komponente (žice, otpornika, motora i slično) i očitamo vrednost otpora.
+Postavimo na Ω. Isključimo napajanje. Sonde multimetra postavimo na krajeve komponente (žice, otpornika, motora i slično) i očitamo vrednost otpora.
 
 Možemo meriti otpor celog kola ili neke komponente. **Izostanak otpora** ukazuje na kratak spoj (veza između dve tačke različitog potencijala sa vrlo malim ili nikakvim otporom), a **beskonačan otpor** na otvoreno (prekinuto) kolo.
 
@@ -53,9 +53,9 @@ Preklopnik često nema položaj isključeno, već samo dva položaja uključeno.
 
 ### Ispitivanje osigurača
 
-Osigurač štiti elektronsko kolo, tako što pregori kada struja kroz njega premaši dozvoljenu jačinu. Osigurač može da pregori i iz drugih razloga, kao što je naponski udar usled udara groma.
+Osigurač štiti elektronsko kolo tako što pregori kada struja premaši dozvoljenu jačinu. Osigurač može da pregori i iz drugih razloga, kao što je naponski udar usled udara groma.
 
-Da proverite osigurač, birač multimetra postavite u režim za merenje otpora. Krajeve osigurača dodirnite sondama. Očitana vrednost bi trebalo da bude 0 (nula) oma. Ukoliko multimetar pokaže beskonačnu otpornost, osigurač je pregoreo i morate ga zameniti.
+Da proverimo osigurač, biramo režim za merenje otpora. Kad sondama dodirnemo krajeve osigurača, očitana vrednost treba da bude nula oma. Ukoliko multimetar pokaže beskonačnu otpornost, osigurač je pregoreo i moramo ga zameniti.
 
 ### Ispitivanje otpornika
 
