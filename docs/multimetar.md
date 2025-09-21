@@ -8,7 +8,7 @@ Tokom pravljenja ili popravke kola, moramo vršiti određena merenja da bi prove
 
 Ako električno kolo ne radi, pomoću multimetra možemo ustanoviti koja je komponenta uzrok problema. Možemo izmeriti napon, otpor i struju u različitim tačkama kola. Na primer, ako je napon u jednoj tački 5 volti, a u drugoj neočekivano padne na 0, uzrok problema je negde između te dve tačke.
 
-## Digitalni ili analogni multimetar?
+## Digitalni i analogni multimetar
 
 Postoje dve vrste multimetara: digitalni i analogni.
 * **Digitalni multimetri** imaju digitalni displej.
