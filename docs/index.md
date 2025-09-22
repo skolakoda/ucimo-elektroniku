@@ -43,7 +43,7 @@
   - [Dodatne funkcije multimetra](dodatne-funkcije-multimetra.md)
   - [Merenje struje naponom](merenje-struje-naponom.md)
 - [Mikrokontroleri](mikrokontroleri.md)
-- [Prototipska ploča](prototipska-ploča.md)
+- [Prototipska ploča](prototipska-ploca.md)
 - [Štampana ploča](štampana-ploča.md)
 - [Lemljenje](lemljenje.md)
 - [Omotavanje žice](omotavanje-žice.md)
