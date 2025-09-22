@@ -1,4 +1,4 @@
-# Poređenje sa vodom
+# Poređenje sa vodom (hidraulična analogija)
 
 [wiki](https://sh.wikipedia.org/wiki/Hidrauli%C4%8Dka_analogija)
 

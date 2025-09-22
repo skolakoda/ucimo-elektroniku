@@ -1,15 +1,15 @@
 # Merenja multimetrom
 
-Multimetar se koristi za brojna merenja u elektronici. Svaki multimetar ima par mernih kablova (**crni** za uzemljenje, **crveni** za pozitivni pol), sa metalnom sondom ili pipalicom na kraju. Pomoću multimetra se mere:
+Multimetar se koristi za razna merenja u elektronici. Svaki multimetar ima par mernih kablova (**crni** za uzemljenje, **crveni** za pozitivni pol), sa sondom ili pipalicom na kraju. Pomoću multimetra se mere:
 
 * **napon** (jednosmerni i naizmenični)
 * **struja**
 * **otpor**
 * **kontinuitet** (je li kolo čitavo ili prekinuto)
 
-Na nekim multimetrima moramo izabrati opseg merenja da bi imali precizne rezultate. Na primer, ako merimo napon baterije od 9 volti, opseg podešavamo na naredni veći napon, što je obično 20 ili 50 volti. Obavezno očitajte rezultat sa odgovarajuće skale. Ako ste izabrali, na primer, opseg od 20 volti, morate koristiti skalu od 20 volti. U suprotnom, dobićete netačne rezultate.
+Obično moramo izabrati opseg merenja da bismo dobili precizne rezultate. Na primer, ako merimo napon baterije od 9 volti, opseg podešavamo na naredni veći napon, što je obično 20. Neki digitalni multimetri imaju automatsko biranje opsega.
 
-Danas je automatsko biranje opsega kod digitalnih multimetara uobičajeno. 
+> Kod analognog multimetra, obavezno očitajte rezultat sa odgovarajuće skale. Ako ste izabrali, na primer, opseg od 20 volti, morate koristiti skalu od 20 volti. U suprotnom, dobićete netačne rezultate.
 
 ## Merenje napona
 
