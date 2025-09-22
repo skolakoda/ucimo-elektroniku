@@ -4,15 +4,15 @@
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/400_points_breadboard.jpg/320px-400_points_breadboard.jpg)
 
-**Prototipske ploče** (en. *circuit breadboards*, *prototyping boards*, *solderless breadboards*) proizvode se u svim oblicima, stilovima i veličinama, ali sve služe istoj svrsi: imaju redove otvora, električno spojenih pomoću metalnih traka. U njih umećemo komponente - otpornike, kondenzatore, diode, tranzistore, integrisana kola... a potom ih povezujemo žicama da napravimo kolo. Kada se uverimo da kolo radi, možemo primeniti neku od brojnih konstrukcionih tehnika koje su nam dostupne.
+**Prototipske ploče** (en. *circuit breadboards*, *prototyping boards*, *solderless breadboards*) imaju redove otvora, električno spojenih pomoću metalnih traka. U njih umećemo komponente - otpornike, kondenzatore, diode, tranzistore, integrisana kola... a potom ih povezujemo žicama da napravimo kolo. Kada se uverimo da kolo radi, možemo primeniti neku od brojnih konstrukcionih tehnika koje su nam dostupne.
 
-Ne propustite prvo na prototipskoj ploči da ispitate kolo koje planirate da napravite. Često je moguće popraviti performanse malom promenom vrednosti nekoliko komponenti. Te izmene izvršićete na krajnje jednostavan način - uklonićete komponentu i zameniti je drugom, bez lemljenja.
+Kolo koje planirate da napravite prvo ispitajte na prototipskoj ploči. Često je moguće popraviti performanse malim izmenama. Te izmene vršimo na krajnje jednostavan način - uklonimo komponentu i zamenimo je drugom, bez lemljenja.
 
 ## Prototipske ploče - lice i naličje
 
-Prototipska ploča sastoji se od nizova četvrtastih otvora unutar kojih su redovi i redovi metalnih traka. Metalne trake su savitljive i savijene su tako da čine kanal. U otvore umećete žicu i tako je stabilno povezujete s metalnim kanalom.
+Prototipska ploča sastoji se od nizova četvrtastih otvora unutar kojih su redovi metalnih traka. Metalne trake su savijene tako da čine kanal. U otvore umećemo žicu i tako je stabilno povezujemo s metalnim kanalom.
 
-Metalni kanali u unutrašnjosti prototipske ploče zovu se kontakti. Svaka kolona obuhvata pet otvora koji su električno spojeni. To omogućava jednostavno povezivanje komponenti i žica - ubacite ih u odgovarajuće otvore na ploči.
+Metalni kanali u unutrašnjosti prototipske ploče zovu se kontakti. Svaka kolona obuhvata pet otvora koji su električno spojeni. To omogućava jednostavno povezivanje komponenti i žica - ubacimo ih u odgovarajuće otvore na ploči.
 
 Dugi redovi kontakata na vrhu i dnu prototipske ploče omogućavaju jednostavno povezivanje s napajanjem i masom. Većina ploča ima po dva reda na vrhu i dnu za masu i napajanje. Na nekim pločama, ti horizontalni redovi su spojeni, dok su na drugim međusobno izolovani. Obavezno proverite! Uzmite multimetar, stavite žicu u svaki otvor, potom dodirnite prvi jednom sondom, a drugi drugom. Ako je očitavanje u omima nisko, dva reda su spojena. Ukoliko je očitana otpornost beskonačna, nisu spojena.
 

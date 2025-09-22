@@ -4,6 +4,7 @@
 
 - [Osnovni pojmovi](pojmovi.md)
   - [Poređenje sa vodom](poredjenje-sa-vodom.md)
+  - [Poređenje sa saobraćajem](saobracajna-analogija.md)
 - [Izvori elektriciteta](izvori-elektriciteta.md)
 - [Komponente](komponente.md)
 - [Elektronsko kolo](elektronsko-kolo.md)
@@ -43,7 +44,7 @@
   - [Dodatne funkcije multimetra](dodatne-funkcije-multimetra.md)
   - [Merenje struje naponom](merenje-struje-naponom.md)
 - [Mikrokontroleri](mikrokontroleri.md)
-- [Prototipska ploča](prototipska-ploča.md)
+- [Prototipska ploča](prototipska-ploca.md)
 - [Štampana ploča](štampana-ploča.md)
 - [Lemljenje](lemljenje.md)
 - [Omotavanje žice](omotavanje-žice.md)
