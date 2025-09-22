@@ -3,6 +3,7 @@
 ## Osnove
 
 - [Osnovni pojmovi](pojmovi.md)
+  - [Poređenje sa vodom](poredjenje-sa-vodom.md)
 - [Izvori elektriciteta](izvori-elektriciteta.md)
 - [Komponente](komponente.md)
 - [Elektronsko kolo](elektronsko-kolo.md)

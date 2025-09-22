@@ -78,16 +78,3 @@ Pad napona se javlja samo u serijskom spoju. Kod serijskog spoja imamo jedan nap
 U skoro svim elektronskim uređajima koriste se otpornici. Otpornici imaju zadatu vrednost, što omogućava upravljanje tokom elektrona kroz kolo.
 
 ![](slike/otpor.jpg)
-
-## Poređenje sa vodom
-
-[wiki](https://sh.wikipedia.org/wiki/Hidrauli%C4%8Dka_analogija)
-
-Ako uzmemo žicu i jedan kraj povežemo s pozitivnim polom baterije a drugi s negativnim, elektroni počinju da teku od negativnog ka pozitivnom polu. Taj tok elektrona zove se električni tok (ili struja). Da bismo lakše razumeli električni tok, koristimo analogiju sa vodom:
-
-* Više vode teče kroz istu cev pod većim pritiskom, a više elektrona kroz isti provodnik pod većim naponom.
-* Kroz širu cev teče više vode pod istim pritiskom, a kroz širi provodnik više elektrona pod istim naponom.
-
-![](slike/analogija.jpg)
-
-<!-- ![](slike/analogija.png) -->
