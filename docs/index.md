@@ -3,6 +3,7 @@
 ## Osnove
 
 - [Osnovni pojmovi](pojmovi.md)
+  - [Poređenje sa saobraćajem](saobracajna-analogija.md)
 - [Izvori elektriciteta](izvori-elektriciteta.md)
 - [Komponente](komponente.md)
 - [Elektronsko kolo](elektronsko-kolo.md)
