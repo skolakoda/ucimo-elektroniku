@@ -1,31 +1,31 @@
-# Bitne elektronske formule
+# Elektronske formule
 
-Jednačine otklanjaju nedoumice u elektronici. Umesto da prospemo komponente na sto i slažemo ih nasumično, iskusan elektroničar praviće kolo primenjujući jednačine, na osnovu kojih utvrđuje tačne vrednosti veličina.
+Jednačine otklanjaju nedoumice u elektronici. Umesto da komponente slažemo nasumično, iskusan elektroničar pravi kolo primenjujući jednačine, na osnovu kojih utvrđuje tačne vrednosti.
 
-Neke od jednačina koristimo i pri menjanju postojećih kola. Na primer, pomoću jednačine Omovog zakona za struju možemo odabrati odgovarajući otpornik da bi LED diode sijale jače ili slabije.
+Jednačine koristimo i pri menjanju postojećih kola. Na primer, pomoću Omovog zakona možemo odabrati odgovarajući otpornik da bi LED diode sijale jače ili slabije.
 
-## Računanje nepoznanica pomoću Omovog zakona
+## Računanje nepoznatih pomoću Omovog zakona
 
 [Omov zakon](omov-zakon) otkriva odnos snage, napona, struje i otpora. U tabeli su navedene jednačine pomoću kojih se računaju ove vrednosti:
 
 Nepoznata vrednost | jedinica   | formula
--------------------|----|---------
-Napon (V)     | volt   | V = I * R
-Struja (I)    | amper  | I = V / R
-Snaga (P)     | vat    | P = V * I
-Otpornost (R) | om     | R = V / I
+-------------------|------------|----------------
+Napon (V)          | volt (V)   | V = I * R
+Struja (I)         | amper (A)  | I = V / R
+Snaga (P)          | vat (W)    | P = V * I
+Otpor (R)          | om (Ω)     | R = V / I
 
-### Primer: snaga kola 
+### Primer: računanje snage kola 
 
-Da bi našli snagu kola koje zahteva 100 volti na 10 ampera, pomnožite voltažu s brojem ampera (100 x 10). Dakle, 1000 vati. Na osnovu ove brojke utvrdićete kakav osigurač možete dodati kolu, ili koliki ćete račun za struju dobiti na kraju meseca.
+Da bi izračunali snagu kola koje zahteva 100 volti na 10 ampera, pomnožite voltažu s brojem ampera (100 x 10). Dakle, 1000 vati. Na osnovu ove vrednosti utvrdićemo kakav osigurač treba dodati kolu ili koliki će račun za struju biti na kraju meseca.
 
 ### Primer: traženje otpornika 
 
-Da bi povezali LED diodu, otpornik i bateriju, moramo izračunati otpornost otpornika. Poznate su nam sledeće vrednosti:
-* V: Napon. Pošto dioda kroz koju protiče struja pravi pad napona, moramo oduzeti napon na diodi (oko 1,2 volta za tipičnu LED) od izvora napajanja. Tako, ako je napajanje 5 volti, a pad napona na diodi 1,2 volta, ostaje 3,8 volti.
-* I: Potrebna struja za LED diodu. Vrednost 20 mA je bezbedna za skoro svaku LED diodu; niža amperaža znači prigušenije svetlo, a viša od 40 ili 50 mA može uništiti diodu. Pošto struju moramo izraziti u amperima, to je 0,02 ampera.
+Da bismo povezali LED diodu, otpornik i bateriju, moramo izračunati otpornost otpornika. Poznate su nam sledeće vrednosti:
+* Napon (V). Pošto dioda u kolu pravi pad napona, moramo oduzeti napon na diodi (oko 1,2 volta za tipičnu LED) od izvora napajanja. Tako, ako je napajanje 5 volti, a pad napona na diodi 1,2 volta, ostaje 3,8 volti.
+* Potrebna struja (I) za LED diodu. Vrednost 20 mA je bezbedna za skoro svaku LED diodu; niža amperaža znači prigušenije svetlo, a viša od 40 ili 50 mA može uništiti diodu. Pošto struju moramo izraziti u amperima, to je 0,02 ampera.
 
-Da bi našli vrednost otpornika, koji će ograničiti struju kroz LED diodu, koristimo Omov zakon na sledeći način:
+Da bismo našli vrednost otpornika koji će ograničiti struju kroz LED diodu, koristimo Omov zakon na sledeći način:
 
 ```
 R = V / I
@@ -33,28 +33,35 @@ R = V / I
   = 190 oma
 ```
 
-## Računanje otpora
+## Računanje ukupnog otpora (Rt)
 
-Otpornost jednog otpornika u kolu može se jednostavno izračunati. Ali, ako se otpornici spoje paralelno ili serijski, ukupna otpornost se menja. Vrednosti serijski vezanih otpornika se sabiraju, dok je ukupnu otpornost paralelne veze malo teže izračunati.
+Otpor jednog otpornika u kolu može se jednostavno izračunati. Ali, ako se otpornici spoje paralelno ili serijski, ukupan otpor se menja. Vrednosti serijski vezanih otpornika se sabiraju, dok je ukupan otpor paralelne veze malo teže izračunati.
 
 ### Redna veza otpornika
 
-Jednačina za serijsku vezu otpornika veoma je jednostavna - otpornosti se sabiraju:
+Jednačina za serijsku vezu otpornika je prosta - svi otpori se sabiraju:
 
 ```
 Rt = R1 + R2 + R3 . . . (koliko god je potrebno)
 ```
 
-Pretpostavimo da imate dva otpornika od 1,2 i 2,2 kilooma. Sabiranjem se dobija ukupna otpornost od 3,4 kilooma.
+Na primer, imamo dva otpornika od 1,2 i 2,2 kilooma. Sabiranjem se dobija ukupan otpor od 3,4 kilooma.
 
 ### Uporedna veza otpornika
 
-Ukupna otpornost dva otpornika u paralelnoj vezi računa se nešto složenije. Evo jednačine:
+Ukupan otpor otpornika u paralelnoj vezi računa se nešto složenije:
+
+```
+Rt = 1 / (1/R1 + 1/R2 + 1/R3 + ...)
+```
+
+Ukupan otpor u paralelnoj vezi sa dva otpornika računamo na sledeći način:
+
 ```
 Rt = (R1 * R2) / (R1 + R2)
 ```
 
-Ako su pojedinačne otpornosti 1,2 kΩ (1200 Ω) i 2,2 kΩ (2200 Ω), ukupna otpornost je:
+Na primer, ako imamo dva otpornika od 1,2 kΩ (1200 Ω) i 2,2 kΩ (2200 Ω), ukupan otpor je:
 
 ```
 Rt = (1200 * 2200) / (1200 + 2200)
@@ -62,38 +69,35 @@ Rt = (1200 * 2200) / (1200 + 2200)
    = 776,47
 ```
 
-Izračunajmo sada otpornost paralelne veze tri ili više otpornika:
-```
-Rt = 1 / (1/R1 + 1/R2 + 1/R3 + ...)
-```
+## Računanje ukupne kapacitivnosti (Ct)
 
-## Računanje kapacitivnosti
-
-Pomoću ovih jednačina možemo izračunati ukupnu kapacitivnost u kolu, što odgovara inverznom obliku jednačina za otpornost.
-
-### Uporedna veza kondenzatora
-
-Ukupna kapacitivnost paralelno vezanih kondenzatora dobija se sabiranjem pojedinačnih kapacitivnosti:
-```
-Ct = C1 + C2 + C3...
-```
+Na sličan način možemo izračunati ukupnu kapacitivnost u kolu, što odgovara inverznom obliku jednačina za otpornost.
 
 ### Redna veza kondenzatora
 
-Računanje ukupne kapacitivnosti dva redno vezana kondenzatora:
+Ukupna kapacitivnost kondenzatora u serijskoj vezi računa se na sledeći način:
+
+```
+Ct = 1 / (1/C1 + 1/C2 + 1/C3 + ...)
+```
+
+Ako ima samo dva redno vezana kondenzatora, možemo  uprostiti jednačinu:
 
 ```
 Ct = (C1 * C2) / (C1 + C2)
 ```
 
-Ako ima više od dva kondenzatora, ukupnu kapacitivnost računamo pomoću sledeće jednačine:
+### Uporedna veza kondenzatora
+
+Jednačina za paralelnu vezu kondenzatora je jednostavna – svi kapaciteti se sabiraju:
+
 ```
-Ct = 1 / (1/C1 + 1/C2 + 1/C3 + ...)
+Ct = C1 + C2 + C3 . . . (koliko god je potrebno)
 ```
 
-## Jedinice energije
+## Računanje energije (Wh)
 
-Vat-čas je jedna od najpraktičnijih mernih jedinica energije; opisuje mogućnost uređaja da obavi posao. Vat-časove računamo množenjem snage kola s vremenom rada kola. Jednačina za računanje vat-časova je:
+Vat-čas (*watt-hour*, skraćeno Wh) je jedna od najpraktičnijih mernih jedinica energije; opisuje mogućnost uređaja da obavi posao. Vat-časove računamo množenjem snage kola s vremenom rada kola. Formula je:
 
 ```
 Vat-časovi = P x T
@@ -109,7 +113,7 @@ Vat-sekunde, odnosno džule, izračunaćemo ako vat-časove podelimo sa 3600.
 
 ![](slike/rc-veza.jpg)
 
-Elektronska kola često pomoću vremenskih konstanti odlažu slanje signala ili produžuju trajanje. Vremenske konstante najčešće se realizuju pomoću otpornika i kondenzatora - otud i njihov naziv, RC. Rad RC kola zasniva se na činjenici da pražnjenje kondenzatora kroz otpornik traje izvesno vreme. Što je veća otpornost ili kapacitivnost, kondenzator se duže prazni. RC vezu koristimo da bi napravili jednostavne tajmere i oscilatore ili izmenili oblik signala.
+Elektronska kola često pomoću vremenskih konstanti odlažu slanje signala ili produžuju trajanje. Vremenske konstante najčešće se realizuju pomoću otpornika i kondenzatora - otud i njihov naziv, RC. Rad RC kola zasniva se na činjenici da pražnjenje kondenzatora kroz otpornik traje izvesno vreme. Što je veći otpor ili kapacitivnost, kondenzator se duže prazni. RC vezu koristimo da bismo napravili jednostavne tajmere i oscilatore ili izmenili oblik signala.
 
 Da bismo zatvorili kolo sa slike, povezaćemo otpornik i kondenzator s nekom aktivnom komponentom, poput invertora ili tranzistora. Kad izmenimo vrednosti otpornika ili kondenzatora, menjamo trajanje izlaznog signala.
 
@@ -123,17 +127,15 @@ Na primer, vremenska konstanta kola sa otpornikom od 2000 oma i s kondenzatorom 
 
 ## Računanje frekvencije i talasne dužine signala
 
-Frekvencija signala je direktno srazmerna talasnoj dužini. Talasna dužina signala izražava se u milimetrima, a frekvencija u megahercima. Ove jednačine su korisne ako eksperimentišete s radio-talasima.
+Frekvencija signala (u megahercima) je direktno srazmerna talasnoj dužini (u milimetrima). Ove jednačine su korisne ako eksperimentišete s radio-talasima.
 
 ### Računanje frekvencije
 
-Recimo kako hoćete da komunicirate s ljudima širom sveta putem amaterskog radio uređaja. U svetu radio amatera, kolege će vam pominjati da koristite određenu talasnu dužinu. Ovako računate frekvenciju za datu talasnu dužinu:
+Recimo kako hoćete da komunicirate s ljudima širom sveta putem amaterskog radio uređaja. U svetu radio amatera, kolege će vam reći da koristite određenu talasnu dužinu. Ovako računate frekvenciju za datu talasnu dužinu:
 
 ```
 frekvencija = 300.000 / talasna dužina
 ```
-
-Rezultat je izražen u megahercima.
 
 ### Računanje talasne dužine
 
@@ -142,8 +144,6 @@ Pomoću iste formule možemo izračunati talasnu dužinu, ako nam je poznata fre
 ```
 talasna dužina = 300.000 / frekvencija
 ```
-
-Rezultat je izražen u milimetrima. 
 
 #### Primer
 
