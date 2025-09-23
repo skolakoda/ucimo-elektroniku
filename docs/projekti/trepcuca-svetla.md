@@ -2,7 +2,7 @@
 
 Prvi projekat koji smo napravili bilo je svetlo koje se naizmenično uključivalo i isključivalo. Valjalo je zalemiti tranzistor, otpornik i diode. Trebalo mi je dva dana i 17 dolara za delove. 
 
-Danas je zahvaljujući posebnom integrisanom kolu pravljenje trepćućeg svetla prosto. Tajmer LM555 je osnova mnogih projekata koje ćete praviti. Čip 555 možete koristiti na različite načine, ali najbitnija njegova funkcija jeste slanje impulsa u pravilnim intervalima. Čip LM555 (ili odgovarajuću zamenu) možete kupiti u skoro svakoj prodavnici elektroopreme.
+Danas je zahvaljujući posebnom integrisanom kolu pravljenje trepćućeg svetla prosto. Tajmer LM555 je osnova mnogih projekata koje ćete praviti. Čip 555 možete koristiti na različite načine, ali najbitnija njegova funkcija jeste slanje impulsa u pravilnim intervalima. LM555 ili odgovarajuću zamenu možete kupiti u skoro svakoj prodavnici elektroopreme.
 
 ## Uputstvo
 

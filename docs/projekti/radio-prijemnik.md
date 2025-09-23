@@ -1,6 +1,6 @@
 # FM Radio prijemnik
 
-Prijemnik je predviđen za prijem FM stanica na frekvencijama od 82 do 145 MHz, tako da se pored običnih stanica mogu pratiti i vazduhoplovne, taxi i slične, kao i amaterske stanice. Jednako dobro prima i AM (amplitudno modulisane signale) kao i FM (frekventno modulisane signale). Kao antena služi komad zice. Moguć je priključak odgovarajuće spoljne antene, čime će se čujnost prijemnika uveliko povećati.
+Prijemnik je predviđen za prijem FM stanica na frekvencijama od 82 do 145 MHz, tako da se pored običnih stanica mogu pratiti i vazduhoplovne, taxi i slične, kao i amaterske stanice. Jednako dobro prima i AM (amplitudno modulisane signale) kao i FM (frekventno modulisane signale). Kao antena služi komad zice. Moguć je priključak odgovarajuće spoljne antene, čime se čujnost prijemnika uveliko povećava.
 
 Napajanje prijemnika je iz baterije ili ispravljača 9 do 25 Volti. Potrošnja je minimalna. Osetljivost prijemnika je ispod 1 mikrovolta a niskofrekventni izlaz je 40 mW, što je dovoljno za slušanje na slušalicama impendanse 1-2 KΩ. Za prijem na zvučnik preporučujemo pojačavač.
 

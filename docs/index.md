@@ -59,7 +59,7 @@
 - [Gitarsko pojačalo za slušalice](projekti/gitarsko-pojacalo-za-slusalice.md)
 - [Ispravljač](projekti/ispravljac.md)
 - [Jutarnji alarm](projekti/jutarnji-alarm.md)
-- [Merač vlažnosti](projekti/merac-vlaznosti.md)
+- [Vlagomer](projekti/vlagomer.md)
 - [Piezo-električni bubanj](projekti/piezo-elektricni-bubanj.md)
 - [Punjač akumulatora](projekti/punjac-akumulatora.md)
 - [Radio-prijemnik](projekti/radio-prijemnik.md)

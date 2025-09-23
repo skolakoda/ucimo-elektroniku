@@ -1,8 +1,8 @@
 # Piezo-električni bubanj
 
-Projekat koji sledi, sam stvara struju za sebe. U pitanju je svetlosni bubanj - neonsko svetlo sine kada udarimo piezoelektrični disk.
+Ovaj projekat sam stvara struju za sebe. U pitanju je svetlosni bubanj - neonsko svetlo sine kada udarimo piezoelektrični disk.
 
-Reč *piezo* je grčka i znači „stisnuti“, „iscediti“. Pre mnogo godina, ljudi koji su imali silno slobodno vreme, otkrili su da se snažnim pritiskom na određene kristale može dobiti struja. Ispostavilo se da je to bilo važno otkriće, jer se piezoelektricitet danas koristi u nebrojeno mnogo uređaja, poput kvarcnih satova, alarma, startera za električni roštilj i mnoštva drugih spravica.
+Reč *piezo* je grčka i znači „stisnuti“, „iscediti“. Pre mnogo godina, naučnici su otkrili su da se snažnim pritiskom na određene kristale može dobiti struja. Ispostavilo se da je to bilo važno otkriće, jer se piezoelektricitet danas koristi u nebrojeno mnogo uređaja, poput kvarcnih satova, alarma, startera za električni roštilj i mnoštva drugih spravica.
 
 ## Uputstvo
 

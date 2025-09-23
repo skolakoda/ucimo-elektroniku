@@ -2,7 +2,7 @@
 
 Sa meračem vlage možemo proveriti vlažnost tla i je li biljkama potrebno zalivanje.
 
-Vlagomer je neviđeno jednostavan. Zasniva se na principu električne provodljivosti vode. Kada dva metalna izvoda stavimo u vlažno okruženje, usled provodljivosti vode zatvara se kolo. Struja uključuje tranzistor, a tranzistor svetleću diodu. Ako nema vlage, kolo nije zatvoreno, i LED ne svetli.
+Vlagomer je veoma jednostavan. Zasniva se na principu električne provodljivosti vode. Kada dva metalna izvoda stavimo u vlažno tlo, usled provodljivosti vode zatvara se kolo. Struja uključuje tranzistor, a tranzistor svetleću diodu. Ako nema vlage, kolo nije zatvoreno, i ne svetli.
 
 ## Šema
 

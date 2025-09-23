@@ -1,14 +1,18 @@
 # Automatski punjač za akumulator
 
-Kada kažemo automatski punjač akumulatora, mislimo na automatsko isključenje kada se napuni. Akumulator se puni do nekih 14V i onda se smatra punim. Tada ga treba isključiti. To u automobilu radi regler.
+Automatski punjač akumulatora se automatski isključuje kada se akumulator napuni. Akumulator se puni do nekih 14V i tada ga treba isključiti. To u automobilu radi regler.
 
 Sve to rade dva tiristora, jedna dioda i jedna zener dioda uz nekoliko otpornika. 
 
 ## Šema
 
+### Ispravljač
+
 Osnovu punjača čini ispravljač. On je standardan, tu su prekidač za uključenje na gradsku mrežu i osigurač torusni trafo 2 x 18V, 2 x 2.25A, grec ispravljač od 8-10A. Na desnoj strani šeme, imamo dve veze, plus i minus kojima trebamo da se povezemo sa sledećom šemom. 
 
 ![](../slike/ispravljac-za-punjac-akumulatora-shema.jpg)
+
+### Regulator
 
 Drugi deo automatskog punjača čini regulator sa indikatorima:
 
