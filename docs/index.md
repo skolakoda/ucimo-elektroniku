@@ -53,7 +53,7 @@
 ## Projekti
 
 - [Autić](projekti/autic.md)
-- [Detektor infracrvenog zračenja](projekti/detektor-infracrvenog-zračenja.md)
+- [Detektor infracrvenog zračenja](projekti/detektor-infracrvenog-zracenja.md)
 - [Detektor metala](projekti/detektor-metala.md)
 - [Detektor strujnih vodova](projekti/detektor-strujnih-vodova.md)
 - [Gitarsko pojačalo za slušalice](projekti/gitarsko-pojacalo-za-slusalice.md)
