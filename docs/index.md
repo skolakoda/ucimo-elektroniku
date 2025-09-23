@@ -47,7 +47,7 @@
 - [Prototipska ploča](prototipska-ploca.md)
 - [Štampana ploča](stampana-ploca.md)
 - [Lemljenje](lemljenje.md)
-- [Omotavanje žice](omotavanje-žice.md)
+- [Omotavanje žice](omotavanje-zice.md)
 - [Formule](formule.md)
 
 ## Projekti
