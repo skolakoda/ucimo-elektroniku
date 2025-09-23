@@ -55,13 +55,11 @@ Evo još nekoliko saveta:
 
 # Lemiva prototipska ploča
 
-Napravili ste najveličanstvenije kolo na svetu, i hoćete da ga učinite večnim. Posle nelemive prototipske ploče sledi lemiva prototipska ploča, zvana eksperimentalna PC ploča ili univerzalna lemiva ploča. Svoj projekat možete lako preneti na lemivu ploču, jer ona izgleda isto kao nelemiva.
+Napravili ste najveličanstvenije kolo na svetu, i hoćete da ga učinite večnim. Posle nelemive sledi lemiva prototipska ploča, zvana eksperimentalna PC ploča ili univerzalna lemiva ploča. Svoj projekat možete lako preneti na lemivu ploču, koja izgleda isto kao nelemiva.
 
-Projekat ćete preneti tako što ćete skinuti komponente s nelemive ploče, postaviti ih na lemivu ploču i zalemiti na odgovarajućim mestima. Za spajanje komponenti koje nisu električno spojene metalnim trakama u ploči upotrebite žice.
+Projekat ćete preneti tako što ćete skinuti komponente s nelemive ploče, postaviti ih na lemivu ploču i zalemiti na odgovarajućim mestima. Ako projektujete veoma malo kolo, možete upotrebili pola lemive ploče. Pre postavljanja komponenti, presecite lemivu ploču testericom.
 
-Ako projektujete veoma malo kolo, možete upotrebili pola lemive ploče. Pre postavljanja komponenti, presecite lemivu ploču testericom.
-
-Ostavite dovoljno mesta u uglovima ploče za otvore za pričvršćivanje koje čete kasnije izbušiti. Pomoći tih otvora pričvrstićete ploču za kućište (na primer, za šasiju robota). Ploču možete postaviti u okvir i pomoću dvostrano lepljive penaste trake.
+Ostavite dovoljno mesta u uglovima ploče da izbušite otvore za pričvršćivanje. Pomoći tih otvora pričvrstićete ploču za kućište (na primer, za šasiju robota). Ploču možete postaviti u okvir i pomoću dvostrano lepljive trake.
 
 # Statički elektricitet
 

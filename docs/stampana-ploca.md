@@ -4,9 +4,9 @@
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/ZXspectrum_mb.jpg/600px-ZXspectrum_mb.jpg)
 
-Kada napravite svoju prvu štampanu ploču, na putu ste da postanete elektronski guru. Zaboravite na sve žičane spojeve na prototipskoj ploči i na pretrpavanje lemive ploče komponentama. Kada u rukama budete držali štampanu ploču koju ste sami napravili, znaćete da ste pravi elektroničar.
+**Štampanu ploču** (en. *printed circuit board*, skraćeno **PCB**) možete napraviti na razne načine. Opisujemo nekoliko tehnika, uključujući direktno nagrizanje ("ecovanje"), foto-postupak i prenos tonera sa folije.
 
-**Štampanu ploču** (en. *printed circuit board*, PCE) možete napraviti na razne načine. Opisujemo nekoliko tehnika, uključujući direktno nagrizanje ("ecovanje"), ioto-postupak i prenos tonera sa folije. Posavetovaćemo vas i kako da pomoću računara ubrzate rad.
+Kada napravite svoju prvu štampanu ploču, na putu ste da postanete elektronski guru. Zaboravite na sve žičane spojeve na prototipskoj ploči i na pretrpavanje lemive ploče komponentama. Kada u rukama budete držali štampanu ploču koju ste sami napravili, znaćete da ste pravi elektroničar.
 
 ## Anatomija štampane ploče
 

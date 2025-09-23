@@ -45,7 +45,7 @@
   - [Merenje struje naponom](merenje-struje-naponom.md)
 - [Mikrokontroleri](mikrokontroleri.md)
 - [Prototipska ploča](prototipska-ploca.md)
-- [Štampana ploča](štampana-ploča.md)
+- [Štampana ploča](stampana-ploca.md)
 - [Lemljenje](lemljenje.md)
 - [Omotavanje žice](omotavanje-žice.md)
 - [Formule](formule.md)
