@@ -50,7 +50,7 @@
 - [Omotavanje žice](omotavanje-zice.md)
 - [Formule](formule.md)
 
-## Projekti bez mikrokontrolera
+## Projekti
 
 - [Autić](projekti/autic.md)
 - [Detektor infracrvenog zračenja](projekti/detektor-infracrvenog-zracenja.md)
@@ -73,7 +73,9 @@
 
 ## Projekti sa Arduinom
 
-- [Zdravo svete](arduino-primeri/10-zdravo-svete/10-zdravo-svete.ino)
+vidi [arduino-primeri](https://github.com/skolakoda/ucimo-elektroniku/tree/master/arduino-primeri):
+
+- [Zdravo svete](https://github.com/skolakoda/ucimo-elektroniku/blob/master/arduino-primeri/10-zdravo-svete/10-zdravo-svete.ino)
 
 ## Sopstvena struja
 
