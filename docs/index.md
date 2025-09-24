@@ -50,7 +50,7 @@
 - [Omotavanje žice](omotavanje-zice.md)
 - [Formule](formule.md)
 
-## Projekti
+## Projekti bez mikrokontrolera
 
 - [Autić](projekti/autic.md)
 - [Detektor infracrvenog zračenja](projekti/detektor-infracrvenog-zracenja.md)
@@ -70,6 +70,10 @@
 - [Treptajuća svetla](projekti/trepcuca-svetla.md)
 - [Treptavo svetlo](projekti/treptavo-svetlo.md)
 - [Zujalica](projekti/zujalica.md)
+
+## Projekti sa Arduinom
+
+- [Zdravo svete](arduino-primeri/10-zdravo-svete/10-zdravo-svete.ino)
 
 ## Sopstvena struja
 

@@ -44,3 +44,4 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 - vremenska stanica:
   - dodati solarno napajanje
     https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
+- napraviti nešto za zalivanje (ima mali solenoid)
