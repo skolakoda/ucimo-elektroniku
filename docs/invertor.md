@@ -2,4 +2,4 @@
 
 [wiki](https://sh.wikipedia.org/wiki/Invertor)
 
-Invertor pretvara jednosmernu struju u naizmeničnu.
+Invertor je elektronski uređaj koji pretvara jednosmernu struju u naizmeničnu.
