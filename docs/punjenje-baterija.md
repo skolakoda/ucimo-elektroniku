@@ -1,6 +1,6 @@
 # Punjenje baterija
 
-Za stabilizaciju solarnog napona prilikom punjenje baterija potrebno je koristiti [regulator napona](regulator-napona), zvan i kontroler punjenja (*charge controller*).
+Za stabilizaciju solarnog napona prilikom punjenje baterija potrebno je koristiti [regulator napona](regulator-napona), odnosno kontroler punjenja (*charge controller*).
 
 ## Nikl-metal-hidridne (NiMH) ćelije od 1,2 V
 
@@ -28,22 +28,28 @@ Recimo da imamo:
 - 12v punjač
 - 4 x AA nikl-metal-hidridne (NiMH) baterije
 
-Da bi izabrali otpornik, treba izračunati napon. Kada su baterije prazne imaju napon oko 1V, pa će napon kola biti:
+Da bismo izabrali otpornik, treba izračunati **napon**. Kada su baterije prazne imaju napon oko 1V, pa će napon kola biti:
 ```
 V = 12V – 4V = 8V
 ```
 
-Sada možemo izračunati otpor: 
+> Objašnjenje: Punjač i baterije su vezani redno ali sa obrnutim polaritetom – punjač gura struju ka baterijama, dok se njihov napon suprotstavlja tom toku. Zato se napon baterija oduzima od ulaznog napona.
+
+Sada možemo izračunati **otpor**: 
 ```
-R = V / I = 8V / 0.1A = 80Ω
+R = V / I 
+  = 8V / 0.1A 
+  = 80 Ω
 ```
 
-Iz opreza možemo izabrati jači otpornik od 100Ω. Kada ga prikačimo u kolo, aktuelna struja će biti slabija:
+Iz opreza možemo izabrati jači otpornik od 100 Ω. Kada ga prikačimo u kolo, **aktuelna struja** će biti slabija:
 ```
-I = V / R = 8V / 100Ω = 80mA
+I = V / R 
+  = 8V / 100 Ω 
+  = 80 mA
 ```
 
-Sa jačim otpornikom, vreme punjenja je duže. Sa strujom od 80mA će biti:
+Sa jačim otpornikom, **vreme punjenja** je duže. Sa strujom od 80mA će biti:
 
 ```
 Vreme punjenja = 3 × 2000mAh / 80mA 
@@ -51,7 +57,7 @@ Vreme punjenja = 3 × 2000mAh / 80mA
                = 75 časova
 ```
 
-Na kraju, treba izračunati koje snage otpornik treba da bude:
+Na kraju, treba izračunati potrebnu **snagu otpornika**:
 
 ```
 P = I * V 
