@@ -2,7 +2,11 @@
 
 [wiki](https://en.wikipedia.org/wiki/Voltage_regulator)
 
-Da bismo obezbedili stabilan napon, treba nam **regulator napona** (poznat i kao stabilizator napona). U kontekstu punjenja baterija, ova komponenta naziva se **kontroler punjenja** (*charge controller*). U kontekstu auto-elektronike naziva se **regler**.
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/7812_voltage_regulator.jpg/200px-7812_voltage_regulator.jpg)
+
+**Da bismo obezbedili stabilan napon, treba nam regulator napona** (poznat i kao stabilizator napona). Regulator drži napon stabilnim kada ulazni napon varira. Radi tako što poredi ulazni napon sa referentnim naponom - ako izlaz pređe zadatu vrednost, regulator povećava otpor, ako padne ispod, smanjuje otpor. U regulatorima napona glavni element je tranzistor (obično bipolarni ili MOSFET).
+
+U kontekstu punjenja baterija, ova komponenta naziva se **kontroler punjenja** (*charge controller*). U kontekstu auto-elektronike naziva se **regler**.
 
 ## Kontroler punjenja
 
