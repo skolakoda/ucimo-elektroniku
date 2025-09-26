@@ -7,6 +7,19 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 > Važno upozorenje: Povezivati uzemljenje pa napon, a prekidati napon pa uzemljenje! U suprotnom, neki moduli mogu biti uništeni.
 
 ## TODO
+
+### Dokumentovati postojeće
+- vremenska stanica
+- vlagomer
+- robot 1
+- robot 2
+
+### Praviti novo
+- autić (projekti)
+  - dodati bateriju
+  - dodati prekidač
+  - dodati solarni pogon
+  - dodati propeler
 - paljenje svetla noću (ili od 22h do 1h):
   - solarno-bastensko-svetlo (projekti)
   - detektovati noć pomoću fotootpornik ili časovnika i logovati
@@ -27,21 +40,29 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 - banka baterija
   - mobilni: https://www.instructables.com/Mobile-Phone-Battery-Power-Bank/
   - laptop: https://www.instructables.com/REUSE-YOUR-OLD-LAPTOP-BATTERY-TO-MAKE-A-POWER-BANK/
-- autić (projekti)
-  - dodati propeler
-  - dodati solarni pogon
-- merač vlažnosti sa ekserima (projekti)
-- fm radio prijemnik (projekti, ima kit)
-- jutarnji alarm (cekam kit)
+- vlagomer sa ekserima (projekti)
+- fm radio prijemnik (projekti, kit)
+- jutarnji alarm (kit)
 - punjači
   - solarni punjač (fali dioda?, projekti)
   - punjač akumulatora https://www.electronicshub.org/lead-acid-battery-charger-circuit/
   - regulator napona (vidi članak, treba transistor 7805 i kondenzatori)
 - detektori
-  - detektor metala (projekti, cekam kit)
+  - detektor metala (projekti, kit)
   - detektor strujnih vodova (projekti)
-- glasovni prekidač (*clap switch*, cekam kit)
+- glasovni prekidač (*clap switch*, kit)
 - vremenska stanica:
   - dodati solarno napajanje
     https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
 - napraviti nešto za zalivanje (ima mali solenoid)
+
+Neke narudžbine:
+https://www.aliexpress.com/item/33006209085.html?spm=a2g0o.order_list.order_list_main.477.9c8d180236clui#nav-specification
+https://www.aliexpress.com/item/1005002225497691.html?spm=a2g0o.order_list.order_list_main.507.9c8d180236clui
+https://www.aliexpress.com/item/33062782229.html?spm=a2g0o.order_list.order_list_main.557.9c8d180236clui
+https://www.aliexpress.com/item/32873637300.html?spm=a2g0o.order_list.order_list_main.587.9c8d180236clui
+https://www.aliexpress.com/item/32671833519.html?spm=a2g0o.order_list.order_list_main.582.9c8d180236clui
+https://www.aliexpress.com/item/4000544635931.html?spm=a2g0o.order_list.order_list_main.642.9c8d180236clui
+https://www.aliexpress.com/item/32789859292.html?spm=a2g0o.order_list.order_list_main.647.9c8d180236clui
+https://www.aliexpress.com/item/1005001557483971.html?spm=a2g0o.order_list.order_list_main.667.9c8d180236clui
+https://www.aliexpress.com/item/32649659086.html?spm=a2g0o.order_list.order_list_main.834.9c8d180236clui

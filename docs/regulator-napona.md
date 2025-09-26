@@ -12,6 +12,8 @@ U kontekstu punjenja baterija, ova komponenta naziva se **kontroler punjenja** (
 
 [wiki](https://en.wikipedia.org/wiki/Charge_controller)
 
+![](https://upload.wikimedia.org/wikipedia/commons/3/37/6-60v_10a_Lithium_Battery_Charge_Controller_Protection.webp)
+
 Kontroler punjenja reguliše snagu koja dolazi do baterije, da se ona ne prepuni i ošteti. Njegove glavne funkcije su:
 
 - **Stabilizacija napona** – smanjuje i stabilizuje napon do nivoa bezbednog za bateriju.
