@@ -1,4 +1,4 @@
-// https://subscription.packtpub.com/book/hardware_and_creative/9781787288102/1/ch01lvl1sec15/connecting-the-esp8266-to-a-cloud-server
+// https://subscription.packtpub.com/book/iot-and-hardware/9781787288102/1/ch01lvl1sec08/connecting-the-esp8266-to-a-cloud-server
 // https://dweet.io/get/latest/dweet/for/vremenska-stanica-zvezdara
 #include <ESP8266WiFi.h>
 #include "DHT.h"
