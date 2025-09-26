@@ -9,8 +9,8 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 ## TODO
 
 ### Dokumentovati postojeće
-- vremenska stanica
 - vlagomer
+- vremenska stanica
 - robot 1
 - robot 2
 
