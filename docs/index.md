@@ -75,7 +75,7 @@
 
 vidi [arduino-primeri](https://github.com/skolakoda/ucimo-elektroniku/tree/master/arduino-primeri):
 
-- [Zdravo svete](https://github.com/skolakoda/ucimo-elektroniku/blob/master/arduino-primeri/10-zdravo-svete/10-zdravo-svete.ino)
+- [Zdravo svete](arduino-projekti/zdravo-svete.md)
 
 ## Sopstvena struja
 
