@@ -6,7 +6,7 @@ Arduino UNO ima ugrađenu lampicu na pinu 13. Konstanta LED_BUILTIN označava ta
 
 Možemo prikačiti i zasebnu LED diodu. Ako dodajemo LED, duža noga je pozitivna, a kraća uzemljenje.
 
-![](https://docs.arduino.cc/static/c8dbeff786e52681c3d0e9ee9525e140/29114/schematic.png)
+![](https://docs.arduino.cc/static/52c238dba09c2e40b69e0612ff02ef0f/29114/circuit.png)
 
 ## Primer koda
 

@@ -2,6 +2,10 @@
 
 Pored osnovnog merača vlage, možemo napraviti i verziju sa Arduinom.
 
+![](../slike/vlagomer.png)
+
+<!-- ![](https://media.geeksforgeeks.org/wp-content/uploads/20221120223837/SoilMoistureSensor-660x404.png) -->
+
 ## Primer koda
 
 ```c
