@@ -14,7 +14,17 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 - robot 1
 - robot 2
 
-### Praviti novo
+### Napisati uputstva za 
+- sistem za zalivanje sa pumpom
+  https://www.instructables.com/Automatic-Plant-Watering-System-Using-Soil-Moistur/
+  https://www.instructables.com/Smart-Irrigation-Project-on-Arduino/
+- sistem za zalivanje sa ventilom
+  https://www.instructables.com/IoT-Based-Smart-Irrigation-System-Using-NodeMCU-ES/
+  https://bc-robotics.com/tutorials/controlling-a-solenoid-valve-with-arduino/
+  https://www.instructables.com/Control-Solenoid-Valve-Using-Arduino/
+  
+
+### Praviti
 - autić (projekti)
   - dodati bateriju
   - dodati prekidač

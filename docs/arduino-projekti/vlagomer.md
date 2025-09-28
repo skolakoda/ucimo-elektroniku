@@ -1,13 +1,74 @@
 # Vlagomer
 
-Pored osnovnog merača vlage, možemo napraviti i verziju sa Arduinom.
+Pored osnovnog merača vlage bez kontrolera, možemo napraviti i verziju sa Arduinom.
+
+## Prosta verzija
 
 ![](../slike/vlagomer.png)
 
-## Primer koda
+Napajanje senzora je povezano na 5 V pin Arduina, a izlaz senzora na A0. Program čita vrednost senzora i štampa:
 
 ```c
-#define sensorPower 7
+#define sensorPin A0
+
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  int vrednost = analogRead(sensorPin);
+  Serial.print("Izmerena vrednost: ");
+  Serial.println(vrednost);
+
+  delay(1000);
+}
+```
+
+## Proširena verzija
+
+Ovde dodajemo granične vrednosti i na osnovu njih gradimo logiku:
+
+```c
+#define sensorPin A0
+
+#define vlazno 350
+#define suvo 650
+
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  int vrednost = analogRead(sensorPin);
+  Serial.print("Izmerena vrednost: ");
+  Serial.println(vrednost);
+
+  if (vrednost < vlazno)
+  {
+    Serial.println("Status: Tlo je prevlazno");
+  }
+  else if (vrednost > suvo)
+  {
+    Serial.println("Status: Tlo je presuvo - vreme za zalivanje!");
+  }
+  else
+  {
+    Serial.println("Status: Tlo je odlicno");
+  }
+
+  delay(1000);
+}
+```
+
+## Verzija sa tri svetiljke
+
+Ovde dodajemo još i crvenu, žutu i zelenu svetiljku kao indikatore vlažnosti tla:
+
+```c
 #define sensorPin A0
 
 #define bluePin 11
@@ -19,8 +80,6 @@ Pored osnovnog merača vlage, možemo napraviti i verziju sa Arduinom.
 
 void setup()
 {
-  pinMode(sensorPower, OUTPUT);
-
   pinMode(bluePin, OUTPUT);
   pinMode(greenPin, OUTPUT);
   pinMode(redPin, OUTPUT);
@@ -74,3 +133,8 @@ void blue()
   digitalWrite(bluePin, HIGH);
 }
 ```
+
+## Izvori
+
+- [Arduino Soil Moisture Sensor](https://www.instructables.com/Arduino-Soil-Moisture-Sensor/)
+- [Arduino Soil Moisture Sensor](https://www.instructables.com/Soil-Moisture-Sensor)
