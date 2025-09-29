@@ -8,10 +8,7 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
 ## TODO
 
-### Spojiti Arduino primeri i projekti
-
 ### Dokumentovati postojeće
-- vlagomer
 - vremenska stanica
 - robot 1
 - robot 2

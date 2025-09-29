@@ -73,9 +73,8 @@
 
 ## Arduino projekti
 
-Za izvorni kod vidi [arduino-primeri](https://github.com/skolakoda/ucimo-elektroniku/tree/master/arduino-primeri)
+Za sve primere vidi [arduino-primeri](https://github.com/skolakoda/ucimo-elektroniku/tree/master/arduino-primeri)
 
-- [Zdravo svete](arduino-projekti/zdravo-svete.md)
 - [Vlagomer](arduino-projekti/vlagomer.md)
 - [Vremenska stanica](arduino-projekti/vremenska-stanica.md)
 - [Robot](arduino-projekti/robot.md)

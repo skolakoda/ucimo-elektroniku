@@ -2,9 +2,15 @@
 
 Vremenska stanica koristi senzore za temperaturu i vlažnost vazduha. Može služiti rezultate preko lokalnog servera, slati ih na oblak ili prikazivati na ekranu.
 
-STATUS: Vremenska stanica trenutno ne radi (možda jer sajt dweet.io više ne postoji).
+Ovaj projekat koristi ESP8266 mikrokontroler s ugrađenim Wi-Fi-jem. ESP8266 ima *Deep Sleep* režim u kojem gasi CPU i većinu periferija, ostavlja aktivan samo tajmer i budi se resetom posle zadatog vremena.
+
+STATUS: Vremenska stanica trenutno ne radi (sajt dweet.io više ne postoji).
 
 ## Primer koda
+
+Program očitava podatke sa senzora pa šalje na oblak, u međuvremenu duboko spava radi štednje energije.
+
+Potrebno je povezati RST i D0 (pin za buđenje ESP8266), nakon slanja koda.
 
 ```c
 #include <ESP8266WiFi.h>
@@ -14,8 +20,12 @@ STATUS: Vremenska stanica trenutno ne radi (možda jer sajt dweet.io više ne po
 const char *ssid = "skolakoda";
 const char *password = "skolakoda523";
 const char *host = "dweet.io";
+const int vremeSpavanja = 60; // u sekundama
 
 uint8_t DHTPin = D7;
+
+String temperatura = "0", vlaznost = "0", osecaj = "0";
+
 DHT dht(DHTPin, DHT11);
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
@@ -27,6 +37,44 @@ void setup()
   lcd.init();
   delay(10);
 
+  izvrsiMerenja();
+  prikaziPodatke();
+  posaljiNaOblak();
+
+  Serial.println("Uredjaj odlazi na spavanje...");
+  ESP.deepSleep(vremeSpavanja * 1000000);
+}
+
+void loop()
+{
+}
+
+void izvrsiMerenja()
+{
+  float temp = dht.readTemperature();
+  float humid = dht.readHumidity();
+  float heatIndex = dht.computeHeatIndex(temp, humid, false);
+
+  temperatura = String(round(temp), 0);
+  vlaznost = String(round(humid), 0);
+  osecaj = String(round(heatIndex), 0);
+
+  Serial.println("\ntemperatura: " + temperatura + ", vlaznost: " + vlaznost + ", osecaj: " + osecaj);
+}
+
+void prikaziPodatke()
+{
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Temperatura: " + temperatura);
+  lcd.setCursor(15, 0);
+  lcd.write(0xdf); // º
+  lcd.setCursor(0, 1);
+  lcd.print("Vlaznost:    " + vlaznost + "%");
+}
+
+void posaljiNaOblak()
+{
   Serial.println("\npovezivanje na wifi ");
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED)
@@ -34,42 +82,7 @@ void setup()
     delay(500);
     Serial.print(".");
   }
-}
 
-void loop()
-{
-  float temp = dht.readTemperature();
-  float humid = dht.readHumidity();
-  float heatIndex = dht.computeHeatIndex(temp, humid, false);
-  
-  String temperatura = String(round(temp), 0);
-  String vlaznost = String(round(humid), 0);
-  String osecaj = String(round(heatIndex), 0);
-  
-  Serial.println("\ntemperatura: " + temperatura + ", vlaznost: " + vlaznost + ", osecaj: " + osecaj);
-
-  prikaziPodatke(temperatura, osecaj);
-  posaljiNaOblak(temperatura, vlaznost, osecaj);
-
-  delay(60000); // azurira jednom u minuti
-}
-
-void prikaziPodatke(String temperatura, String osecaj)
-{
-  lcd.clear();
-  lcd.backlight();
-  lcd.setCursor(0, 0);
-  lcd.print("Temperatura: " + temperatura);
-  lcd.setCursor(15,0);
-  lcd.write(0xdf); // º
-  lcd.setCursor(0, 1);
-  lcd.print("Osecaj:      " + osecaj);
-  lcd.setCursor(15,1);
-  lcd.write(0xdf); // º
-}
-
-void posaljiNaOblak(String temperatura, String vlaznost, String osecaj)
-{
   Serial.println("povezivanje na oblak ");
   WiFiClient client;
   if (!client.connect(host, 80))
