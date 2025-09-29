@@ -34,6 +34,8 @@ void loop()
 
 ## Primer sa ekranom
 
+<img src="https://www.circuitbasics.com/wp-content/uploads/2015/12/Arduino-DHT11-Humidity-and-Temperature-Sensor-With-LCD-Output.png" width="500">
+
 Očitava vremenske prilike i prikazuje na LCD ekranu.
 
 ```c
@@ -86,6 +88,8 @@ void prikaziPodatke(String temperatura, String osecaj)
 ```
 
 ## Primer sa lokalnim serverom
+
+![](https://lastminuteengineers.com/wp-content/uploads/arduino/Wiring-Fritzing-Connecting-DHT11-Temperature-Humidity-Sensor-with-ESP8266-NodeMCU.png)
 
 Program koristi ESP8266 modul, koji pokreće lokalni web server i povezuje se na Wi-Fi da očita IP adresu.
 
