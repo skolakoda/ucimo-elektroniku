@@ -7,53 +7,40 @@
 const char *ssid = "lokalna-mreza";
 
 #define DHTPIN D7
-#define DHTTYPE DHT11 // or DHT22, DHT21
+#define DHTTYPE DHT11 // or DHT21, DHT22
 
 DHT dht(DHTPIN, DHTTYPE);
 AsyncWebServer server(80); // create server on port 80
 
 float temperatura = 0.0;
 float vlaznost = 0.0;
-unsigned long previousMillis = 0; // use unsigned long for time
-const long interval = 10000;      // Updates readings every 10 seconds
+unsigned long previousMillis = 0;
+const unsigned long interval = 10000; // every 10 seconds
 
 const char index_html[] PROGMEM = R"rawliteral(
-<!DOCTYPE HTML><html>
+<!DOCTYPE html>
+<html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="10" >
-  <title>Vremenska stanica</title>
+  <title>Временска станица</title>
   <style>
-    html {
-     font-family: Arial;
-     text-align: center;
+    body {
+      font-family: Helvetica;
+      text-align: center;
+      padding: 20px;
+      color: #444;
     }
-    h2 { font-size: 3.0rem; }
-    p { font-size: 3.0rem; }
-    .units { font-size: 1.2rem; }
-    .dht-labels{
-      font-size: 1.5rem;
-      vertical-align:middle;
-      padding-bottom: 15px;
-    }
+    p { font-size: 24px; }
   </style>
 </head>
 <body>
-  <h2>Vremenska stanica</h2>
-  <p>
-    <span class="dht-labels">Temperatura</span> 
-    <span>%TEMPERATURE%</span>
-    <sup class="units">&deg;C</sup>
-  </p>
-  <p>
-    <span class="dht-labels">Vlažnost</span>
-    <span>%HUMIDITY%</span>
-    <sup class="units">%</sup>
-  </p>
+  <h1>Временска станица</h1>
+  <p>Температура: %TEMPERATURE% °C</p>
+  <p>Влажност ваздуха: %HUMIDITY% %</p>
 </body>
-</html>)rawliteral";
+</html>
+)rawliteral";
 
-// replace placeholder with values
 String processor(const String &var)
 {
   if (var == "TEMPERATURE")
