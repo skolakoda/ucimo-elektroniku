@@ -23,7 +23,6 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
   https://www.instructables.com/Control-Solenoid-Valve-Using-Arduino/
   https://www.circuits-diy.com/solenoid-water-liquid-valve-arduino-tutorial/
   https://arduinogetstarted.com/tutorials/arduino-water-liquid-valve
-  
 
 ### Praviti
 - autić (projekti)
@@ -33,10 +32,9 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
   - dodati propeler
 - paljenje svetla noću (ili od 22h do 1h):
   - solarno-bastensko-svetlo (projekti)
-  - detektovati noć pomoću fotootpornik ili časovnika i logovati
-  - koristiti postojeće svetiljke, LED traku ili zasebne diode 
+  - detektovati noć pomoću fotootpornika i logovati
+  - koristiti svetiljke, LED traku ili zasebne diode 
   - paljenje led (fotootpornik i npn tranzistor) https://youtu.be/eEBMTpxdPiE
-  - bonus: paljene na pljesak
 - robot:
   - popraviti oba robota
   - osposobiti robota da radi na prekidač

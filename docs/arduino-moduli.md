@@ -172,19 +172,15 @@ To je mali modul za punjenje litijum-jonskih (Li-Ion) i litijum-polimerskih (Li-
 
 Link: https://www.aliexpress.com/item/1005001557483971.html
 
-## Upravljači motora (drajveri)
+## Upravljač motora
 
 ![](slike/moduli/upravljac-motora.png)
 
-### L293D
+Upravljač motora (*motor driver*) omogućava upravljanje DC motorima i stepper motorima. Može da kontroliše smer i brzinu rotacije.
 
-Motor driver koji omogućava upravljanje manjim DC motorima i stepper motorima. Može da kontroliše smer i brzinu rotacije.
+Koristi se u robotici i vozilima na daljinsko upravljanje.
 
-### L298N
-
-Popularni drajver za DC i stepper motore koji podržava veće struje od L293D. Koristi se u robotici i vozilima na daljinsko upravljanje.
-
-### A4988
+### Upravljač motora (A4988)
 
 Specijalizovan drajver za stepper motore, poznat po preciznoj kontroli koraka. Često se koristi u 3D štampačima i CNC mašinama.
 
