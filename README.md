@@ -68,7 +68,7 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 - detektor metala (projekti, kit)
   https://www.aliexpress.com/item/33004705384.html
 - glasovni prekidač (*Voice-Controlled Clapping Switch Kit*, kit)
-- Podesivi modul napajanja (kit)
+- Podesivi modul napajanja LM317 (kit)
   https://www.aliexpress.com/item/1005002225497691.html
 - Tekući LED modul (kit)
   https://www.aliexpress.com/item/33006209085.html

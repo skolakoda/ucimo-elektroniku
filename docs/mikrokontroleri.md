@@ -18,6 +18,14 @@ Prvobitna svrha mikrokontrolera bila je komunikacija računara i elektronskih sp
 
 Većina mikrokontrolera namenjena je za komercijalne uređaje, i možda čete imati poteškoća u njihovom programiranju. Mikrokontrolere namenjene hobistima lako ćete programirati, a neće vas mnogo koštati.
 
+### Arduino Nano 3.0
+
+![](slike/moduli/nano-3.png)
+
+Arduino Nano 3.0 je mikrokontrolerska ploča zasnovana na ATmega328P mikrokontroleru, sa ugrađenim bootloader-om, koja ima sve periferije, programira se preko USB-a i povezuje sa Arduino projektima. Arduino Nano je manji od Arduino Uno i pogodniji za projekte sa malo prostora.
+
+Postoje mnoge kompatibilne ploče kineskih proizvođača koje se mogu koristiti umesto originalnog Arduino Nano 3.0.
+
 ## Delovi mikrokontrolera
 
 Evo delova tipičnog mikrokontrolera:

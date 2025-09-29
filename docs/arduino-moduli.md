@@ -46,6 +46,12 @@ Senzor za detekciju nivoa vode ili curenja, sa analognim i digitalnim izlazom.
 
 ## Komunikacioni moduli
 
+### SIM modul (SIM800L)
+
+![](slike/moduli/sim-modul.png)
+
+GSM/GPRS modul SIM800L, sa ugrađenom PCB antenom i slotom za SIM karticu, omogućava Arduinu da šalje i prima SMS poruke, pravi pozive i pristupa internetu preko mobilne mreže.
+
 ### ESP8266 / ESP32
 
 Wi-Fi moduli koji omogućavaju povezivanje Arduina na internet. ESP32 dodatno ima Bluetooth i više procesorske snage.
@@ -109,9 +115,11 @@ Posebni moduli koji omogućavaju Arduinu da precizno kontroliše kretanje motora
 
 ## Memorijski moduli
 
-### SD kartica modul
+### Čitač Micro SD kartica
 
-Omogućava beleženje i čuvanje podataka na standardnu microSD karticu. Koristi se u data logerima i projektima gde se prikupljaju informacije kroz vreme.
+![](slike/moduli/citac-kartica.png)
+
+Modul za čitanje Micro SD kartica, sa SPI interfejsom, omogućava Arduinu da čita i zapisuje podatke na standardnu microSD karticu. Koristi se u data logovima i projektima gde se podaci prikupljaju i čuvaju duže vreme.
 
 ### EEPROM modul
 

@@ -27,6 +27,7 @@
   - [Ispravljač](ispravljac.md)
 - [Prekidači](prekidaci.md)
   - [Releji](releji.md)
+- Elektromagnetni ventil (solenoidni ventil)
 - [Elektromotori](elektromotori.md)
 - [Senzori](senzori.md)
 - [Integrisano kolo](integrisano-kolo.md)
