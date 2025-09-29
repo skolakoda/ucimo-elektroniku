@@ -1,14 +1,42 @@
 # Vremenska stanica
 
-Vremenska stanica koristi senzore za temperaturu i vlažnost vazduha. Može služiti rezultate preko lokalnog servera, slati ih na oblak ili prikazivati na ekranu.
-
-Ovaj projekat koristi ESP8266 mikrokontroler s ugrađenim Wi-Fi-jem. ESP8266 ima *Deep Sleep* režim u kojem gasi CPU i većinu periferija, ostavlja aktivan samo tajmer i budi se resetom posle zadatog vremena.
+Osnova vremenske stanice je DHT senzor, koji meri temperaturu i vlažnost vazduha i šalje ih mikrokontroleru. Arduino može služiti rezultate preko lokalnog servera, slati ih na oblak ili prikazivati na ekranu.
 
 STATUS: Vremenska stanica trenutno ne radi (sajt dweet.io više ne postoji).
 
-## Primer koda
+## Prost primer
+
+Napomena: Potrebno je instalirati DHT biblioteku.
+
+```c
+#include <dht.h>
+
+#define tempPin 7
+dht DHT; // pravi objekat DHT tipa dht
+
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  DHT.read11(tempPin);
+  Serial.print("Temperatura: ");
+  Serial.print(DHT.temperature);
+  Serial.println(" °C");
+  Serial.print("Vlažnost: ");
+  Serial.print(DHT.humidity);
+  Serial.println(" % ");
+  delay(2000);
+}
+```
+
+## Kompletan primer (sa slanjem podataka na oblak)
 
 Program očitava podatke sa senzora pa šalje na oblak, u međuvremenu duboko spava radi štednje energije.
+
+Ovaj projekat koristi ESP8266 mikrokontroler s ugrađenim Wi-Fi-jem. ESP8266 ima *Deep Sleep* režim u kojem gasi CPU i budi se resetom posle zadatog vremena. 
 
 Potrebno je povezati RST i D0 (pin za buđenje ESP8266), nakon slanja koda.
 
@@ -110,6 +138,8 @@ void posaljiNaOblak()
 ```
 
 ## Literatura
+- [How to Set Up the DHT11 Humidity Sensor on an Arduino](https://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-an-arduino/)
+- [Interfacing DHT11 and DHT22 Sensors with Arduino](https://lastminuteengineers.com/dht11-dht22-arduino-tutorial/)
 - [Create A Simple ESP8266 Weather Station With BME280](https://lastminuteengineers.com/bme280-esp8266-weather-station/)
 - [Interface DHT11 DHT22 w/ ESP8266 NodeMCU Using Web Server](https://lastminuteengineers.com/esp8266-dht11-dht22-web-server-tutorial/)
 - [Connecting the ESP8266 to a cloud server ](https://subscription.packtpub.com/book/iot-and-hardware/9781787288102/1/ch01lvl1sec08/connecting-the-esp8266-to-a-cloud-server)
