@@ -73,11 +73,12 @@
 
 ## Arduino projekti
 
-Za sve primere vidi [arduino-primeri](https://github.com/skolakoda/ucimo-elektroniku/tree/master/arduino-primeri)
-
 - [Vlagomer](arduino-projekti/vlagomer.md)
 - [Vremenska stanica](arduino-projekti/vremenska-stanica.md)
-- [Robot](arduino-projekti/robot.md)
+- [Robot auto](arduino-projekti/robot-auto.md)
+- [Robot kornjača](arduino-projekti/robot-kornjaca.md)
+
+> Za sve primere vidi [arduino-primeri](https://github.com/skolakoda/ucimo-elektroniku/tree/master/arduino-primeri)
 
 ## Sopstvena struja
 

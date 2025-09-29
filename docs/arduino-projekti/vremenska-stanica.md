@@ -371,7 +371,7 @@ void posaljiNaOblak()
 }
 ```
 
-## Literatura
+## Izvori
 - [How to Set Up the DHT11 Humidity Sensor on an Arduino](https://www.circuitbasics.com/how-to-set-up-the-dht11-humidity-sensor-on-an-arduino/)
 - [Interfacing DHT11 and DHT22 Sensors with Arduino](https://lastminuteengineers.com/dht11-dht22-arduino-tutorial/)
 - [Create A Simple ESP8266 Weather Station With BME280](https://lastminuteengineers.com/bme280-esp8266-weather-station/)
