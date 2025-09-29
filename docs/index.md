@@ -44,6 +44,7 @@
   - [Dodatne funkcije multimetra](dodatne-funkcije-multimetra.md)
   - [Merenje struje naponom](merenje-struje-naponom.md)
 - [Mikrokontroleri](mikrokontroleri.md)
+  - [Arduino moduli](arduino-moduli.md)
 - [Prototipska ploča](prototipska-ploca.md)
 - [Štampana ploča](stampana-ploca.md)
 - [Lemljenje](lemljenje.md)

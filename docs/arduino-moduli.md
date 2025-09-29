@@ -1,0 +1,180 @@
+# Arduino moduli
+
+Snaga Arduina leži u bogatoj ponudi **modula** koje možemo jednostavno povezati i koristiti. U nastavku su objašnjene glavne grupe modula i pojedinačni primeri.
+
+## Senzorski moduli
+
+### DHT11 / DHT22
+
+Ovi senzori mere temperaturu i vlažnost vazduha. DHT11 je jednostavniji i manje precizan, dok DHT22 pruža širi opseg i veću tačnost.
+
+### HC-SR04
+
+Ultrazvučni senzor koji meri rastojanje pomoću odjeka zvučnog talasa. Koristi se za robote, parking asistente i pametne merni sisteme.
+
+### PIR senzor
+
+Senzor pokreta zasnovan na infracrvenom zračenju. Najčešće se koristi u alarmima i osvetljenju koje se pali na pokret.
+
+### MQ serija
+
+Grupa senzora koji otkrivaju različite gasove (npr. dim, metan, CO₂, alkohol). Koriste se za detekciju kvaliteta vazduha i sigurnosne sisteme.
+
+### KY-039 Heartbeat/Pulse senzor
+
+Senzor koji detektuje otkucaje srca pomoću fototpornika i LED svetla.
+
+### KY-037 Mikrofon
+
+Visokosenzitivni mikrofon koji detektuje zvučne talase i omogućava detekciju zvuka.
+
+### KY-026 IR senzor plamena
+
+Senzor koji detektuje infracrveno zračenje plamena u opsegu od 760 nm do 1100 nm.
+
+### KY-012 Aktivni piezo-buzzer
+
+Piezo buzzer koji proizvodi zvučni signal pri primeni napona od 3.3V do 5V.
+
+### KY-010 Senzor svetlosne barijere
+
+Senzor koji detektuje prekid svetlosnog snopa između emitera i detektora.
+
+### Water Level senzor
+
+Senzor za detekciju nivoa vode ili curenja, sa analognim i digitalnim izlazom.
+
+## Komunikacioni moduli
+
+### ESP8266 / ESP32
+
+Wi-Fi moduli koji omogućavaju povezivanje Arduina na internet. ESP32 dodatno ima Bluetooth i više procesorske snage.
+
+### HC-05 / HC-06
+
+Bluetooth moduli za bežičnu komunikaciju sa računarom ili mobilnim telefonom. Često se koriste u kontrolisanju robota ili daljinskih uređaja.
+
+### NRF24L01
+
+Radio modul koji omogućava komunikaciju između dva ili više Arduina na daljinama do nekoliko stotina metara.
+
+### SIM800L
+
+GSM modul koji koristi mobilnu mrežu za slanje SMS poruka, pravljenje poziva ili pristup internetu.
+
+### KY-022 IR prijemnik
+
+Infracrveni prijemnik za dekodiranje signala sa daljinskog upravljača.
+
+## Izlazni moduli
+
+### LCD modul (IIC/I2C 1602)
+
+![](slike/moduli/lcd-modul.jpg)
+
+Ovaj modul je LCD ekran sa 16×2 karaktera (1602) sa pozadinskim osvetljenjem u plavoj ili zelenoj boji. Povezuje se preko interfejsa koji koristi samo dva pina (SDA i SCL) umesto klasičnih 6–8 pinova za paralelni priključak. Idealan je za prikaz teksta i osnovnih podataka u Arduino projektima, kompatibilan je sa Arduino UNO, Mega2560 i sličnim pločama.
+
+Link: https://www.aliexpress.com/item/33062782229.html?spm=a2g0o.order_list.order_list_main.557.9c8d180236clui
+
+**Prednosti I²C verzije:**
+
+* Manje žica, jednostavnija veza
+* Mogućnost povezivanja više I²C uređaja na istu magistralu
+* Lakša kontrola sa softverskih biblioteka poput `LiquidCrystal_I2C`
+
+
+### Tekući LED modul (NE555 + CD4017)
+
+![](slike/moduli/tekuci-led-modul.png)
+
+Tekući LED modul kombinuje NE555 tajmer i CD4017 brojač da bi pravio sekvencijalno treptanje LED dioda. Obično se koristi za vizualni efekat “tekuće vode” ili pokretnih svetlosnih traka.
+
+Link: https://www.aliexpress.com/item/33006209085.html?spm=a2g0o.order_list.order_list_main.477.9c8d180236clui#nav-specification
+
+### Relejni modul
+
+![](slike/moduli/relej.png)
+
+Relejni modul je elektronski prekidač kojim Arduino sa naponom od 5 V može da uključi ili isključi uređaje koji rade na 220 V, poput sijalica ili pumpi za vodu.
+
+Link: https://www.aliexpress.com/item/32649659086.html?spm=a2g0o.order_list.order_list_main.834.9c8d180236clui
+
+### Servo i stepper drajveri (L298N, A4988)
+
+Posebni moduli koji omogućavaju Arduinu da precizno kontroliše kretanje motora – od robota do CNC mašina i 3D štampača.
+
+### KY-019 Relej
+
+5V relejni modul koji omogućava kontrolu visokih napona pomoću niskonaponskog digitalnog signala.
+
+## Memorijski moduli
+
+### SD kartica modul
+
+Omogućava beleženje i čuvanje podataka na standardnu microSD karticu. Koristi se u data logerima i projektima gde se prikupljaju informacije kroz vreme.
+
+### EEPROM modul
+
+Služi za trajno čuvanje manjih količina podataka, kao što su podešavanja i parametri sistema. Podaci se ne brišu kada se Arduino isključi.
+
+## Napajanje
+
+### Podesivi regulator napajanja (dizač/spuštač)
+
+![](slike/moduli/regulator-napajanja.png)
+
+Podesivi DC-DC konverter može povećavati (step-up) ili smanjivati (step-down) napon između 1 V i 24 V sa ulaza od 5 V (npr. USB). Koristi potenciometar za podešavanje izlaznog napona i omogućava stabilno napajanje različitih uređaja, uključujući LED diode i Arduino module.
+
+Povećanje napona se postiže korišćenjem step-up (boost) konverzije. U suštini, električni impuls se transformiše tako da izlazni napon bude veći od ulaznog, dok struja proporcionalno opada.
+
+Link: https://www.aliexpress.com/item/4000544635931.html?spm=a2g0o.order_list.order_list_main.642.9c8d180236clui
+
+### Podesivi linearni regulator napajanja (LM317)
+
+![](slike/moduli/podesivi-modul-napajanja.webp)
+
+Podesivi modul napajanja koristi LM317 integrisani regulator i omogućava kontinuirano podešavanje izlaznog napona od 1,25 V do 12 V pri struji do 1 A. Modul je jednostavan za korišćenje – samo se dva spoljašnja otpornika koriste za podešavanje napona, a dodatni potenciometar omogućava fino podešavanje. LM317 ima zaštitu od preopterećenja i sigurnosne zone, a linearnom regulacijom obezbeđuje stabilan izlaz i pri promenama opterećenja.
+
+Specifikacije:
+
+* Ulazni napon: AC ≤ 17 V, DC ≤ 25 V
+* Izlazni napon: 1,25 V – 12 V, kontinuirano podesiv
+* Izlazna struja: do 1 A
+
+Kod linearnog regulatora poput LM317 izlazni napon je uvek manji od ulaznog.
+
+Link: https://www.aliexpress.com/item/1005002225497691.html?spm=a2g0o.order_list.order_list_main.507.9c8d180236clui
+
+### Podesivi dizač napona (DD06AJSB)
+
+![](slike/moduli/dizac-napona.png)
+
+Ovo je podesivi step-up (boost) konverter koji ulazni napon od 3,3 V, 3,7 V ili 5 V može povećati na izlazni napon od 6 V, 9 V ili 12 V. Modul služi za stabilno napajanje uređaja koji zahtevaju veći napon od izvora.
+
+Link: https://www.aliexpress.com/item/32789859292.html?spm=a2g0o.order_list.order_list_main.647.9c8d180236clui
+
+### Podesivi dizač napona (MT3608)
+
+![](slike/moduli/dizac-napona-MT3608.png)
+
+To je step-up (boost) konverter zasnovan na MT3608 čipu, koji može povećati napon sa nižeg ulaza na maksimalno 28 V pri struji do 2 A. Koristi se za napajanje Arduino projekata i drugih uređaja koji zahtevaju viši napon od izvora.
+
+Link: https://www.aliexpress.com/item/1005001557483971.html?spm=a2g0o.order_list.order_list_main.667.9c8d180236clui
+
+### Baterijski dodaci
+
+Posebni moduli koji omogućavaju korišćenje Li-Ion ili Li-Po baterija sa zaštitom od prepunjavanja i pražnjenja. Koriste se u prenosnim i bežičnim projektima.
+
+## Drajveri
+
+### L293D
+
+Motor driver koji omogućava upravljanje manjim DC motorima i stepper motorima. Može da kontroliše smer i brzinu rotacije.
+
+### L298N
+
+Popularni drajver za DC i stepper motore koji podržava veće struje od L293D. Koristi se u robotici i vozilima na daljinsko upravljanje.
+
+### A4988
+
+Specijalizovan drajver za stepper motore, poznat po preciznoj kontroli koraka. Često se koristi u 3D štampačima i CNC mašinama.

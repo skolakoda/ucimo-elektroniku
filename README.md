@@ -67,13 +67,10 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
     https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
 - napraviti nešto za zalivanje (ima mali solenoid)
 
-Neke narudžbine:
-https://www.aliexpress.com/item/33006209085.html?spm=a2g0o.order_list.order_list_main.477.9c8d180236clui#nav-specification
-https://www.aliexpress.com/item/1005002225497691.html?spm=a2g0o.order_list.order_list_main.507.9c8d180236clui
-https://www.aliexpress.com/item/33062782229.html?spm=a2g0o.order_list.order_list_main.557.9c8d180236clui
-https://www.aliexpress.com/item/32873637300.html?spm=a2g0o.order_list.order_list_main.587.9c8d180236clui
-https://www.aliexpress.com/item/32671833519.html?spm=a2g0o.order_list.order_list_main.582.9c8d180236clui
-https://www.aliexpress.com/item/4000544635931.html?spm=a2g0o.order_list.order_list_main.642.9c8d180236clui
-https://www.aliexpress.com/item/32789859292.html?spm=a2g0o.order_list.order_list_main.647.9c8d180236clui
-https://www.aliexpress.com/item/1005001557483971.html?spm=a2g0o.order_list.order_list_main.667.9c8d180236clui
-https://www.aliexpress.com/item/32649659086.html?spm=a2g0o.order_list.order_list_main.834.9c8d180236clui
+### Narudžbine
+- Tekući LED modul (kit)
+  https://www.aliexpress.com/item/33006209085.html?spm=a2g0o.order_list.order_list_main.477.9c8d180236clui#nav-specification
+- Podesivi modul napajanja (kit)
+  https://www.aliexpress.com/item/1005002225497691.html?spm=a2g0o.order_list.order_list_main.507.9c8d180236clui
+- Diode 1N4148 1N4007 1N5819 1N5399 1N5408 1N5822 FR107 FR207:
+  https://www.aliexpress.com/item/32671833519.html?spm=a2g0o.order_list.order_list_main.582.9c8d180236clui
