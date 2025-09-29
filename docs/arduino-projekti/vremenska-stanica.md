@@ -2,7 +2,7 @@
 
 Osnova vremenske stanice je DHT senzor, koji meri temperaturu i vlažnost vazduha i šalje ih mikrokontroleru. Arduino može služiti rezultate preko lokalnog servera, slati ih na oblak ili prikazivati na ekranu.
 
-STATUS: Vremenska stanica trenutno ne radi (sajt dweet.io više ne postoji).
+STATUS: Vremenska stanica sa slanjem na oblak trenutno ne radi jer dweet.io više ne postoji.
 
 ## Prost primer
 
@@ -117,6 +117,98 @@ String createHTML()
 }
 ```
 
+## Primer sa lokalnim serverom i sopstvenom wifi mrežom
+
+Ovaj program pomoću ESP8266 modula pravi sopstvenu Wi-Fi mrežu i server koji prikazuje podatke sa DHT senzora. 
+
+Domet lokalne wifi mreže je 5–30m u zatvorenom (zavisi od zidova) ili do 100m na otvorenom prostoru.
+
+```c
+#include <ESP8266WiFi.h>
+#include <ESPAsyncTCP.h>
+#include <ESPAsyncWebServer.h>
+#include <DHT.h>
+
+const char *ssid = "lokalna-mreza";
+
+#define DHTPIN D7
+#define DHTTYPE DHT11 // or DHT21, DHT22
+
+DHT dht(DHTPIN, DHTTYPE);
+AsyncWebServer server(80); // create server on port 80
+
+float temperatura = 0.0;
+float vlaznost = 0.0;
+unsigned long previousMillis = 0;
+const unsigned long interval = 10000; // every 10 seconds
+
+const char index_html[] PROGMEM = R"rawliteral(
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Временска станица</title>
+  <style>
+    body {
+      font-family: Helvetica;
+      text-align: center;
+      padding: 20px;
+      color: #444;
+    }
+    p { font-size: 24px; }
+  </style>
+</head>
+<body>
+  <h1>Временска станица</h1>
+  <p>Температура: %TEMPERATURE% °C</p>
+  <p>Влажност ваздуха: %HUMIDITY% %</p>
+</body>
+</html>
+)rawliteral";
+
+String processor(const String &var)
+{
+  if (var == "TEMPERATURE")
+  {
+    return String(temperatura);
+  }
+  if (var == "HUMIDITY")
+  {
+    return String(vlaznost);
+  }
+  return String();
+}
+
+void setup()
+{
+  Serial.begin(115200);
+  dht.begin();
+
+  WiFi.softAP(ssid); // password is second parameter, optionally
+  Serial.println("AP IP address: ");
+  Serial.println(WiFi.softAPIP());
+
+  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request) {
+    request->send_P(200, "text/html", index_html, processor);
+  });
+
+  server.begin();
+}
+
+void loop()
+{
+  unsigned long currentMillis = millis();
+  if (currentMillis - previousMillis >= interval)
+  {
+    previousMillis = currentMillis;
+    float newT = dht.readTemperature();
+    temperatura = newT;
+    float newH = dht.readHumidity();
+    vlaznost = newH;
+  }
+}
+```
+
 ## Primer sa slanjem podataka na oblak
 
 Program očitava podatke sa DHT senzora pa šalje na oblak, u međuvremenu duboko spava radi štednje energije.
@@ -181,7 +273,7 @@ void prikaziPodatke()
   lcd.setCursor(0, 0);
   lcd.print("Temperatura: " + temperatura);
   lcd.setCursor(15, 0);
-  lcd.write(0xdf); // º
+  lcd.write(0xdf); // simbol stepena º
   lcd.setCursor(0, 1);
   lcd.print("Vlaznost:    " + vlaznost + "%");
 }
