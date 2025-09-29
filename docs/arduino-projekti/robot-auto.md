@@ -2,6 +2,8 @@
 
 ## Pogon motora
 
+![](../slike/moduli/upravljac-motora.png)
+
 Osnov kretanja robota čini upravljački modul motora (*motor driver module*), koji pomoću elektromotora pokreće točkove:
 
 ```c

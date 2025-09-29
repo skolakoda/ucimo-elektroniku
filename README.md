@@ -52,25 +52,25 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
   - mobilni: https://www.instructables.com/Mobile-Phone-Battery-Power-Bank/
   - laptop: https://www.instructables.com/REUSE-YOUR-OLD-LAPTOP-BATTERY-TO-MAKE-A-POWER-BANK/
 - vlagomer sa ekserima (projekti)
-- fm radio prijemnik (projekti, kit)
-- jutarnji alarm (kit)
 - punjači
   - solarni punjač (fali dioda?, projekti)
   - punjač akumulatora https://www.electronicshub.org/lead-acid-battery-charger-circuit/
   - regulator napona (vidi članak, treba transistor 7805 i kondenzatori)
-- detektori
-  - detektor metala (projekti, kit)
-  - detektor strujnih vodova (projekti)
-- glasovni prekidač (*clap switch*, kit)
+- detektor strujnih vodova (projekti)
 - vremenska stanica:
   - dodati solarno napajanje
     https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
 - napraviti nešto za zalivanje (ima mali solenoid)
 
-### Narudžbine
-- Tekući LED modul (kit)
-  https://www.aliexpress.com/item/33006209085.html?spm=a2g0o.order_list.order_list_main.477.9c8d180236clui#nav-specification
+### Kitovi
+- fm radio prijemnik (projekti, kit)
+- jutarnji alarm (kit)
+- detektor metala (projekti, kit)
+  https://www.aliexpress.com/item/33004705384.html
+- glasovni prekidač (*Voice-Controlled Clapping Switch Kit*, kit)
 - Podesivi modul napajanja (kit)
-  https://www.aliexpress.com/item/1005002225497691.html?spm=a2g0o.order_list.order_list_main.507.9c8d180236clui
-- Diode 1N4148 1N4007 1N5819 1N5399 1N5408 1N5822 FR107 FR207:
-  https://www.aliexpress.com/item/32671833519.html?spm=a2g0o.order_list.order_list_main.582.9c8d180236clui
+  https://www.aliexpress.com/item/1005002225497691.html
+- Tekući LED modul (kit)
+  https://www.aliexpress.com/item/33006209085.html
+- Photosensitive light-controlled sound and light alarm kit 
+  https://www.aliexpress.com/item/1005002823189345.html

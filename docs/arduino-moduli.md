@@ -74,7 +74,7 @@ Infracrveni prijemnik za dekodiranje signala sa daljinskog upravljača.
 
 Ovaj modul je LCD ekran sa 16×2 karaktera (1602) sa pozadinskim osvetljenjem u plavoj ili zelenoj boji. Povezuje se preko interfejsa koji koristi samo dva pina (SDA i SCL) umesto klasičnih 6–8 pinova za paralelni priključak. Idealan je za prikaz teksta i osnovnih podataka u Arduino projektima, kompatibilan je sa Arduino UNO, Mega2560 i sličnim pločama.
 
-Link: https://www.aliexpress.com/item/33062782229.html?spm=a2g0o.order_list.order_list_main.557.9c8d180236clui
+Link: https://www.aliexpress.com/item/33062782229.html
 
 **Prednosti I²C verzije:**
 
@@ -89,7 +89,7 @@ Link: https://www.aliexpress.com/item/33062782229.html?spm=a2g0o.order_list.orde
 
 Tekući LED modul kombinuje NE555 tajmer i CD4017 brojač da bi pravio sekvencijalno treptanje LED dioda. Obično se koristi za vizualni efekat “tekuće vode” ili pokretnih svetlosnih traka.
 
-Link: https://www.aliexpress.com/item/33006209085.html?spm=a2g0o.order_list.order_list_main.477.9c8d180236clui#nav-specification
+Link: https://www.aliexpress.com/item/33006209085.html
 
 ### Relejni modul
 
@@ -97,7 +97,7 @@ Link: https://www.aliexpress.com/item/33006209085.html?spm=a2g0o.order_list.orde
 
 Relejni modul je elektronski prekidač kojim Arduino sa naponom od 5 V može da uključi ili isključi uređaje koji rade na 220 V, poput sijalica ili pumpi za vodu.
 
-Link: https://www.aliexpress.com/item/32649659086.html?spm=a2g0o.order_list.order_list_main.834.9c8d180236clui
+Link: https://www.aliexpress.com/item/32649659086.html
 
 ### Servo i stepper drajveri (L298N, A4988)
 
@@ -127,7 +127,7 @@ Podesivi DC-DC konverter može povećavati (step-up) ili smanjivati (step-down) 
 
 Povećanje napona se postiže korišćenjem step-up (boost) konverzije. U suštini, električni impuls se transformiše tako da izlazni napon bude veći od ulaznog, dok struja proporcionalno opada.
 
-Link: https://www.aliexpress.com/item/4000544635931.html?spm=a2g0o.order_list.order_list_main.642.9c8d180236clui
+Link: https://www.aliexpress.com/item/4000544635931.html
 
 ### Podesivi linearni regulator napajanja (LM317)
 
@@ -143,7 +143,7 @@ Specifikacije:
 
 Kod linearnog regulatora poput LM317 izlazni napon je uvek manji od ulaznog.
 
-Link: https://www.aliexpress.com/item/1005002225497691.html?spm=a2g0o.order_list.order_list_main.507.9c8d180236clui
+Link: https://www.aliexpress.com/item/1005002225497691.html
 
 ### Podesivi dizač napona (DD06AJSB)
 
@@ -151,7 +151,7 @@ Link: https://www.aliexpress.com/item/1005002225497691.html?spm=a2g0o.order_list
 
 Ovo je podesivi step-up (boost) konverter koji ulazni napon od 3,3 V, 3,7 V ili 5 V može povećati na izlazni napon od 6 V, 9 V ili 12 V. Modul služi za stabilno napajanje uređaja koji zahtevaju veći napon od izvora.
 
-Link: https://www.aliexpress.com/item/32789859292.html?spm=a2g0o.order_list.order_list_main.647.9c8d180236clui
+Link: https://www.aliexpress.com/item/32789859292.html
 
 ### Podesivi dizač napona (MT3608)
 
@@ -159,13 +159,15 @@ Link: https://www.aliexpress.com/item/32789859292.html?spm=a2g0o.order_list.orde
 
 To je step-up (boost) konverter zasnovan na MT3608 čipu, koji može povećati napon sa nižeg ulaza na maksimalno 28 V pri struji do 2 A. Koristi se za napajanje Arduino projekata i drugih uređaja koji zahtevaju viši napon od izvora.
 
-Link: https://www.aliexpress.com/item/1005001557483971.html?spm=a2g0o.order_list.order_list_main.667.9c8d180236clui
+Link: https://www.aliexpress.com/item/1005001557483971.html
 
 ### Baterijski dodaci
 
 Posebni moduli koji omogućavaju korišćenje Li-Ion ili Li-Po baterija sa zaštitom od prepunjavanja i pražnjenja. Koriste se u prenosnim i bežičnim projektima.
 
-## Drajveri
+## Upravljači motora (drajveri)
+
+![](slike/moduli/upravljac-motora.png)
 
 ### L293D
 
