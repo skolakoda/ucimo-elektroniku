@@ -1,14 +1,10 @@
 // https://randomnerdtutorials.com/esp8266-nodemcu-access-point-ap-web-server/
-#include <Arduino.h>
 #include <ESP8266WiFi.h>
-#include <Hash.h>
 #include <ESPAsyncTCP.h>
 #include <ESPAsyncWebServer.h>
-#include <Adafruit_Sensor.h>
 #include <DHT.h>
 
 const char *ssid = "lokalna-mreza";
-const char *password = "123456789";
 
 #define DHTPIN D7
 #define DHTTYPE DHT11 // or DHT22, DHT21
@@ -57,14 +53,14 @@ const char index_html[] PROGMEM = R"rawliteral(
 </body>
 </html>)rawliteral";
 
-// Replaces placeholder with values
+// replace placeholder with values
 String processor(const String &var)
 {
   if (var == "TEMPERATURE")
   {
     return String(temperatura);
   }
-  else if (var == "HUMIDITY")
+  if (var == "HUMIDITY")
   {
     return String(vlaznost);
   }
@@ -76,13 +72,9 @@ void setup()
   Serial.begin(115200);
   dht.begin();
 
-  Serial.println("Setting AP (Access Point)…");
   WiFi.softAP(ssid); // password is second parameter, optionally
-  IPAddress IP = WiFi.softAPIP();
   Serial.println("AP IP address: ");
-  Serial.println(IP);
-  // Print ESP8266 Local IP Address
-  Serial.println(WiFi.localIP());
+  Serial.println(WiFi.softAPIP());
 
   server.on("/", HTTP_GET, [](AsyncWebServerRequest *request) {
     request->send_P(200, "text/html", index_html, processor);
