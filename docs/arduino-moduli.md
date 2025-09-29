@@ -16,14 +16,6 @@ Ultrazvučni senzor koji meri rastojanje pomoću odjeka zvučnog talasa. Koristi
 
 Senzor pokreta zasnovan na infracrvenom zračenju. Najčešće se koristi u alarmima i osvetljenju koje se pali na pokret.
 
-### MQ serija
-
-Grupa senzora koji otkrivaju različite gasove (npr. dim, metan, CO₂, alkohol). Koriste se za detekciju kvaliteta vazduha i sigurnosne sisteme.
-
-### KY-039 Heartbeat/Pulse senzor
-
-Senzor koji detektuje otkucaje srca pomoću fototpornika i LED svetla.
-
 ### KY-037 Mikrofon
 
 Visokosenzitivni mikrofon koji detektuje zvučne talase i omogućava detekciju zvuka.
@@ -31,10 +23,6 @@ Visokosenzitivni mikrofon koji detektuje zvučne talase i omogućava detekciju z
 ### KY-026 IR senzor plamena
 
 Senzor koji detektuje infracrveno zračenje plamena u opsegu od 760 nm do 1100 nm.
-
-### KY-012 Aktivni piezo-buzzer
-
-Piezo buzzer koji proizvodi zvučni signal pri primeni napona od 3.3V do 5V.
 
 ### KY-010 Senzor svetlosne barijere
 
@@ -74,6 +62,14 @@ Infracrveni prijemnik za dekodiranje signala sa daljinskog upravljača.
 
 ## Izlazni moduli
 
+### Buzzer
+
+![](slike/moduli/buzzer.png) ![](slike/moduli/buzzer-5v.png)
+
+Buzzer je mini zvučnik koji se priključuje direktno na matičnu ploču računara i koristi za BIOS zvuke (bipove). 
+
+U Arduino projektima može poslužiti kao jednostavan zvučni izlaz.
+
 ### LCD modul (IIC/I2C 1602)
 
 ![](slike/moduli/lcd-modul.jpg)
@@ -82,12 +78,11 @@ Ovaj modul je LCD ekran sa 16×2 karaktera (1602) sa pozadinskim osvetljenjem u 
 
 Link: https://www.aliexpress.com/item/33062782229.html
 
-**Prednosti I²C verzije:**
+Prednosti I²C verzije:
 
 * Manje žica, jednostavnija veza
 * Mogućnost povezivanja više I²C uređaja na istu magistralu
 * Lakša kontrola sa softverskih biblioteka poput `LiquidCrystal_I2C`
-
 
 ### Tekući LED modul (NE555 + CD4017)
 
@@ -161,17 +156,21 @@ Ovo je podesivi step-up (boost) konverter koji ulazni napon od 3,3 V, 3,7 V 
 
 Link: https://www.aliexpress.com/item/32789859292.html
 
-### Podesivi dizač napona (MT3608)
+### Podesivi dizač napona (SX1308)
 
-![](slike/moduli/dizac-napona-MT3608.png)
+![](slike/moduli/dizac-napona-SX1308.png)
 
-To je step-up (boost) konverter zasnovan na MT3608 čipu, koji može povećati napon sa nižeg ulaza na maksimalno 28 V pri struji do 2 A. Koristi se za napajanje Arduino projekata i drugih uređaja koji zahtevaju viši napon od izvora.
+Podesivi dizač napona (SX1308) je step-up modul koji može povećati ulazni napon od 2–24 V na izlazni napon od 2–28 V pri struji do 2 A. Koristi se za napajanje Arduino projekata i drugih uređaja koji zahtevaju viši napon od izvora.
+
+### Modul za punjenje baterija (TP4056)
+
+![](slike/moduli/TP4056.png) ![](slike/moduli/TP4056-modul.png)
+
+To je mali modul za punjenje litijum-jonskih (Li-Ion) i litijum-polimerskih (Li-Po) baterija preko micro USB porta, zasnovan na čipu TP4056. Omogućava punjenje strujom do 1 A. Ima ugrađenu zaštitu od prepunjavanja, prekomernog pražnjenja i kratkog spoja. 
+
+Često se koristi u prenosnim i bežičnim Arduino projektima.
 
 Link: https://www.aliexpress.com/item/1005001557483971.html
-
-### Baterijski dodaci
-
-Posebni moduli koji omogućavaju korišćenje Li-Ion ili Li-Po baterija sa zaštitom od prepunjavanja i pražnjenja. Koriste se u prenosnim i bežičnim projektima.
 
 ## Upravljači motora (drajveri)
 
@@ -188,3 +187,13 @@ Popularni drajver za DC i stepper motore koji podržava veće struje od L293D. K
 ### A4988
 
 Specijalizovan drajver za stepper motore, poznat po preciznoj kontroli koraka. Često se koristi u 3D štampačima i CNC mašinama.
+
+## Logička kola
+
+## Logičko kolo CD4069
+
+![](slike/moduli/logicko-kolo-CD4069.png)
+
+Integrisano logičko elektronsko kolo CD4069 sadrži šest invertora (NOT gate) u DIP14 kućištu. Koristi se za logičke operacije, oscilatore i različite digitalne sklopove.
+
+Na primer, može se koristiti za pravljenje jednostavnog oscilatora koji trepće LED diodom. Invertori u čipu povezuju se sa otpornikom i kondenzatorom da bi stvarali periodične impulsne signale.

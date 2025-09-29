@@ -64,7 +64,6 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
 ### Kitovi
 - fm radio prijemnik (projekti, kit)
-- jutarnji alarm (kit)
 - detektor metala (projekti, kit)
   https://www.aliexpress.com/item/33004705384.html
 - glasovni prekidač (*Voice-Controlled Clapping Switch Kit*, kit)
@@ -74,3 +73,8 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
   https://www.aliexpress.com/item/33006209085.html
 - Photosensitive light-controlled sound and light alarm kit 
   https://www.aliexpress.com/item/1005002823189345.html
+- Mini Tesla coil kit
+- Jutarnji alarm (kit)
+- Noćno svetlo (fotosenzitivni prekidač, može se povezati sa LED, pali se kad je mrak)
+  https://www.aliexpress.com/item/1005003692020218.html
+  https://www.aliexpress.com/item/1005004644166555.html
