@@ -1,42 +1,44 @@
 # Arduino moduli
 
-Snaga Arduina leži u bogatoj ponudi **modula** koje možemo jednostavno povezati i koristiti. U nastavku su objašnjene glavne grupe modula i pojedinačni primeri.
+Snaga Arduina leži u bogatoj ponudi **modula** koje možemo jednostavno povezati i koristiti. U nastavku su objašnjeni najpoznatiji Arduino moduli.
 
 ## Senzorski moduli
 
-### Senzor temperature (DHT11 / DHT22)
-
-![](slike/moduli/DHT11.jpg)
-
-![](slike/moduli/DHT11-vs-DHT22.png)
-
-Ovi senzori mere temperaturu i vlažnost vazduha. DHT11 je jednostavniji i manje precizan, dok DHT22 pruža širi opseg i veću tačnost.
-
-### Ultrazvučni senzor (HC-SR04)
+### Detektor rastojanja (ultrazvučni senzor HC-SR04)
 
 ![](slike/moduli/ultrazvucni-senzor.jpg)
 
-Ultrazvučni senzor koji meri rastojanje pomoću odjeka zvučnog talasa. Koristi se za robote, parking asistente i pametne merni sisteme.
+Ultrazvučni senzor meri rastojanje pomoću odjeka zvučnog talasa. Koristi se za robote, parking asistente i slično.
 
-### PIR senzor
+### Senzor kretanja (PIR senzor)
 
-Senzor pokreta zasnovan na infracrvenom zračenju. Najčešće se koristi u alarmima i osvetljenju koje se pali na pokret.
+![](slike/moduli/senzor-kretanja.jpg)
 
-### KY-037 Mikrofon
+Senzor pokreta, poznat kao PIR (pasivni infracrveni) senzor, je zasnovan na infracrvenom zračenju. Najčešće se koristi u alarmima protiv provalnika ili osvetljenju koje se pali na pokret.
+
+### Senzor zvuka (KY-037, KY-38)
+
+![](slike/moduli/senzor-zvuka.jpg)
 
 Visokosenzitivni mikrofon koji detektuje zvučne talase i omogućava detekciju zvuka.
 
-### KY-026 IR senzor plamena
+### Senzor svetla (fotosenzor)
 
-Senzor koji detektuje infracrveno zračenje plamena u opsegu od 760 nm do 1100 nm.
+![](slike/moduli/fotosenzor.jpg) ![](slike/moduli/fotosenzor-crni.jpg)
 
-### KY-010 Senzor svetlosne barijere
+Arduino modul za detekciju svetla se pravi pomoću fotootpornika (*light dependent resistor*, LDR). Fotootpornik menja otpor zavisno od jačine svetla – što je više svetla, otpor je manji. Arduino meri napon na fotootporniku preko analognog pina i tako detektuje je li okolina svetla ili tamna.
 
-Senzor koji detektuje prekid svetlosnog snopa između emitera i detektora.
+### Senzor vlažnosti tla (YL-69, HL-69)
 
-### Water Level senzor
+![](slike/moduli/moisture-sensor.webp)
 
-Senzor za detekciju nivoa vode ili curenja, sa analognim i digitalnim izlazom.
+Senzor vlažnosti tla meri koliko je zemlja suva ili vlažna. Modul se sastoji od metalnih sondi koje idu u zemlju i pločice sa elektronikom (komparator + potenciometar) koja daje digitalni i analogni izlaz. Merenje se vrši tako što se dve metalne sonde zabodu u zemlju - što više vlage to je manji otpor između njih, pa Arduino očitava veći napon.
+
+### Senzor temperature (DHT11 / DHT22)
+
+![](slike/moduli/DHT11-vs-DHT22.png) ![](slike/moduli/DHT11.jpg)
+
+Ovi senzori mere temperaturu i vlažnost vazduha. DHT11 je jednostavniji i manje precizan, dok DHT22 pruža širi opseg i veću tačnost.
 
 ## Komunikacioni moduli
 
@@ -46,25 +48,33 @@ Senzor za detekciju nivoa vode ili curenja, sa analognim i digitalnim izlazom.
 
 GSM/GPRS modul SIM800L, sa ugrađenom PCB antenom i slotom za SIM karticu, omogućava Arduinu da šalje i prima SMS poruke, pravi pozive i pristupa internetu preko mobilne mreže.
 
-### ESP8266 / ESP32
+### Wifi modul (ESP8266)
 
-Wi-Fi moduli koji omogućavaju povezivanje Arduina na internet. ESP32 dodatno ima Bluetooth i više procesorske snage.
+![](slike/moduli/wifi-module.jpg)
 
-### HC-05 / HC-06
+ESP8266 je wifi modul koji omogućava povezivanje Arduina na internet.
 
-Bluetooth moduli za bežičnu komunikaciju sa računarom ili mobilnim telefonom. Često se koriste u kontrolisanju robota ili daljinskih uređaja.
+ESP8266 može pokrenuti web server koji nam omogućava da preko Wi-Fi mreže palimo i gasimo LED diode i druge uređaje.
 
-### NRF24L01
+### Infracrveni prijemnik (KY-022)
 
-Radio modul koji omogućava komunikaciju između dva ili više Arduina na daljinama do nekoliko stotina metara.
+![](slike/moduli/infrared.jpg) ![](slike/moduli/HW-477-modul.jpg)
 
-### SIM800L
+Infracrveni (IR) prijemnik služi za dekodiranje signala sa daljinskog upravljača.
 
-GSM modul koji koristi mobilnu mrežu za slanje SMS poruka, pravljenje poziva ili pristup internetu.
+### Bluetooth modul (HC-05, HC-06)
 
-### KY-022 IR prijemnik
+![](slike/moduli/bluetooth-module.jpg)
 
-Infracrveni prijemnik za dekodiranje signala sa daljinskog upravljača.
+Bluetooth modul služi za bežičnu komunikaciju sa računarom ili mobilnim telefonom. Često se koristi za kontrolu robota ili drugih uređaja.
+
+### Radio modul (NRF24L01)
+
+![](slike/moduli/radio-modul.jpg)
+
+Radio modul omogućava komunikaciju između dva ili više Arduina na daljinama do ~100 metara. Mikrokontroleri mogu da razmenjuju bilo kakve podatke: vrednosti senzora, komande za LED/motor, status uređaja, tekstualne poruke...
+
+Na primer, jedan Arduino može slati očitanu vlažnost tla, a drugi primati i puštati navodnjavanje kada vlažnost padne ispod određene granice.
 
 ## Izlazni moduli
 
@@ -78,17 +88,17 @@ U Arduino projektima može poslužiti kao jednostavan zvučni izlaz.
 
 ### LCD modul (IIC/I2C 1602)
 
-![](slike/moduli/lcd-modul.jpg)
+![](slike/moduli/lcd-modul.webp)
 
-Ovaj modul je LCD ekran sa 16×2 karaktera (1602) sa pozadinskim osvetljenjem u plavoj ili zelenoj boji. Povezuje se preko interfejsa koji koristi samo dva pina (SDA i SCL) umesto klasičnih 6–8 pinova za paralelni priključak. Idealan je za prikaz teksta i osnovnih podataka u Arduino projektima, kompatibilan je sa Arduino UNO, Mega2560 i sličnim pločama.
+Ovaj modul je LCD ekran sa 16×2 karaktera (1602) sa pozadinskim osvetljenjem u plavoj ili zelenoj boji. Povezuje se preko interfejsa koji koristi samo dva pina (SDA i SCL) umesto klasičnih 6–8 pinova za paralelni priključak. Idealan je za prikaz teksta i osnovnih podataka u Arduino projektima.
 
-Link: https://www.aliexpress.com/item/33062782229.html
-
-Prednosti I²C verzije:
+Prednosti I2C verzije:
 
 * Manje žica, jednostavnija veza
-* Mogućnost povezivanja više I²C uređaja na istu magistralu
+* Mogućnost povezivanja više I2C uređaja na istu magistralu
 * Lakša kontrola sa softverskih biblioteka poput `LiquidCrystal_I2C`
+
+Link: https://www.aliexpress.com/item/33062782229.html
 
 ### Tekući LED modul (NE555 + CD4017)
 
@@ -98,7 +108,7 @@ Tekući LED modul kombinuje NE555 tajmer i CD4017 brojač da bi pravio sekvencij
 
 Link: https://www.aliexpress.com/item/33006209085.html
 
-### Relejni modul
+### Relej
 
 ![](slike/moduli/relej.png)
 
@@ -106,25 +116,19 @@ Relejni modul je elektronski prekidač kojim Arduino sa naponom od 5 V može da 
 
 Link: https://www.aliexpress.com/item/32649659086.html
 
-### Servo i stepper drajveri (L298N, A4988)
+### Upravljač motora
 
-Posebni moduli koji omogućavaju Arduinu da precizno kontroliše kretanje motora – od robota do CNC mašina i 3D štampača.
+![](slike/moduli/upravljac-motora.png) ![](slike/moduli/motor-driver-modul.webp)
 
-### KY-019 Relej
+Upravljač motora (*motor driver*) omogućava upravljanje DC motorima i stepper motorima. Može da kontroliše smer i brzinu rotacije.
 
-5V relejni modul koji omogućava kontrolu visokih napona pomoću niskonaponskog digitalnog signala.
+Koristi se u robotici i vozilima na daljinsko upravljanje.
 
-## Memorijski moduli
+### Upravljač steper motora (A4988)
 
-### Čitač Micro SD kartica
+![](slike/moduli/upravljac-steper-motora.jpg)
 
-![](slike/moduli/citac-kartica.png)
-
-Modul za čitanje Micro SD kartica, sa SPI interfejsom, omogućava Arduinu da čita i zapisuje podatke na standardnu microSD karticu. Koristi se u data logovima i projektima gde se podaci prikupljaju i čuvaju duže vreme.
-
-### EEPROM modul
-
-Služi za trajno čuvanje manjih količina podataka, kao što su podešavanja i parametri sistema. Podaci se ne brišu kada se Arduino isključi.
+Specijalizovani upravljač steper motora (A4988) poznat je po preciznoj kontroli koraka. Obično se koristi za robote, 3D štampače i CNC mašine.
 
 ## Napajanje
 
@@ -168,7 +172,7 @@ Link: https://www.aliexpress.com/item/32789859292.html
 
 Podesivi dizač napona (SX1308) je step-up modul koji može povećati ulazni napon od 2–24 V na izlazni napon od 2–28 V pri struji do 2 A. Koristi se za napajanje Arduino projekata i drugih uređaja koji zahtevaju viši napon od izvora.
 
-### Modul za punjenje baterija (TP4056)
+### Punjač telefonskih baterija (TP4056)
 
 ![](slike/moduli/TP4056.png) ![](slike/moduli/TP4056-modul.png)
 
@@ -178,24 +182,10 @@ To je mali modul za punjenje litijum-jonskih (Li-Ion) i litijum-polimerskih (Li-
 
 Link: https://www.aliexpress.com/item/1005001557483971.html
 
-## Upravljač motora
+## Memorijski moduli
 
-![](slike/moduli/upravljac-motora.png) ![](slike/moduli/motor-driver-modul.webp)
+### Čitač Micro SD kartica
 
-Upravljač motora (*motor driver*) omogućava upravljanje DC motorima i stepper motorima. Može da kontroliše smer i brzinu rotacije.
+![](slike/moduli/citac-kartica.png)
 
-Koristi se u robotici i vozilima na daljinsko upravljanje.
-
-### Upravljač motora (A4988)
-
-Specijalizovan drajver za stepper motore, poznat po preciznoj kontroli koraka. Često se koristi u 3D štampačima i CNC mašinama.
-
-## Logička kola
-
-## Logičko kolo CD4069
-
-![](slike/moduli/logicko-kolo-CD4069.png)
-
-Integrisano logičko elektronsko kolo CD4069 sadrži šest invertora (NOT gate) u DIP14 kućištu. Koristi se za logičke operacije, oscilatore i različite digitalne sklopove.
-
-Na primer, može se koristiti za pravljenje jednostavnog oscilatora koji trepće LED diodom. Invertori u čipu povezuju se sa otpornikom i kondenzatorom da bi stvarali periodične impulsne signale.
+Modul za čitanje Micro SD kartica, sa SPI interfejsom, omogućava Arduinu da čita i zapisuje podatke na standardnu microSD karticu. Koristi se u data logovima i projektima gde se podaci prikupljaju i čuvaju duže vreme.

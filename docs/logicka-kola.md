@@ -32,3 +32,13 @@ Logičko ILI kolo dobija se uporednim povezivanjem dva prekidača. Struja će te
 ![](slike/ili-kolo.jpg)
 
 Ako umesto prekidača stavimo foto-otpornike ili druge senzore u kombinaciji sa tranzistorima, možemo graditi kompleksniju logiku (npr. da signal krene ako ima svetla i/ili pokreta).
+
+## Integrisana logička kola
+
+### Logičko kolo CD4069
+
+![](slike/moduli/logicko-kolo-CD4069.png)
+
+Integrisano logičko elektronsko kolo CD4069 sadrži šest invertora (NOT gate) u DIP14 kućištu. Koristi se za logičke operacije, oscilatore i različite digitalne sklopove.
+
+Na primer, može se koristiti za pravljenje jednostavnog oscilatora koji trepće LED diodom. Invertori u čipu povezuju se sa otpornikom i kondenzatorom da bi stvarali periodične impulsne signale.

@@ -26,3 +26,9 @@ U katalozima proizvođača obično se navodi nekoliko specifikacija motora. Dve 
 Efikasniji metod upravljanja brzinom zove se impulsno-širinska modulacija. Primenom te metode, napon se u kratkim impulsima uključuje i isključuje. Što su intervali duži, motor se brže okreće. Ako pravite uređaj kojim upravlja motor u kompletu ćete verovatno naći i komponentu za kontrolu brzine.
 
 Motori jednosmerne struje imaju **dva izvoda** - pozitivan i negativan. Ako se napajanje obrne, motor se okreće na drugu stranu.
+
+## Servo motor
+
+![](slike/moduli/servo-motor.jpg)
+
+Servo motor je električni motor sa kontrolom položaja osovine. Može precizno da se pomera na određeni ugao (obično 0–180°) na osnovu signala sa mikrokontrolera. Koristi se za robote, otvaranje vrata, pomeranje ruke, 3D štampače i slično.
