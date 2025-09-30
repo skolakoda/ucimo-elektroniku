@@ -1,14 +1,16 @@
 # Vremenska stanica
 
-Osnova vremenske stanice je DHT senzor, koji meri temperaturu i vlažnost vazduha i šalje ih mikrokontroleru. Rezultate možemo prikazati preko lokalnog servera, slati ih na oblak ili prikazivati na ekranu.
+Glavne komponente vremenske stanice su:
+- DHT senzor, koji meri temperaturu i vlažnost vazduha 
+- Mikrokontroler (Arduino ili ESP8266, zavisno od primera) 
 
-Za vremensku stanicu ne treba Arduino ako koristimo ESP8266 mikrokontroler.
+DHT senzor šalje merenja mikrokontroleru, koji ih može prikazati na ekranu, preko lokalnog servera ili slati na oblak. 
 
-STATUS: Vremenska stanica sa slanjem na oblak trenutno ne radi jer dweet.io više ne postoji.
+STATUS: Verzija sa slanjem na oblak trenutno ne radi jer dweet.io više ne postoji.
 
 ## Prost primer
 
-Napomena: Potrebno je instalirati DHT biblioteku.
+U ovom primeru koristimo Arduino i DHT senzor. Da bi program radio, potrebno je instalirati DHT biblioteku.
 
 ```c
 #include <dht.h>
@@ -36,9 +38,9 @@ void loop()
 
 ## Primer sa ekranom
 
-<img src="https://www.circuitbasics.com/wp-content/uploads/2015/12/Arduino-DHT11-Humidity-and-Temperature-Sensor-With-LCD-Output.png" width="500">
+![](../slike/vremenska-stanica.jpg)
 
-Očitava vremenske prilike i prikazuje na LCD ekranu.
+U ovom primeru koristimo ESP8266 mikrokontroler, DHT senzor i LCD ekran, na kom se prikazuju rezultati merenja.
 
 ```c
 #include <ESP8266WiFi.h>
@@ -46,12 +48,9 @@ Očitava vremenske prilike i prikazuje na LCD ekranu.
 #include <LiquidCrystal_I2C.h>
 
 const int interval = 60000; // 60 sekundi
-
-uint8_t DHTPin = D7;
-
 String temperatura = "0", vlaznost = "0", osecaj = "0";
 
-DHT dht(DHTPin, DHT11);
+DHT dht(D7, DHT11);
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 void setup()
