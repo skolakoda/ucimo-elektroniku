@@ -4,11 +4,17 @@ Snaga Arduina leži u bogatoj ponudi **modula** koje možemo jednostavno povezat
 
 ## Senzorski moduli
 
-### DHT11 / DHT22
+### Senzor temperature (DHT11 / DHT22)
+
+![](slike/moduli/DHT11.jpg)
+
+![](slike/moduli/DHT11-vs-DHT22.png)
 
 Ovi senzori mere temperaturu i vlažnost vazduha. DHT11 je jednostavniji i manje precizan, dok DHT22 pruža širi opseg i veću tačnost.
 
-### HC-SR04
+### Ultrazvučni senzor (HC-SR04)
+
+![](slike/moduli/ultrazvucni-senzor.jpg)
 
 Ultrazvučni senzor koji meri rastojanje pomoću odjeka zvučnog talasa. Koristi se za robote, parking asistente i pametne merni sisteme.
 
