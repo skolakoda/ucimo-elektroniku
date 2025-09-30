@@ -174,7 +174,7 @@ Link: https://www.aliexpress.com/item/1005001557483971.html
 
 ## Upravljač motora
 
-![](slike/moduli/upravljac-motora.png)
+![](slike/moduli/upravljac-motora.png) ![](slike/moduli/motor-driver-modul.webp)
 
 Upravljač motora (*motor driver*) omogućava upravljanje DC motorima i stepper motorima. Može da kontroliše smer i brzinu rotacije.
 

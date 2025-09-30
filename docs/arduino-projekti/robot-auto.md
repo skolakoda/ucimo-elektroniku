@@ -6,7 +6,7 @@ Arduino robot je kombinacija elektromotora koji pokreću točkove i senzora na o
 
 ## Delovi
 
-![](../slike/robot-delovi.webp)
+![](../slike/moduli/robot-delovi.webp)
 
 1. **Razvojna ploča**: Najčešće Arduino mikrokontroler (ili kompatibilna ploča poput Wemos D1) koja služi kao „mozak“ projekta. Na njoj se učitava i izvršava kod.
 2. **Ekspanziona ploča**, poznata kao **štit** (*shield*): ubacuje se u razvojnu ploču radi lakšeg povezivanja drugih komponenti. Često sadrži i prototipsku ploču (*breadboard*) na sebi.
