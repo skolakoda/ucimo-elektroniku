@@ -52,7 +52,7 @@ GSM/GPRS modul SIM800L, sa ugrađenom PCB antenom i slotom za SIM karticu, omogu
 
 ![](slike/moduli/wifi-module.jpg)
 
-ESP8266 je wifi modul koji omogućava povezivanje Arduina na internet.
+ESP8266 (NodeMCU) je mikrokontroler s ugrađenim Wi-Fi-jem, koji omogućava povezivanje na internet. Može se programirati direktno, bez Arduina.
 
 ESP8266 može pokrenuti web server koji nam omogućava da preko Wi-Fi mreže palimo i gasimo LED diode i druge uređaje.
 
