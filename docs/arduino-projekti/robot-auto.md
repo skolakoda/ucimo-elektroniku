@@ -1,39 +1,26 @@
 # Robot auto
 
-## Pogon motora
+![](../slike/arduino-robot.jpg)
 
-![](../slike/moduli/upravljac-motora.png)
+Arduino robot je kombinacija elektromotora koji pokreću točkove i senzora na osnovu kojih može donositi odluke o izbegavanju prepreka.
 
-Osnov kretanja robota čini upravljački modul motora (*motor driver module*), koji pomoću elektromotora pokreće točkove:
+## Delovi
 
-```c
-int motor1levi  = 9;
-int motor1desni  = 10;
-int motor2levi  = 6;
-int motor2desni  = 5;
+![](../slike/robot-delovi.webp)
 
-void setup(){
-    Serial.begin(9600);
-    pinMode(motor1levi, OUTPUT);
-    pinMode(motor1desni, OUTPUT);
-    pinMode(motor2levi, OUTPUT);
-    pinMode(motor2desni, OUTPUT);
-}
+1. **Razvojna ploča**: Najčešće Arduino mikrokontroler (ili kompatibilna ploča poput Wemos D1) koja služi kao „mozak“ projekta. Na njoj se učitava i izvršava kod.
+2. **Ekspanziona ploča**, poznata kao **štit** (*shield*): ubacuje se u razvojnu ploču radi lakšeg povezivanja drugih komponenti. Često sadrži i prototipsku ploču (*breadboard*) na sebi.
+3. **Ultrazvučni modul (HC-SR04)**, poznat kao **senzor udaljenosti**: koristi zvučne talase za merenje rastojanja do objekta. Često se koristi za izbegavanje prepreka kod robota.
+4. **Modul za upravljanje motorima**: kontroliše brzinu i smer elektromotora. Potreban jer razvojna ploča obično ne može obezbediti dovoljno struje za direktno napajanje motora.
+5. **TT motor**, odnosno mali **elektromotor sa zupčanikom**: koristi se za pogon točkova kod robotskih vozila.
+6. **Servo motor**: može da se rotira pod određenim uglom, obično između $0^\circ$ i $180^\circ$. Koristi se za upravljanje, pomeranje ruke ili male mehanizme.
+7. **Kutija za baterije**: drži baterija i napaja celo kolo.
 
-void ideNapred(int speed) {
-    Serial.println("ide napred");
-    analogWrite(motor1levi, 0);
-    analogWrite(motor1desni, speed);
-    analogWrite(motor2levi, 0);
-    analogWrite(motor2desni, speed);  
-}
+## Elektronsko kolo
 
-void loop(){
-  ideNapred(100);
-}
-```
+![](../slike/arduino-robot-kolo.png)
 
-## Kompletan primer
+## Kompletan kod
 
 Napomena: Servo biblioteka onemogućuje `analogWrite()` (PWM) na pinovima 9 i 10!
 
@@ -166,3 +153,4 @@ void loop()
 ## Izvori
 
 - [How to Use the L298 Motor Driver Module](https://www.instructables.com/How-to-use-the-L298-Motor-Driver-Module-Arduino-Tu/)
+- [Obstacle Avoiding Arduino Robot](https://www.instructables.com/Bluetooth-Controlled-Obstacle-Avoiding-Arduino-Rob/)

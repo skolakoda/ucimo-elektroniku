@@ -1,6 +1,8 @@
 # Robot kornjača
 
-Radi na daljinac.
+![](../slike/robot-kornjaca.webp)
+
+Robot kornjača ima slične karakteristike kao robot auto + radi na daljinac.
 
 ## Kompletan primer
 
@@ -34,7 +36,7 @@ const long repeatedBtn = 0xffffffff;
 
 IRrecv irrecv(infraRedPin);
 decode_results results;
-
+0
 unsigned long lastClick = 0;
 long currButton = stopBtn;
 
