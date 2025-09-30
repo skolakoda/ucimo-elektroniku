@@ -9,7 +9,6 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 ## TODO
 
 ### Dokumentovati postojeće
-- vremenska stanica
 - robot 1
 - robot 2
 
@@ -17,6 +16,8 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 - sistem za zalivanje sa pumpom
   https://www.instructables.com/Automatic-Plant-Watering-System-Using-Soil-Moistur/
   https://www.instructables.com/Smart-Irrigation-Project-on-Arduino/
+  https://www.instructables.com/Self-Watering-System-for-Plants-Using-Arduino-Uno/
+  https://create.arduino.cc/projecthub/ammarshahid572/automated-plant-watering-system-cb23d9?ref=search&ref_id=ESP8266&offset=46
 - sistem za zalivanje sa ventilom
   https://www.instructables.com/IoT-Based-Smart-Irrigation-System-Using-NodeMCU-ES/
   https://bc-robotics.com/tutorials/controlling-a-solenoid-valve-with-arduino/
@@ -43,22 +44,15 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 - laser na kuli prati ljudski pokret
   - https://www.instructables.com/Arduino-Nano-Infrared-Obstacle-Avoidance-Sensor-Wi/
   - https://www.instructables.com/Arduino-Laser-Turret/
-- automatsko zalivanje (relej za pumpu)
-  https://www.instructables.com/Self-Watering-System-for-Plants-Using-Arduino-Uno/
-  https://create.arduino.cc/projecthub/ammarshahid572/automated-plant-watering-system-cb23d9?ref=search&ref_id=ESP8266&offset=46
 - banka baterija
   - mobilni: https://www.instructables.com/Mobile-Phone-Battery-Power-Bank/
   - laptop: https://www.instructables.com/REUSE-YOUR-OLD-LAPTOP-BATTERY-TO-MAKE-A-POWER-BANK/
 - vlagomer sa ekserima (projekti)
 - punjači
-  - solarni punjač (fali dioda?, projekti)
+  - solarni punjač (projekti)
   - punjač akumulatora https://www.electronicshub.org/lead-acid-battery-charger-circuit/
   - regulator napona (vidi članak, treba transistor 7805 i kondenzatori)
 - detektor strujnih vodova (projekti)
-- vremenska stanica:
-  - dodati solarno napajanje
-    https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/
-- napraviti nešto za zalivanje (ima mali solenoid)
 
 ### Kitovi
 - fm radio prijemnik (projekti, kit)

@@ -6,6 +6,8 @@ Glavne komponente vremenske stanice su:
 
 DHT senzor šalje merenja mikrokontroleru, koji ih može prikazati na ekranu, preko lokalnog servera ili slati na oblak. 
 
+Napomena: Pinove RST i D0 mikrokontrolera ESP8266 povezujemo žicom da bi radio režim dubokog sna. Kada prebacujemo kod moramo ukloniti žicu.
+
 STATUS: Verzija sa slanjem na oblak trenutno ne radi jer dweet.io više ne postoji.
 
 ## Prost primer
@@ -278,7 +280,7 @@ Program očitava podatke sa DHT senzora pa šalje na oblak, u međuvremenu dubok
 
 Ovaj projekat koristi ESP8266 mikrokontroler s ugrađenim Wi-Fi-jem. ESP8266 ima *Deep Sleep* režim u kojem gasi CPU i budi se resetom posle zadatog vremena. 
 
-Potrebno je povezati RST i D0 (pin za buđenje ESP8266), nakon slanja koda.
+Potrebno je povezati žicom RST i D0 (pin za buđenje ESP8266), nakon slanja koda.
 
 ```c
 #include <ESP8266WiFi.h>
@@ -383,3 +385,4 @@ void posaljiNaOblak()
 - [Create A Simple ESP8266 Weather Station With BME280](https://lastminuteengineers.com/bme280-esp8266-weather-station/)
 - [Interface DHT11 DHT22 w/ ESP8266 NodeMCU Using Web Server](https://lastminuteengineers.com/esp8266-dht11-dht22-web-server-tutorial/)
 - [Connecting the ESP8266 to a cloud server ](https://subscription.packtpub.com/book/iot-and-hardware/9781787288102/1/ch01lvl1sec08/connecting-the-esp8266-to-a-cloud-server)
+- [SOLAR POWERED ARDUINO WEATHER STATION](https://www.instructables.com/SOLAR-POWERED-ARDUINO-WEATHER-STATION/)
