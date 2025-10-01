@@ -152,5 +152,6 @@ void loop()
 
 ## Izvori
 
+- [Assembly Instructions for a Motor Robot Car Kit](robot-car-instructions.pdf) (pdf)
 - [How to Use the L298 Motor Driver Module](https://www.instructables.com/How-to-use-the-L298-Motor-Driver-Module-Arduino-Tu/)
 - [Obstacle Avoiding Arduino Robot](https://www.instructables.com/Bluetooth-Controlled-Obstacle-Avoiding-Arduino-Rob/)
