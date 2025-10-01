@@ -1,18 +1,19 @@
 # Poređenje sa saobraćajem (saobraćajna analogija)
 
-- **Napon (V)** - razlika u gužvi (broju vozila) između dve tačke.
-- **Struja ili električni tok (I)** - saobraćajni tok odnosno tok vozila.
+- **Elektroni** - vozila
+- **Napon (V)** - razlika u broju vozila između dve tačke.
+- **Električna struja ili električni tok (I)** - saobraćajni tok ili tok vozila.
 - **Naboj (Q)** - broj vozila u nekom delu mreže.
-- **Otpor (R)** - otežanost kretanja putem usled prepreka.
-- **Otpornik** - usko grlo (suženje puta, ograničenje brzine, radovi).
-- **Provodnik** - put; što širi to više provodi. Preopterećenje provodnika - gužva. 
-- **Izolator** - blokada, sprečava tok.
-- **Kondenzator (C)** - privremeni parking koji brzo prima i pušta vozila; drži napon stabilnim.
-- **Induktor (L)** - duga kolona vozila (inercija toka); teži da očuva protok i suprotstavlja se naglim promenama
-- **Dioda** - jednosmerna ulica
-- **Prekidač** - rampa ili semafor
-- **Uzemljenje** - beskonačno veliki parking, gde je gužva uvek praktično nula.
-- **Izvor napona** - izvor vozila, npr. ulaz sa autoputa ili velika garaža odakle stalno izlazi/ulazi određeni broj vozila, održavajući tok.
+- **Provodnik** - put; što širi više provodi. **Preopterećenje provodnika** - gužva. 
+- **Otpor (R)** - smanjena prohodnost vozila.
+- **Otpornik** - usko grlo (suženje puta, rupe, krivine, ograničenje brzine, radovi).
+- **Izolator** - prepreka, barikada.
+- **Kondenzator (C)** - parking pored puta koji brzo prima i pušta vozila; drži napon stabilnim.
+- **Induktor (L)** - kolona kamiona; suprotstavlja se naglim promenama toka.
+- **Dioda** - jednosmerna ulica.
+- **Prekidač** - rampa, semafor.
+- **Uzemljenje** - praktično beskonačan parking koji prima višak vozila.
+- **Izvor napona** - izvor vozila, npr. ulaz sa autoputa ili velika garaža odakle stalno izlazi određeni broj vozila, održavajući tok.
 - **Otvoreno kolo** - prekinut put (nema saobraćajnog toka).
 
 ## Redna i paralelna kola

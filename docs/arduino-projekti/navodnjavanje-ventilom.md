@@ -78,4 +78,3 @@ void loop() {
 
 - [Controlling A Solenoid Valve With Arduino](https://bc-robotics.com/tutorials/controlling-a-solenoid-valve-with-arduino/)
 - [Arduino Water Liquid Valve](https://arduinogetstarted.com/tutorials/arduino-water-liquid-valve)
-- [oT Based Smart Irrigation System Using NodeMCU ESP8266 & Adafruit IO](https://www.instructables.com/IoT-Based-Smart-Irrigation-System-Using-NodeMCU-ES/)

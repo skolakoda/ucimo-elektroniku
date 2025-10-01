@@ -10,10 +10,6 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
 - poređenje sa saobraćajem
 
-### Napisati uputstva za 
-- Sistem za navodnjavanje sa ventilom
-  https://arduinogetstarted.com/tutorials/arduino-water-liquid-valve
-
 ### Praviti
 - autić (projekti)
   - dodati bateriju
