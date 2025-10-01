@@ -8,12 +8,12 @@ Arduino robot je kombinacija elektromotora koji pokreću točkove i senzora na o
 
 ![](../slike/moduli/robot-delovi.webp)
 
-1. **Razvojna ploča**: Najčešće Arduino mikrokontroler (ili kompatibilna ploča poput Wemos D1) koja služi kao „mozak“ projekta. Na njoj se učitava i izvršava kod.
-2. **Ekspanziona ploča**, poznata kao **štit** (*shield*): ubacuje se u razvojnu ploču radi lakšeg povezivanja drugih komponenti. Često sadrži i prototipsku ploču (*breadboard*) na sebi.
-3. **Ultrazvučni modul (HC-SR04)**, poznat kao **senzor udaljenosti**: koristi zvučne talase za merenje rastojanja do objekta. Često se koristi za izbegavanje prepreka kod robota.
-4. **Modul za upravljanje motorima**: kontroliše brzinu i smer elektromotora. Potreban jer razvojna ploča obično ne može obezbediti dovoljno struje za direktno napajanje motora.
-5. **TT motor**, odnosno mali **elektromotor sa zupčanikom**: koristi se za pogon točkova kod robotskih vozila.
-6. **Servo motor**: može da se rotira pod određenim uglom, obično između $0^\circ$ i $180^\circ$. Koristi se za upravljanje, pomeranje ruke ili male mehanizme.
+1. **Mikrokontroler**, obično Arduino ili kompatibilni Wemos D1, je mozak robota. Tu se učitava i izvršava programski kod.
+2. **Ekspanziona ploča**, poznata kao **štit** (*shield*), ubacuje se u razvojnu ploču radi lakšeg povezivanja drugih komponenti. Često sadrži i prototipsku ploču na sebi.
+3. **Ultrazvučni modul**, poznat kao **senzor udaljenosti**, koristi zvučne talase za merenje rastojanja do objekta. Služi kao oči robota.
+4. **Modul za upravljanje motorima** kontroliše brzinu i smer elektromotora. Potreban jer razvojna ploča obično ne može obezbediti dovoljno struje za njihovo napajanje.
+5. **TT motor**, odnosno mali **elektromotor sa zupčanikom**, služi za pogon točkova robota.
+6. **Servo motor**: služi za rotiranje pod određenim uglom, obično između $0^\circ$ i $180^\circ$. Kod robota služi za okretanje glave.
 7. **Kutija za baterije**: drži baterija i napaja celo kolo.
 
 ## Elektronsko kolo
@@ -152,6 +152,8 @@ void loop()
 
 ## Izvori
 
-- [Assembly Instructions for a Motor Robot Car Kit](robot-car-instructions.pdf) (pdf)
+- [Assembly Instructions for a Motor Robot Car Kit](pdf/robot-car-instructions.pdf) (pdf)
+- [Smart Robot Car Kit for Arduino User Guide](pdf/robot-kit-instructions.pdf) (pdf)
+- [Arduino Smart Robot Car Kit](pdf/arduino-robot-car-kit.pdf) (pdf)
 - [How to Use the L298 Motor Driver Module](https://www.instructables.com/How-to-use-the-L298-Motor-Driver-Module-Arduino-Tu/)
 - [Obstacle Avoiding Arduino Robot](https://www.instructables.com/Bluetooth-Controlled-Obstacle-Avoiding-Arduino-Rob/)
