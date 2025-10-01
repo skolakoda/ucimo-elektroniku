@@ -8,17 +8,13 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
 ## TODO
 
-### Dokumentovati postojeće
-- robot 1
-- robot 2
-
 ### Napisati uputstva za 
-- sistem za zalivanje sa pumpom
+- Sistem za navodnjavanje sa pumpom
   https://www.instructables.com/Automatic-Plant-Watering-System-Using-Soil-Moistur/
   https://www.instructables.com/Smart-Irrigation-Project-on-Arduino/
   https://www.instructables.com/Self-Watering-System-for-Plants-Using-Arduino-Uno/
   https://create.arduino.cc/projecthub/ammarshahid572/automated-plant-watering-system-cb23d9?ref=search&ref_id=ESP8266&offset=46
-- sistem za zalivanje sa ventilom
+- Sistem za navodnjavanje sa ventilom
   https://www.instructables.com/IoT-Based-Smart-Irrigation-System-Using-NodeMCU-ES/
   https://bc-robotics.com/tutorials/controlling-a-solenoid-valve-with-arduino/
   https://www.instructables.com/Control-Solenoid-Valve-Using-Arduino/

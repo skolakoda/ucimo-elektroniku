@@ -27,7 +27,7 @@
   - [Ispravljač](ispravljac.md)
 - [Prekidači](prekidaci.md)
   - [Releji](releji.md)
-- Elektromagnetni ventil (solenoidni ventil)
+  - [Solenoidi](solenoidi.md)
 - [Elektromotori](elektromotori.md)
 - [Senzori](senzori.md)
 - [Integrisano kolo](integrisano-kolo.md)
@@ -75,12 +75,14 @@
 
 ## Arduino projekti
 
+> Za sve primere vidi [arduino-primeri](https://github.com/skolakoda/ucimo-elektroniku/tree/master/arduino-primeri)
+
 - [Vlagomer](arduino-projekti/vlagomer.md)
 - [Vremenska stanica](arduino-projekti/vremenska-stanica.md)
 - [Robot auto](arduino-projekti/robot-auto.md)
 - [Robot kornjača](arduino-projekti/robot-kornjaca.md)
-
-> Za sve primere vidi [arduino-primeri](https://github.com/skolakoda/ucimo-elektroniku/tree/master/arduino-primeri)
+- [Sistem za navodnjavanje sa pumpom](arduino-projekti/navodnjavanje-sa-pumpom.md)
+- [Sistem za navodnjavanje sa ventilom](arduino-projekti/navodnjavanje-sa-ventilom.md)
 
 ## Sopstvena struja
 
