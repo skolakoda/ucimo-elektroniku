@@ -12,7 +12,6 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
 ### Napisati uputstva za 
 - Sistem za navodnjavanje sa ventilom
-  https://www.instructables.com/Control-Solenoid-Valve-Using-Arduino/
   https://www.circuits-diy.com/solenoid-water-liquid-valve-arduino-tutorial/
   https://arduinogetstarted.com/tutorials/arduino-water-liquid-valve
 

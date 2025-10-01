@@ -17,18 +17,18 @@ Dodatni delovi irigacionog sistema mogu biti:
 - **solarno napajanje** radi samoodrživosti
 - **relej** (ili MOSFET) za solenoidni ventil višeg napona
 
-## Primer (Arduino i solenoidni ventil)
+## Primer (MOSFET otvara ventil)
 
 ![](../slike/arduino-i-solenoid.jpg)
 
 Delovi:
-* Arduino Uno ili kompatibilna ploča
+* Arduino Uno (ili kompatibilna ploča)
 * Solenoid ventil (12V DC)
 * MOSFET tranzistor (npr. IRLZ44N)
 * Dioda (1N4007 ili slična)
 * Otpornik (220Ω)
 * Napajanje (12V za solenoid)
-* Žice i breadboard
+* Napajanje (5V za Arduino)
 
 Električna šema:
 
@@ -53,7 +53,29 @@ void loop() {
 }
 ```
 
+## Primer (relej otvara ventil)
+
+![](../slike/arduino-relej-solenoid.png)
+
+Delovi za ovo kolo su uglavnom slični kao za prethodno, osim što umesto MOSFET-a ide relej.
+
+```c
+const int RELAY_PIN = A5;
+
+void setup() {
+  pinMode(RELAY_PIN, OUTPUT);  // Postavljanje pina kao izlaznog
+}
+
+void loop() {
+  digitalWrite(RELAY_PIN, HIGH);  // uključuje relej (otvara ventil)
+  delay(5000);
+  digitalWrite(RELAY_PIN, LOW);  // isključuje relej (zatvara ventil)
+  delay(5000);
+}
+```
+
 ## Izvori
 
 - [Controlling A Solenoid Valve With Arduino](https://bc-robotics.com/tutorials/controlling-a-solenoid-valve-with-arduino/)
+- [Solenoid Water Liquid Valve – Arduino Tutorial](https://www.circuits-diy.com/solenoid-water-liquid-valve-arduino-tutorial/)
 - [oT Based Smart Irrigation System Using NodeMCU ESP8266 & Adafruit IO](https://www.instructables.com/IoT-Based-Smart-Irrigation-System-Using-NodeMCU-ES/)
