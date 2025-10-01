@@ -120,9 +120,16 @@ Link: https://www.aliexpress.com/item/32649659086.html
 
 ![](slike/moduli/upravljac-motora.png) ![](slike/moduli/motor-driver-modul.webp)
 
-Upravljač motora (*motor driver*) omogućava upravljanje DC motorima i stepper motorima. Može da kontroliše smer i brzinu rotacije.
+Upravljač motora (*motor driver*) je elektronski sklop koji kontroliše elektromotore pomoću mikrokontrolera - paljenje, smer i brzinu rotacije. Takođe napaja motore iz posebnog izvora (npr. baterija ili adapter), kada mikrokontroler sam ne može dati dovoljno struje.
 
-Koristi se u robotici i vozilima na daljinsko upravljanje.
+Unutra obično sadrži:
+
+* **Tranzistore ili MOSFET-e** – služe kao prekidači koji uključuju/isključuju motor i propuštaju veću struju.
+* **H-bridge kola** – omogućavaju da se motor okreće napred i nazad promenom polariteta.
+* **Flyback diode** – štite elektroniku od povratnih struja koje motor generiše kada se zaustavlja.
+* **Regulaciju napajanja** – neki moduli imaju i stabilizator napona, pa pored motora mogu napajati i mikrokontroler.
+
+Najčešći moduli su L298N i L293D. Koriste se u robotici i vozilima na daljinsko upravljanje.
 
 ### Upravljač steper motora (A4988)
 
