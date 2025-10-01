@@ -179,3 +179,9 @@ void stop()
     digitalWrite(IN2, HIGH);
 }
 ```
+
+## Linkovi
+
+- [Smart Turtle Robot Car Kit](pdf/smart-turtle-robot-car-kit.pdf)
+- [Arduino Smart little turtle Manual](pdf/arduino-smart-turtle-manual.pdf)
+- [Smart Little Turtle Robot V3](https://docs.keyestudio.com/projects/KS0464/en/latest/KS0464_arduino.html)

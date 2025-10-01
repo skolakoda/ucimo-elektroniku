@@ -150,7 +150,7 @@ void loop()
 }
 ```
 
-## Izvori
+## Linkovi
 
 - [Assembly Instructions for a Motor Robot Car Kit](pdf/robot-car-instructions.pdf) (pdf)
 - [Smart Robot Car Kit for Arduino User Guide](pdf/robot-kit-instructions.pdf) (pdf)
