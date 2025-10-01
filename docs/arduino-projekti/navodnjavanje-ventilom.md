@@ -55,21 +55,21 @@ void loop() {
 
 ## Primer (relej otvara ventil)
 
-![](../slike/arduino-relej-solenoid.png)
+![](../slike/arduino-relej-solenoid.jpg)
 
-Delovi za ovo kolo su uglavnom slični kao za prethodno, osim što umesto MOSFET-a ide relej.
+Delovi za ovo kolo uglavnom su slični kao za prethodno, osim što umesto MOSFET-a ide relej.
 
 ```c
-const int RELAY_PIN = A5;
+const int RELAY_PIN = 4;
 
 void setup() {
-  pinMode(RELAY_PIN, OUTPUT);  // Postavljanje pina kao izlaznog
+  pinMode(RELAY_PIN, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(RELAY_PIN, HIGH);  // uključuje relej (otvara ventil)
+  digitalWrite(RELAY_PIN, HIGH); // otvara ventil 5 sekundi
   delay(5000);
-  digitalWrite(RELAY_PIN, LOW);  // isključuje relej (zatvara ventil)
+  digitalWrite(RELAY_PIN, LOW);  // zatvara ventil 5 sekundi
   delay(5000);
 }
 ```
@@ -77,5 +77,5 @@ void loop() {
 ## Izvori
 
 - [Controlling A Solenoid Valve With Arduino](https://bc-robotics.com/tutorials/controlling-a-solenoid-valve-with-arduino/)
-- [Solenoid Water Liquid Valve – Arduino Tutorial](https://www.circuits-diy.com/solenoid-water-liquid-valve-arduino-tutorial/)
+- [Arduino Water Liquid Valve](https://arduinogetstarted.com/tutorials/arduino-water-liquid-valve)
 - [oT Based Smart Irrigation System Using NodeMCU ESP8266 & Adafruit IO](https://www.instructables.com/IoT-Based-Smart-Irrigation-System-Using-NodeMCU-ES/)

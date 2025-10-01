@@ -86,7 +86,7 @@ void loop()
 
 ## Primer (vlagomer, pumpa i LCD ekran)
 
-![](../slike/sistem-za-navodnjavanje.jpg)
+![](../slike/sistem-za-navodnjavanje.webp)
 
 ```c
 #include <LiquidCrystal.h>
