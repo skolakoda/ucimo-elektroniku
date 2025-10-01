@@ -18,7 +18,7 @@ Arduino robot je kombinacija elektromotora koji pokreću točkove i senzora na o
 
 ## Elektronsko kolo
 
-![](../slike/arduino-robot-kolo.png)
+![](../slike/arduino-robot-kolo.webp)
 
 ## Kompletan kod
 

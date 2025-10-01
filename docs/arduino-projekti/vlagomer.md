@@ -1,6 +1,6 @@
 # Vlagomer
 
-Pored osnovnog merača vlage bez kontrolera, možemo napraviti i verziju sa Arduinom.
+Pored osnovnog merača vlažnosti tla bez kontrolera, možemo napraviti i verziju sa Arduinom.
 
 ## Prosta verzija
 
