@@ -81,8 +81,8 @@
 - [Vremenska stanica](arduino-projekti/vremenska-stanica.md)
 - [Robot auto](arduino-projekti/robot-auto.md)
 - [Robot kornjača](arduino-projekti/robot-kornjaca.md)
-- [Sistem za navodnjavanje sa pumpom](arduino-projekti/navodnjavanje-sa-pumpom.md)
-- [Sistem za navodnjavanje sa ventilom](arduino-projekti/navodnjavanje-sa-ventilom.md)
+- [Sistem za navodnjavanje pumpom](arduino-projekti/navodnjavanje-pumpom.md)
+- [Sistem za navodnjavanje ventilom](arduino-projekti/navodnjavanje-ventilom.md)
 
 ## Sopstvena struja
 

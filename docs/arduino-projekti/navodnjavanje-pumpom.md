@@ -1,4 +1,4 @@
-# Sistem za navodnjavanje sa pumpom
+# Sistem za navodnjavanje pomoću pumpe
 
 Ovaj sistem za navodnjavanje radi tako što pumpom vučemo vodu iz rezervoara (bunara, bazena, potoka...) i njom zalivamo baštu.
 
@@ -6,7 +6,7 @@ Zalivanje može biti vremenski zadato ili na osnovu nekih uslova (obično vlažn
 
 ## Delovi
 
-![](../slike/navodnjavanje-sa-pumpom.webp)
+![](../slike/navodnjavanje-pumpom.webp)
 
 Glavni delovi sistema za navodnjavanje su:
 - **napajanje**, obezbeđuje struju i napon svim komponentama
