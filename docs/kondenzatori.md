@@ -4,7 +4,9 @@
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Capacitors_%287189597135%29.jpg/420px-Capacitors_%287189597135%29.jpg)
 
-**Kondenzatori skladište elektrone** tako što ih privlače ka pozitivnom polu. Čim se napon smanji ili nestane, elektroni se oslobađaju. Tako kondenzator omogućava regulisanje promena napona. Takođe, kondenzatori u kombinaciji sa otpornicima mogu se koristiti kao merači vremena (tajmeri).
+**Kondenzator** je električna komponenta koja se se suprotstavlja promenama napona.
+
+Kondenzatori skladište elektrone tako što ih privlače ka pozitivnom polu. Čim se napon smanji ili nestane, elektroni se oslobađaju. Tako kondenzator omogućava regulisanje promena napona. Takođe, kondenzatori u kombinaciji sa otpornicima mogu se koristiti kao merači vremena (tajmeri).
 
 Kondenzatori su vrlo prosti. Kondenzator ima u sebi dve metalne pločice, koje razdvaja dielektrični materijal (izolator). Kao dielektrici se najčešće koriste plastika, liskun i papir.
 
@@ -18,9 +20,9 @@ Kondenzatori se upotrebljavaju za različite svrhe, uključujući:
 
 ### Stabilizacija napona
 
-Svojstvo kondenzatora da prikupljaju i otpuštaju elektrone možemo iskoristiti za „peglanje" kolebanja napona. Određeni nivo napona primenjenog na kondenzator proizvodi određeni broj uskladištenih elektrona. Kada napon počne da raste, kondenzator skladišti više elektrona, čime se umanjuje taj porast napona. U slučaju da napon počne da opada, kondenzator oslobađa određeni broj „zarobljenih" elektrona i time se ponovo smanjuje promena napona. 
+Svojstvo kondenzatora da prikuplja i otpušta elektrone koristimo za „peglanje" kolebanja napona. Kada napon raste, kondenzator skladišti više elektrona, čime se umanjuje taj porast napona. U slučaju da napon opada, kondenzator oslobađa određeni broj „zarobljenih" elektrona i time se ponovo smanjuje promena napona. Pri nagloj promeni napona kroz kondenzator može poteći vrlo velika struja da bi zadržao postojeći napon na svojim pločama.
 
-U ispravljačima naizmenične struje u jednosmernu često se koriste kondenzatori za „peglanje" kolebanja napona.
+U ispravljačima naizmenične struje u jednosmernu često se koriste kondenzatori za stabilizaciju napona. 
 
 ## Kapacitivnost
 

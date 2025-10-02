@@ -20,26 +20,10 @@
 
 ![](slike/saobracajna-analogija.jpg)
 
-Redno vezani otpornici - više uskih grla zaredom; veći ukupni otpor.
-Paralelno vezani otpornici - paralelni putevi; veći kapacitet, manji ukupan otpor.
-
-- Razdelnik napona (serijsko grananje) – dugačak put sa više rednih isključenja. Isti saobraćajni tok (struja) prolazi kroz sve, ali „pritisak gužve“ (napon) opada deo po deo.
-
-- Razdelnik struje - čvor gde se put razdvaja na više paralelnih puteva; „pritisak“ (napon) na ulazu je svima isti; tok se deli između paralelnih puteva obrnuto proporcionalno otporu, odnosno srazmerno njihovoj širini.
-
-Dakle:
-– **Razdelnik napona** = serija, deli *napon*, tok isti.
-– **Razdelnik struje** = paralela, deli *tok*, napon isti.
-
-
-Osnovni pojmovi
-
-Induktor se suprotstavlja promenama struje: kada struja naglo raste ili opada, induktor generiše napon suprotnog smera (elektromotorna sila) i time „pegla“ nagle promene.
-
-Kondenzator se suprotstavlja promenama **napona**, ne struje.
-– pri nagloj promeni napona kroz kondenzator može poteći vrlo velika struja da bi zadržao postojeći napon na svojim pločama.
-– obrnuto, induktor zadržava postojeću struju i stvara napon da uspori njenu promenu.
-
+- **Redno vezani otpornici** - više uskih grla zaredom; veći ukupni otpor.
+- **Paralelno vezani otpornici** - paralelni putevi; manji ukupan otpor (veći kapacitet).
+- **Razdelnik napona** (redno grananje) – dugačak put sa više rednih isključenja. Isti saobraćajni tok (struja) prolazi kroz sve, ali „pritisak gužve“ (napon) opada deo po deo.
+- **Razdelnik struje** - čvor gde se put razdvaja na više paralelnih puteva; „pritisak“ (napon) na ulazu je svima isti; tok se deli između puteva obrnuto proporcionalno otporu, odnosno srazmerno njihovoj širini.
 
 https://www.sciencefix.co.uk/2023/07/models-and-analogies-for-teaching-electricity
 

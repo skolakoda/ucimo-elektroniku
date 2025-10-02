@@ -17,11 +17,13 @@
 ## Komponente
 
 - [Otpornici](otpornici.md)
-- [Kondenzatori](kondenzatori.md)
 - [Diode](diode.md)
   - [LED diode](led-diode.md)
 - [Tranzistori](tranzistori.md)
   - [MOSFET](MOSFET.md)
+- [Kondenzatori](kondenzatori.md)
+- [Induktori](kalemovi.md)
+- [Kristali](kristali.md)
 - [Žice](zice.md)
 - [Baterije](baterije.md)
   - [Ispravljač](ispravljac.md)
@@ -32,7 +34,6 @@
 - [Senzori](senzori.md)
 - [Integrisano kolo](integrisano-kolo.md)
   - [Logička kola](logicka-kola.md)
-- [Kalemovi i kristali](kalemovi-i-kristali.md)
 - [Kombinacija kondenzatora i otpornika](kombinacija-kondenzator-otpornik.md)
 
 ## Električna kola
