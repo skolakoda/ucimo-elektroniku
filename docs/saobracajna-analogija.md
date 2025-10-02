@@ -24,7 +24,3 @@
 - **Paralelno vezani otpornici** - paralelni putevi; manji ukupan otpor (veći kapacitet).
 - **Razdelnik napona** (redno grananje) – dugačak put sa više rednih isključenja. Isti saobraćajni tok (struja) prolazi kroz sve, ali „pritisak gužve“ (napon) opada deo po deo.
 - **Razdelnik struje** - čvor gde se put razdvaja na više paralelnih puteva; „pritisak“ (napon) na ulazu je svima isti; tok se deli između puteva obrnuto proporcionalno otporu, odnosno srazmerno njihovoj širini.
-
-https://www.sciencefix.co.uk/2023/07/models-and-analogies-for-teaching-electricity
-
-https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.dC6HVhRz-tkNWvs99nPtGQHaFj%3Fpid%3DApi&f=1&ipt=aab0a522da7babb6266bf6bf6e5148f07d16c75ba01aeba12189b236f162249d

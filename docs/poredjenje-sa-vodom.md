@@ -17,6 +17,7 @@ Ako jedan kraj žice povežemo s pozitivnim polom baterije a drugi s negativnim,
 - **Izvor napona (baterija)** - pumpa ili vodo-toranj; stvara razliku pritisaka.
 - **Prekidač** - ventil; zatvara i pušta vodeni tok.
 - **Dioda** - jednosmerni ventil; dozvoljava tok samo u jednom smeru.
+- **Potrošač** - vodenički točak; pretvara vodenu struju u mehanički rad.
 
 ## Osnovne paralele:
 
