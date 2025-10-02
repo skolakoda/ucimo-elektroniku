@@ -33,6 +33,8 @@ Uobičajene greške:
 
 ## Spisak potrebnih delova
 
+![](../slike/komponente/NE555-timer.png) ![](../slike/komponente/kondenzatori.png)
+
 Spisak potrebnih delova za kolo sa trepćućom LED diodom:
 * IC1: Integrisano kolo, tajmer LM555
 * R1: Potenciometar od 1 megaoma

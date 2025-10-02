@@ -12,6 +12,8 @@ Srce projekta je tajmer LM555 koji se ponaša kao generator zvuka. Kada svetlost
 
 ## Delovi
 
+![](../slike/komponente/NE555-timer.png) ![](../slike/komponente/fotootpornici.png)
+
 Lista delova alarma za svetlo:
 * IC1: Tajmer LM555
 * Q1: Tranzistor 2N3906 PNP

@@ -23,6 +23,8 @@ Zener dioda i otpornik od 470 oma osiguravaju da napon napajanja kontrolera nika
 
 ## Alternativna verzija
 
+![](../slike/komponente/fotootpornici.png)
+
 Bez solarnog napajanja: 
 - Arduino 
 - zvučnik

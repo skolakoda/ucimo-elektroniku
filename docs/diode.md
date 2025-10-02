@@ -10,6 +10,8 @@ Najčešći tipovi dioda su:
 * **Diodni ispravljač**: Ispravlja naizmeničnu struju u jednosmernu. Diode se često nazivaju ispravljači jer ispravljaju struju.
 * **Diodni most (Grecov most)** čine četiri diode povezane u kvadrat; najefikasnije ispravlja naizmeničnu struju u jednosmernu.
 
+![](slike/komponente/zener-diode.png)
+
 ## Vršni napon i struja
 
 Diode nemaju svoje „vrednosti“ kao otpornici i kondenzatori (sem zener dioda). One se biraju na osnovu vršnog napona i struje.

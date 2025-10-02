@@ -8,6 +8,8 @@ Podesite dva potenciometra, R2 i R4, da menjaju visinu i brzinu zavijajućeg zvu
 
 ## Delovi
 
+![](../slike/komponente/NE555-timer.png)
+
 Kolo čine naredne komponente:
 * IC1, IC2: Integrisano kolo, tajmer 555
 * R1, R3: Otpornik od 2,2 kilooma

@@ -65,6 +65,8 @@ Otpornici velike snage mogu biti različitog oblika. Otpornici snage veće od 5W
 
 ## Promenljivi otpornik - potenciometar
 
+![](slike/komponente/adjustable-resistors.png)
+
 Promenljivi otpornici, potenciometri, omogućavaju „biranje“ otpora. Gornja granica potenciometra određuje opseg otpora. Većina potenciometara obeležena je tom gornjom vrednošću - 10K, 50K, 100K, 1M i tako dalje. Na primer, s potenciometrom od 50K možete izabrati bilo koji otpor od 0 do 50.000 oma. 
 
 Imajte na umu da je opseg potenciometra samo približan. Ako na potenciometru nema oznake, upotrebite multimetar da odredite opseg.

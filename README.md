@@ -8,8 +8,6 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
 ## TODO
 
-- poređenje sa saobraćajem
-
 ### Praviti
 - autić (projekti)
   - dodati bateriju
