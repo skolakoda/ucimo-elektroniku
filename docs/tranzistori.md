@@ -31,7 +31,7 @@ Kada se tranzistor koristi kao prekidač, **baza** se ponaša kao poluga na meha
 
 Tranzistori kao prekidači sastavni su deo integrisanih kola koja sadrže logička kola, na primer za kalkulatore i računare.
 
-![](slike/NPN-transistor.jpg)
+![](slike/komponente/NPN-transistor.jpg)
 
 ### Primer: paljenje u svitanje
 

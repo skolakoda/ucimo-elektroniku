@@ -14,7 +14,7 @@ Jednostavan mehanizam sastavljen od **komutatora** (kružnog prekidača kod koga
 
 **Osovina** u DC motoru rotira brzinom od nekoliko hiljada obrtaja u minutu - što je prebrzo za većinu primena. Proizvođači zato prodaju i motore sa uređajem koji smanjuje brzinu osovine na manje od sto obrtaja u minutu - slično kao što se promenom stepena prenosa menja brzina automobila.
 
-![](slike/dc-motor.jpg)
+![](slike/komponente/dc-motor.jpg)
 
 ## Karakteristike
 

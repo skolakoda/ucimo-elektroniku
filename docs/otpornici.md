@@ -33,7 +33,7 @@ Ukoliko ne znamo vrednost otpora nekog otpornika, možemo je izmeriti multimetro
 
 ### Primer
 
-![](slike/otpornik.webp)
+![](slike/komponente/otpornik.webp)
 
 Pretpostavimo da je otpornik označen žuto-ljubičasto-crveno-srebrnom trakom. Prve dve trake ukazuju na prve dve cifre vrednosti. Dakle, žuta predstavlja broj 4 a ljubičasta broj 7, pa su značajne cifre 47. Treća traka je množilac. U našem primeru ta traka je crvena, pa je vrednost 100. Pomnožimo 47 sa 100 i dobijamo 4700 oma. 
 
@@ -59,9 +59,9 @@ P = I * V
 
 Na otpornicima je retko odštampana vrednost snage u vatima. Umesto toga, moramo proceniti snagu na osnovu veličine otpornika, ili tu informaciju tražimo od proizvođača. Otpornici koji se koriste u kolima sa velikim opterećenjem, kao što su motor ili upravljački uređaj za lampu, moraju biti veće snage od uobičajenih. Snaga najvećeg broja otpornika koji se koriste u hobi projektima iznosi 1/4 ili 1/8 vata.
 
-Otpornici velike snage mogu biti različitog oblika. Otpornici snage veće od 5W najčešće imaju epoksidni ili neki drugi vodonepropusni i vatrostalni omotač, i pravougaoni su a ne cilindrični. Otpornici velike snage ponekad čak imaju i sopstveni hladnjak za odvođenje toplote.
+![](slike/komponente/otpornik-5w.jpg)
 
-![](slike/otpornik-5w.jpg)
+Otpornici velike snage mogu biti različitog oblika. Otpornici snage veće od 5W najčešće imaju epoksidni ili neki drugi vodonepropusni i vatrostalni omotač, i pravougaoni su a ne cilindrični. Otpornici velike snage ponekad čak imaju i sopstveni hladnjak za odvođenje toplote.
 
 ## Promenljivi otpornik - potenciometar
 

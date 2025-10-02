@@ -2,7 +2,7 @@
 
 [wiki](https://sh.wikipedia.org/wiki/Induktor)
 
-![](slike/induktor.jpg)
+![](slike/komponente/induktor.jpg)
 
 **Induktivni kalem** (**prigušnica**, **namotaj**, **induktor** ili samo **kalem**) je električna komponenta koja se suprotstavlja promenama struje. Kada struja naglo raste ili opada, kalem stvara napon suprotnog smera i tako ublažava te promene. Kalemovi se često koriste za filtriranje, tj. odstranjivanje svih frekvencija sem željene.
 
