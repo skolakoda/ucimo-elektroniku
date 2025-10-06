@@ -14,15 +14,26 @@ Da bismo razumeli elektricitet i električnu struju, neophodno je razložiti ih 
 
 Dok su protoni relativno nepokretni, elektroni često prelaze s jednog predmeta na drugi. 
 
-## Elektricitet
+## Naelektrisanje
 
 [wiki](https://sh.wikipedia.org/wiki/Elektricitet)
 
+![](slike/naelektrisanje.png)
+
+**Naelektrisanje** ili **električni naboj** znači da čestica ima višak ili manjak elektrona u odnosu na broj protona. **Negativno** naelektrisanje znači da čestica ima višak elektrona, a **pozitivno** da ima manjak. Čestice istog naboja se međusobno odbijaju, a različitog privlače.
+
+## Elektricitet
+
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Lightning3.jpg/330px-Lightning3.jpg)
 
-**Elektricitet** je prirodni fenomen koji potiče od prisustva i kretanja električnog naboja. Negativan električni naboj znači da čestica ima višak elektrona. Takve čestice se međusobno odbijaju, a privlače ih čestice sa pozitivnim nabojem.
+**Elektricitet** je prirodni fenomen koji potiče od prisustva i kretanja električnog naboja. Postoje dva osnovna oblika elektriciteta:
 
-Prošetajte po vunenom tepihu i dotaknite kvaku; elektroni koji putuju između vašeg prsta i kvake izazivaće varnicu. Munja je najupečatljiviji primer elektrona koji putuju između oblaka i površine zemlje. Ovo su primeri elektriciteta u "neobuzdanom" stanju.
+* **Statički elektricitet** – kada se naelektrisanje akumulira na površini materijala.
+* **Električna struja** – kada se elektroni kreću kroz provodnik.
+
+Elektricitet se s jednoga tela može prenositi na drugo. Prošetajte po vunenom tepihu i dotaknite kvaku; elektroni koji putuju između vašeg prsta i kvake izazivaće varnicu. Munja je najupečatljiviji primer elektrona koji putuju između oblaka i površine zemlje. Ovo su primeri elektriciteta u "neobuzdanom" stanju.
+
+"Ukroćeni" elektricitet je osnova mnogih tehnologija i koristi se za svetlo, toplotu, pokretanje motora i prenos informacija.
 
 ## Električna struja
 
