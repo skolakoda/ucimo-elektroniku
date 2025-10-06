@@ -28,8 +28,8 @@ Dok su protoni relativno nepokretni, elektroni često prelaze s jednog predmeta 
 
 **Elektricitet** je prirodni fenomen koji potiče od prisustva i kretanja električnog naboja. Postoje dva osnovna oblika elektriciteta:
 
-* **Statički elektricitet** – kada se naelektrisanje akumulira na površini materijala.
-* **Električna struja** – kada se elektroni kreću kroz provodnik.
+* **Statički elektricitet** – kada se naelektrisanje nagomila na površini tela (elektricitet miruje).
+* **Električna struja** – kada se elektroni kreću kroz provodnik (elektricitet struji).
 
 Elektricitet se s jednoga tela može prenositi na drugo. Prošetajte po vunenom tepihu i dotaknite kvaku; elektroni koji putuju između vašeg prsta i kvake izazivaće varnicu. Munja je najupečatljiviji primer elektrona koji putuju između oblaka i površine zemlje. Ovo su primeri elektriciteta u "neobuzdanom" stanju.
 
