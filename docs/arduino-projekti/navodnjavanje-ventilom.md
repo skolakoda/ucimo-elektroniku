@@ -94,7 +94,7 @@ Standardni izlaz rezervoara je plastični navoj **S60x6** (prečnik 60 mm, korak
 
 ### Baštenska slavina
 
-Standardni navoj za baštenske slavine je muški navoj **G 3/4″**, na koji se uvrće adapter za crevo sa ženskim navojem G 3/4″. 
+Standardni navoj za baštenske slavine je muški navoj **G 3/4″**, na koji se uvrće ženski navoj G 3/4″ (na kojem je obično adapter za crevo). 
 
 Redosled spajanja je sledeći: **slavina** (G 3/4″ muški navoj) → **adapter** (G 3/4″ ženski navoj) → **crevo** (navučeno ili sa klik-spojnicom).
 
@@ -106,7 +106,10 @@ Standardni navoj za tuš je muški navoj G 1/2″, na koji se uvrće ženski nav
 
 ### Tajmer
 
-Automatski tajmer koristi standardne priključke: 3/4″ ženski navoj na ulazu i 3/4″ muški navoj na izlazu (sa spojnicom za crevo od 16mm). Radi pod pritiskom od 2 do 4 bara.
+Automatski tajmer ima ženski navoj 3/4″ na ulazu i muški navoj 3/4″ na izlazu (sa spojnicom za crevo od 16mm). Radi pod pritiskom od 2 do 4 bara.
+
+- Da bi priključili tajmer na kuhinjsku slavinu, potreban je adapter: muški navoj G 1/2″ -> muški navoj 3/4″
+- Da bi priključili tajmer na baštensku slavinu, nije potreban adapter. Slavina ima muški navoj G 3/4″ a tajmer ženski navoj 3/4″.
 
 ## Izvori
 
