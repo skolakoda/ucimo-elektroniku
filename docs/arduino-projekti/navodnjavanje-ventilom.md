@@ -74,6 +74,40 @@ void loop() {
 }
 ```
 
+## Standardne veličine navoja
+
+Prefiks **G** označava **BSP** (*British Standard Pipe*) navoj, što je standardni navoj za kuhinjske slavine i ventile u Evropi. Naziv oznake (npr. 1/2″ - pola inča) nije stvarna mera prečnika navoja, nego istorijska oznaka veličine cevi.
+
+| Oznaka navoja | Spoljašnji prečnik (mm) | Spoljašnji prečnik (inča) | Korak navoja (mm) | Navoja po inču (TPI) |
+|----------------|--------------------------|----------------------------|-------------------|----------------|
+| G 1/8″         | 9.728 mm                 | 0.383″                    | 0.907 mm          | 28             |
+| G 1/4″         | 13.157 mm                | 0.518″                    | 1.337 mm          | 19             |
+| G 3/8″         | 16.662 mm                | 0.656″                    | 1.337 mm          | 19             |
+| **G 1/2″**     | **20.955 mm**            | **0.825″**                | **1.814 mm**      | **14**         |
+| **G 3/4″**     | **26.441 mm**            | **1.041″**                | **1.814 mm**      | **14**         |
+| G 1″           | 33.249 mm                | 1.310″                    | 2.309 mm          | 11             |
+| G 1 1/4″       | 41.910 mm                | 1.650″                    | 2.309 mm          | 11             |
+
+### Rezervoar za vodu
+
+Standardni izlaz rezervoara je plastični navoj **S60x6** (prečnik 60 mm, korak 6 mm), po metričkom industrijskom standardu za plastične IBC (*Intermediate Bulk Container*) rezervoare.
+
+### Baštenska slavina
+
+Standardni navoj za baštenske slavine je muški navoj **G 3/4″**, na koji se uvrće adapter za crevo sa ženskim navojem G 3/4″. 
+
+Redosled spajanja je sledeći: **slavina** (G 3/4″ muški navoj) → **adapter** (G 3/4″ ženski navoj) → **crevo** (navučeno ili sa klik-spojnicom).
+
+### Kućne slavine
+
+Standardni navoj za kuhinjske slavine u Evropi je ženski navoj **G 1/2″**, u koji se uvrće odgovarajući muški navoj G 1/2″.
+
+Standardni navoj za tuš je muški navoj G 1/2″, na koji se uvrće ženski navoj G 1/2″ sa crevom.
+
+### Tajmer
+
+Automatski tajmer koristi standardne priključke: 3/4″ ženski navoj na ulazu i 3/4″ muški navoj na izlazu (sa spojnicom za crevo od 16mm). Radi pod pritiskom od 2 do 4 bara.
+
 ## Izvori
 
 - [Controlling A Solenoid Valve With Arduino](https://bc-robotics.com/tutorials/controlling-a-solenoid-valve-with-arduino/)
