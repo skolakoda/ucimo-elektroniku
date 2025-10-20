@@ -92,11 +92,15 @@ Prefiks **G** označava **BSP** (*British Standard Pipe*) navoj, što je standar
 
 Standardni izlaz rezervoara je plastični navoj **S60x6** (prečnik 60 mm, korak 6 mm), po metričkom industrijskom standardu za plastične IBC (*Intermediate Bulk Container*) rezervoare.
 
-### Baštenska slavina
+### Baštenske slavine
 
-Standardni navoj za baštenske slavine je muški navoj **G 3/4″**, na koji se uvrće ženski navoj G 3/4″ (na kojem je obično adapter za crevo). 
+Baštenske slavine imaju dva navoja, za ulaz i za izlaz, oba muška. Najčešće veličine navoja su: ulaz G 1/2″ ili G 3/4″ → izlaz **G 3/4″** ili **G 1″**.
 
-Redosled spajanja je sledeći: **slavina** (G 3/4″ muški navoj) → **adapter** (G 3/4″ ženski navoj) → **crevo** (navučeno ili sa klik-spojnicom).
+Na slavinu se uvrće odgovarajući ženski navoj (G 3/4″ ili G 1″), na kojem je obično adapter za crevo. 
+
+Naša baštenska slavina ima muški navoj G 1″. Redosled povezivanja je sledeći: 
+
+- **slavina** (G 1″ muški navoj) → **adapter za crevo** (G 1″ ženski navoj) → **crevo** (navučeno ili sa klik-spojnicom).
 
 ### Kućne slavine
 
@@ -106,10 +110,11 @@ Standardni navoj za tuš je muški navoj G 1/2″, na koji se uvrće ženski nav
 
 ### Tajmer
 
-Automatski tajmer ima ženski navoj 3/4″ na ulazu i muški navoj 3/4″ na izlazu (sa spojnicom za crevo od 16mm). Radi pod pritiskom od 2 do 4 bara.
+Naš automatski tajmer ima ženski navoj 3/4″ na ulazu i muški navoj 3/4″ na izlazu (sa spojnicom za crevo od 16mm). Radi pod pritiskom od 2 do 4 bara.
 
-- Da bi priključili tajmer na kuhinjsku slavinu, potreban je adapter: muški navoj G 1/2″ -> muški navoj 3/4″
-- Da bi priključili tajmer na baštensku slavinu, nije potreban adapter. Slavina ima muški navoj G 3/4″ a tajmer ženski navoj 3/4″.
+- Da bi priključili tajmer na kuhinjsku slavinu, potreban je adapter: muški navoj G 1/2″ -> muški navoj 3/4″.
+- Da bi priključili tajmer na baštensku slavinu G 3/4″ nije potreban adapter (direktno ide ženski navoj tajmera).
+- Da bi priključili tajmer na baštensku slavinu G 1″ potreban je adapter: ženski navoj 1″ -> muški navoj 3/4″ (nakon čega ide ženski navoj tajmera).
 
 ## Izvori
 
