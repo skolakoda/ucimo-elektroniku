@@ -7,7 +7,7 @@ Snaga Arduina leži u bogatoj ponudi **modula** koje možemo jednostavno povezat
 - [Upravljački moduli](#upravljački-moduli)
 - [Moduli napajanja](#moduli-napajanja)
 - [Komunikacioni moduli](#komunikacioni-moduli)
-- [Memorijski moduli](#memorijski-moduli)
+- [Razni moduli](#razni-moduli)
 
 ## Senzorski moduli
 
@@ -22,6 +22,14 @@ Ultrazvučni senzor meri rastojanje pomoću odjeka zvučnog talasa. Koristi se z
 ![](slike/moduli/senzor-kretanja.jpg)
 
 Senzor pokreta, poznat kao PIR (pasivni infracrveni) senzor, je zasnovan na infracrvenom zračenju. Najčešće se koristi u alarmima protiv provalnika ili osvetljenju koje se pali na pokret.
+
+### IR senzor za izbegavanje prepreka
+
+![](slike/moduli/senzor-za-izbegavanje-prepreka.jpg)
+
+Infracrveni senzor za izbegavanje prepreka emituje infracrvenu svetlost i meri odbija li se o predmete ispred njega. Kad senzor detektuje prepreku, daje HIGH/LOW digitalni signal Arduinu da reaguje.
+
+Info: [https://arduinomodules.info/ky-032-infrared-obstacle-avoidance-sensor-module/](https://arduinomodules.info/ky-032-infrared-obstacle-avoidance-sensor-module/)
 
 ### Senzor zvuka (KY-037, KY-38)
 
@@ -47,15 +55,37 @@ Senzor vlažnosti tla meri koliko je zemlja suva ili vlažna. Modul se sastoji o
 
 Ovi senzori mere temperaturu i vlažnost vazduha. DHT11 je jednostavniji i manje precizan, dok DHT22 pruža širi opseg i veću tačnost.
 
+### Senzor nagiba (SW-420)
+
+![](slike/moduli/senzor-nagiba.jpg)
+
+Senzor nagiba (*tilt senzor*) je prekidač koji detektuje nagib ili pomeranje. Kad se nagne iz svoje osnovne pozicije, zatvara ili otvara električni krug i šalje signal Arduinu.
+
+### Senzor plamena
+
+![](slike/moduli/senzor-plamena.png)
+
+Senzor plamena detektuje plamen ili izvor vatre u vidljivom i infracrvenom spektru i šalje Arduinu signal ako je plamen prisutan.
+
+Najčešće se koristi za detekciju požara ili uređaja aktiviranih plamenom.
+
+Info: [https://www.teachmemicro.com/flame-sensor-project-comprehensive-guide](https://www.teachmemicro.com/flame-sensor-project-comprehensive-guide/)
+
+### Senzor gasa (MQ-2)
+
+![](slike/moduli/senzor-gasa.jpg)
+
+MQ-2 je senzor za detekciju gasa i dima, uključujući propan, butan, metan i alkohol. Arduino može da očita analogni signal ili digitalni signal kada koncentracija gasa pređe određenu granicu.
+
+Info: [https://arduinogetstarted.com/tutorials/arduino-gas-sensor](https://arduinogetstarted.com/tutorials/arduino-gas-sensor)
+
+### Senzor kiše
+
+![](slike/moduli/senzor-kise.jpg)
+
+Senzor kiše detektuje prisustvo vode ili kiše na svojoj pločici. Arduino dobija digitalni signal kad je pločica mokra i može npr. da ažurira uslov zalivanja ili aktivira neki uređaj.
+
 ## Izlazni moduli
-
-### Buzzer
-
-![](slike/moduli/buzzer.png) ![](slike/moduli/buzzer-5v.png)
-
-Buzzer je mini zvučnik koji se priključuje direktno na matičnu ploču računara i koristi za BIOS zvuke (bipove). 
-
-U Arduino projektima može poslužiti kao jednostavan zvučni izlaz.
 
 ### LCD modul (IIC/I2C 1602)
 
@@ -88,6 +118,14 @@ Modul laserskog predajnika KY-008 može se koristiti kao laserski pokazivač. Em
 Kompatibilan je sa Arduinom, Raspberry PI, ESP32 i drugim popularnim mikrokontrolerima.
 
 Info: [https://arduinomodules.info/ky-008-laser-transmitter-module](https://arduinomodules.info/ky-008-laser-transmitter-module/)
+
+### Buzzer
+
+![](slike/moduli/buzzer.png) ![](slike/moduli/buzzer-5v.png)
+
+Buzzer je mini zvučnik koji se priključuje direktno na matičnu ploču računara i koristi za BIOS zvuke (bipove). 
+
+U Arduino projektima može poslužiti kao jednostavan zvučni izlaz.
 
 ## Upravljački moduli
 
@@ -208,10 +246,17 @@ Radio modul omogućava komunikaciju između dva ili više Arduina na daljinama d
 
 Na primer, jedan Arduino može slati očitanu vlažnost tla, a drugi primati i puštati navodnjavanje kada vlažnost padne ispod određene granice.
 
-## Memorijski moduli
+## Razni moduli
 
 ### Čitač Micro SD kartica
 
 ![](slike/moduli/citac-kartica.png)
 
 Modul za čitanje Micro SD kartica, sa SPI interfejsom, omogućava Arduinu da čita i zapisuje podatke na standardnu microSD karticu. Koristi se u data logovima i projektima gde se podaci prikupljaju i čuvaju duže vreme.
+
+### Časovnik (DS1302)
+
+![](slike/moduli/casovnik.jpg)
+
+DS1302 je modul stvarnog vremena (RTC) koji čuva tačno vreme i datum čak i kad Arduino nema napajanje, koristeći malu bateriju.
+Arduino može da očita sate, minute, sekunde, dan, mesec i godinu sa ovog modula.
