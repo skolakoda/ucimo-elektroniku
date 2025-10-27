@@ -20,10 +20,12 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
   - koristiti svetiljke, LED traku ili zasebne diode 
   - paljenje led (fotootpornik i npn tranzistor) https://youtu.be/eEBMTpxdPiE
 - robot:
-  - popraviti oba robota
-  - osposobiti robota da radi na prekidač
-  - napraviti ploču od drveta (elektronika za neupućene 318), pričvrstiti motore i ostale delove, 
-  - doraditi skretanje (elektronika za neupućene 321)
+  - popraviti drugog robota
+  - napraviti kućište od drveta
+    https://www.hackster.io/webotricks/how-to-make-a-cute-wall-e-smart-robot-with-arduino-4c6979 
+  - dodati mikrofon:
+    - robot pleše – sinhronizuje pokrete s muzikom (mikrofonski modul sa jednostavnom detekcijom ritma, spremni pokreti, okreti, vrtenje glavom)
+    - robot ljubimac - prati vlasnika, reaguje na neke komande
 - laser na kuli prati ljudski pokret
   - https://www.instructables.com/Arduino-Nano-Infrared-Obstacle-Avoidance-Sensor-Wi/
   - https://www.instructables.com/Arduino-Laser-Turret/

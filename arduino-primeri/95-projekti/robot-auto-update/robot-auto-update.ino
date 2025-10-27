@@ -1,7 +1,7 @@
 // Servo library disables analogWrite() (PWM) functionality on pins 9 and 10!
 #include <Servo.h>
 
-const byte TRIG_PIN = 8;     // beli
+const byte TRIGGER_PIN = 8;  // beli
 const byte ECHO_PIN = 7;     // sivi
 const byte SERVO_PIN = 9;    // servo
 
@@ -14,7 +14,7 @@ Servo servo;
 
 const byte BROJ_UGLOVA = 7;
 const byte PRAV_UGAO = 75;
-const byte ULGOVI[BROJ_UGLOVA] = {PRAV_UGAO - 90, PRAV_UGAO - 60, PRAV_UGAO - 30, PRAV_UGAO, PRAV_UGAO + 30, PRAV_UGAO + 60, PRAV_UGAO + 90};
+const byte UGLOVI[BROJ_UGLOVA] = {PRAV_UGAO - 90, PRAV_UGAO - 60, PRAV_UGAO - 30, PRAV_UGAO, PRAV_UGAO + 30, PRAV_UGAO + 60, PRAV_UGAO + 90};
 unsigned int rastojanja[BROJ_UGLOVA];
 
 const byte BRZINA = 128; // 0-255 jačina signala
@@ -25,11 +25,11 @@ const unsigned int CEKAJ_SERVO = 120; // ms
 const unsigned int PREDAH = 500;      // ms
 
 unsigned int rastojanje() {
-    digitalWrite(TRIG_PIN, LOW);
+    digitalWrite(TRIGGER_PIN, LOW);
     delayMicroseconds(5);
-    digitalWrite(TRIG_PIN, HIGH);
+    digitalWrite(TRIGGER_PIN, HIGH);
     delayMicroseconds(10);
-    digitalWrite(TRIG_PIN, LOW);
+    digitalWrite(TRIGGER_PIN, LOW);
     
     unsigned int vreme = pulseIn(ECHO_PIN, HIGH);  // da ode i da se vrati
     return (vreme * 0.034) / 2;                    // to cm
@@ -37,7 +37,7 @@ unsigned int rastojanje() {
 
 void pogledajDesnoLevo() {
     for (byte i = 0; i < BROJ_UGLOVA; i++) {
-        servo.write(ULGOVI[i]);
+        servo.write(UGLOVI[i]);
         delay(CEKAJ_SERVO);            // čekaj da servo stigne
         rastojanja[i] = rastojanje();  // meri
     }
@@ -95,7 +95,7 @@ void setup() {
     pinMode(MOTOR1_DESNI, OUTPUT);
     pinMode(MOTOR2_LEVI, OUTPUT);
     pinMode(MOTOR2_DESNI, OUTPUT);
-    pinMode(TRIG_PIN, OUTPUT);
+    pinMode(TRIGGER_PIN, OUTPUT);
     pinMode(ECHO_PIN, INPUT);
     servo.attach(SERVO_PIN);
     pogledajDesnoLevo();

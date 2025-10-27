@@ -1,4 +1,4 @@
-#include <IRremote.h> // onesposobljava neke pinove?
+#include <IRremote.h> // verzija 2. onesposobljava neke pinove?
 
 int infraRedPin = 2; // braon
 
