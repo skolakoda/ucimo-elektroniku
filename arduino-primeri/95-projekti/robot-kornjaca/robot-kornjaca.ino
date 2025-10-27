@@ -1,4 +1,4 @@
-#include <IRremote.h> // verzija 2. onesposobljava neke pinove?
+#include <IRremote.h> // verzija 2; onesposobljava neke pinove; radi
 
 int infraRedPin = 2; // braon
 
@@ -25,11 +25,19 @@ const long rightBtn = 0xFF5AA5;     // 6
 const long rightAlt = 0x449E79F;    // 6
 const long repeatedBtn = 0xffffffff;
 
+const int BRZINA = 255;
+const int BRZINA_OKRETA = BRZINA / 3;
+
 IRrecv irrecv(infraRedPin);
 decode_results results;
 
 unsigned long lastClick = millis();
 long currButton = stopBtn;
+
+bool jeBezKlika(int ms) 
+{
+    return millis() - lastClick > ms;
+}
 
 void setup()
 {
@@ -46,61 +54,55 @@ void setup()
     pinMode(echoPin, INPUT);
 
     Serial.begin(9600);
-    irrecv.enableIRIn(); // Start the receiver // ubija motore!
+    irrecv.enableIRIn();
 }
 
 void loop()
 {
-    if (rastojanje() < 10 && millis() - lastClick > 500)
+    if (rastojanje() < 10 && jeBezKlika(500))
     {
         stop();
     }
 
-    if ((currButton == leftBtn || currButton == rightBtn) && (millis() - lastClick > 1000))
+    if ((currButton == leftBtn || currButton == rightBtn) && jeBezKlika(300))
     {
         stop();
     }
 
     if (irrecv.decode(&results))
     {
-        // if 1/4 second since lastClick IR received, print
-        if (millis() - lastClick > 250)
-        {
-            Serial.println(currButton, HEX);
-        }
-
         lastClick = millis();
 
         if (results.value != repeatedBtn)
             currButton = results.value;
 
+        Serial.println(currButton, HEX);
+
         switch (currButton)
         {
-        case forwardBtn:
-        case forwardAlt:
-            forward();
-            break;
-        case backBtn:
-        case backAlt:
-            back();
-            break;
-        case leftBtn:
-        case leftAlt:
-            left();
-            break;
-        case rightBtn:
-        case rightAlt:
-            right();
-            break;
-        case stopBtn:
-        case stopAlt:
-            stop();
-            break;
-        default:
-            break;
+            case forwardBtn:
+            case forwardAlt:
+                forward();
+                break;
+            case backBtn:
+            case backAlt:
+                back();
+                break;
+            case leftBtn:
+            case leftAlt:
+                left();
+                break;
+            case rightBtn:
+            case rightAlt:
+                right();
+                break;
+            case stopBtn:
+            case stopAlt:
+                stop();
+                break;
         }
 
-        irrecv.resume(); // receive next value
+        irrecv.resume();
     }
 }
 
@@ -119,8 +121,8 @@ int rastojanje()
 void forward()
 {
     Serial.println("forward");
-    analogWrite(ENA, 120);
-    analogWrite(ENB, 120);
+    analogWrite(ENA, BRZINA);
+    analogWrite(ENB, BRZINA);
     digitalWrite(IN1, LOW);
     digitalWrite(IN2, HIGH);
     digitalWrite(IN3, HIGH);
@@ -130,8 +132,8 @@ void forward()
 void back()
 {
     Serial.println("back");
-    analogWrite(ENA, 120);
-    analogWrite(ENB, 120);
+    analogWrite(ENA, BRZINA / 2);
+    analogWrite(ENB, BRZINA / 2);
     digitalWrite(IN4, HIGH);
     digitalWrite(IN3, LOW);
     digitalWrite(IN1, HIGH);
@@ -141,8 +143,8 @@ void back()
 void left()
 {
     Serial.println("left");
-    analogWrite(ENA, 80);
-    analogWrite(ENB, 80);
+    analogWrite(ENA, BRZINA_OKRETA);
+    analogWrite(ENB, BRZINA_OKRETA);
     digitalWrite(IN4, HIGH);
     digitalWrite(IN3, LOW);
     digitalWrite(IN1, LOW);
@@ -152,8 +154,8 @@ void left()
 void right()
 {
     Serial.println("right");
-    analogWrite(ENA, 80);
-    analogWrite(ENB, 80);
+    analogWrite(ENA, BRZINA_OKRETA);
+    analogWrite(ENB, BRZINA_OKRETA);
     digitalWrite(IN4, LOW);
     digitalWrite(IN3, HIGH);
     digitalWrite(IN1, HIGH);

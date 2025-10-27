@@ -1,4 +1,4 @@
-#include <IRremote.h> // verzija 4. onesposobljava neke pinove?
+#include <IRremote.h> // verzija 4; ne radi jedan motor
 
 const byte IN1 = 4;  // plavi
 const byte IN2 = 7;  // zeleni
@@ -12,13 +12,14 @@ const byte IR_RECEIVE_PIN = 2; // braon
 const byte trigPin = 8; // braon
 const byte echoPin = 9; // zuti
 
-const byte NUM_2 = 24;
-const byte NUM_8 = 82;
-const byte NUM_5 = 28;
-const byte NUM_4 = 8;
-const byte NUM_6 = 90;
+const byte NUM_2 = 24; // gore
+const byte NUM_8 = 82; // dole
+const byte NUM_5 = 28; // sredina
+const byte NUM_4 = 8;  // levo
+const byte NUM_6 = 90; // desno
 
-unsigned long value = 0;
+unsigned long lastClick = millis();
+long currButton = NUM_5;
 
 void setup()
 {
@@ -32,37 +33,37 @@ void setup()
     pinMode(trigPin, OUTPUT);
     pinMode(echoPin, INPUT);
 
-    Serial.begin(115200);
+    Serial.begin(9600);
     IrReceiver.begin(IR_RECEIVE_PIN, ENABLE_LED_FEEDBACK);
 }
 
 void loop()
 {
-    if (rastojanje() < 10)
+    if (rastojanje() < 10 && millis() - lastClick > 500)
     {
         stop();
     }
-   
+
+    if ((currButton == NUM_4 || currButton == NUM_6) && (millis() - lastClick > 1000))
+    {
+        stop();
+    }
+
     if (IrReceiver.decode())
-    {        
-        if (!(IrReceiver.decodedIRData.flags & IRDATA_FLAGS_IS_REPEAT))
-        {
-            value = IrReceiver.decodedIRData.command; // ažurira samo na novo pritiskanje
-        }
+    {
+        Serial.print("cmd="); Serial.print(IrReceiver.decodedIRData.command);
+        lastClick = millis();
 
-        Serial.print("Command: ");
-        Serial.println(IrReceiver.decodedIRData.command);
-        Serial.print("value: ");
-        Serial.println(value);
+        currButton = IrReceiver.decodedIRData.command;
 
-        switch (value)
+        switch (currButton)
         {
             case NUM_2: forward(); break;
             case NUM_8:    back(); break;
             case NUM_4:    left(); break;
             case NUM_6:   right(); break;
             case NUM_5:    stop(); break;
-            default:       stop(); break;
+            default: break;
         }
 
         IrReceiver.resume(); // receive next value
