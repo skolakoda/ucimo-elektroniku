@@ -7,9 +7,8 @@ Veseli robot je promena softvera za robot auto, tako da:
 ## Komponente
 
 Pored standardnih komponenti, koristi još:
+- senzor pokreta (za detekciju ljudi)
 - mikrofonski modul (za detekciju ritma)
-- termalni senzor (npr. MLX90640, AMG8833) za detekciju toplih tela; detektuje i peć
-- ili PIR (detektuje samo pokret toplih tela, ne u mirovanju)
 
 Ultrazvučni senzor možda nije neophodan.
 

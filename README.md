@@ -13,28 +13,26 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
   - napraviti veselog robota
   - napraviti kućište od drveta
     https://www.hackster.io/webotricks/how-to-make-a-cute-wall-e-smart-robot-with-arduino-4c6979 
+- punjači
+  - osposobiti punjač mobilnih baterija
+  - solarni punjač (projekti) i solarno-bastensko-svetlo (projekti)
+- paljenje svetla kod čikica noću (ili od 22h do 1h):
+  - možda i bez arduina, ali onda mora celu noć?
+  - detektovati noć pomoću fotootpornika i logovati
+  - koristiti svetiljke, LED traku ili zasebne diode 
+  - paljenje led (fotootpornik i npn tranzistor) https://youtu.be/eEBMTpxdPiE
 - laser na kuli prati ljudski pokret
   - https://www.instructables.com/Arduino-Nano-Infrared-Obstacle-Avoidance-Sensor-Wi/
   - https://www.instructables.com/Arduino-Laser-Turret/
-- banka baterija
-  - mobilni: https://www.instructables.com/Mobile-Phone-Battery-Power-Bank/
-  - laptop: https://www.instructables.com/REUSE-YOUR-OLD-LAPTOP-BATTERY-TO-MAKE-A-POWER-BANK/
 - vlagomer sa ekserima (projekti)
-- punjači
-  - solarni punjač (projekti)
-  - punjač akumulatora https://www.electronicshub.org/lead-acid-battery-charger-circuit/
-  - regulator napona (vidi članak, treba transistor 7805 i kondenzatori)
 - detektor strujnih vodova (projekti)
 - autić (projekti)
   - dodati bateriju
   - dodati prekidač
   - dodati solarni pogon
   - dodati propeler
-- paljenje svetla noću (ili od 22h do 1h):
-  - solarno-bastensko-svetlo (projekti)
-  - detektovati noć pomoću fotootpornika i logovati
-  - koristiti svetiljke, LED traku ili zasebne diode 
-  - paljenje led (fotootpornik i npn tranzistor) https://youtu.be/eEBMTpxdPiE
+- sistem za navodnjavanje
+  - isprobati solenoidni ventil
 
 ### Kitovi
 - fm radio prijemnik (projekti, kit)
