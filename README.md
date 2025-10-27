@@ -9,23 +9,10 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 ## TODO
 
 ### Praviti
-- autić (projekti)
-  - dodati bateriju
-  - dodati prekidač
-  - dodati solarni pogon
-  - dodati propeler
-- paljenje svetla noću (ili od 22h do 1h):
-  - solarno-bastensko-svetlo (projekti)
-  - detektovati noć pomoću fotootpornika i logovati
-  - koristiti svetiljke, LED traku ili zasebne diode 
-  - paljenje led (fotootpornik i npn tranzistor) https://youtu.be/eEBMTpxdPiE
 - robot:
-  - popraviti drugog robota
+  - napraviti veselog robota
   - napraviti kućište od drveta
     https://www.hackster.io/webotricks/how-to-make-a-cute-wall-e-smart-robot-with-arduino-4c6979 
-  - dodati mikrofon:
-    - robot pleše – sinhronizuje pokrete s muzikom (mikrofonski modul sa jednostavnom detekcijom ritma, spremni pokreti, okreti, vrtenje glavom)
-    - robot ljubimac - prati vlasnika, reaguje na neke komande
 - laser na kuli prati ljudski pokret
   - https://www.instructables.com/Arduino-Nano-Infrared-Obstacle-Avoidance-Sensor-Wi/
   - https://www.instructables.com/Arduino-Laser-Turret/
@@ -38,6 +25,16 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
   - punjač akumulatora https://www.electronicshub.org/lead-acid-battery-charger-circuit/
   - regulator napona (vidi članak, treba transistor 7805 i kondenzatori)
 - detektor strujnih vodova (projekti)
+- autić (projekti)
+  - dodati bateriju
+  - dodati prekidač
+  - dodati solarni pogon
+  - dodati propeler
+- paljenje svetla noću (ili od 22h do 1h):
+  - solarno-bastensko-svetlo (projekti)
+  - detektovati noć pomoću fotootpornika i logovati
+  - koristiti svetiljke, LED traku ili zasebne diode 
+  - paljenje led (fotootpornik i npn tranzistor) https://youtu.be/eEBMTpxdPiE
 
 ### Kitovi
 - fm radio prijemnik (projekti, kit)

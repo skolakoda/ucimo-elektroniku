@@ -2,6 +2,13 @@
 
 Snaga Arduina leži u bogatoj ponudi **modula** koje možemo jednostavno povezati i koristiti. U nastavku su objašnjeni najpoznatiji Arduino moduli.
 
+- [Senzorski moduli](#senzorski-moduli)
+- [Izlazni moduli](#izlazni-moduli)
+- [Upravljački moduli](#upravljački-moduli)
+- [Moduli napajanja](#moduli-napajanja)
+- [Komunikacioni moduli](#komunikacioni-moduli)
+- [Memorijski moduli](#memorijski-moduli)
+
 ## Senzorski moduli
 
 ### Detektor rastojanja (ultrazvučni senzor HC-SR04)
@@ -10,7 +17,7 @@ Snaga Arduina leži u bogatoj ponudi **modula** koje možemo jednostavno povezat
 
 Ultrazvučni senzor meri rastojanje pomoću odjeka zvučnog talasa. Koristi se za robote, parking asistente i slično.
 
-### Senzor kretanja (PIR senzor)
+### Senzor kretanja (PIR senzor HC-SR501)
 
 ![](slike/moduli/senzor-kretanja.jpg)
 
@@ -39,42 +46,6 @@ Senzor vlažnosti tla meri koliko je zemlja suva ili vlažna. Modul se sastoji o
 ![](slike/moduli/DHT11-vs-DHT22.png) ![](slike/moduli/DHT11.jpg)
 
 Ovi senzori mere temperaturu i vlažnost vazduha. DHT11 je jednostavniji i manje precizan, dok DHT22 pruža širi opseg i veću tačnost.
-
-## Komunikacioni moduli
-
-### SIM modul (SIM800L)
-
-![](slike/moduli/sim-modul.png)
-
-GSM/GPRS modul SIM800L, sa ugrađenom PCB antenom i slotom za SIM karticu, omogućava Arduinu da šalje i prima SMS poruke, pravi pozive i pristupa internetu preko mobilne mreže.
-
-### Wifi modul (ESP8266)
-
-![](slike/moduli/wifi-module.jpg)
-
-ESP8266 (NodeMCU) je mikrokontroler s ugrađenim Wi-Fi-jem, koji omogućava povezivanje na internet. Može se programirati direktno, bez Arduina.
-
-ESP8266 može pokrenuti web server koji nam omogućava da preko Wi-Fi mreže palimo i gasimo LED diode i druge uređaje.
-
-### Infracrveni prijemnik (KY-022)
-
-![](slike/moduli/infrared.jpg) ![](slike/moduli/HW-477-modul.jpg)
-
-Infracrveni (IR) prijemnik služi za dekodiranje signala sa daljinskog upravljača.
-
-### Bluetooth modul (HC-05, HC-06)
-
-![](slike/moduli/bluetooth-module.jpg)
-
-Bluetooth modul služi za bežičnu komunikaciju sa računarom ili mobilnim telefonom. Često se koristi za kontrolu robota ili drugih uređaja.
-
-### Radio modul (NRF24L01)
-
-![](slike/moduli/radio-modul.jpg)
-
-Radio modul omogućava komunikaciju između dva ili više Arduina na daljinama do ~100 metara. Mikrokontroleri mogu da razmenjuju bilo kakve podatke: vrednosti senzora, komande za LED/motor, status uređaja, tekstualne poruke...
-
-Na primer, jedan Arduino može slati očitanu vlažnost tla, a drugi primati i puštati navodnjavanje kada vlažnost padne ispod određene granice.
 
 ## Izlazni moduli
 
@@ -108,6 +79,18 @@ Tekući LED modul kombinuje NE555 tajmer i CD4017 brojač da bi pravio sekvencij
 
 Link: https://www.aliexpress.com/item/33006209085.html
 
+### Laserski modul (KY-008)
+
+![](slike/moduli/laserski-modul.jpg)
+
+Modul laserskog predajnika KY-008 može se koristiti kao laserski pokazivač. Emituje crveni laserski zrak u obliku tačke.
+
+Kompatibilan je sa Arduinom, Raspberry PI, ESP32 i drugim popularnim mikrokontrolerima.
+
+Info: [https://arduinomodules.info/ky-008-laser-transmitter-module](https://arduinomodules.info/ky-008-laser-transmitter-module/)
+
+## Upravljački moduli
+
 ### Relej
 
 ![](slike/moduli/relej.png)
@@ -137,7 +120,7 @@ Najčešći moduli su L298N i L293D. Koriste se u robotici i vozilima na daljins
 
 Specijalizovani upravljač steper motora (A4988) poznat je po preciznoj kontroli koraka. Obično se koristi za robote, 3D štampače i CNC mašine.
 
-## Napajanje
+## Moduli napajanja
 
 ### Podesivi regulator napajanja (dizač/spuštač)
 
@@ -188,6 +171,42 @@ To je mali modul za punjenje litijum-jonskih (Li-Ion) i litijum-polimerskih (Li-
 Često se koristi u prenosnim i bežičnim Arduino projektima.
 
 Link: https://www.aliexpress.com/item/1005001557483971.html
+
+## Komunikacioni moduli
+
+### SIM modul (SIM800L)
+
+![](slike/moduli/sim-modul.png)
+
+GSM/GPRS modul SIM800L, sa ugrađenom PCB antenom i slotom za SIM karticu, omogućava Arduinu da šalje i prima SMS poruke, pravi pozive i pristupa internetu preko mobilne mreže.
+
+### Wifi modul (ESP8266)
+
+![](slike/moduli/wifi-module.jpg)
+
+ESP8266 (NodeMCU) je mikrokontroler s ugrađenim Wi-Fi-jem, koji omogućava povezivanje na internet. Može se programirati direktno, bez Arduina.
+
+ESP8266 može pokrenuti web server koji nam omogućava da preko Wi-Fi mreže palimo i gasimo LED diode i druge uređaje.
+
+### Infracrveni prijemnik (KY-022)
+
+![](slike/moduli/infrared.jpg) ![](slike/moduli/HW-477-modul.jpg)
+
+Infracrveni (IR) prijemnik služi za dekodiranje signala sa daljinskog upravljača.
+
+### Bluetooth modul (HC-05, HC-06)
+
+![](slike/moduli/bluetooth-module.jpg)
+
+Bluetooth modul služi za bežičnu komunikaciju sa računarom ili mobilnim telefonom. Često se koristi za kontrolu robota ili drugih uređaja.
+
+### Radio modul (NRF24L01)
+
+![](slike/moduli/radio-modul.jpg)
+
+Radio modul omogućava komunikaciju između dva ili više Arduina na daljinama do ~100 metara. Mikrokontroleri mogu da razmenjuju bilo kakve podatke: vrednosti senzora, komande za LED/motor, status uređaja, tekstualne poruke...
+
+Na primer, jedan Arduino može slati očitanu vlažnost tla, a drugi primati i puštati navodnjavanje kada vlažnost padne ispod određene granice.
 
 ## Memorijski moduli
 
