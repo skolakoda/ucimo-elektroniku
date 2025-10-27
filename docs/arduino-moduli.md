@@ -85,6 +85,16 @@ Info: [https://arduinogetstarted.com/tutorials/arduino-gas-sensor](https://ardui
 
 Senzor kiše detektuje prisustvo vode ili kiše na svojoj pločici. Arduino dobija digitalni signal kad je pločica mokra i može npr. da ažurira uslov zalivanja ili aktivira neki uređaj.
 
+### Senzor za praćenje linije (KY-033)
+
+![](slike/moduli/senzor-za-pracenje-puta.jpg)
+
+Modul za praćenje linije (KY-033) je infracrveni senzor koji detektuje da li je površina ispred njega reflektujuća ili neprozirna. Osetljivost na ambijentalno svetlo može se podešavati kako bi se postiglo precizno očitavanje.
+
+Ovaj senzor se obično koristi na robotima sa točkovima.
+
+Info: [https://arduinomodules.info/ky-033-line-tracking-sensor-module](https://arduinomodules.info/ky-033-line-tracking-sensor-module/)
+
 ## Izlazni moduli
 
 ### LCD modul (IIC/I2C 1602)
