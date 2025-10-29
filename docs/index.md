@@ -14,7 +14,7 @@
 - [Alati i oprema](alati-i-oprema.md)
 - [Mesto za rad](mesto-za-rad.md)
 
-## Komponente
+## Elektronske komponente
 
 - [Otpornici](otpornici.md)
 - [Diode](diode.md)
@@ -46,14 +46,13 @@
   - [Dodatne funkcije multimetra](dodatne-funkcije-multimetra.md)
   - [Merenje struje naponom](merenje-struje-naponom.md)
 - [Mikrokontroleri](mikrokontroleri.md)
-  - [Arduino moduli](arduino-moduli.md)
 - [Prototipska ploča](prototipska-ploca.md)
 - [Štampana ploča](stampana-ploca.md)
 - [Lemljenje](lemljenje.md)
 - [Omotavanje žice](omotavanje-zice.md)
 - [Formule](formule.md)
 
-## Projekti
+## Elektronski projekti
 
 - [Autić](projekti/autic.md)
 - [Detektor infracrvenog zračenja](projekti/detektor-infracrvenog-zracenja.md)
@@ -73,6 +72,11 @@
 - [Treptajuća svetla](projekti/trepcuca-svetla.md)
 - [Treptavo svetlo](projekti/treptavo-svetlo.md)
 - [Zujalica](projekti/zujalica.md)
+
+## Arduino moduli
+
+- [Arduino moduli](arduino-moduli.md)
+- [Arduino štit](arduino-stit.md)
 
 ## Arduino projekti
 

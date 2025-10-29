@@ -9,8 +9,9 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 ## TODO
 
 ### Praviti
-- robot:
-  - napraviti veselog robota
+- napraviti veselog robota:
+  - dodati senzor pokreta i logiku za praćenje ljudi
+  - dodati mikrofon i logiku za plesanje uz ritam
   - napraviti kućište od drveta
     https://www.hackster.io/webotricks/how-to-make-a-cute-wall-e-smart-robot-with-arduino-4c6979 
 - punjači

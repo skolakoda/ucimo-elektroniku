@@ -23,6 +23,10 @@ Ultrazvučni senzor meri rastojanje pomoću odjeka zvučnog talasa. Koristi se z
 
 Senzor pokreta, poznat kao PIR (pasivni infracrveni) senzor, je zasnovan na infracrvenom zračenju. Najčešće se koristi u alarmima protiv provalnika ili osvetljenju koje se pali na pokret.
 
+Info: 
+- [https://docs.sunfounder.com/projects/ultimate-sensor-kit/en/latest/components_basic/13-component_pir_motion.html](https://docs.sunfounder.com/projects/ultimate-sensor-kit/en/latest/components_basic/13-component_pir_motion.html)
+- [https://www.instructables.com/HC-SR501-PIR-Sensor-With-Arduino/](https://www.instructables.com/HC-SR501-PIR-Sensor-With-Arduino/)
+
 ### IR senzor za izbegavanje prepreka
 
 ![](slike/moduli/senzor-za-izbegavanje-prepreka.jpg)
