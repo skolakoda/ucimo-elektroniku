@@ -2,7 +2,10 @@
 
 ![](slike/moduli/arduino-sensor-shield.png)
 
-**Arduino senzorni štit** (*Arduino Sensor Shield*) je dodatna ploča koja služi kao interfejs između Arduina i senzora, servo motora, releja i drugih komponenti, omogućujući lako povezivanje bez lemljenja (poput prototipske ploče).
+**Arduino senzorni štit** (*Arduino Sensor Shield*) je dodatna ploča koja služi kao interfejs između Arduina i senzora, servo motora, releja i drugih modula, omogućujući lako povezivanje bez lemljenja (poput prototipske ploče).
+
+Svaki od pinova na štitu je zapravo arduino pin podeljen u tri linije: **S** (signal), **V** (napajanje, obično 5 V) i **G** (uzemljenje).
+Tako svaki modul možemo direktno priključiti trožilnim kablom, bez zasebnog spajanja napajanja i uzemljenja.
 
 ## Tehničke karakteristike
 
