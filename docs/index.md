@@ -30,6 +30,7 @@
 - [Prekidači](prekidaci.md)
   - [Releji](releji.md)
   - [Solenoidi](solenoidi.md)
+  - [Solenoidni ventil](solenoidni-ventil.md)
 - [Elektromotori](elektromotori.md)
 - [Senzori](senzori.md)
 - [Integrisano kolo](integrisano-kolo.md)

@@ -19,7 +19,7 @@ Dodatni delovi irigacionog sistema mogu biti:
 
 ## Primer (MOSFET otvara ventil)
 
-![](../slike/arduino-i-solenoid.jpg)
+![](../slike/sheme/arduino-i-solenoid.jpg)
 
 Delovi:
 * Arduino Uno (ili kompatibilna ploča)
@@ -55,7 +55,9 @@ void loop() {
 
 ## Primer (relej otvara ventil)
 
-![](../slike/arduino-relej-solenoid.jpg)
+<!-- ![](../slike/sheme/arduino-relej-solenoid.jpg) -->
+
+![](../slike/sheme/arduino-relej-solenoid2.jpg)
 
 Delovi za ovo kolo uglavnom su slični kao za prethodno, osim što umesto MOSFET-a ide relej.
 
@@ -113,10 +115,11 @@ Standardni navoj za tuš je muški navoj G 1/2″, na koji se uvrće ženski nav
 Naš automatski tajmer ima ženski navoj 3/4″ na ulazu i muški navoj 3/4″ na izlazu (sa spojnicom za crevo od 16mm). Radi pod pritiskom od 2 do 4 bara.
 
 - Da bi priključili tajmer na kuhinjsku slavinu, potreban je adapter: muški navoj G 1/2″ -> muški navoj 3/4″.
+- Da bi priključili tajmer na našu baštensku slavinu G 1″ potreban je adapter: ženski navoj 1″ -> muški navoj 3/4″ (nakon čega ide ženski navoj tajmera).
 - Da bi priključili tajmer na baštensku slavinu G 3/4″ nije potreban adapter (direktno ide ženski navoj tajmera).
-- Da bi priključili tajmer na baštensku slavinu G 1″ potreban je adapter: ženski navoj 1″ -> muški navoj 3/4″ (nakon čega ide ženski navoj tajmera).
 
 ## Izvori
 
 - [Controlling A Solenoid Valve With Arduino](https://bc-robotics.com/tutorials/controlling-a-solenoid-valve-with-arduino/)
 - [Arduino Water Liquid Valve](https://arduinogetstarted.com/tutorials/arduino-water-liquid-valve)
+- [Solenoid Valve Interfacing With Arduino](https://techatronic.com/solenoid-valve-interfacing-with-arduino/)

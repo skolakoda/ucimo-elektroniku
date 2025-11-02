@@ -8,20 +8,23 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
 ## TODO
 
+### Kupiti
+
+- adapter za automatsku slavinu: ženski navoj 1″ -> muški navoj 3/4″
+
 ### Praviti
-- napraviti veselog robota:
-  - dodati senzor pokreta i logiku za praćenje ljudi
-  - dodati mikrofon i logiku za plesanje uz ritam
-  - napraviti kućište od drveta
-    https://www.hackster.io/webotricks/how-to-make-a-cute-wall-e-smart-robot-with-arduino-4c6979 
-- punjači
-  - osposobiti punjač mobilnih baterija
-  - solarni punjač (projekti) i solarno-bastensko-svetlo (projekti)
+- navodnjavanje-pumpom
+  - isprobati mali solenoidni ventil sa malim crevom
+    - naći specifikacije, napisati članak
+  - isprobati veliki solenoidni ventil sa velikim crevom
+    - naći specifikacije, napisati članak
+    - obezbediti mu napajanje od 12v
 - paljenje svetla kod čikica noću (ili od 22h do 1h):
   - možda i bez arduina, ali onda mora celu noć?
   - detektovati noć pomoću fotootpornika i logovati
   - koristiti svetiljke, LED traku ili zasebne diode 
   - paljenje led (fotootpornik i npn tranzistor) https://youtu.be/eEBMTpxdPiE
+  - paljenje na pljesak?
 - laser na kuli prati ljudski pokret
   - https://www.instructables.com/Arduino-Nano-Infrared-Obstacle-Avoidance-Sensor-Wi/
   - https://www.instructables.com/Arduino-Laser-Turret/
@@ -32,8 +35,9 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
   - dodati prekidač
   - dodati solarni pogon
   - dodati propeler
-- sistem za navodnjavanje
-  - isprobati solenoidni ventil
+- punjači
+  - osposobiti punjač mobilnih baterija
+  - solarni punjač (projekti) i solarno-bastensko-svetlo (projekti)
 
 ### Kitovi
 - fm radio prijemnik (projekti, kit)

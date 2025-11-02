@@ -20,9 +20,3 @@ Tipična primena je u bravama, ventilima (solenoidni ventil), automobilskim star
 Solenoidi mogu biti monostabilni i bistabilni:
 - Monostabilni da bi ostali u drugom položaju, moraju imati stalno uključenu zavojnicu. Na primer, relej drži kontakt dok mu ide struja. Kad nestane struje, opruga se vraća nazad. 
 - Bistabilni kad se prebace u određeno stanje, ostaju tu bez napajanja. Potreban im je samo kratak impuls da promene stanje, pa su energetski efikasniji.
-
-## Solenoidni ventil
-
-![](slike/komponente/solenoidni-ventil.jpg)
-
-Solenoidni ventil (ili elektromagnetni ventil) služi za kontrolu protoka tečnosti (ili gasa) pomoću električnog kola. Često se koristi u automatskim [sistemima za navodnjavanje](arduino-projekti/navodnjavanje-ventilom.md).
