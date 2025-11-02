@@ -1,16 +1,17 @@
+int sensorPin = 2;
 int ledPin = 13;
-int motionPin = 8;
 
 void setup()
 {
   pinMode(ledPin, OUTPUT);
-  pinMode(motionPin, INPUT);
+  pinMode(sensorPin, INPUT);
   Serial.begin(9600);
 }
 
 void loop()
 {
-  int sensorValue = digitalRead(motionPin);
+  int sensorValue = digitalRead(sensorPin);
   digitalWrite(ledPin, sensorValue);
   Serial.println(sensorValue);
+  delay(100);
 }
