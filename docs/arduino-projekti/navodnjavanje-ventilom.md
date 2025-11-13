@@ -118,6 +118,14 @@ Naš automatski tajmer ima ženski navoj 3/4″ na ulazu i muški navoj 3/4″ n
 - Da bi priključili tajmer na našu baštensku slavinu G 1″ potreban je adapter: ženski navoj 1″ -> muški navoj 3/4″ (nakon čega ide ženski navoj tajmera).
 - Da bi priključili tajmer na baštensku slavinu G 3/4″ nije potreban adapter (direktno ide ženski navoj tajmera).
 
+## Problemi
+
+Uobičajene su dve vrste solenoidnih ventila:
+- mali od 5V i 
+- veliki od 12V. 
+
+Male je lakše napajati, ali problem je što propuštaju premalo vode. Veliki imaju veću propusnost ali teže im je obezbediti napajanje. Ni Arduino ni klasične baterije ne daju 12V. Neka od mogućih rešenja su automobilski akumulator ili solarna ploča + kontroler.
+
 ## Izvori
 
 - [Controlling A Solenoid Valve With Arduino](https://bc-robotics.com/tutorials/controlling-a-solenoid-valve-with-arduino/)
