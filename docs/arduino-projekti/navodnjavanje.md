@@ -24,7 +24,7 @@ Prefiks **G** označava **BSP** (*British Standard Pipe*) navoj, što je standar
 
 Standardni izlaz rezervoara za vodu je plastični navoj **S60x6** (prečnik 60 mm, korak 6 mm), po metričkom industrijskom standardu za plastične IBC (*Intermediate Bulk Container*) rezervoare.
 
-## Spojke
+## Spojnice
 
 Za pravljenje irigacionih sistema potrebna je gomila spojki. Sve spojke se dele u dve vrste:
 
