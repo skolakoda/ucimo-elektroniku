@@ -13,18 +13,14 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 - adapter za automatsku slavinu: ženski navoj 1″ -> muški navoj 3/4″
 
 ### Praviti
-- navodnjavanje-pumpom
-  - isprobati mali solenoidni ventil sa malim crevom
-    - naći specifikacije, napisati članak
-  - isprobati veliki solenoidni ventil sa velikim crevom
-    - naći specifikacije, napisati članak
-    - obezbediti mu napajanje od 12v
-- paljenje svetla kod čikica noću (ili od 22h do 1h):
-  - možda i bez arduina, ali onda mora celu noć?
+- paljenje svetiljki kod čikica noću (ili od 22h do 1h):
   - detektovati noć pomoću fotootpornika i logovati
-  - koristiti svetiljke, LED traku ili zasebne diode 
-  - paljenje led (fotootpornik i npn tranzistor) https://youtu.be/eEBMTpxdPiE
+  - dva odvojena napajanja ili jedno i buck converter (LM2596)?
+  - npn tranzistor 
   - paljenje na pljesak?
+- noćno svetlo bez arduina 
+  - https://youtu.be/eEBMTpxdPiE
+  - možda solarno za terasu
 - laser na kuli prati ljudski pokret
   - https://www.instructables.com/Arduino-Nano-Infrared-Obstacle-Avoidance-Sensor-Wi/
   - https://www.instructables.com/Arduino-Laser-Turret/
