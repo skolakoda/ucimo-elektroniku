@@ -8,7 +8,7 @@ void setup()
 
 void loop()
 {
-  int mracnost = digitalRead(fotoPin);
-  Serial.println(mracnost);
+  int jelMrak = digitalRead(fotoPin);
+  Serial.println(jelMrak);
   delay(100);
 }
