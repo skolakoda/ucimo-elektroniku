@@ -12,6 +12,7 @@ Tako svaki modul možemo direktno priključiti trožilnim kablom, bez zasebnog s
 Arduino Sensor Shield v5.0 ima sledeće karakteristike:
 
 * **Napajanje**: 5V putem Arduino ploče ili eksternog napajanja (ako je jumper za napajanje servoa postavljen na "EXT").
+* **Izlazni pinovi**: svaki trostruki pin konektor ima napajanje (5V ili 3.3V), uzemljenje i signal.
 * **Digitalni pinovi**: D0–D13 (ukupno 14 digitalnih pinova).
 * **Analogni pinovi**: A0–A5 (ukupno 6 analognih pinova).
 * **I2C komunikacija**: SDA (A4) i SCL (A5).
@@ -19,6 +20,8 @@ Arduino Sensor Shield v5.0 ima sledeće karakteristike:
 * **LCD interfejs**: Podrška za paralelni i serijski LCD ekran.
 * **Serijski portovi**: UART (TX/RX), APC220, Bluetooth.
 * **Napajanje servoa**: Mogućnost napajanja servoa sa Arduina ili eksternog izvora.
+
+Podrazumevano izlazno napajanje pinova 5V. Može se prebaciti na 3.3V pomoću džampera.
 
 ## Raspored pinova
 
