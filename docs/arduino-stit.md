@@ -1,4 +1,4 @@
-# Arduino štit
+# Arduino štit v5.0
 
 ![](slike/moduli/arduino-sensor-shield.png)
 

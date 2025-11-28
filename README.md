@@ -14,9 +14,8 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
 ### Praviti
 - paljenje svetiljki kod čikica noću (ili od 22h do 1h):
-  - detektovati noć pomoću fotootpornika i logovati
   - dva odvojena napajanja ili jedno i buck converter (LM2596)?
-  - npn tranzistor 
+  - npn tranzistor
   - paljenje na pljesak?
 - noćno svetlo bez arduina 
   - https://youtu.be/eEBMTpxdPiE
