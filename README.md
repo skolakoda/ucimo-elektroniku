@@ -14,6 +14,8 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
 ### Praviti
 - paljenje svetiljki kod čikica noću (ili od 22h do 1h):
+  - probati fotootpornik umesto fotosenzora
+  - probati mosfet
   - dva odvojena napajanja ili jedno i buck converter (LM2596)?
   - npn tranzistor
   - paljenje na pljesak?
@@ -33,6 +35,7 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 - punjači
   - osposobiti punjač mobilnih baterija
   - solarni punjač (projekti) i solarno-bastensko-svetlo (projekti)
+- suncev-instrument
 
 ### Kitovi
 - fm radio prijemnik (projekti, kit)

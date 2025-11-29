@@ -17,6 +17,7 @@
 ## Elektronske komponente
 
 - [Otpornici](otpornici.md)
+  - [Fotootpornici](Fotootpornici.md)
 - [Diode](diode.md)
   - [LED diode](led-diode.md)
 - [Tranzistori](tranzistori.md)

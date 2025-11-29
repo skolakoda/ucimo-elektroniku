@@ -1,4 +1,4 @@
-// https://create.arduino.cc/projecthub/MisterBotBreak/how-to-use-a-photoresistor-46c5eb
+// https://projecthub.arduino.cc/tropicalbean/how-to-use-a-photoresistor-1143fd
 // objasnjenje: https://techexplorations.com/guides/arduino/common-circuits/voltage-divider-photoresistor/
 int fotootpornik = A0;
 
