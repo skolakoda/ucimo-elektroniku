@@ -14,7 +14,6 @@ Učimo elektroniku i programiranje Arduino mikrokontrolera.
 
 ### Praviti
 - noćne svetiljke
-  - da arduino ide na spavanje?
   - dodati mikrofon i paljenje na pljesak?
 - noćno svetlo bez arduina 
   - https://youtu.be/eEBMTpxdPiE
