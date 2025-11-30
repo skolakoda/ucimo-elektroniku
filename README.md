@@ -14,10 +14,8 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 
 ### Praviti
 - paljenje svetiljki kod čikica noću (ili od 22h do 1h):
-  - probati fotootpornik umesto fotosenzora
-  - probati mosfet
-  - dva odvojena napajanja ili jedno i buck converter (LM2596)?
-  - npn tranzistor
+  - povezati sa svetiljkama
+  - dodati mikrofon
   - paljenje na pljesak?
 - noćno svetlo bez arduina 
   - https://youtu.be/eEBMTpxdPiE
