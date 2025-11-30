@@ -2,7 +2,7 @@
 
 https://skolakoda.github.io/ucimo-elektroniku/
 
-Učimo elektroniku, Arduino i programiranje mikrokontrolera.
+Učimo elektroniku i programiranje Arduino mikrokontrolera.
 
 > Važno upozorenje: Povezivati uzemljenje pa napon, a prekidati napon pa uzemljenje! U suprotnom, neki moduli mogu biti uništeni.
 
@@ -13,10 +13,9 @@ Učimo elektroniku, Arduino i programiranje mikrokontrolera.
 - adapter za automatsku slavinu: ženski navoj 1″ -> muški navoj 3/4″
 
 ### Praviti
-- paljenje svetiljki kod čikica noću (ili od 22h do 1h):
-  - povezati sa svetiljkama
-  - dodati mikrofon
-  - paljenje na pljesak?
+- noćne svetiljke
+  - da arduino ide na spavanje?
+  - dodati mikrofon i paljenje na pljesak?
 - noćno svetlo bez arduina 
   - https://youtu.be/eEBMTpxdPiE
   - možda solarno za terasu
