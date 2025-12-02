@@ -38,7 +38,11 @@ Info: [https://arduinomodules.info/ky-032-infrared-obstacle-avoidance-sensor-mod
 
 ![](slike/moduli/senzor-zvuka.jpg)
 
-Visokosenzitivni mikrofon koji detektuje zvučne talase i omogućava detekciju zvuka.
+KY-037 i KY-038 su elektronski moduli sa visokosenzitivnim mikrofonom koji služe za detekciju zvuka. Imaju dva izlaza:
+- analogni izlaz (AO) — daje signal proporcionalan jačini zvuka,
+- digitalni izlaz (DO) — šalje HIGH kad zvuk pređe zadati prag, koji se podešava pomoću potenciometra.
+
+Senzor zvuka se koristi kao okidač za svetlo, alarm, automatizaciju, interaktivne projekte, merenje nivoa buke i slično.
 
 ### Senzor svetla (fotosenzor)
 

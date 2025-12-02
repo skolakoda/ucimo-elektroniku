@@ -10,10 +10,10 @@ const unsigned long trajanje = 3600000UL;
 bool svetli = false;
 unsigned long vremePaljenja = 0;
 
-ISR(WDT_vect) {} // prepisuje podrazumevanu ISR koja pravi probleme
+ISR(WDT_vect) {} // gazi podrazumevanu ISR koja pravi probleme
 
 void spavaj() {
-  // SLEEP_MODE_PWR_DOWN više štedi, ali sijalice trepću dok svetle
+  // SLEEP_MODE_PWR_DOWN više štedi, ali sijalice trepću
   set_sleep_mode(svetli ? SLEEP_MODE_IDLE : SLEEP_MODE_PWR_DOWN); 
   sleep_enable();
   wdt_enable(WDTO_8S);
