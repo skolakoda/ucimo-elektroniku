@@ -14,7 +14,7 @@ Učimo elektroniku i programiranje Arduino mikrokontrolera.
 
 ### Praviti
 - noćne svetiljke
-  - dodati mikrofon i paljenje na pljesak?
+  - upakovati i postaviti
 - noćno svetlo bez arduina 
   - https://youtu.be/eEBMTpxdPiE
   - možda solarno za terasu

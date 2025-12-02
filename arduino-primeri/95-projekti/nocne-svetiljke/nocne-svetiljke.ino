@@ -5,16 +5,22 @@ const int fotootpornik = A0;
 const int mosfetPin = 6;
 const int soundPin = 2;
 
-const int granicaSvetla = 20;
-const unsigned long trajanje = 3600000UL;
-unsigned long vremePaljenja = 0;
+const int granicaMraka = 20;
+unsigned long pocetakSvetla = 0;
+const unsigned long trajanjeSvetla = 3600000UL; // 1 čas
+const unsigned long trajanjePljeska = 300000UL; // 5 min
 bool svetli = false;
 volatile bool pljesnuto = false;
+volatile unsigned long poslednjiPljesak = 0;
+const unsigned long debounce = 200; 
 
 ISR(WDT_vect) {} 
 
 void hendlajPljesak() {
-  pljesnuto = !pljesnuto;
+  if (millis() - poslednjiPljesak > debounce) {
+    pljesnuto = !pljesnuto;
+    poslednjiPljesak = millis();
+  }
 }
 
 void spavaj() {
@@ -25,6 +31,13 @@ void spavaj() {
   sleep_cpu();
   sleep_disable();
   wdt_disable();
+}
+
+void promeniSvetlo(bool ukljuciti) {
+  svetli = ukljuciti;
+  if (ukljuciti) {
+    pocetakSvetla = millis();
+  }
 }
 
 void setup() {
@@ -39,22 +52,23 @@ void setup() {
 }
 
 void loop() {
-  bool jeMrak = analogRead(fotootpornik) < granicaSvetla;
+  bool jeMrak = analogRead(fotootpornik) < granicaMraka;
 
   if (jeMrak && !svetli) {
-    svetli = true;
-    vremePaljenja = millis();
+    promeniSvetlo(true);
   }
 
-  if (svetli && !jeMrak || (svetli && millis() - vremePaljenja >= trajanje)) {
-    svetli = false;
+  if (svetli && !jeMrak || (svetli && millis() - pocetakSvetla >= trajanjeSvetla)) {
+    promeniSvetlo(false);
   }
 
   if (pljesnuto) {
-    svetli = !svetli;
+    promeniSvetlo(!svetli);
+    if (millis() - poslednjiPljesak >= trajanjePljeska) {
+      pljesnuto = false;
+    }
   }
 
   digitalWrite(mosfetPin, svetli);
-
   spavaj();
 }
