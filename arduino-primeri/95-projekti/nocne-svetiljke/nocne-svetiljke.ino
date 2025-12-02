@@ -4,15 +4,17 @@
 const int fotootpornik = A0;
 const int mosfetPin = 6;
 
-const int limit = 50;
+const int limit = 20;
 const unsigned long trajanje = 3600000UL;
 
-bool svetloUkljuceno = false;
-bool vecSvetlelo = false;
+bool svetli = false;
 unsigned long vremePaljenja = 0;
 
-void spavaj8sek() {
-  set_sleep_mode(SLEEP_MODE_PWR_DOWN);
+ISR(WDT_vect) {} // prepisuje podrazumevanu ISR koja pravi probleme
+
+void spavaj() {
+  // SLEEP_MODE_PWR_DOWN više štedi, ali sijalice trepću dok svetle
+  set_sleep_mode(svetli ? SLEEP_MODE_IDLE : SLEEP_MODE_PWR_DOWN); 
   sleep_enable();
   wdt_enable(WDTO_8S);
   wdt_reset();
@@ -31,23 +33,22 @@ void setup() {
 void loop() {
   int value = analogRead(fotootpornik);
   bool jeMrak = value < limit;
-  bool jeDan = value > limit + 20;
 
-  if (jeDan) {
-    vecSvetlelo = false;
-  }
-
-  if (jeMrak && !svetloUkljuceno && !vecSvetlelo) {
+  if (jeMrak && !svetli) {
     digitalWrite(mosfetPin, HIGH);
-    svetloUkljuceno = true;
-    vecSvetlelo = true;
+    svetli = true;
     vremePaljenja = millis();
   }
 
-  if (svetloUkljuceno && millis() - vremePaljenja >= trajanje) {
+  if (!jeMrak && svetli) {
     digitalWrite(mosfetPin, LOW);
-    svetloUkljuceno = false;
+    svetli = false;
   }
 
-  spavaj8sek();
+  if (svetli && millis() - vremePaljenja >= trajanje) {
+    digitalWrite(mosfetPin, LOW);
+    svetli = false;
+  }
+
+  spavaj();
 }
