@@ -3,18 +3,22 @@
 
 const int fotootpornik = A0;
 const int mosfetPin = 6;
+const int soundPin = 2;
 
-const int limit = 20;
+const int granicaSvetla = 20;
 const unsigned long trajanje = 3600000UL;
-
-bool svetli = false;
 unsigned long vremePaljenja = 0;
+bool svetli = false;
+volatile bool pljesnuto = false;
 
-ISR(WDT_vect) {} // gazi podrazumevanu ISR koja pravi probleme
+ISR(WDT_vect) {} 
+
+void hendlajPljesak() {
+  pljesnuto = !pljesnuto;
+}
 
 void spavaj() {
-  // SLEEP_MODE_PWR_DOWN više štedi, ali sijalice trepću
-  set_sleep_mode(svetli ? SLEEP_MODE_IDLE : SLEEP_MODE_PWR_DOWN); 
+  set_sleep_mode(SLEEP_MODE_IDLE);
   sleep_enable();
   wdt_enable(WDTO_8S);
   wdt_reset();
@@ -26,29 +30,31 @@ void spavaj() {
 void setup() {
   pinMode(mosfetPin, OUTPUT);
   digitalWrite(mosfetPin, LOW);
+
+  pinMode(soundPin, INPUT);
+  attachInterrupt(digitalPinToInterrupt(soundPin), hendlajPljesak, RISING);
+
   pinMode(LED_BUILTIN, OUTPUT);
   digitalWrite(LED_BUILTIN, LOW);
 }
 
 void loop() {
-  int value = analogRead(fotootpornik);
-  bool jeMrak = value < limit;
+  bool jeMrak = analogRead(fotootpornik) < granicaSvetla;
 
   if (jeMrak && !svetli) {
-    digitalWrite(mosfetPin, HIGH);
     svetli = true;
     vremePaljenja = millis();
   }
 
-  if (!jeMrak && svetli) {
-    digitalWrite(mosfetPin, LOW);
+  if (svetli && !jeMrak || (svetli && millis() - vremePaljenja >= trajanje)) {
     svetli = false;
   }
 
-  if (svetli && millis() - vremePaljenja >= trajanje) {
-    digitalWrite(mosfetPin, LOW);
-    svetli = false;
+  if (pljesnuto) {
+    svetli = !svetli;
   }
+
+  digitalWrite(mosfetPin, svetli);
 
   spavaj();
 }
