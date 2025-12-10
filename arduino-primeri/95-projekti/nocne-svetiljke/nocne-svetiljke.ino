@@ -1,20 +1,21 @@
 #include <avr/sleep.h>
 #include <avr/wdt.h>
 
-const int fotootpornik = A0;
-const int mosfetPin = 6;
-const int soundPin = 2;
+const int fotootpornik = A0; // žuti
+const int mosfetPin = 6;     // narandžasti
+const int soundPin = 2;      // žuti
 
 const int granicaMraka = 20;
-unsigned long pocetakSvetla = 0;
 const unsigned long trajanjeSvetla = 3600000UL; // 1 čas
 const unsigned long trajanjePljeska = 300000UL; // 5 min
+const unsigned long debounce = 200; 
+
 bool svetli = false;
 volatile bool pljesnuto = false;
 volatile unsigned long poslednjiPljesak = 0;
-const unsigned long debounce = 200; 
+unsigned long pocetakSvetla = 0;
 
-ISR(WDT_vect) {} 
+ISR(WDT_vect) {} // gazi default reset, omogućava buđenje bez reseta
 
 void hendlajPljesak() {
   if (millis() - poslednjiPljesak > debounce) {
