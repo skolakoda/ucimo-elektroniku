@@ -40,7 +40,7 @@ void loop()
 
 ## Primer sa ekranom
 
-![](../slike/vremenska-stanica.jpg)
+![](../slike/projekti/vremenska-stanica.jpg)
 
 U ovom primeru koristimo ESP8266 mikrokontroler, DHT senzor i LCD ekran, na kom se prikazuju rezultati merenja.
 

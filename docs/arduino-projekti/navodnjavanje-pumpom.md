@@ -46,7 +46,7 @@ void loop() {
 
 ## Primer (merenje vlažnosti tla)
 
-![](../slike/vlagomer.png)
+![](../slike/projekti/vlagomer.png)
 
 Ovaj progam čita vrednost senzora i odlučuje treba li zalivati.
 

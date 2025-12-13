@@ -4,7 +4,7 @@ Pored osnovnog merača vlažnosti tla bez kontrolera, možemo napraviti i verzij
 
 ## Prosta verzija
 
-![](../slike/vlagomer.png)
+![](../slike/projekti/vlagomer.png)
 
 Napajanje senzora je povezano na 5 V pin Arduina, a izlaz senzora na A0. Program čita vrednost senzora i štampa:
 
