@@ -82,7 +82,7 @@
 
 ## Arduino projekti
 
-> Za sve primere vidi [arduino-primeri](https://github.com/skolakoda/ucimo-elektroniku/tree/master/arduino-primeri)
+> Za sve primere koda vidi [arduino-primeri](https://github.com/skolakoda/ucimo-elektroniku/tree/master/arduino-primeri)
 
 - [Vlagomer](arduino-projekti/vlagomer.md)
 - [Vremenska stanica](arduino-projekti/vremenska-stanica.md)
@@ -91,6 +91,7 @@
 - [Navodnjavanje](arduino-projekti/navodnjavanje.md)
   - [Sistem za navodnjavanje pumpom](arduino-projekti/navodnjavanje-pumpom.md)
   - [Sistem za navodnjavanje ventilom](arduino-projekti/navodnjavanje-ventilom.md)
+- [Noćni kontrolor](arduino-projekti/nocni-kontrolor.md)
 
 ## Sopstvena struja
 

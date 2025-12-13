@@ -13,8 +13,13 @@ Učimo elektroniku i programiranje Arduino mikrokontrolera.
 - adapter za automatsku slavinu: ženski navoj 1″ -> muški navoj 3/4″
 
 ### Praviti
-- noćne svetiljke
-  - upakovati i postaviti
+- noćni kontrolor
+  - BUG: kada pljeskom ugasimo svetiljke po svetlu, pa ugasimo svetlo, ne pale se
+  - BUG: nakon par sati zateknem mrak i upaljene, upalim svetlo, ne gase se.
+  - BUG: ujutru i dalje upaljene
+  - skratiti vreme svetla noću na 30 min, danju na 3 min
+  - napraviti mu ruku kojom drži kabal (2 ruke za kablove?)
+  - ugasiti crvene lampice
 - noćno svetlo bez arduina 
   - https://youtu.be/eEBMTpxdPiE
   - možda solarno za terasu

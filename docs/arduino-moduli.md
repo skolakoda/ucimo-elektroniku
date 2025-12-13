@@ -34,9 +34,9 @@ Infracrveni senzor za izbegavanje prepreka emituje infracrvenu svetlost i meri o
 
 Info: [https://arduinomodules.info/ky-032-infrared-obstacle-avoidance-sensor-module/](https://arduinomodules.info/ky-032-infrared-obstacle-avoidance-sensor-module/)
 
-### Senzor zvuka (KY-037, KY-38)
+### Senzor zvuka (KY-037, KY-038)
 
-![](slike/moduli/senzor-zvuka.jpg)
+![](slike/moduli/senzor-zvuka.webp)
 
 KY-037 i KY-038 su elektronski moduli sa visokosenzitivnim mikrofonom koji služe za detekciju zvuka. Imaju dva izlaza:
 - analogni izlaz (AO) — daje signal proporcionalan jačini zvuka,

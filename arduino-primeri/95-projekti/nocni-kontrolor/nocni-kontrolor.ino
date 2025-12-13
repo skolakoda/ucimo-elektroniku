@@ -15,7 +15,7 @@ volatile bool pljesnuto = false;
 volatile unsigned long poslednjiPljesak = 0;
 unsigned long pocetakSvetla = 0;
 
-ISR(WDT_vect) {} // gazi default reset, omogućava buđenje bez reseta
+ISR(WDT_vect) {} // gazi default, omogućava buđenje bez reseta
 
 void hendlajPljesak() {
   if (millis() - poslednjiPljesak > debounce) {
