@@ -8,7 +8,6 @@ const int soundPin = 2;      // žuti
 const int granicaMraka = 20;
 const unsigned long trajanjeSvetla = 3600000UL; // 1 čas
 const unsigned long trajanjePljeska = 300000UL; // 5 min
-const unsigned long debounce = 200; 
 
 bool svetli = false;
 volatile bool pljesnuto = false;
@@ -18,7 +17,7 @@ unsigned long pocetakSvetla = 0;
 ISR(WDT_vect) {} // gazi default, omogućava buđenje bez reseta
 
 void hendlajPljesak() {
-  if (millis() - poslednjiPljesak > debounce) {
+  if (millis() - poslednjiPljesak > 200) { // debounce ms
     pljesnuto = !pljesnuto;
     poslednjiPljesak = millis();
   }

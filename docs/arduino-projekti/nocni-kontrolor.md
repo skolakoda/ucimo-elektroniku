@@ -11,5 +11,15 @@ Glavne komponente su:
 - MOSFET kao prekidač
 - sijaličice (sa zasebnim napajanjem)
 
-## Primer koda
+## Specifikacija programa
+
+Mogući scenariji:
+- mrak -> svetiljke se pale na 30 min
+    - pljesak -> gasi svetiljke dok traje mrak
+        - pljesak -> svetiljke se pale na 30 min
+    - prođe 30 min -> gasi svetiljke dok traje mrak
+- dan -> gasi svetiljke i resetuje stanje
+    - pljesak -> svetiljke se pale na 3 min
+        - novi pljesak pre isteka -> gasi svetiljke i resetuje stanje
+    - prođe 3 min -> gasi svetiljke i resetuje stanje
 
