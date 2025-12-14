@@ -4,6 +4,8 @@
 
 Noćni kontrolor pali svetiljke kada je noć, a gasi kada je dan. Pored toga, u svako doba reaguje na glasan zvuk (pljesak) i menja stanje svetiljki.
 
+## Komponente
+
 Glavne komponente su:
 - Arduino Uno
 - Senzor zvuka (KY-037)
@@ -11,15 +13,10 @@ Glavne komponente su:
 - MOSFET kao prekidač
 - sijaličice (sa zasebnim napajanjem)
 
-## Specifikacija programa
+## Logika
 
-Mogući scenariji:
-- mrak -> svetiljke se pale na 30 min
-    - pljesak -> gasi svetiljke dok traje mrak
-        - pljesak -> svetiljke se pale na 30 min
-    - prođe 30 min -> gasi svetiljke dok traje mrak
-- dan -> gasi svetiljke i resetuje stanje
-    - pljesak -> svetiljke se pale na 3 min
-        - novi pljesak pre isteka -> gasi svetiljke i resetuje stanje
-    - prođe 3 min -> gasi svetiljke i resetuje stanje
+Logika programa:
 
+- Svetlo se pali automatski noću, samo jednom, na zadato trajanje (pola sata).
+- Svetlo se gasi dolaskom dana ili kada istekne trajanje.
+- Pljesak pali ili gasi svetlo u svakom trenutku.

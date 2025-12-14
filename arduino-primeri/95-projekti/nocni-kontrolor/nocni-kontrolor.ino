@@ -6,20 +6,23 @@ const int mosfetPin = 6;     // narandžasti
 const int soundPin = 2;      // žuti
 
 const int granicaMraka = 20;
-const unsigned long trajanjeSvetla = 3600000UL; // 1 čas
-const unsigned long trajanjePljeska = 300000UL; // 5 min
+const unsigned long trajanjeSvetlaNocu  = 1800000UL; // 30 min
+const unsigned long trajanjeSvetlaDanju = 180000UL; // 3 min
 
-bool svetli = false;
+bool vecUgaseno = false;
+unsigned long vremePaljenja = 0;
 volatile bool pljesnuto = false;
-volatile unsigned long poslednjiPljesak = 0;
-unsigned long pocetakSvetla = 0;
+unsigned long poslednjiPljesak = 0;
+const unsigned long debouncePljeska = 200; // ms
+bool noviDan = true; 
 
 ISR(WDT_vect) {} // gazi default, omogućava buđenje bez reseta
 
 void hendlajPljesak() {
-  if (millis() - poslednjiPljesak > 200) { // debounce ms
-    pljesnuto = !pljesnuto;
-    poslednjiPljesak = millis();
+  unsigned long sada = millis();
+  if (sada - poslednjiPljesak > debouncePljeska) {
+    pljesnuto = true;
+    poslednjiPljesak = sada;
   }
 }
 
@@ -33,11 +36,16 @@ void spavaj() {
   wdt_disable();
 }
 
-void promeniSvetlo(bool ukljuciti) {
-  svetli = ukljuciti;
-  if (ukljuciti) {
-    pocetakSvetla = millis();
-  }
+void promeniSvetlo(bool upaliti) {
+  vremePaljenja = upaliti ? millis() : 0;
+}
+
+bool svetiljkeUpaljene() {
+  return vremePaljenja != 0;
+}
+
+bool istekloSvetlo(bool mrak) {
+  return millis() - vremePaljenja >= (mrak ? trajanjeSvetlaNocu : trajanjeSvetlaDanju);
 }
 
 void setup() {
@@ -52,23 +60,40 @@ void setup() {
 }
 
 void loop() {
-  bool jeMrak = analogRead(fotootpornik) < granicaMraka;
+  bool mrak = analogRead(fotootpornik) < granicaMraka;
 
-  if (jeMrak && !svetli) {
-    promeniSvetlo(true);
-  }
+  /* NORMALAN TOK */
 
-  if (svetli && !jeMrak || (svetli && millis() - pocetakSvetla >= trajanjeSvetla)) {
-    promeniSvetlo(false);
-  }
-
-  if (pljesnuto) {
-    promeniSvetlo(!svetli);
-    if (millis() - poslednjiPljesak >= trajanjePljeska) {
-      pljesnuto = false;
+  if (!pljesnuto) {
+    if (mrak) {
+      if (!svetiljkeUpaljene() && !vecUgaseno) {
+        promeniSvetlo(true);
+      } else if (svetiljkeUpaljene() && istekloSvetlo(mrak)) {
+        promeniSvetlo(false);
+        vecUgaseno = true;
+      }
+      noviDan = true;
+    } else { // dan
+      if (svetiljkeUpaljene() && (noviDan || istekloSvetlo(mrak))) {
+        promeniSvetlo(false);
+      }
+      vecUgaseno = false; // reset za novu noć
+      noviDan = false;
     }
   }
 
-  digitalWrite(mosfetPin, svetli);
+  /* PLJESAK */
+
+  if (pljesnuto) {
+      if (svetiljkeUpaljene()) {
+        promeniSvetlo(false);
+        vecUgaseno = true;
+      } else if (!svetiljkeUpaljene()) {
+        promeniSvetlo(true);
+      }
+    pljesnuto = false;
+  }
+
+  digitalWrite(mosfetPin, svetiljkeUpaljene());
   spavaj();
 }
