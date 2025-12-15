@@ -9,7 +9,7 @@ const int granicaMraka = 20;
 const unsigned long trajanjeSvetlaNocu  = 1800000UL; // 30 min
 const unsigned long trajanjeSvetlaDanju = 180000UL; // 3 min
 
-bool vecUgaseno = false;
+bool biloUgaseno = false;
 unsigned long vremePaljenja = 0;
 volatile bool pljesnuto = false;
 unsigned long poslednjiPljesak = 0;
@@ -36,15 +36,16 @@ void spavaj() {
   wdt_disable();
 }
 
-void promeniSvetlo(bool upaliti) {
-  vremePaljenja = upaliti ? millis() : 0;
+void prekidac(bool paljenje) {
+  vremePaljenja = paljenje ? millis() : 0;
+  if (!paljenje) biloUgaseno = true;
 }
 
-bool svetiljkeUpaljene() {
+bool upaljeno() {
   return vremePaljenja != 0;
 }
 
-bool istekloSvetlo(bool mrak) {
+bool vremeIsteklo(bool mrak) {
   return millis() - vremePaljenja >= (mrak ? trajanjeSvetlaNocu : trajanjeSvetlaDanju);
 }
 
@@ -60,40 +61,33 @@ void setup() {
 }
 
 void loop() {
-  bool mrak = analogRead(fotootpornik) < granicaMraka;
-
-  /* NORMALAN TOK */
 
   if (!pljesnuto) {
-    if (mrak) {
-      if (!svetiljkeUpaljene() && !vecUgaseno) {
-        promeniSvetlo(true);
-      } else if (svetiljkeUpaljene() && istekloSvetlo(mrak)) {
-        promeniSvetlo(false);
-        vecUgaseno = true;
+    bool jeMrak = analogRead(fotootpornik) < granicaMraka;
+
+    if (jeMrak) {
+      if (!upaljeno() && !biloUgaseno) {
+        prekidac(true);
+      } else if (upaljeno() && vremeIsteklo(jeMrak)) {
+        prekidac(false);
       }
       noviDan = true;
-    } else { // dan
-      if (svetiljkeUpaljene() && (noviDan || istekloSvetlo(mrak))) {
-        promeniSvetlo(false);
+    } 
+
+    if (!jeMrak) {
+      if (upaljeno() && (noviDan || vremeIsteklo(jeMrak))) {
+        prekidac(false);
       }
-      vecUgaseno = false; // reset za novu noć
+      biloUgaseno = false; // reset za noć
       noviDan = false;
     }
   }
 
-  /* PLJESAK */
-
   if (pljesnuto) {
-      if (svetiljkeUpaljene()) {
-        promeniSvetlo(false);
-        vecUgaseno = true;
-      } else if (!svetiljkeUpaljene()) {
-        promeniSvetlo(true);
-      }
+    prekidac(!upaljeno());
     pljesnuto = false;
   }
 
-  digitalWrite(mosfetPin, svetiljkeUpaljene());
+  digitalWrite(mosfetPin, upaljeno());
   spavaj();
 }
