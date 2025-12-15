@@ -5,22 +5,22 @@ const int fotootpornik = A0; // žuti
 const int mosfetPin = 6;     // narandžasti
 const int soundPin = 2;      // žuti
 
-const int granicaMraka = 20;
-const unsigned long trajanjeSvetlaNocu  = 1800000UL; // 30 min
-const unsigned long trajanjeSvetlaDanju = 180000UL; // 3 min
+const int granicaMraka = 6;
+const int granicaSvetla = 11;
+const unsigned long trajanjeSvetla = 30 * 60000UL; // minuta
 
-bool biloUgaseno = false;
-unsigned long vremePaljenja = 0;
 volatile bool pljesnuto = false;
+unsigned long vremePaljenja = 0;
 unsigned long poslednjiPljesak = 0;
-const unsigned long debouncePljeska = 200; // ms
+bool biloUgaseno = false;
 bool noviDan = true; 
+bool jeMrak = false;
 
 ISR(WDT_vect) {} // gazi default, omogućava buđenje bez reseta
 
 void hendlajPljesak() {
   unsigned long sada = millis();
-  if (sada - poslednjiPljesak > debouncePljeska) {
+  if (sada - poslednjiPljesak > 200) { // debounce
     pljesnuto = true;
     poslednjiPljesak = sada;
   }
@@ -45,8 +45,8 @@ bool upaljeno() {
   return vremePaljenja != 0;
 }
 
-bool vremeIsteklo(bool mrak) {
-  return millis() - vremePaljenja >= (mrak ? trajanjeSvetlaNocu : trajanjeSvetlaDanju);
+bool vremeIsteklo() {
+  return millis() - vremePaljenja >= trajanjeSvetla;
 }
 
 void setup() {
@@ -63,19 +63,21 @@ void setup() {
 void loop() {
 
   if (!pljesnuto) {
-    bool jeMrak = analogRead(fotootpornik) < granicaMraka;
+    int vrednost = analogRead(fotootpornik);
+    if (jeMrak && vrednost > granicaSvetla) jeMrak = false; // histereza (favorizuje prethodno stanje)
+    if (!jeMrak && vrednost < granicaMraka) jeMrak = true; 
 
     if (jeMrak) {
       if (!upaljeno() && !biloUgaseno) {
         prekidac(true);
-      } else if (upaljeno() && vremeIsteklo(jeMrak)) {
+      } else if (upaljeno() && vremeIsteklo()) {
         prekidac(false);
       }
       noviDan = true;
     } 
 
     if (!jeMrak) {
-      if (upaljeno() && (noviDan || vremeIsteklo(jeMrak))) {
+      if (upaljeno() && (noviDan || vremeIsteklo())) {
         prekidac(false);
       }
       biloUgaseno = false; // reset za noć
