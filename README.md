@@ -13,16 +13,6 @@ Učimo elektroniku i programiranje Arduino mikrokontrolera.
 - adapter za automatsku slavinu: ženski navoj 1″ -> muški navoj 3/4″
 
 ### Praviti
-- noćni kontrolor
-  - BUG: kada pljeskom ugasimo svetiljke po svetlu, pa ugasimo svetlo, ne pale se
-  - BUG: nakon par sati zateknem mrak i upaljene, upalim svetlo, ne gase se.
-  - BUG: ujutru i dalje upaljene
-  - skratiti vreme svetla noću na 30 min, danju na 3 min
-  - napraviti mu ruku kojom drži kabal (2 ruke za kablove?)
-  - ugasiti crvene lampice
-- noćno svetlo bez arduina 
-  - https://youtu.be/eEBMTpxdPiE
-  - možda solarno za terasu
 - laser na kuli prati ljudski pokret
   - https://www.instructables.com/Arduino-Nano-Infrared-Obstacle-Avoidance-Sensor-Wi/
   - https://www.instructables.com/Arduino-Laser-Turret/
@@ -37,6 +27,9 @@ Učimo elektroniku i programiranje Arduino mikrokontrolera.
   - osposobiti punjač mobilnih baterija
   - solarni punjač (projekti) i solarno-bastensko-svetlo (projekti)
 - suncev-instrument
+- noćno svetlo bez arduina 
+  - https://youtu.be/eEBMTpxdPiE
+  - možda solarno za terasu
 
 ### Kitovi
 - fm radio prijemnik (projekti, kit)

@@ -1,9 +1,9 @@
 #include <avr/sleep.h>
 #include <avr/wdt.h>
 
-const int fotootpornik = A0; // žuti
-const int mosfetPin = 6;     // narandžasti
-const int soundPin = 2;      // žuti
+#define FOTOOTPORNIK A0
+#define MOSFET_PIN 6
+#define SOUND_PIN 2
 
 const int granicaMraka = 6;
 const int granicaSvetla = 11;
@@ -50,11 +50,11 @@ bool vremeIsteklo() {
 }
 
 void setup() {
-  pinMode(mosfetPin, OUTPUT);
-  digitalWrite(mosfetPin, LOW);
+  pinMode(MOSFET_PIN, OUTPUT);
+  digitalWrite(MOSFET_PIN, LOW);
 
-  pinMode(soundPin, INPUT);
-  attachInterrupt(digitalPinToInterrupt(soundPin), hendlajPljesak, RISING);
+  pinMode(SOUND_PIN, INPUT);
+  attachInterrupt(digitalPinToInterrupt(SOUND_PIN), hendlajPljesak, RISING);
 
   pinMode(LED_BUILTIN, OUTPUT);
   digitalWrite(LED_BUILTIN, LOW);
@@ -63,7 +63,7 @@ void setup() {
 void loop() {
 
   if (!pljesnuto) {
-    int vrednost = analogRead(fotootpornik);
+    int vrednost = analogRead(FOTOOTPORNIK);
     if (jeMrak && vrednost > granicaSvetla) jeMrak = false; // histereza (favorizuje prethodno stanje)
     if (!jeMrak && vrednost < granicaMraka) jeMrak = true; 
 
@@ -90,6 +90,6 @@ void loop() {
     pljesnuto = false;
   }
 
-  digitalWrite(mosfetPin, upaljeno());
+  digitalWrite(MOSFET_PIN, upaljeno());
   spavaj();
 }
