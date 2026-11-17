@@ -1,6 +1,6 @@
 # Solenoidni ventil
 
-**Solenoidni ventil** (ili **elektromagnetni ventil**) služi za kontrolu protoka tečnosti ili gasa pomoću električnog kola. Često se koristi u automatskim [sistemima za navodnjavanje](arduino-projekti/navodnjavanje-ventilom.md).
+**Solenoidni ventil** (ili **elektromagnetni ventil**) služi za kontrolu protoka tečnosti ili gasa pomoću električnog kola. Često se koristi u automatskim [sistemima za navodnjavanje](navodnjavanje/navodnjavanje-ventilom.md).
 
 ## Veliki solenoidni ventil
 
@@ -33,4 +33,4 @@ U normalnom stanju je zatvoren, a kada mu dovedemo struju, otvara se i propušta
 
 ## Vidi još
 
-- [Sistem za navodnjavanje ventilom](arduino-projekti/navodnjavanje-ventilom.md)
+- [Sistem za navodnjavanje ventilom](navodnjavanje/navodnjavanje-ventilom.md)

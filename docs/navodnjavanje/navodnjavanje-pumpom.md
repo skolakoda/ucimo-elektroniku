@@ -16,7 +16,7 @@ Glavni delovi sistema za navodnjavanje su:
 - **rezervoar** iz kog pumpa crpi vodu
 
 Dodatni delovi irigacionog sistema mogu biti:
-- **[vlagomer](vlagomer.md)**, kako bi zalivanje bilo pametnije
+- **[vlagomer](../arduino-projekti/vlagomer.md)**, kako bi zalivanje bilo pametnije
 - **LCD ekran** za ispis trenutnih vrednosti
 - **komunikacioni modul** za aktiviranje na daljinu
 - **solarno napajanje** radi samoodrživosti

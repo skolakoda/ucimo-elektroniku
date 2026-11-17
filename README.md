@@ -30,6 +30,8 @@ Učimo elektroniku i programiranje Arduino mikrokontrolera.
 - noćno svetlo bez arduina 
   - https://youtu.be/eEBMTpxdPiE
   - možda solarno za terasu
+- vremenska stanica
+  - dodati senzor za dim (zagađenje vazduha)
 
 ### Kitovi
 - fm radio prijemnik (projekti, kit)
