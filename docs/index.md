@@ -93,6 +93,7 @@
 ## Navodnjavanje
 
 - [Navodnjavanje](navodnjavanje/navodnjavanje.md)
+  - [Pojmovnik](navodnjavanje/pojmovnik.md)
   - [Sistem za navodnjavanje pumpom](navodnjavanje/navodnjavanje-pumpom.md)
   - [Sistem za navodnjavanje ventilom](navodnjavanje/navodnjavanje-ventilom.md)
 
