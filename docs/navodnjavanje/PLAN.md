@@ -21,6 +21,9 @@
     - obnoviti ogradu i zasenu (možda i odozgo)
     - postaviti podlogu
     - zasaditi nove četinare 
+- struja
+    - povezati regulator napona za punjače
+    - kupiti akumulator i povezati
 
 ## Bela Crkva
 
