@@ -33,6 +33,12 @@
 
 ## Bela Crkva
 
+- kolektorski bazen
+    - kupiti cevi
+    - sprovesti kišnicu cevima od oluka do bazena
+- kupiti električnu pumpu
+- kupiti razna creva (premeriti gde i šta treba, osmisliti sistem zalivanja)
+
 # Podsistemi
 
 ## Barajevo
