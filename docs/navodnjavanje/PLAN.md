@@ -21,9 +21,15 @@
     - obnoviti ogradu i zasenu (možda i odozgo)
     - postaviti podlogu
     - zasaditi nove četinare 
+    - ispitati mogućnost skupljanja kišnice pomoću cerade
 - struja
     - povezati regulator napona za punjače
     - kupiti akumulator i povezati
+- kontejner (sa strujom)
+    - razmisliti treba li
+    - raskrčiti mesto
+    - poravnati tlo, postaviti blokove, otvoriti prolaz
+    - naručiti
 
 ## Bela Crkva
 
