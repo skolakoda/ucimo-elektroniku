@@ -82,7 +82,7 @@
 
 ## Arduino projekti
 
-> Za sve primere koda vidi [arduino-primeri](https://github.com/skolakoda/ucimo-elektroniku/tree/master/arduino-primeri)
+> Za sve primere koda vidi [code](https://github.com/skolakoda/ucimo-elektroniku/tree/master/code)
 
 - [Vlagomer](arduino-projekti/vlagomer.md)
 - [Vremenska stanica](arduino-projekti/vremenska-stanica.md)
